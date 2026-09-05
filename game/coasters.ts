@@ -1,0 +1,16 @@
+export const COASTERS=[
+ {id:'coaster-alpenexpress',name:'Alpenexpress Enzian',area:'park-15',slug:'alpenexpress-enzian'},
+ {id:'coaster-arthur',name:'ARTHUR',area:'park-10',slug:'arthur'},
+ {id:'coaster-atlantica',name:'Atlantica SuperSplash',area:'park-16',slug:'atlantica-supersplash'},
+ {id:'coaster-baaa-express',name:'Ba-a-a Express',area:'park-7',slug:'ba-express'},
+ {id:'coaster-blue-fire',name:'blue fire Megacoaster',area:'park-8',slug:'blue-fire-megacoaster'},
+ {id:'coaster-euro-mir',name:'Euro-Mir',area:'park-17',slug:'euro-mir'},
+ {id:'coaster-eurosat',name:'Eurosat – CanCan Coaster',area:'park-3',slug:'eurosat-cancan-coaster'},
+ {id:'coaster-matterhorn',name:'Matterhorn-Blitz',area:'park-18',slug:'matterhorn-blitz'},
+ {id:'coaster-pegasus',name:'Pegasus',area:'park-4',slug:'pegasus-die-youngstar-achterbahn'},
+ {id:'coaster-bobbahn',name:'Schweizer Bobbahn',area:'park-18',slug:'schweizer-bobbahn'},
+ {id:'coaster-silver-star',name:'Silver Star',area:'park-14',slug:'silver-star'},
+ {id:'coaster-voltron',name:'Voltron Nevera',area:'park-11',slug:'voltron-nevera-powered-rimac'},
+ {id:'coaster-wodan',name:'WODAN Timburcoaster',area:'park-8',slug:'wodan-timburcoaster'},
+ {id:'coaster-poseidon',name:'Poseidon',area:'park-4',slug:'wasserachterbahn-poseidon'},
+];

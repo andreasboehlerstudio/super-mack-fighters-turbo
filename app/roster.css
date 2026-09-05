@@ -1,0 +1,59 @@
+.screen-select .game-screen{background:#101936 url('/assets/title-background-snes.png') center/cover;image-rendering:pixelated}
+.screen-select .game-screen:after{content:'';position:absolute;inset:0;background:linear-gradient(#081327e8,#101538d9);z-index:-1}
+.fighter-portrait{display:block;width:100%;height:100%;object-fit:cover;image-rendering:pixelated;user-select:none}
+.game-screen .roster-layout{top:82px;left:40px;right:40px;height:486px;grid-template-columns:1fr 1fr;grid-template-rows:272px 198px;gap:16px 26px}
+.game-screen .roster-center{grid-column:1/3;grid-row:1}
+.game-screen .roster-grid{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));grid-auto-rows:132px;gap:5px;height:269px}
+.game-screen .fighter-card,.game-screen .fighter-card.selected,.game-screen .fighter-card.selected2{position:relative;min-width:0;min-height:0;padding:0;border:3px solid #4b6178;border-top-color:#9aa6b0;border-left-color:#83939e;border-radius:0;overflow:visible;background:#101b37;box-shadow:2px 3px #050b1f}
+.game-screen .fighter-card .fighter-portrait{position:absolute;inset:0;height:100%;width:100%;object-position:center 35%}
+.game-screen .fighter-card span.name{position:absolute;left:0;right:0;bottom:0;min-height:21px;max-width:100%;padding:4px 1px 2px;background:#050b21bd;font:13px/1 var(--pixel);color:#f6ecde;text-shadow:1px 1px #000;z-index:1}
+.game-screen .fighter-card.selected{border-color:#ffe76d;box-shadow:0 0 0 2px #ae630f,0 0 15px #ffcf464d;z-index:4}
+.game-screen .fighter-card.selected2{border-color:#80eaff;box-shadow:0 0 0 2px #1176a7;z-index:4}
+.game-screen .fighter-card.selected.selected2{border-color:#ffe76d #80eaff #80eaff #ffe76d}
+.game-screen .fighter-card:hover,.game-screen .fighter-card:focus-visible{transform:none;filter:brightness(1.12);outline:2px solid #fff6b2;outline-offset:1px;z-index:5}
+.game-screen .fighter-card .player-flag{position:absolute;top:-3px;left:-3px;z-index:3;font:700 19px/1 var(--pixel);background:#ffd65b;color:#37232a;padding:3px 5px;text-shadow:none;border:1px solid #fff0b0}
+.game-screen .fighter-card .player-flag.p2{left:auto;right:-3px;background:#8ce6fc}
+.game-screen .chosen{grid-row:2;grid-column:1;display:grid;grid-template-columns:190px 1fr;grid-template-rows:28px 56px 31px 1fr;column-gap:17px;padding:0;text-align:left;border:0;background:linear-gradient(110deg,#3d60936b,transparent);overflow:hidden}
+.game-screen .chosen:last-child{grid-column:2}
+.game-screen .chosen .fighter-portrait{grid-column:1;grid-row:1/5;width:190px;height:198px;border:3px solid #92a3b8;border-right-color:#364665;border-bottom-color:#283c59}
+.game-screen .chosen .eyebrow{grid-column:2;grid-row:1;margin:6px 0 0;font:14px var(--pixel);color:#c2d0e5}
+.game-screen .chosen h2{grid-column:2;grid-row:2;font:700 29px/1.05 var(--pixel);margin:8px 0 0;align-self:center;color:#fff2c3;text-shadow:2px 3px #202342}
+.game-screen .chosen .special-name{grid-column:2;grid-row:3;font:20px var(--pixel);color:var(--fighter-color);align-self:end}
+.game-screen .chosen .combo{grid-column:2;grid-row:4;margin:8px 0 0;align-self:start;justify-content:flex-start;font:18px var(--pixel)}
+.game-screen .chosen .combo .key{background:transparent;border:0;box-shadow:none;color:#ffe194;font-size:24px;min-width:23px;padding:0}
+.game-screen .selection-switch{top:-31px;bottom:auto;left:auto;right:0;width:auto;gap:18px}
+.game-screen .setup-bar{bottom:65px;height:70px;left:43px;right:43px;gap:15px}
+.game-screen .setup-bar>.arcade-button{min-width:238px}
+.game-screen .view-heading{top:24px;left:41px;right:40px}
+.versus-screen{position:absolute;inset:0;overflow:hidden;background:#080e25;cursor:pointer}
+.versus-backdrop{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;image-rendering:pixelated;opacity:.3}
+.versus-arena{position:absolute;top:36px;left:30px;right:30px;text-align:center;z-index:5;text-shadow:3px 3px #081226}
+.versus-arena span{display:block;color:#ddd4bc;font:14px var(--arcade);margin-bottom:20px}
+.versus-arena strong{color:#ffdc7c;font:700 34px var(--pixel)}
+.versus-player{position:absolute;top:143px;width:426px;height:426px;z-index:2;border:4px solid #c1a9a2;border-right-color:#4d3965;border-bottom-color:#352644;box-shadow:9px 9px #0d0a20;animation:versus-in .55s steps(9) both}
+.versus-player.one{left:86px;--slide:-540px;transform:skewY(2deg)}
+.versus-player.two{right:86px;--slide:540px;transform:skewY(-2deg)}
+.versus-player.two .fighter-portrait{transform:scaleX(-1)}
+.versus-player>div{position:absolute;left:-10px;right:-10px;bottom:-52px;min-height:75px;background:#142448e8;border-top:3px solid #ffc963;text-align:center;padding:11px}
+.versus-player small{font:17px var(--pixel);color:#ffd773;margin-right:14px}
+.versus-player strong{font:700 29px var(--pixel);color:#fff0d9;text-shadow:2px 3px #0a0d2d}
+.versus-letter{position:absolute;left:50%;top:43%;transform:translate(-50%,-50%) skew(-12deg);z-index:7;font:italic 900 120px var(--pixel);color:#ffca52;text-shadow:4px 4px #e46330,9px 9px #673047,13px 13px #0d1639;-webkit-text-stroke:2px #ffebad;animation:versus-stamp .35s .35s steps(6) both}
+.versus-skip{position:absolute;bottom:28px;right:40px;color:#d2c8dd;font:13px var(--arcade)}
+@keyframes versus-in{from{translate:var(--slide) 0;opacity:0}to{translate:0 0;opacity:1}}
+@keyframes versus-stamp{from{scale:2;opacity:0}to{scale:1;opacity:1}}
+@media(prefers-reduced-motion:reduce){.versus-player,.versus-letter{animation:none}}
+.game-screen .selection-switch{width:320px;right:0;top:-24px;display:flex;gap:20px;justify-content:flex-end}
+.game-screen .selection-switch button{width:auto;min-width:0;white-space:nowrap;font:13px var(--pixel);padding:2px 5px}
+.game-screen .result-screen{display:block;text-align:left;background:#101a34;overflow:hidden}
+.result-backdrop{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.3;image-rendering:pixelated}
+.result-screen:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#0b183617,#0b1836f2 60%);z-index:1}
+.game-screen .result-screen .result-portrait{position:absolute;left:40px;bottom:65px;width:490px;height:560px;z-index:2;border:4px solid #93b8d1;box-shadow:7px 7px #08152a;overflow:hidden}
+.game-screen .result-screen .result-copy{position:absolute;top:148px;left:575px;right:50px;z-index:3}
+.game-screen .result-screen h1{font:italic 700 64px/.98 var(--pixel);color:#ffe7aa;text-shadow:4px 4px #bc5946,7px 7px #131d40;margin:15px 0 26px}
+.game-screen .result-screen .result-name{font:700 32px var(--pixel);color:#8df0e1}
+.game-screen .result-screen p{font:22px/1.4 var(--pixel);margin:22px 0 35px;max-width:590px}
+.game-screen .result-screen .result-actions{display:flex;flex-direction:column;align-items:flex-start;gap:16px;margin:0}
+.game-screen .result-screen .result-actions .arcade-button{min-width:290px;font-size:22px}
+.map-player-location{position:absolute;z-index:15;transform:translate(-50%,-50%);color:white;font:22px var(--pixel);text-shadow:2px 2px #163247,-2px -2px #163247;pointer-events:none}
+.map-player-location b{position:absolute;top:20px;left:50%;transform:translateX(-50%);font:13px var(--pixel);background:#122842;color:white;padding:2px 5px}
+
