@@ -36,7 +36,7 @@ const escape=text=>text.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAl
 const galleryPath=path.join(root,'public/art-gallery.html');let gallery=await fs.readFile(galleryPath,'utf8');
 gallery=gallery.replace(/<div class="music-panel"[\s\S]*?<\/div>/g,'');
 for(const t of manifest){
- const marker=new RegExp('(<figure><a href="/assets/arenas/'+t.id+'\\.png">[\\s\\S]*?</figcaption>)(</figure>)');
+ const marker=new RegExp('(<figure><a href="/assets/arenas/'+t.id+'\\.webp">[\\s\\S]*?</figcaption>)(</figure>)');
  gallery=gallery.replace(marker,(_,start,end)=>`${start}<div class="music-panel" data-area="${t.id}"><h2>${escape(t.title)}</h2><p>${escape(t.description)}</p><small>${t.bpm} BPM · ${Math.round(t.duration)} SEK. · EIGENE KOMPOSITION</small><button type="button" data-play="${t.id}" aria-label="${escape(t.area)}: ${escape(t.title)} abspielen" aria-pressed="false">▶ ANHÖREN</button><a href="${t.midi}" download="${escape(t.title)}.mid">MIDI ↓</a><progress max="1" value="0" aria-label="Fortschritt der Hörprobe"></progress><span class="music-status" aria-live="polite"></span></div>${end}`);
 }
 if(!gallery.includes('/music-gallery.js'))gallery=gallery.replace('</header>','<div class="gallery-music-controls"><a href="/">◀ ZUM SPIEL</a><label>♪ LAUTSTÄRKE <input id="music-volume" aria-label="Lautstärke der Hörproben" type="range" min="0" max="100" value="40"></label><a href="/assets/music/park-soundtracks.zip" download>ALLE 21 MIDI ↓</a></div></header>').replace('</html>','<link rel="stylesheet" href="/music-gallery.css"><script src="/music-gallery.js" defer></script></html>');

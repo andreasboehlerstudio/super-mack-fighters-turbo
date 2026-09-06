@@ -1,0 +1,422 @@
+[
+  {
+    "file": "coaster-alpenexpress.png",
+    "webp": "coaster-alpenexpress.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2395682,
+    "webpBytes": 1531192,
+    "pixelSha256": "50b85a83b1402c07b7c6df8f5e68898272761efec2ff2507c7e11dd5a643ec08",
+    "identicalPixels": true
+  },
+  {
+    "file": "coaster-arthur.png",
+    "webp": "coaster-arthur.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2258257,
+    "webpBytes": 1546160,
+    "pixelSha256": "c446b9fc6fed220680508911e2778d358e7e361349b3cba0865db129a0198fb2",
+    "identicalPixels": true
+  },
+  {
+    "file": "coaster-atlantica.png",
+    "webp": "coaster-atlantica.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2207720,
+    "webpBytes": 1464012,
+    "pixelSha256": "b6cc6355ca2183a75437dcf5a33b4b0636977e31563a10498bd5393a510beaf2",
+    "identicalPixels": true
+  },
+  {
+    "file": "coaster-baaa-express.png",
+    "webp": "coaster-baaa-express.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2284147,
+    "webpBytes": 1438148,
+    "pixelSha256": "950879ca3306c03b569e07841295a877a2bbe34e4dd62080d12ccc623cabda76",
+    "identicalPixels": true
+  },
+  {
+    "file": "coaster-blue-fire.png",
+    "webp": "coaster-blue-fire.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 1823324,
+    "webpBytes": 1240536,
+    "pixelSha256": "309ff7237936029f631d4856e40a87337a272826a77552a8c11bb810871a4fdc",
+    "identicalPixels": true
+  },
+  {
+    "file": "coaster-bobbahn.png",
+    "webp": "coaster-bobbahn.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2201561,
+    "webpBytes": 1338874,
+    "pixelSha256": "24a089bfe898d61b54fd8842b64d9298783e7b9698587c548d1a86cc0b8db8f7",
+    "identicalPixels": true
+  },
+  {
+    "file": "coaster-euro-mir.png",
+    "webp": "coaster-euro-mir.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2173573,
+    "webpBytes": 1379906,
+    "pixelSha256": "769f7d85e0046fe6ae68b90dd24297ef9a64756a851648e0bafec73cf9cd65db",
+    "identicalPixels": true
+  },
+  {
+    "file": "coaster-eurosat.png",
+    "webp": "coaster-eurosat.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2101370,
+    "webpBytes": 1396324,
+    "pixelSha256": "4dc3035d1684a7238e3b501508486e78afceb7e705bdffc6a0c4e1cccc388cc3",
+    "identicalPixels": true
+  },
+  {
+    "file": "coaster-matterhorn.png",
+    "webp": "coaster-matterhorn.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2213959,
+    "webpBytes": 1374790,
+    "pixelSha256": "c697067aaa57fb07f9c85ea7dd54acaa8e436a811655df45ba759bd3ba93734b",
+    "identicalPixels": true
+  },
+  {
+    "file": "coaster-pegasus.png",
+    "webp": "coaster-pegasus.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2204775,
+    "webpBytes": 1417068,
+    "pixelSha256": "a30c6942981b64973472f1c3f2255b54738b21438ef964b11e967484dcc4599f",
+    "identicalPixels": true
+  },
+  {
+    "file": "coaster-poseidon.png",
+    "webp": "coaster-poseidon.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2236479,
+    "webpBytes": 1514730,
+    "pixelSha256": "ae26628ea0791a0eeed4f17f4bebdf1887b01c6c19703c3cc2fa3d90fa60998f",
+    "identicalPixels": true
+  },
+  {
+    "file": "coaster-silver-star.png",
+    "webp": "coaster-silver-star.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2208868,
+    "webpBytes": 1467342,
+    "pixelSha256": "920c1b7ec2f19d2a228ba72b3f928b9e72fe703c061757771a660370e9a91f7c",
+    "identicalPixels": true
+  },
+  {
+    "file": "coaster-voltron.png",
+    "webp": "coaster-voltron.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2255578,
+    "webpBytes": 1431356,
+    "pixelSha256": "3abb424b0ed2dd04dfd4a449cfefb1f49c7c76e5d2221fe1daefdc2e19ddcbea",
+    "identicalPixels": true
+  },
+  {
+    "file": "coaster-wodan.png",
+    "webp": "coaster-wodan.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2041885,
+    "webpBytes": 1310166,
+    "pixelSha256": "b9af6ce1b026614e74656d2c8e06d2b819adad7ff57a8e210cdf013a80772dfb",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-0.png",
+    "webp": "park-0.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2500924,
+    "webpBytes": 1704746,
+    "pixelSha256": "3fcaaef06fa4bc16436805b3f5ce76aab90b7817ca9010b692783941b9ebfa3f",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-1.png",
+    "webp": "park-1.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2428963,
+    "webpBytes": 1595942,
+    "pixelSha256": "e6ecf98e64b9ef9f8672062a5f197a4179f173a92de9ad24fe19d5c5c276cd47",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-10.png",
+    "webp": "park-10.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2212413,
+    "webpBytes": 1497222,
+    "pixelSha256": "b991ab415e55998136070979afaa1f0b4aeb17cfbace45effb975ded6667bc38",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-11.png",
+    "webp": "park-11.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2048706,
+    "webpBytes": 1414276,
+    "pixelSha256": "5ff27ad08289a1f485f80d828d25f70ef56ab53c6d4793d9f7aa922e06c526d4",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-12.png",
+    "webp": "park-12.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2506501,
+    "webpBytes": 1691390,
+    "pixelSha256": "f72eb28cfd27676dd52a87b594d1edb9408b073f8769e22484bc8859724618d7",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-13.png",
+    "webp": "park-13.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2277103,
+    "webpBytes": 1528434,
+    "pixelSha256": "31cd8c4ac0475ae4230e96904b102e52d2fa3e9b69757656c2c3ee6ae97f3025",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-14.png",
+    "webp": "park-14.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2437928,
+    "webpBytes": 1586478,
+    "pixelSha256": "b6cae65bb175f83ecb578f3711dd553c0492f2599113127702345794a14d4bd9",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-15.png",
+    "webp": "park-15.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2309584,
+    "webpBytes": 1512362,
+    "pixelSha256": "909d856edc94b11d4cb0a8b0188826d28f89268f4cf0b6c3b24f08840b38a533",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-16.png",
+    "webp": "park-16.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2253104,
+    "webpBytes": 1537672,
+    "pixelSha256": "3d1a2ab9b83c9358a437e08cf5a3b69232f2526650bb4ab77bf9a071514955ce",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-17.png",
+    "webp": "park-17.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2273533,
+    "webpBytes": 1459934,
+    "pixelSha256": "7a52ac048e9f108d43918ac8f8da5dd15811dcd15791c72904747d7ea3d8fcb8",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-18.png",
+    "webp": "park-18.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2160682,
+    "webpBytes": 1410488,
+    "pixelSha256": "475d826027465dd4c0ee4e8f83b267c883e537de7b4bea8900f4fb8c14d9e586",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-19.png",
+    "webp": "park-19.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2374891,
+    "webpBytes": 1600344,
+    "pixelSha256": "f6bd5f6bc42b382f8aea5a66f4da218e919ffccc64f71d1a371afaacdbed8c3d",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-2.png",
+    "webp": "park-2.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2243191,
+    "webpBytes": 1368174,
+    "pixelSha256": "ca0c723b5506732f2ef31478531fa1a3d9e33c0fe1635f1aae2bff717429bd68",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-20.png",
+    "webp": "park-20.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2372637,
+    "webpBytes": 1539206,
+    "pixelSha256": "a5c7a281171db63682a95865aedc913ab54e79b4ad9a9b3fbc43748eb18fa1ca",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-3.png",
+    "webp": "park-3.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2033389,
+    "webpBytes": 1371612,
+    "pixelSha256": "c0fba5b86058e794554839830044622d33d807dce5c6ee06589a0987e7ab4e39",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-4.png",
+    "webp": "park-4.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2012009,
+    "webpBytes": 1342984,
+    "pixelSha256": "42324795cf61ddfcc09fb3bb97cc38ede58db9a14a69fed9763d24f5398ada03",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-5.png",
+    "webp": "park-5.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2220759,
+    "webpBytes": 1430648,
+    "pixelSha256": "ba690bae71a448c4ac182c2b3d7e1922a6bd4d067d1bcb3c2f0205c0f11f9557",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-6.png",
+    "webp": "park-6.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2203161,
+    "webpBytes": 1450750,
+    "pixelSha256": "5cf980a6a96abf9b2609064c9e2c39f0c5fd032a0802f754622ddbb4d60f9b96",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-7.png",
+    "webp": "park-7.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2408608,
+    "webpBytes": 1681490,
+    "pixelSha256": "09e6fb5d45527e8a56f72a288558ab600337541cd71b1beea468e5c2189a910e",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-8.png",
+    "webp": "park-8.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2231490,
+    "webpBytes": 1395612,
+    "pixelSha256": "013a073e403788c95f9ff2d22249abfc7fdc004614c83d6834fbd46967b5ca1c",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-9.png",
+    "webp": "park-9.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2469208,
+    "webpBytes": 1676166,
+    "pixelSha256": "5bea29ba45179d20c5e59a20d697bda2d98249bd30a3cc7bb05cb16998d5566d",
+    "identicalPixels": true
+  },
+  {
+    "file": "stage-batavia.png",
+    "webp": "stage-batavia.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2205732,
+    "webpBytes": 1325948,
+    "pixelSha256": "55fec523bfe481069e96876071c608dad8860a9beb1a9b3f7d78777666a9acc3",
+    "identicalPixels": true
+  },
+  {
+    "file": "stage-blue-fire.png",
+    "webp": "stage-blue-fire.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 1940262,
+    "webpBytes": 1227078,
+    "pixelSha256": "7bf5bf4153002b18f826a7bc65011fe65ec68f6a75d50b161df5f9a9bb558b24",
+    "identicalPixels": true
+  },
+  {
+    "file": "stage-cosmic.png",
+    "webp": "stage-cosmic.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2191623,
+    "webpBytes": 1363184,
+    "pixelSha256": "1780239e5076476a574a0378d523e3a577ec2a1b8bb32c22a2721b8d95d2888a",
+    "identicalPixels": true
+  },
+  {
+    "file": "stage-hq.png",
+    "webp": "stage-hq.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2059609,
+    "webpBytes": 1185024,
+    "pixelSha256": "e569af3729e9c7af812c31dc85ac46c7e0aa1d1db7b4ff83028d7d741f68af5d",
+    "identicalPixels": true
+  },
+  {
+    "file": "stage-skyport.png",
+    "webp": "stage-skyport.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 2156372,
+    "webpBytes": 1336604,
+    "pixelSha256": "1f7f20744c87b9116eb33ec32119ee9317db33fbce4de011becc23b11e5de378",
+    "identicalPixels": true
+  },
+  {
+    "file": "stage-svalgurok.png",
+    "webp": "stage-svalgurok.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 1790139,
+    "webpBytes": 1109314,
+    "pixelSha256": "29fa26f1a27d511f3446dc1e6c64aeb118c930bc40814178f2d00c81f49071af",
+    "identicalPixels": true
+  },
+  {
+    "file": "stage-traumatica.png",
+    "webp": "stage-traumatica.webp",
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 1852277,
+    "webpBytes": 1149570,
+    "pixelSha256": "8cd6f828f084f0c8edf3e6653a902d2fb203e774ce72fa2d70d5c268aaf8effa",
+    "identicalPixels": true
+  }
+]

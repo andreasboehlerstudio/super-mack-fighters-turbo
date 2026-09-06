@@ -9,6 +9,15 @@ import {cameraTarget,WORLD_WIDTH,WORLD_HEIGHT} from './park-layout.ts';
 import {makeBattleConfig} from './match-setup.ts';
 import {DEFAULT_RULES} from './rules.ts';
 const asset=(p:string)=>new URL('../public/assets/'+p,import.meta.url);
+function losslessWebpSize(bytes:Buffer){
+ assert.equal(bytes.toString('ascii',0,4),'RIFF');assert.equal(bytes.toString('ascii',8,12),'WEBP');
+ for(let offset=12;offset+8<bytes.length;){
+  const type=bytes.toString('ascii',offset,offset+4),length=bytes.readUInt32LE(offset+4);
+  if(type==='VP8L'){assert.equal(bytes[offset+8],0x2f);const bits=bytes.readUInt32LE(offset+9);return {width:(bits&0x3fff)+1,height:((bits>>>14)&0x3fff)+1};}
+  offset+=8+length+(length&1);
+ }
+ throw Error('Expected a lossless WebP image');
+}
 test('all fighters have a native sheet for every action and all frame references are valid',()=>{
  assert.equal(FIGHTER_DISPLAY_SIZE*COMBAT_RENDER_ZOOM,256);
  for(const f of FIGHTERS)for(const clip of Object.keys(ANIMATION_SHEETS) as AnimationClip[]){
@@ -30,7 +39,7 @@ test('map tiles join without gaps, cover every camera view and retain native det
  const manifest=JSON.parse(readFileSync(asset('atlas/detail/manifest.json'),'utf8'));
  assert.equal(manifest.width,WORLD_WIDTH*2);assert.equal(manifest.height,WORLD_HEIGHT*2);
  let pixels=0;
- for(const t of manifest.tiles){const png=readFileSync(asset('atlas/detail/'+t.file));assert.equal(png.readUInt32BE(16),t.width);assert.equal(png.readUInt32BE(20),t.height);pixels+=t.width*t.height;}
+ for(const t of manifest.tiles){const size=losslessWebpSize(readFileSync(asset('atlas/detail/'+t.file)));assert.equal(size.width,t.width);assert.equal(size.height,t.height);pixels+=t.width*t.height;}
  assert.equal(pixels,manifest.width*manifest.height);
  for(let x=0;x<=WORLD_WIDTH;x+=53)for(let y=0;y<=WORLD_HEIGHT;y+=53){
   const camera=cameraTarget({x,y},PARK_VIEW_WIDTH,PARK_VIEW_HEIGHT),tiles=visibleParkTiles(camera);
@@ -39,5 +48,5 @@ test('map tiles join without gaps, cover every camera view and retain native det
  }
 });
 test('every free arena choice reaches the same arena in Versus, CPU and Training',()=>{
- for(const s of STATIONS)for(const mode of ['versus','cpu','training'] as const){const c=makeBattleConfig({mode,p1:'laurent',p2:'max',arena:s.id,route:SHORT_TOUR,index:3,difficulty:.3,rules:DEFAULT_RULES,pads:[null,null]});assert.equal(c.stationId,s.id);assert.equal(c.p2,'max');assert.equal(c.training,mode==='training');}
+ for(const s of STATIONS){const size=losslessWebpSize(readFileSync(asset(`arenas/${s.id}.webp`)));assert.ok(size.width>0&&size.height>0);for(const mode of ['versus','cpu','training'] as const){const c=makeBattleConfig({mode,p1:'laurent',p2:'max',arena:s.id,route:SHORT_TOUR,index:3,difficulty:.3,rules:DEFAULT_RULES,pads:[null,null]});assert.equal(c.stationId,s.id);assert.equal(c.p2,'max');assert.equal(c.training,mode==='training');}}
 });

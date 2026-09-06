@@ -11,7 +11,7 @@ export function visibleParkTiles(camera:{x:number;y:number},width=PARK_VIEW_WIDT
  const lastY=Math.min(Math.ceil(WORLD_HEIGHT/PARK_TILE_WORLD)-1,Math.floor((camera.y+height/2)/PARK_TILE_WORLD));
  for(let row=firstY;row<=lastY;row++)for(let col=firstX;col<=lastX;col++){
   const x=col*PARK_TILE_WORLD,y=row*PARK_TILE_WORLD;
-  tiles.push({key:`${col}-${row}`,x,y,width:Math.min(PARK_TILE_WORLD,WORLD_WIDTH-x),height:Math.min(PARK_TILE_WORLD,WORLD_HEIGHT-y),url:`/assets/atlas/detail/${col}-${row}.png`});
+  tiles.push({key:`${col}-${row}`,x,y,width:Math.min(PARK_TILE_WORLD,WORLD_WIDTH-x),height:Math.min(PARK_TILE_WORLD,WORLD_HEIGHT-y),url:`/assets/atlas/detail/${col}-${row}.webp`});
  }
  return tiles;
 }

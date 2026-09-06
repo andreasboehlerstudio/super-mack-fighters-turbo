@@ -1,0 +1,62 @@
+[
+  {
+    "file": "park-1-detail.png",
+    "webp": "park-1-detail.webp",
+    "width": 2968,
+    "height": 2120,
+    "originalBytes": 17015849,
+    "webpBytes": 10597130,
+    "pixelSha256": "b595ef167a164b560d39b1d59149f9546dbbe271180d6b497a37af09e0931d5a",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-1-overview.png",
+    "webp": "park-1-overview.webp",
+    "width": 1484,
+    "height": 1060,
+    "originalBytes": 4518597,
+    "webpBytes": 3284810,
+    "pixelSha256": "c92bec3f8737fb271bcf3ff041484795b4122dfefeaf1912085a0db5c560ae06",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-1.png",
+    "webp": "park-1.webp",
+    "width": 1484,
+    "height": 1060,
+    "originalBytes": 3172656,
+    "webpBytes": 2679016,
+    "pixelSha256": "12a3a080507e4554f0add6f1677cba79f09a7ff6452930fd69a72d25cd6af4d9",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-2.png",
+    "webp": "park-2.webp",
+    "width": 1482,
+    "height": 1061,
+    "originalBytes": 3245754,
+    "webpBytes": 2710682,
+    "pixelSha256": "2f9f943f18af69d7f4b0e19cd6d19614fc833d172cd02ae2dbc1b74055ebc13e",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-3.png",
+    "webp": "park-3.webp",
+    "width": 1485,
+    "height": 1059,
+    "originalBytes": 3286995,
+    "webpBytes": 2923818,
+    "pixelSha256": "6051ab399a4789a9ef7f22fa1c3c304a2d05a2d6bf786a7c8185a1c9edf7bba8",
+    "identicalPixels": true
+  },
+  {
+    "file": "park-4.png",
+    "webp": "park-4.webp",
+    "width": 1484,
+    "height": 1060,
+    "originalBytes": 3390261,
+    "webpBytes": 2896738,
+    "pixelSha256": "9808be802f349a20a041fec22124ca4d1bcb4b026553e9c89019af23c32c9204",
+    "identicalPixels": true
+  }
+]
