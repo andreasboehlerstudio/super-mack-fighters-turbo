@@ -7,9 +7,9 @@ Vier eigens mit Imagegen illustrierte Europa-Park-Ansichten, erreichbar unter `/
 - Übersicht oder Taste 0: ganze Karte einpassen.
 - Markierungen und Themenbereich-Auswahl: den ausgewählten Bereich bei 240 % fokussieren.
 - Vier Kartenvarianten: klassische Oberwelt, kompakte Spielkarte, grüne Parklandschaft und Abendzauber.
-- Im Arcade-Atlas kennzeichnen Tourziel und besuchte Bereiche den Fortschritt. „Laufwege“ öffnet die bestehende genaue Übersicht der begehbaren Spielwelt.
+- Im Arcade-Atlas kennzeichnen Tourziel und besuchte Bereiche den Fortschritt. „Laufwege“ öffnet die Übersicht derselben begehbaren Spielwelt mit dem aktuellen Weg.
 
-Die Illustrationen sind eine vereinfachte künstlerische Interpretation. Ihre Wege sind keine Kollisions- oder Navigationsdaten. Die begehbare Welt und deren echte Spielerposition bleiben in der separaten Laufkarte erhalten. Vergrößert werden die vorhandenen Pixel; beim Zoomen wird keine zusätzliche Geometrie generiert.
+Die erste Illustration ist jetzt die begehbare Spielwelt: Ihr Wegenetz wurde an den sichtbaren Pflasterwegen nachgezeichnet. Alle 21 Arena-Eingänge sind verbunden; die echte Spielerposition erscheint auch in der ersten Atlasansicht. Die anderen drei Ansichten bleiben alternative Illustrationen. Die Anordnung ist künstlerisch vereinfacht und nicht geografisch maßstabsgetreu. Vergrößert werden die vorhandenen Pixel; beim Zoomen wird keine zusätzliche Geometrie generiert.
 
 Alle 21 Themenbereiche folgen der [offiziellen Europa-Park-Übersicht](https://www.europapark.de/de/freizeitpark/attraktionen/themenbereiche), einschließlich Monaco und der drei Fantasiebereiche. Kleine Flaggen in Variante 2 wurden bereinigt; Variante 3 erhielt das fehlende Schild „Königreich der Minimoys“.
 

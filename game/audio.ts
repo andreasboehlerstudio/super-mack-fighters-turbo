@@ -9,8 +9,10 @@ export class ArcadeAudio {
  volumes(music:number,effects:number){this.music=music;this.effects=effects;this.apply();}
  setMode(mode:AudioMode){if(this.mode!==mode){this.mode=mode;this.soundtrack?.setScore(this.currentScore());}}
  private arenaId:string|null=null;private previewId:string|null=null;
- private currentScore(){return this.previewId?areaScore(this.previewId):this.arrangements.get(this.mode)??this.defaultScore()}
+ private currentScore(){return this.previewId==='@title'?(this.arrangements.get('menu')??originalScore('menu')):this.previewId?areaScore(this.previewId):this.arrangements.get(this.mode)??this.defaultScore()}
  previewArea(id:string|null){if(id)areaScore(id);this.previewId=id;this.soundtrack?.setScore(this.currentScore());}
+ previewTitle(){this.previewId='@title';this.soundtrack?.setScore(this.currentScore())}
+ get hasTitleMidi(){return this.arrangements.has('menu')}
  private defaultScore(){return this.arenaId&&(this.mode==='fight'||this.mode==='boss')?areaScore(this.arenaId):originalScore(this.mode)}
  setArena(id:string,boss=false){areaScore(id);const mode=boss?'boss':'fight';if(this.arenaId===id&&this.mode===mode)return;this.arenaId=id;this.mode=mode;this.soundtrack?.setScore(this.currentScore());}
  useMidi(mode:AudioMode,bytes:ArrayBuffer|Uint8Array,title:string){const score=midiScore(bytes,title);this.arrangements.set(mode,score);if(this.mode===mode)this.soundtrack?.setScore(this.currentScore());}

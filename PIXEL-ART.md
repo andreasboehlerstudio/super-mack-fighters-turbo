@@ -1,0 +1,13 @@
+# Gemeinsames Pixelraster und Animationen
+
+Die begehbare Welt, Kampfansicht, Titelsequenz und Endings zeichnen auf 640 × 360 Bildpunkten. Das 1280 × 720 Bedienlayout wird zusammen mit diesen Flächen vergrößert. Im Modus „Pixelgenau“ bleiben sowohl der Vergrößerungsfaktor als auch der Ursprung auf ganzen physischen Bildpunkten, einschließlich Windows-DPI-Skalierung. „Fenster ausfüllen“ erlaubt bei Bedarf eine nicht ganzzahlige Vergrößerung. Sehr kleine eingebettete Fenster unterhalb des nativen Rasters müssen verkleinern.
+
+Phaser behält 960 × 540 Spielkoordinaten und die bestehenden Trefferzonen; die Kamera bildet diese auf 640 × 360 ab. Sprites werden mit Nearest-Neighbor gerendert und ihre Positionen auf das gemeinsame Ausgaberaster gesetzt. Standatmung und Landung dürfen den Sprite nicht mehr strecken. Die Pose selbst stellt Beugung und Gewichtsverlagerung dar.
+
+Jede Figur hat einen festen Maßstab. Eine gebeugte oder gedrehte Pose darf eine niedrigere Silhouette haben; ihre Bounding Box wird deshalb niemals automatisch auf Standhöhe aufgeblasen. Die fünf nachweislich zu kleinen Motion-Atlanten wurden einmalig mit je einem gemeinsamen Faktor korrigiert. Feste Quellanker in `game/sprite-origin.ts` gleichen die unterschiedlichen Bodenlinien von Sprung, Boden- und Luftangriffen aus.
+
+Die Gehfolgen verwenden acht gezeichnete Kontakt-, Lastwechsel-, Passing- und Vorschwungphasen in 4 × 2 Zellen à 256 Pixel. Der Ablauf richtet sich nach der zurückgelegten Strecke und läuft beim Zurückweichen rückwärts. Kampf, Parkwelt, Kostümvorschau und Endings verwenden denselben Walk-Atlas. Die frühere verkürzte Gehreihe aus den Motion-Sheets wird nicht mehr ausgewählt. Angriffsbilder bleiben an Startup, aktive Trefferphase und Erholung gebunden; zusätzliche Zeichnungen dürfen das Trefferfenster nicht verlängern.
+
+Die erste Parkkarte wird in ihrer nativen Größe 1484 × 1060 verwendet. Gebäude, Boden und Wege stammen aus einem zusammenhängenden Bild. Die Laufwege sind nachgezeichnete Polylinien auf den sichtbaren Pflasterwegen; alle 21 Themenbereiche sind erreichbar. Kein Separatskalieren von Gebäuden oder wiederholten Bodenflicken. Der Atlaszoom vergrößert die vorhandene Illustration und erzeugt keine zusätzlichen Details.
+
+Porträts folgen Max Magers freigegebener feiner Pixelästhetik: Hochformat, Blick nach rechts, dunkelblauer/türkiser Hintergrund und warmer Lichtrand. Die Dateigröße allein bestimmt keinen einheitlichen Stil; Detaildichte, Konturen, Farbflächen und Proportionen müssen ebenfalls beim Zeichnen übereinstimmen. Neue Imagegen-Ausgaben werden deshalb einzeln geprüft. Ein Pixel-Filter kann uneinheitliche Anatomie oder unterschiedliche zeichnerische Abstraktion nicht reparieren.

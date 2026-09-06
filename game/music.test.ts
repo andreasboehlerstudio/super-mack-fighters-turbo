@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
 import MidiPackage from '@tonejs/midi';
 const {Midi}=MidiPackage;
 import {midiScore,originalScore,scoreWindow,MIDI_PROGRAMS,scoreMidi,type Instrument} from './music-score.ts';
@@ -37,6 +38,25 @@ test('all 21 areas have individual complete melodies and 32-bar MIDI loops',()=>
 });
 test('arena and jukebox changes restore the correct gameplay or menu theme',()=>{
  const audio=new ArcadeAudio();audio.setArena('park-9');assert.equal(audio.trackTitle,'Piazza Dorata');audio.previewArea('park-17');assert.equal(audio.trackTitle,'Orbit 17');audio.previewArea(null);assert.equal(audio.trackTitle,'Piazza Dorata');audio.setMode('menu');assert.match(audio.trackTitle,/menu/);audio.previewArea('park-20');audio.previewArea(null);assert.match(audio.trackTitle,/menu/);audio.setArena('park-3',true);assert.equal(audio.trackTitle,'Étoiles de Paris');assert.throws(()=>audio.setArena('missing'));assert.equal(audio.trackTitle,'Étoiles de Paris');
+});
+test('imported title MIDI stays in the menu and title preview restores the active arena',()=>{
+ const audio=new ArcadeAudio(),bytes=scoreMidi(originalScore('menu'),112);
+ audio.useMidi('menu',bytes,'Feel Free · MIDI');assert.equal(audio.hasTitleMidi,true);assert.equal(audio.trackTitle,'Feel Free · MIDI');
+ audio.setArena('park-9');assert.equal(audio.trackTitle,'Piazza Dorata');
+ audio.previewTitle();assert.equal(audio.trackTitle,'Feel Free · MIDI');
+ audio.previewArea(null);assert.equal(audio.trackTitle,'Piazza Dorata');
+ audio.setMode('menu');assert.equal(audio.trackTitle,'Feel Free · MIDI');
+});
+
+test('shipped Feel Free MIDI keeps its 32-bar loop and audible source melody',()=>{
+ const score=midiScore(readFileSync(new URL('../public/assets/music/feel-free-menu.mid',import.meta.url)));
+ assert.ok(Math.abs(score.duration-61.44)<.001);
+ const lead=score.notes.filter(n=>n.instrument==='flute');
+ assert.equal(lead.length,88);assert.ok(lead.every(n=>n.midi>=64&&n.midi<=73&&n.velocity>.8));
+ assert.equal(score.notes.length,664);
+ assert.ok(score.notes.every(n=>n.time>=0&&n.duration>0&&n.time+n.duration<=score.duration+.001));
+ const seam=scoreWindow(score,score.duration-.12,score.duration+.12);
+ assert.equal(seam.filter(e=>e.note.instrument==='flute'&&Math.abs(e.at-score.duration)<.001).length,1);
 });
 
 class Param {value=0;events:Array<[string,number,number]>=[];setValueAtTime(v:number,t:number){this.events.push(['set',v,t])}exponentialRampToValueAtTime(v:number,t:number){this.events.push(['ramp',v,t])}setTargetAtTime(v:number,t:number){this.events.push(['target',v,t])}cancelScheduledValues(t:number){this.events=this.events.filter(e=>e[2]<t)}}
