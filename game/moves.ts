@@ -23,6 +23,7 @@ const names:Record<FighterId,[string,string,string]>={
  reinhold:['Bassimpuls','Subwoofer-Welle','BASS-FINALE'],
  nathalie:['Farbwirbel','Prismenflug','FARBENFEST'],
  andreas:['Renderbogen','Frame-Wirbel','MASTER RENDER'],
+ wakala:['Nachtfunken','Hasen-Haken','WAKALAS WUNDERLAND'],
  graumacher:['Grauschleier-Sprint','Stillstandsblitz','LETZTER SCHATTEN']
 };
 const other:Record<SpecialKind,[SpecialKind,SpecialKind]>={dash:['arc','burst'],wave:['dash','bolt'],arc:['burst','dash'],burst:['bolt','wave'],bolt:['wave','dash']};

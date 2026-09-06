@@ -1,6 +1,4 @@
-import {SPECIAL_STAGES} from './stages.ts';
-import {COASTERS} from './coasters.ts';
-export type FighterId = 'ed'|'snorri'|'roland'|'marianne'|'juergen'|'mauritia'|'michael'|'thomas'|'annkathrin'|'frederik'|'alexia'|'miriam'|'katja'|'nicolas'|'max'|'matthias'|'laurent'|'reinhold'|'nathalie'|'andreas'|'graumacher';
+export type FighterId = 'ed'|'snorri'|'roland'|'marianne'|'juergen'|'mauritia'|'michael'|'thomas'|'annkathrin'|'frederik'|'alexia'|'miriam'|'katja'|'nicolas'|'max'|'matthias'|'laurent'|'reinhold'|'nathalie'|'andreas'|'wakala'|'graumacher';
 export type SpecialKind = 'bolt'|'wave'|'dash'|'burst'|'arc';
 export interface FighterDef {id:FighterId;name:string;short:string;color:string;special:string;kind:SpecialKind;speed:number;power:number;reach:number;shotSpeed:number;cooldown:number;tag:string;note:string;}
 const f=(id:FighterId,name:string,color:string,special:string,kind:SpecialKind,speed:number,power:number,reach:number,shotSpeed:number,cooldown:number,tag:string,note:string):FighterDef=>({id,name,short:name.replace(' Mack',''),color,special,kind,speed,power,reach,shotSpeed,cooldown,tag,note});
@@ -25,6 +23,7 @@ export const FIGHTERS:FighterDef[]=[
  f('reinhold','Reinhold Lamers','#72e0d0','Bassdruck','burst',195,27,112,320,220,'BASS & NÄHE','Ein kräftiger türkisfarbener Klangstoß in alle Richtungen.'),
  f('nathalie','Nathalie Ruder','#ffb2dc','Farbflug','arc',255,18,90,550,150,'FARBE & BOGEN','Ein pinker Farbfunke schwingt durch die Luft.'),
  f('andreas','Andreas Böhler','#bd9cff','Render-Rush','dash',250,21,97,580,185,'RHYTHMUS & SCHUB','Ein violetter Vorstoß hinterlässt eine leuchtende Spur.'),
+ f('wakala','Wakala','#c5a1ee','Wunderland-Sprung','dash',225,22,105,510,185,'TRICK & SCHRECK','Der unheimliche Hase aus Traumatica. Täuscht an und springt nach vorn.'),
  f('graumacher','Der Graumacher','#c5c8d8','Stillstands-Welle','wave',165,24,116,330,210,'FINALHERAUSFORDERUNG','Erst leuchtet der Boden, dann kommt die Welle. Springe oder blocke!'),
 ];
 export const HEROES=FIGHTERS.filter(f=>f.id!=='graumacher');
@@ -33,16 +32,8 @@ export interface Station {id:string;name:string;kind:'Themenbereich'|'Achterbahn
 const park='https://www.europapark.de/de/freizeitpark/attraktionen/themenbereiche';
 const group='https://mack.group/de/mack-gruppe/geschaeftsfelder/wir-schaffen-erlebnisse';
 const areaNames=['Abenteuerland','Deutschland','England','Frankreich','Griechenland','Grimms Märchenwald','Holland','Irland','Island','Italien','Königreich der Minimoys','Kroatien','Liechtenstein','Luxemburg','Monaco','Österreich','Portugal','Russland','Schweiz','Skandinavien','Spanien'];
-export const STATIONS:Station[]=[
- ...areaNames.map((name,i)=>({id:'park-'+i,name,kind:'Themenbereich' as const,arena:name==='Griechenland'?1:name==='Skandinavien'?2:name==='Italien'?0:i%3,custom:true,source:park,subtitle:'Pixel-Art-Arena · '+name})),
- ...COASTERS.map(c=>({id:c.id,name:c.name,kind:'Achterbahn' as const,arena:0,custom:true,source:`https://www.europapark.de/de/freizeitpark/attraktionen/${c.slug}`,subtitle:'Eigene Achterbahn-Arena · '+areaNames[Number(c.area.split('-')[1])]})),
- ...SPECIAL_STAGES.map(s=>({id:s.id,name:s.name,kind:'Spezialarena' as const,arena:3,custom:true,source:s.id==='stage-hq'?'https://mack.group/de/':s.id==='stage-traumatica'?'https://traumatica.com/':s.id==='stage-svalgurok'?'https://www.europapark.de/de/rulantica':'https://www.europapark.de/de/freizeitpark',subtitle:s.note})),
- ...['MACK Media','MACK Rides','MACK One','MACK Animation','VR Coaster'].map((name,i)=>({id:'company-'+i,name,kind:'Unternehmen' as const,arena:3,custom:name==='MACK Media',source:group+'/'+name.toLowerCase().replaceAll(' ','-'),subtitle:name==='MACK Media'?'Licht an. Kamera läuft.':'Studio-Gastduell · geteilte Arenakulisse'})),
- {id:'company-magic',name:'MACK Magic',kind:'Unternehmen',arena:3,custom:false,source:'https://mack.group/de/presse-medien/pressemitteilungen/2025-01-02/mit-mack-one-geschichten-zum-leben-erwecken',subtitle:'Geschichten-Challenge · Studiokulisse'},
- {id:'brand-music',name:'MACK Music / 2112 Studios',kind:'Marke / Studio',arena:3,custom:false,source:'https://mack.group/de/presse-medien/pressemitteilungen/2025-01-02/mit-mack-one-geschichten-zum-leben-erwecken',subtitle:'Klang-Challenge · Studiokulisse'},
- {id:'finale',name:'Die letzte Farbe',kind:'Finale',arena:4,custom:true,source:'',subtitle:'Der Graumacher wartet am stillen Coaster'},
-];
-export const SHORT_TOUR=['park-9','park-4','park-19','company-0','company-1','company-magic','brand-music','finale'];
-export const FULL_TOUR=[...STATIONS.map(s=>s.id)];
+export const STATIONS:Station[]=areaNames.map((name,i)=>({id:'park-'+i,name,kind:'Themenbereich' as const,arena:name==='Griechenland'?1:name==='Skandinavien'?2:name==='Italien'?0:i%3,custom:true,source:park,subtitle:'Themenbereich · '+name}));
+export const SHORT_TOUR=['park-9','park-4','park-19','park-6','park-15','park-20','park-3','park-1'];
+export const FULL_TOUR=['park-1','park-9','park-2','park-7','park-5','park-12','park-14','park-0','park-16','park-13','park-11','park-4','park-18','park-3','park-8','park-19','park-17','park-6','park-10','park-15','park-20'];
 export const station=(id:string)=>STATIONS.find(s=>s.id===id)??STATIONS[9];
-export const SOURCES=[{label:'21 offizielle Themenbereiche',url:park},{label:'Die zwölf aktuellen Familienmitglieder',url:'https://mack.group/de/ueber-uns/familie-mack'},{label:'Geschäftsfelder und Unternehmen',url:group},{label:'MACK Magic, Musiklabel und Studio',url:'https://mack.group/de/presse-medien/pressemitteilungen/2025-01-02/mit-mack-one-geschichten-zum-leben-erwecken'},{label:'Snorri: der Sixtopus',url:'https://www.europapark.de/de/rulantica/infos/media-unterhaltung/story/snorri'}];
+export const SOURCES=[{label:'21 offizielle Themenbereiche',url:park},{label:'Die zwölf aktuellen Familienmitglieder',url:'https://mack.group/de/ueber-uns/familie-mack'},{label:'Wakala · offizielle Traumatica-Referenz',url:'https://mack.group/de/presse-medien/pressemitteilungen/2025-09-05/traumatica-festival-of-fear-1'},{label:'Snorri: der Sixtopus',url:'https://www.europapark.de/de/rulantica/infos/media-unterhaltung/story/snorri'}];

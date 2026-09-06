@@ -5,7 +5,7 @@ import {movesFor} from './moves.ts';
 import {createMatch,step,neutral,teamHealth,aiInput,createBrain,type Match,type Input,type MatchOptions} from './combat.ts';
 const ticks=(m:Match,n:number,a=neutral(),b=neutral())=>{for(let i=0;i<n;i++)step(m,[a,b])};
 const ready=(options:MatchOptions={},id=FIGHTERS[0].id)=>{const m=createMatch(id,'snorri',19,options);ticks(m,150);return m};
-test('all 63 specials use their distinct command and can hit from either side',()=>{
+test('all character specials use their distinct command and can hit from either side',()=>{
  for(const f of FIGHTERS)for(const reverse of [false,true])for(let variant=0;variant<3;variant++){
   const m=ready({},f.id);m.actors[0].x=reverse?560:400;m.actors[1].x=reverse?400:560;step(m,[neutral(),neutral()]);
   const forward=m.actors[0].face===1?'right':'left',back=forward==='right'?'left':'right';

@@ -31,8 +31,8 @@ export class ArenaLife {
   if(scene.textures.exists('arena-crowd')){
    scene.textures.get('arena-crowd').setFilter(Phaser.Textures.FilterMode.NEAREST);
    this.people=this.style.crowd.map((x,i)=>{
-    this.shadows.push(scene.add.ellipse(x*960,409,22,5,0x142039,.26));
-    return scene.add.sprite(x*960,410,'arena-crowd',i*4).setOrigin(.5,1).setDisplaySize(72,72).setFlipX(i>1).setTint(this.style.mood==='sun'?0xffffff:0xc8d7ed);
+    this.shadows.push(scene.add.ellipse(x*960,402,45,9,0x142039,.26));
+    return scene.add.sprite(x*960,404,'arena-crowd',i*4).setOrigin(.5,246/256).setDisplaySize(158,158).setFlipX(i>1).setTint(this.style.mood==='sun'?0xffffff:0xc8d7ed);
    });
   }
  }
