@@ -1,0 +1,11 @@
+# Erweiterte Fighter-Animationen
+
+Die zusätzlichen Bildfolgen wurden mit dem eingebauten Imagegen anhand der bestehenden Figurenblätter erzeugt. Alle 22 Figuren inklusive des optionalen Graumachers erhalten ein Atlas mit 8 Spalten und 6 Zeilen, je 256 × 256 Pixel. Die Reihen sind Standbewegung, Gehen, Bodenschlag, Bodentritt, Luftschlag und Lufttritt. Die bisherigen Posen für Block, Treffer, Specials, Sieg und Niederlage bleiben verfügbar.
+
+Die atlasse enthalten 48 belegte Animationsplätze. Nicht jeder Platz ist eine einzigartige Zeichnung: Einige Generatorausgaben enthielten sieben Posen pro Reihe, unpassende Standposen oder ungeeignete Rückholphasen. Diese wurden aus den tatsächlich erzeugten Posen kuratiert; dokumentierte Endpunkt-Wiederholungen schließen die Folgen. `public/assets/motion/manifest.json` nennt die tatsächliche Zahl unterschiedlicher Bilder je Reihe. Es wird kein interpoliertes Foto oder Alpha-Crossfade als neue Zeichnung ausgegeben.
+
+Die generierten Hintergründe wurden technisch freigestellt, die Zellen ausgeschnitten und mit einheitlichem Maßstab pro Figur auf transparente Atlasse normalisiert. Bodenposen liegen bei y=246, Luftposen bei y=224. `scripts/import-motion-assets.py` validiert Auflösung, Alpha, belegte Zellen und freie Ränder, kopiert die finalen Blätter und misst die Kopfbereiche für Kostüm-Zubehör. Diese Zubehöranker sind geometrisch angenähert und können pro Pose später von Hand verfeinert werden.
+
+`game/fighter-animation.ts` ordnet die Bildphasen der festen Kampfsimulation zu: Spalten 0–2 vorbereiten, 3–4 treffen, 5–7 zurückholen. Nur während des aktiven Fensters kann ein Schlag treffen. Luftangriffe erhalten Flugbewegung und Richtung, treffen einmal pro Aktion und enden bei der Landung. Gehen benutzt acht Phasen und bleibt an die tatsächlich zurückgelegte Strecke gekoppelt. Bewegung, Kampfarena, Parkwelt und die Gehsequenz im Ending verwenden dieselben neuen Blätter. Kostüme werden auch auf die neuen Posen gesetzt.
+
+Die Generierungs-Prompts, Originalpfade und die genaue Auswahl wiederverwendeter Quellzellen liegen im Arbeitsordner `../work/motion-assets`. Der Built-in-Imagegen-Modus wurde verwendet, kein alternativer Bildgenerator. Die produktiv geladenen Dateien sind ausschließlich im Spielordner unter `public/assets/motion` abgelegt.

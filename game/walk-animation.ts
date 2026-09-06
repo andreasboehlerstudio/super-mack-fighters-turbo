@@ -4,4 +4,4 @@ export function advanceWalkPhase(phase:number,distance:number,stride:number,dire
  if(!Number.isFinite(distance)||stride<=0)return phase;
  return ((phase+distance/stride*direction)%1+1)%1;
 }
-export const walkFrame=(phase:number)=>Math.floor(((phase%1+1)%1)*4)%4;
+export const walkFrame=(phase:number,frames=4)=>Math.floor(((phase%1+1)%1)*frames)%frames;

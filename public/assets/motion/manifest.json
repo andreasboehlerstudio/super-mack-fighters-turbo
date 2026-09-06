@@ -1,0 +1,398 @@
+[
+  {
+    "id": "ed",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      6,
+      8,
+      7,
+      7,
+      8,
+      6
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "snorri",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "roland",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      8,
+      8,
+      6,
+      7,
+      7,
+      5
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "marianne",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      7,
+      8,
+      7,
+      8,
+      7,
+      7
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "juergen",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "mauritia",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      8,
+      8,
+      8,
+      6,
+      7,
+      6
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "michael",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      7,
+      7,
+      6,
+      5,
+      7,
+      6
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "thomas",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      8,
+      8,
+      8,
+      7,
+      8,
+      6
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "annkathrin",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      6
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "frederik",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "alexia",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      7,
+      7,
+      7,
+      6,
+      7,
+      7
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "miriam",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      8,
+      8,
+      8,
+      7,
+      8,
+      8
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "katja",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      4,
+      8,
+      8,
+      7,
+      8,
+      8
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "nicolas",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      4,
+      8,
+      8,
+      7,
+      7,
+      7
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "max",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      8
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "matthias",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      8,
+      8,
+      5,
+      5,
+      8,
+      8
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "laurent",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      6,
+      8,
+      7,
+      6,
+      8,
+      8
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "reinhold",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      8,
+      8,
+      7,
+      7,
+      8,
+      8
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "nathalie",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      8,
+      8,
+      8,
+      7,
+      8,
+      8
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "andreas",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      8,
+      8,
+      8,
+      8,
+      7,
+      8
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "wakala",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      8,
+      8,
+      6,
+      7,
+      7,
+      7
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  },
+  {
+    "id": "graumacher",
+    "columns": 8,
+    "rows": 6,
+    "frameWidth": 256,
+    "frameHeight": 256,
+    "frames": 48,
+    "distinctFramesPerRow": [
+      8,
+      8,
+      8,
+      5,
+      8,
+      8
+    ],
+    "groundBaseline": 246,
+    "airBaseline": 224
+  }
+]
