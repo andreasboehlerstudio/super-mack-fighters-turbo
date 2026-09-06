@@ -2,10 +2,10 @@
 import {useEffect,useRef,useState} from 'react';
 import {createAnimatedTitle} from './title-motion';
 
-type Props={hasSave:boolean;full:boolean;suspended:boolean;onArcade:()=>void;onVersus:()=>void;onContinue:()=>void;onFull:()=>void;onHelp:()=>void;onAudio:()=>void;onCredits:()=>void;onSound:()=>void};
+type Props={hasSave:boolean;full:boolean;suspended:boolean;onArcade:()=>void;onVersus:()=>void;onContinue:()=>void;onFull:()=>void;onHelp:()=>void;onAudio:()=>void;onCredits:()=>void;onRules:()=>void;onSound:()=>void};
 type Page='attract'|'menu'|'options';
 export function TitleScreen(props:Props){const [page,setPage]=useState<Page>('attract'),[selected,setSelected]=useState(0),[ready,setReady]=useState(false);const canvas=useRef<HTMLCanvasElement>(null),state=useRef({page,selected,props,ready});state.current={page,selected,props,ready};
- const entries=page==='attract'?[{label:'START DRÜCKEN',run:()=>{setPage('menu');setSelected(0)}}]:page==='menu'?[...(props.hasSave?[{label:'FORTSETZEN',run:props.onContinue}]:[]),{label:'ARCADE-TOUR',run:props.onArcade},{label:'2 SPIELER',run:props.onVersus},{label:'OPTIONEN',run:()=>{setPage('options');setSelected(0)}}]:[{label:props.full?'FENSTERMODUS':'VOLLBILD',run:props.onFull},{label:'STEUERUNG',run:props.onHelp},{label:'SOUND',run:props.onAudio},{label:'CREDITS',run:props.onCredits},{label:'ZURÜCK',run:()=>{setPage('menu');setSelected(0)}}];
+ const entries=page==='attract'?[{label:'START DRÜCKEN',run:()=>{setPage('menu');setSelected(0)}}]:page==='menu'?[...(props.hasSave?[{label:'FORTSETZEN',run:props.onContinue}]:[]),{label:'ARCADE-TOUR',run:props.onArcade},{label:'2 SPIELER',run:props.onVersus},{label:'OPTIONEN',run:()=>{setPage('options');setSelected(0)}}]:[{label:'REGELN & KOSTÜME',run:props.onRules},{label:props.full?'FENSTERMODUS':'VOLLBILD',run:props.onFull},{label:'STEUERUNG',run:props.onHelp},{label:'SOUND',run:props.onAudio},{label:'CREDITS',run:props.onCredits},{label:'ZURÜCK',run:()=>{setPage('menu');setSelected(0)}}];
  const menu=useRef(entries);menu.current=entries;
  const baseline=(i:number,count:number)=>page==='attract'?290:249+(5-count)*6+i*18;
  const activate=(index:number)=>{if(props.suspended||!ready)return;props.onSound();entries[index]?.run()};

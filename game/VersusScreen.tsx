@@ -16,6 +16,6 @@ export function VersusScreen({battle,onReady}:{battle:BattleConfig;onReady:()=>v
   <div className="versus-arena"><span>NÄCHSTER KAMPF</span><strong>{station(battle.stationId).name.toUpperCase()}</strong></div>
   <div className="versus-player one"><FighterPortrait id={battle.p1}/><div><small>1P</small><strong>{fighter(battle.p1).name}</strong></div></div>
   <div className="versus-player two"><FighterPortrait id={battle.p2}/><div><small>{battle.cpu?'CPU':'2P'}</small><strong>{fighter(battle.p2).name}</strong></div></div>
-  <b className="versus-letter">VS</b><span className="versus-skip">ENTER / A</span>
+  {battle.partners?.some(Boolean)&&<div className="versus-teams">{battle.partners.map((id,i)=><span key={i}>{id?'+ '+fighter(id).short:''}</span>)}</div>}<b className="versus-letter">VS</b><span className="versus-skip">ENTER / A</span>
  </section>;
 }

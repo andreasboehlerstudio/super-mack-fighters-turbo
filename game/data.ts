@@ -1,3 +1,4 @@
+import {SPECIAL_STAGES} from './stages.ts';
 import {COASTERS} from './coasters.ts';
 export type FighterId = 'ed'|'snorri'|'roland'|'marianne'|'juergen'|'mauritia'|'michael'|'thomas'|'annkathrin'|'frederik'|'alexia'|'miriam'|'katja'|'nicolas'|'max'|'matthias'|'laurent'|'reinhold'|'nathalie'|'andreas'|'graumacher';
 export type SpecialKind = 'bolt'|'wave'|'dash'|'burst'|'arc';
@@ -28,13 +29,14 @@ export const FIGHTERS:FighterDef[]=[
 ];
 export const HEROES=FIGHTERS.filter(f=>f.id!=='graumacher');
 export const fighter=(id:FighterId)=>FIGHTERS.find(f=>f.id===id)!;
-export interface Station {id:string;name:string;kind:'Themenbereich'|'Achterbahn'|'Unternehmen'|'Marke / Studio'|'Finale';arena:number;custom:boolean;source:string;subtitle:string;}
+export interface Station {id:string;name:string;kind:'Themenbereich'|'Achterbahn'|'Unternehmen'|'Marke / Studio'|'Finale'|'Spezialarena';arena:number;custom:boolean;source:string;subtitle:string;}
 const park='https://www.europapark.de/de/freizeitpark/attraktionen/themenbereiche';
 const group='https://mack.group/de/mack-gruppe/geschaeftsfelder/wir-schaffen-erlebnisse';
 const areaNames=['Abenteuerland','Deutschland','England','Frankreich','Griechenland','Grimms Märchenwald','Holland','Irland','Island','Italien','Königreich der Minimoys','Kroatien','Liechtenstein','Luxemburg','Monaco','Österreich','Portugal','Russland','Schweiz','Skandinavien','Spanien'];
 export const STATIONS:Station[]=[
  ...areaNames.map((name,i)=>({id:'park-'+i,name,kind:'Themenbereich' as const,arena:name==='Griechenland'?1:name==='Skandinavien'?2:name==='Italien'?0:i%3,custom:true,source:park,subtitle:'Pixel-Art-Arena · '+name})),
  ...COASTERS.map(c=>({id:c.id,name:c.name,kind:'Achterbahn' as const,arena:0,custom:true,source:`https://www.europapark.de/de/freizeitpark/attraktionen/${c.slug}`,subtitle:'Eigene Achterbahn-Arena · '+areaNames[Number(c.area.split('-')[1])]})),
+ ...SPECIAL_STAGES.map(s=>({id:s.id,name:s.name,kind:'Spezialarena' as const,arena:3,custom:true,source:s.id==='stage-hq'?'https://mack.group/de/':s.id==='stage-traumatica'?'https://traumatica.com/':s.id==='stage-svalgurok'?'https://www.europapark.de/de/rulantica':'https://www.europapark.de/de/freizeitpark',subtitle:s.note})),
  ...['MACK Media','MACK Rides','MACK One','MACK Animation','VR Coaster'].map((name,i)=>({id:'company-'+i,name,kind:'Unternehmen' as const,arena:3,custom:name==='MACK Media',source:group+'/'+name.toLowerCase().replaceAll(' ','-'),subtitle:name==='MACK Media'?'Licht an. Kamera läuft.':'Studio-Gastduell · geteilte Arenakulisse'})),
  {id:'company-magic',name:'MACK Magic',kind:'Unternehmen',arena:3,custom:false,source:'https://mack.group/de/presse-medien/pressemitteilungen/2025-01-02/mit-mack-one-geschichten-zum-leben-erwecken',subtitle:'Geschichten-Challenge · Studiokulisse'},
  {id:'brand-music',name:'MACK Music / 2112 Studios',kind:'Marke / Studio',arena:3,custom:false,source:'https://mack.group/de/presse-medien/pressemitteilungen/2025-01-02/mit-mack-one-geschichten-zum-leben-erwecken',subtitle:'Klang-Challenge · Studiokulisse'},

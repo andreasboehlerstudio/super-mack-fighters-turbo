@@ -1,5 +1,6 @@
 // Representative landmarks from Europa-Park's official interactive parkplan (2026-09-05).
 // The illustration is a simplified game map; company stages belong to a separate tour chapter.
+import {SPECIAL_STAGES} from './stages.ts';
 import {COASTERS} from './coasters.ts';
 export const MAP_SOURCE='https://www.europapark.de/de/freizeitpark/attraktionen/interaktiver-europa-park-parkplan';
 export const PARK_COORDINATES:Record<string,[number,number]>={
@@ -70,5 +71,5 @@ const COASTER_COORDINATES:Record<string,[number,number]>={
   7.71944295
  ]
 };
-export function mapPoint(id:string){const coord=COASTER_COORDINATES[id]??PARK_COORDINATES[COASTERS.find(c=>c.id===id)?.area??id];if(!coord)return null;return {x:Math.round((48.275733-coord[0])*14890/(48.275733-48.256155)/8-512),y:Math.round((7.749013-coord[1])*19230/(7.749013-7.710720)/8-1280-120)};}
+export function mapPoint(id:string){const coord=COASTER_COORDINATES[id]??PARK_COORDINATES[COASTERS.find(c=>c.id===id)?.area??SPECIAL_STAGES.find(s=>s.id===id)?.area??id];if(!coord)return null;return {x:Math.round((48.275733-coord[0])*14890/(48.275733-48.256155)/8-512),y:Math.round((7.749013-coord[1])*19230/(7.749013-7.710720)/8-1280-120)};}
 export function mapStatus(id:string,route:string[],index:number){const at=route.indexOf(id);return at<0?'outside':at<index?'done':at===index?'current':at===index+1?'next':'future';}

@@ -1,0 +1,78 @@
+.game-screen .chosen{grid-template-rows:20px 38px 1fr;column-gap:14px}
+.game-screen .chosen>.fighter-portrait{grid-row:1/4}
+.game-screen .chosen h2{font-size:25px;margin:2px 0}
+.game-screen .chosen .move-list{grid-column:2;grid-row:3;margin-top:5px}
+.chosen .move-list h3{display:none}
+.move-list>div{display:flex;justify-content:space-between;gap:12px;margin:7px 0;font:16px/1.2 var(--pixel)}
+.move-list strong{color:#a4eadb;font-weight:400}
+.move-list span{color:#f9e5b4;text-align:right;white-space:nowrap}
+.move-list .ultra-command strong{color:#e1b0ff}
+.game-screen .chosen .move-list>div{display:block;margin:3px 0;font-size:14px}
+.chosen .move-list span{float:right;font-size:12px;padding-top:2px}
+.game-screen .setup-bar>.rules-trigger{min-width:205px;font:17px var(--pixel);padding:12px}
+.game-screen .setup-bar>.arcade-button:last-child{min-width:195px}
+.game-screen .setup-fields{flex:1;min-width:0}
+.game-screen .setup-fields .field{min-width:0;flex:1}
+.game-screen .setup-fields .choice-buttons span{max-width:275px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rules-dialog.game-dialog{max-width:830px!important;max-height:660px!important}
+.game-screen .rules-dialog.game-dialog{display:block;padding:20px 26px!important}
+.game-screen .rules-dialog.game-dialog h2{font-size:28px;margin-bottom:8px}
+.game-screen .rules-dialog.game-dialog p{font:16px/1.3 var(--pixel);margin:10px 0}
+.game-screen .rules-dialog .rules-grid{gap:8px 22px}
+.game-screen .rules-dialog .choice-buttons{padding:0;margin-top:3px}
+.game-screen .rules-dialog .choice-buttons button{padding:2px 10px;height:27px}
+.game-screen .rules-dialog .costume-previews canvas{width:108px;height:108px}
+.game-screen .rules-dialog .costume-previews{margin:8px 0}
+.game-screen .rules-dialog .rule-actions button{padding:10px 15px;font-size:17px}
+.rules-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 22px}
+.rules-grid .choice-buttons{display:flex;justify-content:space-between;gap:8px}
+.rules-grid .choice-buttons span{font:18px var(--pixel);align-self:center}
+.rules-grid label{font:14px var(--pixel);color:#a5bed1}
+.rules-grid button{color:#ffe193;background:#213e60;border:1px solid #719cb5;padding:5px 12px}
+.rules-note{align-self:center;font:17px/1.4 var(--pixel);color:#bacfe4}
+.costume-previews{display:flex;justify-content:space-around;background:linear-gradient(#132444,#294253);margin:10px 0;border-bottom:2px solid #76acb5}
+.costume-previews figure{margin:0;text-align:center}
+.costume-previews canvas{width:156px;height:156px;image-rendering:pixelated}
+.costume-previews figcaption{font:14px var(--pixel);color:#e8dba3;margin-bottom:6px}
+.rule-actions{display:flex;gap:18px;justify-content:space-between}
+.rule-actions button{font-size:17px}
+.game-dialog.moves-dialog{max-width:900px!important}
+.move-columns{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.move-columns .move-list h3{font:24px var(--pixel);color:#ffe299;margin:8px 0 15px}
+.move-columns .move-list>div{display:block;margin:12px 0}
+.move-columns .move-list span{display:block;text-align:left;font-size:14px;margin-top:3px}
+.reserve{display:flex;gap:9px;align-items:center;width:185px;margin-top:4px}
+.right .reserve{margin-left:auto;flex-direction:row-reverse}
+.reserve .fighter-portrait{width:40px;height:40px;border:2px solid #bdcad5}
+.reserve>span{flex:1;font:14px var(--pixel);text-shadow:1px 2px #14213c}
+.reserve i{display:block;height:5px;background:#522e43;margin:3px 0}
+.reserve b{display:block;height:100%;background:#84d1ae}
+.reserve small{font:9px var(--pixel)}
+.reserve.out{opacity:.4}
+.super-hud{position:absolute;bottom:31px;left:30px;right:30px;display:flex;justify-content:space-between;pointer-events:none;z-index:15}
+.super-panel{width:270px;color:#caf5ed;text-shadow:1px 2px #15172c}
+.super-panel:last-child{text-align:right}
+.super-panel strong{display:block;font:19px var(--pixel);letter-spacing:1px}
+.super-panel strong span{font-size:14px}
+.super-panel>div{height:13px;margin:4px 0;border:2px solid #c2d6e2;background:#172b45;box-shadow:2px 2px #11213e}
+.super-panel i{display:block;height:100%;background:linear-gradient(#85f1e0 50%,#42a8bb 50%)}
+.super-panel:last-child i{margin-left:auto}
+.super-panel.charged i{background:linear-gradient(#ffeeaf 50%,#df93ed 50%)}
+.super-panel.charged strong{color:#ffe390}
+.super-panel small{font:10px var(--pixel);letter-spacing:.5px;color:#e1e8ef}
+.stage-rule{position:absolute;left:0;right:0;bottom:10px;text-align:center;font:12px var(--pixel);color:#d9e5eb;pointer-events:none;text-shadow:1px 2px #071a31}
+.game-screen .touch-controls{z-index:20}
+.versus-teams{position:absolute;bottom:65px;left:95px;right:95px;display:flex;justify-content:space-between;font:23px var(--pixel);color:#b2e8f6}
+.ending-screen{position:absolute;inset:0;background:#0b1631;overflow:hidden}
+.ending-screen canvas{width:100%;height:100%;image-rendering:pixelated}
+.ending-top{position:absolute;top:35px;left:40px;text-shadow:3px 3px #081731}
+.ending-top>span{font:12px var(--arcade);color:#b8d9e9}
+.ending-top h1{font:700 45px var(--pixel);color:#ffe49e;margin:15px 0 6px}
+.ending-top small{font:20px var(--pixel);color:#e8d7e9}
+.ending-caption{position:absolute;left:40px;right:40px;bottom:25px;background:#091b36ec;border:3px solid #7398b1;box-shadow:4px 4px #08152e;padding:20px 25px}
+.ending-caption p{min-height:59px;font:25px/1.2 var(--pixel);color:#fff0ce;margin:0 0 20px}
+.ending-caption>div{display:flex;justify-content:space-between}
+.ending-caption button{font:13px var(--arcade);color:#e8cf86}
+@media(prefers-reduced-motion:reduce){.super-panel i{transition:none}}
+.game-screen .game-dialog .compact-map .backstage-route,.game-screen .map-layout .backstage-route{min-height:0;overflow-y:auto;scrollbar-color:#809cb7 #132640;scrollbar-width:thin}
+.game-screen .station-card h2{font-size:27px;overflow-wrap:anywhere;hyphens:auto}
