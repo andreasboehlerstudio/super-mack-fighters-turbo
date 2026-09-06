@@ -1,0 +1,178 @@
+[
+  {
+    "id": "alexia",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 3,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "miriam",
+    "frames": 8,
+    "bodyHeight": 194,
+    "maxBreathingHeightDifference": 3,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "ed",
+    "frames": 8,
+    "bodyHeight": 193,
+    "maxBreathingHeightDifference": 1,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "snorri",
+    "frames": 8,
+    "bodyHeight": 193,
+    "maxBreathingHeightDifference": 4,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "roland",
+    "frames": 8,
+    "bodyHeight": 195,
+    "maxBreathingHeightDifference": 0,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "marianne",
+    "frames": 8,
+    "bodyHeight": 194,
+    "maxBreathingHeightDifference": 2,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "juergen",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 2,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "mauritia",
+    "frames": 8,
+    "bodyHeight": 195,
+    "maxBreathingHeightDifference": 1,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "michael",
+    "frames": 8,
+    "bodyHeight": 197,
+    "maxBreathingHeightDifference": 2,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "thomas",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 2,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "annkathrin",
+    "frames": 8,
+    "bodyHeight": 195,
+    "maxBreathingHeightDifference": 1,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "frederik",
+    "frames": 8,
+    "bodyHeight": 194,
+    "maxBreathingHeightDifference": 5,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "katja",
+    "frames": 8,
+    "bodyHeight": 194,
+    "maxBreathingHeightDifference": 2,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "nicolas",
+    "frames": 8,
+    "bodyHeight": 195,
+    "maxBreathingHeightDifference": 0,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "max",
+    "frames": 8,
+    "bodyHeight": 195,
+    "maxBreathingHeightDifference": 1,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "matthias",
+    "frames": 8,
+    "bodyHeight": 195,
+    "maxBreathingHeightDifference": 1,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "laurent",
+    "frames": 8,
+    "bodyHeight": 195,
+    "maxBreathingHeightDifference": 1,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "reinhold",
+    "frames": 8,
+    "bodyHeight": 194,
+    "maxBreathingHeightDifference": 1,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "nathalie",
+    "frames": 8,
+    "bodyHeight": 193,
+    "maxBreathingHeightDifference": 0,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "andreas",
+    "frames": 8,
+    "bodyHeight": 195,
+    "maxBreathingHeightDifference": 2,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "wakala",
+    "frames": 8,
+    "bodyHeight": 215,
+    "maxBreathingHeightDifference": 3,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "graumacher",
+    "frames": 8,
+    "bodyHeight": 195,
+    "maxBreathingHeightDifference": 3,
+    "baseline": 246,
+    "originX": 128
+  }
+]

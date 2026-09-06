@@ -5,7 +5,7 @@ test('pixel mode fits the viewport and produces integer physical pixels at diffe
  for(const dpr of [1,1.25,1.5,2,3])for(const [w,h] of [[1280,720],[1920,1080],[1265,700],[2560,1440]]){
   const scale=pixelScreenScale(w,h,dpr);
   assert.ok(scale*1280<=w+.001&&scale*720<=h+.001);
-  assert.ok(Math.abs(scale*2*dpr-Math.round(scale*2*dpr))<.0001);
+  assert.ok(Math.abs(scale*1280/960*dpr-Math.round(scale*1280/960*dpr))<.0001);
  }
 });
 test('centering cannot place the output raster on half a physical pixel',()=>{

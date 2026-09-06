@@ -11,12 +11,12 @@ export class NetworkSession {
  }
  private closed=()=>{this.error='Verbindung getrennt. Bitte starte eine neue Einladung.'};
  private receive=(event:MessageEvent)=>{try{const m=JSON.parse(event.data);this.lastMessage=Date.now();if(m.type==='ready')this.remoteReady=true;else if(m.type==='pause'&&typeof m.value==='boolean')this.paused[1-this.side]=m.value;else if(m.type==='input'&&Number.isInteger(m.frame)&&m.frame>=this.frame&&m.frame<this.frame+300&&Number.isInteger(m.bits)&&m.bits>=0&&m.bits<1024&&!this.remote.has(m.frame))this.remote.set(m.frame,m.bits)}catch{this.error='Ungültige Spieldaten empfangen.'}};
- send(value:unknown){if(this.channel.readyState!=='open'){this.closed();return}this.channel.send(JSON.stringify(value));}
+ send(value:unknown){if(this.channel.readyState!=='open'){this.closed();return}try{this.channel.send(JSON.stringify(value))}catch{this.closed()}}
  ready(){if(!this.localReady){this.localReady=true;this.send({type:'ready'})}}
  pause(value:boolean){this.paused[this.side]=value;this.send({type:'pause',value})}
  get waiting(){return !this.remoteReady||this.paused.some(Boolean)||this.error!==''}
  inputs(read:()=>Input):[Input,Input]|null {
-  if(this.waiting)return null;
+  if(this.waiting){if(!this.remoteReady&&this.localReady&&Date.now()-this.lastMessage>45000)this.error='Der Gegner konnte die Arena nicht laden. Bitte erneut einladen.';return null;}
   const future=this.frame+4;if(!this.local.has(future)){const bits=packInput(read());this.local.set(future,bits);this.send({type:'input',frame:future,bits})}
   if(!this.remote.has(this.frame)){if(Date.now()-this.lastMessage>15000)this.error='Die Verbindung antwortet nicht mehr.';return null}
   const own=unpackInput(this.local.get(this.frame)??0),other=unpackInput(this.remote.get(this.frame)!);this.local.delete(this.frame);this.remote.delete(this.frame);this.frame++;return this.side===0?[own,other]:[other,own];

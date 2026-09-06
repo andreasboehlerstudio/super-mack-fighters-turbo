@@ -1,0 +1,45 @@
+{
+  "output": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/park-detail-v2/quadrants/park-detail-v2-tiled-candidate.png",
+  "width": 2968,
+  "height": 2120,
+  "method": "nearest-neighbor normalization; documented integer global registration; opaque minimum-error seam selection inside original 128px overlaps; no alpha feathering, no invented pixels",
+  "registration": {
+    "method": "Native raw normalized to 1548x1124 nearest-neighbor; integer global translations only; exposed outer-edge pixels filled from original nearest-neighbor reference.",
+    "shifts": {
+      "top-left": {
+        "dx": 0,
+        "dy": 12
+      },
+      "top-right": {
+        "dx": 0,
+        "dy": 0
+      },
+      "bottom-left": {
+        "dx": 0,
+        "dy": 0
+      },
+      "bottom-right": {
+        "dx": 0,
+        "dy": -2
+      }
+    }
+  },
+  "topVertical": {
+    "meanSelectedCost": 13.329181470772337,
+    "meanMidlineCost": 36.43149463392238,
+    "min": 22,
+    "max": 125
+  },
+  "bottomVertical": {
+    "meanSelectedCost": 8.541814929994612,
+    "meanMidlineCost": 23.5118624362498,
+    "min": 2,
+    "max": 111
+  },
+  "horizontal": {
+    "meanSelectedCost": 15.941262360391109,
+    "meanMidlineCost": 36.1828391725584,
+    "min": 2,
+    "max": 125
+  }
+}

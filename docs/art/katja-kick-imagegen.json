@@ -1,0 +1,17 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit. Input image is the edit target, an existing eight-phase Katja kick animation sprite sheet with FOUR columns and TWO rows. Perform a tightly localized anatomy repair, not a redesign.\nMain change: In frame 4 (top right cell) and frame 5 (bottom left cell), the woman erroneously has THREE arms. DELETE ONLY the superfluous vertically raised arm and hand sticking up behind/above her head. In those two extended-kick poses KEEP the guarding arm bent near her chest and KEEP the natural counterbalancing arm reaching toward screen right above her raised kicking leg. Exactly TWO arms and TWO legs per pose. Her left standing/supporting leg remains planted and her other leg remains extended horizontally to the RIGHT. Reconstruct only any tiny shoulder or hair pixels exposed by removing the duplicate arm, matching the existing pixel art.\nPreserve all EIGHT phases, in identical grid locations and timing order: ready guard, knee lifting, knee chamber, full side kick, held full side kick, retraction, recovering, ready guard. Frames 1,2,3,6,7,8 should retain their current exact poses.\nInvariants: preserve current black-and-gold suit, gold patterned scarf/blouse, gold buttons, black boots, shoulder-length wavy black hair, smiling face likeness, skin colors, right-facing orientation, head positions, planted foot positions, kicking foot positions, whole body proportions, character scale, dark crisp pixel outlines, original clean pixel art rendering. Keep every figure full body within its own cell. Do not add arms, hands, effects, labels, frame borders, shadows or props.\nBackground only: replace all transparent/black empty background areas with perfectly uniform pure bright green #00FF00 RGB(0,255,0), including all gaps between limbs, for later technical chroma extraction. Do not change black parts of clothing or hair.\nUse same 2:1 canvas shape as source, same 4x2 grid. Request output 2048x1024 representing each original pixel at exactly twice scale, but preserve relative positions and proportions regardless of returned resolution. Output only repaired eight-frame sprite sheet.",
+  "referencePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/animations/katja/kick.png",
+  "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-e3217f81-ce68-4d6f-8062-300ed41287b2.png",
+  "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/katja-kick-fix-source.png",
+  "actualSize": {
+    "width": 1774,
+    "height": 887
+  },
+  "grid": {
+    "columns": 4,
+    "rows": 2
+  },
+  "background": "Solid chroma green; technical alpha extraction required",
+  "validation": "Visually inspected output: duplicate vertical arms removed from extended kick frames 4 and 5, preserving chest guard and forward counterbalance arms. Eight timing poses retained. No preprocessing applied."
+}

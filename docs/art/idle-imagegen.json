@@ -1,0 +1,2108 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "id": "alexia",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for alexia.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Young adult woman, long golden blonde wavy hair, pearl stud earrings and pearl necklace, lavender short-sleeved top tucked into lavender high-waisted straight trousers with narrow purple belt, white sneakers. Friendly confident face, youthful adult proportions.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be genuinely transparent alpha. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "backgroundCorrectionPrompt": "Use case: background-extraction. The input is the edit target. Change ONLY the background: remove the white and grey checkerboard completely, replacing every background region including between arms/legs with perfectly uniform bright solid chroma key green RGB(0,255,0), hex #00FF00. Preserve all eight existing character sprites exactly, including every pixel of outlines, clothing, face, hair, fingers, and shoes. Do not reshape, resize, recolor, or redesign the figures. Do not add shadow or effects. Maintain original image dimensions and exact four-column two-row sprite grid. Pure green everywhere outside the characters, no checkerboard, no border.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-1551a05c-85d0-4655-bb74-b964750a89d0.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/alexia-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 142,
+          "y": 42,
+          "width": 214,
+          "height": 383,
+          "footline": 424,
+          "pixels": 45357
+        },
+        {
+          "frame": 1,
+          "x": 130,
+          "y": 42,
+          "width": 213,
+          "height": 383,
+          "footline": 424,
+          "pixels": 45024
+        },
+        {
+          "frame": 2,
+          "x": 119,
+          "y": 42,
+          "width": 211,
+          "height": 383,
+          "footline": 424,
+          "pixels": 44955
+        },
+        {
+          "frame": 3,
+          "x": 103,
+          "y": 35,
+          "width": 211,
+          "height": 390,
+          "footline": 424,
+          "pixels": 45047
+        },
+        {
+          "frame": 4,
+          "x": 142,
+          "y": 23,
+          "width": 213,
+          "height": 386,
+          "footline": 408,
+          "pixels": 45660
+        },
+        {
+          "frame": 5,
+          "x": 130,
+          "y": 23,
+          "width": 211,
+          "height": 386,
+          "footline": 408,
+          "pixels": 45474
+        },
+        {
+          "frame": 6,
+          "x": 118,
+          "y": 24,
+          "width": 211,
+          "height": 385,
+          "footline": 408,
+          "pixels": 45212
+        },
+        {
+          "frame": 7,
+          "x": 102,
+          "y": 24,
+          "width": 211,
+          "height": 385,
+          "footline": 408,
+          "pixels": 45007
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 72,
+        "y": 51,
+        "width": 122,
+        "height": 196,
+        "footline": 246,
+        "pixels": 10912
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "miriam",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for miriam.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Adult woman, shoulder-length voluminous swept dark brown hair, pale blue collared button blouse tucked into ivory white straight trousers with slender white belt, dark navy flat shoes. Confident soft smile; adult proportions.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be genuinely transparent alpha. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "backgroundCorrectionPrompt": "Use case: background-extraction. The input is the edit target. Change ONLY the background: remove the white and grey checkerboard completely, replacing every background region including between arms/legs with perfectly uniform bright solid chroma key green RGB(0,255,0), hex #00FF00. Preserve all eight existing character sprites exactly, including every pixel of outlines, clothing, face, hair, fingers, and shoes. Do not reshape, resize, recolor, or redesign the figures. Do not add shadow or effects. Maintain original image dimensions and exact four-column two-row sprite grid. Pure green everywhere outside the characters, no checkerboard, no border.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-5d4beeca-278a-43a4-a9ac-fcbf189605c0.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/miriam-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 161,
+          "y": 46,
+          "width": 192,
+          "height": 355,
+          "footline": 400,
+          "pixels": 34783
+        },
+        {
+          "frame": 1,
+          "x": 120,
+          "y": 46,
+          "width": 192,
+          "height": 355,
+          "footline": 400,
+          "pixels": 34541
+        },
+        {
+          "frame": 2,
+          "x": 111,
+          "y": 45,
+          "width": 192,
+          "height": 356,
+          "footline": 400,
+          "pixels": 34335
+        },
+        {
+          "frame": 3,
+          "x": 97,
+          "y": 45,
+          "width": 193,
+          "height": 356,
+          "footline": 400,
+          "pixels": 34558
+        },
+        {
+          "frame": 4,
+          "x": 161,
+          "y": 6,
+          "width": 192,
+          "height": 358,
+          "footline": 363,
+          "pixels": 35362
+        },
+        {
+          "frame": 5,
+          "x": 120,
+          "y": 6,
+          "width": 192,
+          "height": 358,
+          "footline": 363,
+          "pixels": 35180
+        },
+        {
+          "frame": 6,
+          "x": 111,
+          "y": 10,
+          "width": 192,
+          "height": 354,
+          "footline": 363,
+          "pixels": 34615
+        },
+        {
+          "frame": 7,
+          "x": 97,
+          "y": 10,
+          "width": 193,
+          "height": 354,
+          "footline": 363,
+          "pixels": 34628
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 72,
+        "y": 52,
+        "width": 121,
+        "height": 195,
+        "footline": 246,
+        "pixels": 10148
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "ed",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for ed.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Ed, cheerful anthropomorphic grey mouse mascot, large round ears with coral inside, grey tousled head tuft, bright eyes, big black nose and two white front teeth. Yellow short sleeve shirt, navy blue bib overalls with one large yellow star on chest, yellow gloves and oversized yellow shoes. Keep compact mascot proportions; do not humanize.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-ac008abb-fcf5-4786-a38b-5b5a17474f61.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/ed-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 125,
+          "y": 66,
+          "width": 217,
+          "height": 340,
+          "footline": 405,
+          "pixels": 50314
+        },
+        {
+          "frame": 1,
+          "x": 116,
+          "y": 66,
+          "width": 216,
+          "height": 340,
+          "footline": 405,
+          "pixels": 50232
+        },
+        {
+          "frame": 2,
+          "x": 105,
+          "y": 65,
+          "width": 217,
+          "height": 341,
+          "footline": 405,
+          "pixels": 50611
+        },
+        {
+          "frame": 3,
+          "x": 98,
+          "y": 65,
+          "width": 218,
+          "height": 341,
+          "footline": 405,
+          "pixels": 50676
+        },
+        {
+          "frame": 4,
+          "x": 122,
+          "y": 33,
+          "width": 220,
+          "height": 340,
+          "footline": 372,
+          "pixels": 50357
+        },
+        {
+          "frame": 5,
+          "x": 116,
+          "y": 33,
+          "width": 219,
+          "height": 340,
+          "footline": 372,
+          "pixels": 50149
+        },
+        {
+          "frame": 6,
+          "x": 105,
+          "y": 33,
+          "width": 220,
+          "height": 340,
+          "footline": 372,
+          "pixels": 50278
+        },
+        {
+          "frame": 7,
+          "x": 99,
+          "y": 33,
+          "width": 218,
+          "height": 340,
+          "footline": 372,
+          "pixels": 50206
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 68,
+        "y": 56,
+        "width": 130,
+        "height": 191,
+        "footline": 246,
+        "pixels": 15280
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "snorri",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for snorri.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Snorri, cheerful compact blue octopus mascot with dark blue spots, expressive large oval eyes, pink/magenta suckers on underside of six visible curved tentacles, golden bronze Viking helmet with two ivory horns and magenta jewel. NO human arms, hands, legs or shoes. Instead use tentacles curled in a gentle idle guard, bottom tentacle tips planted as in walk reference; keep body anatomically octopus.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-a068dd60-b640-435e-a7b9-199df097107f.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/snorri-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 96,
+          "y": 74,
+          "width": 273,
+          "height": 331,
+          "footline": 404,
+          "pixels": 59214
+        },
+        {
+          "frame": 1,
+          "x": 98,
+          "y": 73,
+          "width": 264,
+          "height": 332,
+          "footline": 404,
+          "pixels": 59803
+        },
+        {
+          "frame": 2,
+          "x": 89,
+          "y": 73,
+          "width": 264,
+          "height": 332,
+          "footline": 404,
+          "pixels": 59742
+        },
+        {
+          "frame": 3,
+          "x": 81,
+          "y": 74,
+          "width": 263,
+          "height": 331,
+          "footline": 404,
+          "pixels": 59064
+        },
+        {
+          "frame": 4,
+          "x": 96,
+          "y": 34,
+          "width": 263,
+          "height": 338,
+          "footline": 371,
+          "pixels": 59253
+        },
+        {
+          "frame": 5,
+          "x": 94,
+          "y": 36,
+          "width": 259,
+          "height": 336,
+          "footline": 371,
+          "pixels": 59088
+        },
+        {
+          "frame": 6,
+          "x": 92,
+          "y": 37,
+          "width": 261,
+          "height": 335,
+          "footline": 371,
+          "pixels": 59272
+        },
+        {
+          "frame": 7,
+          "x": 83,
+          "y": 38,
+          "width": 261,
+          "height": 335,
+          "footline": 372,
+          "pixels": 59081
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 52,
+        "y": 53,
+        "width": 153,
+        "height": 194,
+        "footline": 246,
+        "pixels": 18414
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "roland",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for roland.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Older man, short salt-and-pepper grey hair, dark rounded eyeglasses, friendly broad smile. Navy windowpane checked blazer, open-collar white dress shirt, dark navy trousers, black belt with gold buckle, brown leather shoes. Average slightly stocky older adult body proportions.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-62080203-f307-4e04-b6da-522947d5f5aa.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/roland-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 132,
+          "y": 37,
+          "width": 241,
+          "height": 367,
+          "footline": 403,
+          "pixels": 49302
+        },
+        {
+          "frame": 1,
+          "x": 98,
+          "y": 37,
+          "width": 239,
+          "height": 368,
+          "footline": 404,
+          "pixels": 49339
+        },
+        {
+          "frame": 2,
+          "x": 91,
+          "y": 37,
+          "width": 233,
+          "height": 368,
+          "footline": 404,
+          "pixels": 49066
+        },
+        {
+          "frame": 3,
+          "x": 83,
+          "y": 37,
+          "width": 235,
+          "height": 367,
+          "footline": 403,
+          "pixels": 49144
+        },
+        {
+          "frame": 4,
+          "x": 130,
+          "y": 30,
+          "width": 232,
+          "height": 367,
+          "footline": 396,
+          "pixels": 48891
+        },
+        {
+          "frame": 5,
+          "x": 104,
+          "y": 30,
+          "width": 236,
+          "height": 367,
+          "footline": 396,
+          "pixels": 48852
+        },
+        {
+          "frame": 6,
+          "x": 93,
+          "y": 30,
+          "width": 232,
+          "height": 368,
+          "footline": 397,
+          "pixels": 48782
+        },
+        {
+          "frame": 7,
+          "x": 83,
+          "y": 29,
+          "width": 235,
+          "height": 369,
+          "footline": 397,
+          "pixels": 49051
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 67,
+        "y": 56,
+        "width": 123,
+        "height": 191,
+        "footline": 246,
+        "pixels": 10856
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "marianne",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for marianne.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Mature woman, shoulder-length honey brown layered hair with fringe, black rectangular eyeglasses, friendly smile. Olive quilted sleeveless utility vest, beige long-sleeve collared shirt, charcoal trousers, dark belt and brown shoes. Average mature adult proportions.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-63afab36-919f-47c5-8da7-54bfc1b9f03b.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/marianne-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 118,
+          "y": 38,
+          "width": 221,
+          "height": 361,
+          "footline": 398,
+          "pixels": 45743
+        },
+        {
+          "frame": 1,
+          "x": 104,
+          "y": 40,
+          "width": 219,
+          "height": 359,
+          "footline": 398,
+          "pixels": 45298
+        },
+        {
+          "frame": 2,
+          "x": 89,
+          "y": 40,
+          "width": 219,
+          "height": 359,
+          "footline": 398,
+          "pixels": 44933
+        },
+        {
+          "frame": 3,
+          "x": 65,
+          "y": 40,
+          "width": 221,
+          "height": 359,
+          "footline": 398,
+          "pixels": 45326
+        },
+        {
+          "frame": 4,
+          "x": 118,
+          "y": 38,
+          "width": 219,
+          "height": 360,
+          "footline": 397,
+          "pixels": 45448
+        },
+        {
+          "frame": 5,
+          "x": 104,
+          "y": 38,
+          "width": 219,
+          "height": 360,
+          "footline": 397,
+          "pixels": 45252
+        },
+        {
+          "frame": 6,
+          "x": 89,
+          "y": 39,
+          "width": 219,
+          "height": 359,
+          "footline": 397,
+          "pixels": 44813
+        },
+        {
+          "frame": 7,
+          "x": 59,
+          "y": 38,
+          "width": 220,
+          "height": 360,
+          "footline": 397,
+          "pixels": 45321
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 65,
+        "y": 53,
+        "width": 128,
+        "height": 194,
+        "footline": 246,
+        "pixels": 11019
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "juergen",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for juergen.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Mature man with thick swept-up silver grey hair and a broad warm smile, no glasses. Dark navy blue business suit, white open-neck shirt, black belt and black dress shoes. Preserve older adult face and lean-average body proportions.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-5dc08c77-47f0-4d96-879e-c118cfebb64c.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/juergen-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 122,
+          "y": 47,
+          "width": 209,
+          "height": 375,
+          "footline": 421,
+          "pixels": 44223
+        },
+        {
+          "frame": 1,
+          "x": 120,
+          "y": 47,
+          "width": 208,
+          "height": 375,
+          "footline": 421,
+          "pixels": 44245
+        },
+        {
+          "frame": 2,
+          "x": 119,
+          "y": 47,
+          "width": 209,
+          "height": 375,
+          "footline": 421,
+          "pixels": 44233
+        },
+        {
+          "frame": 3,
+          "x": 115,
+          "y": 48,
+          "width": 209,
+          "height": 374,
+          "footline": 421,
+          "pixels": 44145
+        },
+        {
+          "frame": 4,
+          "x": 117,
+          "y": 34,
+          "width": 214,
+          "height": 374,
+          "footline": 407,
+          "pixels": 44537
+        },
+        {
+          "frame": 5,
+          "x": 116,
+          "y": 33,
+          "width": 212,
+          "height": 375,
+          "footline": 407,
+          "pixels": 44439
+        },
+        {
+          "frame": 6,
+          "x": 114,
+          "y": 34,
+          "width": 214,
+          "height": 374,
+          "footline": 407,
+          "pixels": 44555
+        },
+        {
+          "frame": 7,
+          "x": 112,
+          "y": 34,
+          "width": 213,
+          "height": 374,
+          "footline": 407,
+          "pixels": 44506
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 66,
+        "y": 51,
+        "width": 121,
+        "height": 196,
+        "footline": 246,
+        "pixels": 10205
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "mauritia",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for mauritia.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Mature woman with short layered blonde hair and side-swept fringe, pearl drop earrings and cheerful smile. Elegant ivory-white blazer and matching white trousers over white collared blouse, slim ivory belt, beige low-heeled shoes. Preserve mature adult face and body proportions.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-45d08d57-fd1d-4785-8447-02f78f8bd813.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/mauritia-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 136,
+          "y": 37,
+          "width": 199,
+          "height": 372,
+          "footline": 408,
+          "pixels": 41852
+        },
+        {
+          "frame": 1,
+          "x": 111,
+          "y": 37,
+          "width": 202,
+          "height": 372,
+          "footline": 408,
+          "pixels": 41942
+        },
+        {
+          "frame": 2,
+          "x": 97,
+          "y": 37,
+          "width": 200,
+          "height": 372,
+          "footline": 408,
+          "pixels": 42048
+        },
+        {
+          "frame": 3,
+          "x": 82,
+          "y": 37,
+          "width": 205,
+          "height": 372,
+          "footline": 408,
+          "pixels": 41939
+        },
+        {
+          "frame": 4,
+          "x": 136,
+          "y": 30,
+          "width": 196,
+          "height": 373,
+          "footline": 402,
+          "pixels": 41796
+        },
+        {
+          "frame": 5,
+          "x": 112,
+          "y": 29,
+          "width": 201,
+          "height": 374,
+          "footline": 402,
+          "pixels": 41985
+        },
+        {
+          "frame": 6,
+          "x": 96,
+          "y": 31,
+          "width": 198,
+          "height": 372,
+          "footline": 402,
+          "pixels": 41922
+        },
+        {
+          "frame": 7,
+          "x": 81,
+          "y": 30,
+          "width": 203,
+          "height": 373,
+          "footline": 402,
+          "pixels": 42095
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 68,
+        "y": 52,
+        "width": 123,
+        "height": 195,
+        "footline": 246,
+        "pixels": 10686
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "michael",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for michael.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Middle-aged man with short swept-back dark brown hair and a neatly trimmed brown beard and moustache. Dark navy crew-neck long-sleeve sweater, charcoal trousers and black sneakers with narrow white sole accents. No headset, no headphones, no microphone, no glasses, no hat. Preserve reference face and average adult body.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-ea223aa7-8c6d-4b0c-b2b5-ed66677509f3.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/michael-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 127,
+          "y": 31,
+          "width": 206,
+          "height": 371,
+          "footline": 401,
+          "pixels": 41375
+        },
+        {
+          "frame": 1,
+          "x": 106,
+          "y": 31,
+          "width": 206,
+          "height": 371,
+          "footline": 401,
+          "pixels": 41919
+        },
+        {
+          "frame": 2,
+          "x": 88,
+          "y": 31,
+          "width": 206,
+          "height": 372,
+          "footline": 402,
+          "pixels": 41601
+        },
+        {
+          "frame": 3,
+          "x": 73,
+          "y": 31,
+          "width": 208,
+          "height": 371,
+          "footline": 401,
+          "pixels": 41314
+        },
+        {
+          "frame": 4,
+          "x": 130,
+          "y": 31,
+          "width": 205,
+          "height": 374,
+          "footline": 404,
+          "pixels": 42045
+        },
+        {
+          "frame": 5,
+          "x": 107,
+          "y": 31,
+          "width": 205,
+          "height": 374,
+          "footline": 404,
+          "pixels": 42028
+        },
+        {
+          "frame": 6,
+          "x": 88,
+          "y": 31,
+          "width": 207,
+          "height": 374,
+          "footline": 404,
+          "pixels": 41954
+        },
+        {
+          "frame": 7,
+          "x": 71,
+          "y": 31,
+          "width": 206,
+          "height": 374,
+          "footline": 404,
+          "pixels": 41729
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 65,
+        "y": 50,
+        "width": 127,
+        "height": 197,
+        "footline": 246,
+        "pixels": 9523
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "thomas",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for thomas.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Adult man with medium brown swept-back wavy hair and a clean-shaven smiling face. Dark blue suit jacket and matching trousers, white open-collar shirt, brown belt, brown leather shoes. Small lapel pin. Preserve lean-average adult proportions and portrait likeness.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-96d84650-6249-4b4b-894a-9b97163ddfa6.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/thomas-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 132,
+          "y": 28,
+          "width": 211,
+          "height": 374,
+          "footline": 401,
+          "pixels": 40534
+        },
+        {
+          "frame": 1,
+          "x": 91,
+          "y": 28,
+          "width": 210,
+          "height": 374,
+          "footline": 401,
+          "pixels": 40642
+        },
+        {
+          "frame": 2,
+          "x": 81,
+          "y": 26,
+          "width": 212,
+          "height": 376,
+          "footline": 401,
+          "pixels": 40885
+        },
+        {
+          "frame": 3,
+          "x": 58,
+          "y": 28,
+          "width": 211,
+          "height": 374,
+          "footline": 401,
+          "pixels": 40208
+        },
+        {
+          "frame": 4,
+          "x": 125,
+          "y": 31,
+          "width": 211,
+          "height": 373,
+          "footline": 403,
+          "pixels": 40481
+        },
+        {
+          "frame": 5,
+          "x": 90,
+          "y": 31,
+          "width": 210,
+          "height": 373,
+          "footline": 403,
+          "pixels": 40442
+        },
+        {
+          "frame": 6,
+          "x": 87,
+          "y": 31,
+          "width": 211,
+          "height": 373,
+          "footline": 403,
+          "pixels": 40567
+        },
+        {
+          "frame": 7,
+          "x": 66,
+          "y": 31,
+          "width": 211,
+          "height": 373,
+          "footline": 403,
+          "pixels": 40154
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 61,
+        "y": 51,
+        "width": 123,
+        "height": 196,
+        "footline": 246,
+        "pixels": 10411
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "annkathrin",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for annkathrin.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Adult woman with long straight dark brown hair, smiling confident face. Black long-sleeve floral lace blouse over an opaque black camisole, charcoal dark grey trousers, black belt with small silver buckle, black ankle boots. Render floral lace pattern as a few deliberate readable gold-tan/black graphic motifs, not scattered noisy pixels. Preserve face and lean-average adult body.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-d1ebe6bf-237e-4edc-bd93-ba7486bfab19.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/annkathrin-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 133,
+          "y": 42,
+          "width": 197,
+          "height": 364,
+          "footline": 405,
+          "pixels": 33091
+        },
+        {
+          "frame": 1,
+          "x": 127,
+          "y": 42,
+          "width": 197,
+          "height": 364,
+          "footline": 405,
+          "pixels": 32990
+        },
+        {
+          "frame": 2,
+          "x": 96,
+          "y": 42,
+          "width": 197,
+          "height": 364,
+          "footline": 405,
+          "pixels": 33304
+        },
+        {
+          "frame": 3,
+          "x": 87,
+          "y": 42,
+          "width": 198,
+          "height": 364,
+          "footline": 405,
+          "pixels": 32823
+        },
+        {
+          "frame": 4,
+          "x": 133,
+          "y": 39,
+          "width": 197,
+          "height": 365,
+          "footline": 403,
+          "pixels": 33283
+        },
+        {
+          "frame": 5,
+          "x": 125,
+          "y": 38,
+          "width": 196,
+          "height": 366,
+          "footline": 403,
+          "pixels": 33237
+        },
+        {
+          "frame": 6,
+          "x": 96,
+          "y": 39,
+          "width": 197,
+          "height": 365,
+          "footline": 403,
+          "pixels": 33471
+        },
+        {
+          "frame": 7,
+          "x": 95,
+          "y": 39,
+          "width": 197,
+          "height": 365,
+          "footline": 403,
+          "pixels": 33431
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 69,
+        "y": 52,
+        "width": 127,
+        "height": 195,
+        "footline": 246,
+        "pixels": 10278
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "frederik",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for frederik.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Young adult man with short spiky golden brown hair, blue eyes, clean-shaven youthful face, slight smile. Dark navy suit, white open-neck collared shirt, brown belt with small gold buckle and brown leather shoes, tiny lapel pin. Preserve youthful adult stature and body proportions.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-8d1e09ad-3083-48de-a237-819ec21e6928.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/frederik-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 145,
+          "y": 37,
+          "width": 195,
+          "height": 345,
+          "footline": 381,
+          "pixels": 37129
+        },
+        {
+          "frame": 1,
+          "x": 122,
+          "y": 38,
+          "width": 192,
+          "height": 344,
+          "footline": 381,
+          "pixels": 36698
+        },
+        {
+          "frame": 2,
+          "x": 120,
+          "y": 38,
+          "width": 194,
+          "height": 344,
+          "footline": 381,
+          "pixels": 36883
+        },
+        {
+          "frame": 3,
+          "x": 116,
+          "y": 38,
+          "width": 193,
+          "height": 344,
+          "footline": 381,
+          "pixels": 36998
+        },
+        {
+          "frame": 4,
+          "x": 140,
+          "y": 31,
+          "width": 201,
+          "height": 352,
+          "footline": 382,
+          "pixels": 37750
+        },
+        {
+          "frame": 5,
+          "x": 114,
+          "y": 31,
+          "width": 201,
+          "height": 352,
+          "footline": 382,
+          "pixels": 37783
+        },
+        {
+          "frame": 6,
+          "x": 112,
+          "y": 31,
+          "width": 199,
+          "height": 352,
+          "footline": 382,
+          "pixels": 37671
+        },
+        {
+          "frame": 7,
+          "x": 108,
+          "y": 31,
+          "width": 201,
+          "height": 352,
+          "footline": 382,
+          "pixels": 37752
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 62,
+        "y": 51,
+        "width": 123,
+        "height": 196,
+        "footline": 246,
+        "pixels": 10105
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "katja",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for katja.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Adult woman with shoulder-length black wavy hair, side part, warm smile and small gold stud earrings. Black double-breasted blazer with gold buttons over black-and-warm-gold patterned blouse, black trousers and black ankle boots. Pattern as clear sparse motifs instead of noisy dither. Preserve adult proportions.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-b35cad21-916d-4076-9b11-48a113d235ea.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/katja-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 159,
+          "y": 52,
+          "width": 202,
+          "height": 370,
+          "footline": 421,
+          "pixels": 39419
+        },
+        {
+          "frame": 1,
+          "x": 137,
+          "y": 52,
+          "width": 202,
+          "height": 370,
+          "footline": 421,
+          "pixels": 39700
+        },
+        {
+          "frame": 2,
+          "x": 115,
+          "y": 50,
+          "width": 202,
+          "height": 372,
+          "footline": 421,
+          "pixels": 39527
+        },
+        {
+          "frame": 3,
+          "x": 91,
+          "y": 51,
+          "width": 203,
+          "height": 371,
+          "footline": 421,
+          "pixels": 39814
+        },
+        {
+          "frame": 4,
+          "x": 148,
+          "y": 34,
+          "width": 202,
+          "height": 371,
+          "footline": 404,
+          "pixels": 38895
+        },
+        {
+          "frame": 5,
+          "x": 125,
+          "y": 35,
+          "width": 203,
+          "height": 370,
+          "footline": 404,
+          "pixels": 38809
+        },
+        {
+          "frame": 6,
+          "x": 103,
+          "y": 34,
+          "width": 203,
+          "height": 371,
+          "footline": 404,
+          "pixels": 38892
+        },
+        {
+          "frame": 7,
+          "x": 79,
+          "y": 35,
+          "width": 203,
+          "height": 370,
+          "footline": 404,
+          "pixels": 38967
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 69,
+        "y": 51,
+        "width": 129,
+        "height": 196,
+        "footline": 246,
+        "pixels": 11151
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "nicolas",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for nicolas.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Adult man with short swept-up sandy blonde hair, light close-cropped stubble beard and moustache, smiling face. Light grey blazer over white open-collar shirt, muted blue trousers, brown belt with gold buckle, brown leather shoes. Preserve reference likeness and tall lean adult proportions.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-22aaa566-20fa-4d6b-9b5b-7afab8db6aa7.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/nicolas-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 117,
+          "y": 55,
+          "width": 211,
+          "height": 372,
+          "footline": 426,
+          "pixels": 38844
+        },
+        {
+          "frame": 1,
+          "x": 105,
+          "y": 56,
+          "width": 211,
+          "height": 371,
+          "footline": 426,
+          "pixels": 38717
+        },
+        {
+          "frame": 2,
+          "x": 96,
+          "y": 56,
+          "width": 211,
+          "height": 371,
+          "footline": 426,
+          "pixels": 38781
+        },
+        {
+          "frame": 3,
+          "x": 84,
+          "y": 56,
+          "width": 211,
+          "height": 371,
+          "footline": 426,
+          "pixels": 38658
+        },
+        {
+          "frame": 4,
+          "x": 117,
+          "y": 40,
+          "width": 211,
+          "height": 371,
+          "footline": 410,
+          "pixels": 38562
+        },
+        {
+          "frame": 5,
+          "x": 105,
+          "y": 40,
+          "width": 209,
+          "height": 371,
+          "footline": 410,
+          "pixels": 38158
+        },
+        {
+          "frame": 6,
+          "x": 95,
+          "y": 40,
+          "width": 208,
+          "height": 371,
+          "footline": 410,
+          "pixels": 38184
+        },
+        {
+          "frame": 7,
+          "x": 84,
+          "y": 40,
+          "width": 209,
+          "height": 371,
+          "footline": 410,
+          "pixels": 38329
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 65,
+        "y": 52,
+        "width": 125,
+        "height": 195,
+        "footline": 246,
+        "pixels": 10258
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "max",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for max.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Young adult man, black baseball cap worn forwards with clearly visible curved brim, slightly curly brown hair visible underneath behind ears, light brown stubble and blue-grey eyes. Plain black crew-neck short-sleeve T-shirt, dark charcoal jeans, black belt and black sneakers. Black cap present in EVERY frame. Preserve youthful adult face and lean-average body.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-7e6f1309-d16c-4203-a1c3-a8030200d871.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/max-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 115,
+          "y": 60,
+          "width": 206,
+          "height": 358,
+          "footline": 417,
+          "pixels": 39459
+        },
+        {
+          "frame": 1,
+          "x": 111,
+          "y": 60,
+          "width": 206,
+          "height": 358,
+          "footline": 417,
+          "pixels": 39639
+        },
+        {
+          "frame": 2,
+          "x": 109,
+          "y": 60,
+          "width": 206,
+          "height": 358,
+          "footline": 417,
+          "pixels": 39326
+        },
+        {
+          "frame": 3,
+          "x": 106,
+          "y": 60,
+          "width": 206,
+          "height": 358,
+          "footline": 417,
+          "pixels": 39462
+        },
+        {
+          "frame": 4,
+          "x": 115,
+          "y": 41,
+          "width": 206,
+          "height": 358,
+          "footline": 398,
+          "pixels": 39293
+        },
+        {
+          "frame": 5,
+          "x": 111,
+          "y": 41,
+          "width": 206,
+          "height": 358,
+          "footline": 398,
+          "pixels": 39445
+        },
+        {
+          "frame": 6,
+          "x": 109,
+          "y": 41,
+          "width": 206,
+          "height": 358,
+          "footline": 398,
+          "pixels": 39198
+        },
+        {
+          "frame": 7,
+          "x": 106,
+          "y": 41,
+          "width": 206,
+          "height": 358,
+          "footline": 398,
+          "pixels": 39253
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 60,
+        "y": 51,
+        "width": 127,
+        "height": 196,
+        "footline": 246,
+        "pixels": 10373
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "matthias",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for matthias.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Middle-aged man, black baseball cap worn forwards with curved brim, short hair, full neatly trimmed dark beard with grey chin and friendly face. Black short-sleeve collared polo shirt, medium grey jeans and white sneakers. Black cap present in EVERY frame. Preserve reference adult average-stocky proportions.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-46482392-928f-42cb-9141-446683b95ccb.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/matthias-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 129,
+          "y": 47,
+          "width": 208,
+          "height": 364,
+          "footline": 410,
+          "pixels": 43141
+        },
+        {
+          "frame": 1,
+          "x": 116,
+          "y": 47,
+          "width": 207,
+          "height": 364,
+          "footline": 410,
+          "pixels": 42995
+        },
+        {
+          "frame": 2,
+          "x": 106,
+          "y": 47,
+          "width": 206,
+          "height": 364,
+          "footline": 410,
+          "pixels": 42706
+        },
+        {
+          "frame": 3,
+          "x": 92,
+          "y": 47,
+          "width": 207,
+          "height": 364,
+          "footline": 410,
+          "pixels": 42999
+        },
+        {
+          "frame": 4,
+          "x": 122,
+          "y": 35,
+          "width": 206,
+          "height": 365,
+          "footline": 399,
+          "pixels": 42619
+        },
+        {
+          "frame": 5,
+          "x": 108,
+          "y": 35,
+          "width": 207,
+          "height": 365,
+          "footline": 399,
+          "pixels": 42571
+        },
+        {
+          "frame": 6,
+          "x": 98,
+          "y": 35,
+          "width": 205,
+          "height": 365,
+          "footline": 399,
+          "pixels": 42479
+        },
+        {
+          "frame": 7,
+          "x": 85,
+          "y": 35,
+          "width": 205,
+          "height": 364,
+          "footline": 398,
+          "pixels": 42486
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 59,
+        "y": 51,
+        "width": 123,
+        "height": 196,
+        "footline": 246,
+        "pixels": 9961
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "laurent",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for laurent.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Middle-aged man with fully shaved bald head, close neatly trimmed salt-and-pepper GREY beard and moustache, kind face. Black short-sleeve polo shirt, black belt, very dark charcoal trousers and black shoes. NO hat, no hair on scalp. Preserve portrait likeness and average adult proportions.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-74410a33-dede-4637-a404-7e623da605cd.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/laurent-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 136,
+          "y": 47,
+          "width": 212,
+          "height": 362,
+          "footline": 408,
+          "pixels": 39773
+        },
+        {
+          "frame": 1,
+          "x": 98,
+          "y": 47,
+          "width": 213,
+          "height": 362,
+          "footline": 408,
+          "pixels": 39915
+        },
+        {
+          "frame": 2,
+          "x": 61,
+          "y": 47,
+          "width": 213,
+          "height": 362,
+          "footline": 408,
+          "pixels": 40013
+        },
+        {
+          "frame": 3,
+          "x": 27,
+          "y": 48,
+          "width": 213,
+          "height": 361,
+          "footline": 408,
+          "pixels": 39807
+        },
+        {
+          "frame": 4,
+          "x": 136,
+          "y": 42,
+          "width": 212,
+          "height": 362,
+          "footline": 403,
+          "pixels": 39771
+        },
+        {
+          "frame": 5,
+          "x": 98,
+          "y": 42,
+          "width": 213,
+          "height": 362,
+          "footline": 403,
+          "pixels": 39908
+        },
+        {
+          "frame": 6,
+          "x": 63,
+          "y": 42,
+          "width": 213,
+          "height": 362,
+          "footline": 403,
+          "pixels": 39954
+        },
+        {
+          "frame": 7,
+          "x": 26,
+          "y": 42,
+          "width": 212,
+          "height": 362,
+          "footline": 403,
+          "pixels": 39897
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 63,
+        "y": 52,
+        "width": 125,
+        "height": 195,
+        "footline": 246,
+        "pixels": 10345
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "reinhold",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for reinhold.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Stocky middle-aged man with short curly dark brown hair and full dark beard and moustache, warm round smiling face. Teal blue short-sleeve crew-neck T-shirt, medium dark blue jeans, black belt, black sneakers with white sole edges. Preserve noticeably stocky body and rounded belly; do not slim him.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-2198c317-3ba4-49dd-8688-441bcae6a71c.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/reinhold-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 126,
+          "y": 35,
+          "width": 213,
+          "height": 379,
+          "footline": 413,
+          "pixels": 46574
+        },
+        {
+          "frame": 1,
+          "x": 112,
+          "y": 34,
+          "width": 214,
+          "height": 380,
+          "footline": 413,
+          "pixels": 46929
+        },
+        {
+          "frame": 2,
+          "x": 107,
+          "y": 34,
+          "width": 213,
+          "height": 380,
+          "footline": 413,
+          "pixels": 46645
+        },
+        {
+          "frame": 3,
+          "x": 95,
+          "y": 34,
+          "width": 213,
+          "height": 380,
+          "footline": 413,
+          "pixels": 46602
+        },
+        {
+          "frame": 4,
+          "x": 126,
+          "y": 28,
+          "width": 213,
+          "height": 380,
+          "footline": 407,
+          "pixels": 46435
+        },
+        {
+          "frame": 5,
+          "x": 113,
+          "y": 28,
+          "width": 213,
+          "height": 380,
+          "footline": 407,
+          "pixels": 46643
+        },
+        {
+          "frame": 6,
+          "x": 107,
+          "y": 28,
+          "width": 213,
+          "height": 380,
+          "footline": 407,
+          "pixels": 46555
+        },
+        {
+          "frame": 7,
+          "x": 95,
+          "y": 28,
+          "width": 213,
+          "height": 380,
+          "footline": 407,
+          "pixels": 46569
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 73,
+        "y": 54,
+        "width": 109,
+        "height": 193,
+        "footline": 246,
+        "pixels": 10918
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "nathalie",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for nathalie.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Adult woman with long straight blonde hair with darker roots, calm small smile. Plain fitted black long-sleeved crew-neck top, light blue straight jeans and white sneakers. No added jewelry. Preserve portrait likeness and lean-average adult body proportions.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-a49a51cc-450d-491d-899e-49643fd11166.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/nathalie-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 120,
+          "y": 66,
+          "width": 184,
+          "height": 329,
+          "footline": 394,
+          "pixels": 30833
+        },
+        {
+          "frame": 1,
+          "x": 120,
+          "y": 66,
+          "width": 183,
+          "height": 329,
+          "footline": 394,
+          "pixels": 30824
+        },
+        {
+          "frame": 2,
+          "x": 120,
+          "y": 66,
+          "width": 183,
+          "height": 329,
+          "footline": 394,
+          "pixels": 30858
+        },
+        {
+          "frame": 3,
+          "x": 118,
+          "y": 66,
+          "width": 184,
+          "height": 329,
+          "footline": 394,
+          "pixels": 30848
+        },
+        {
+          "frame": 4,
+          "x": 124,
+          "y": 65,
+          "width": 183,
+          "height": 330,
+          "footline": 394,
+          "pixels": 30959
+        },
+        {
+          "frame": 5,
+          "x": 120,
+          "y": 65,
+          "width": 183,
+          "height": 329,
+          "footline": 393,
+          "pixels": 30832
+        },
+        {
+          "frame": 6,
+          "x": 120,
+          "y": 65,
+          "width": 183,
+          "height": 329,
+          "footline": 393,
+          "pixels": 30866
+        },
+        {
+          "frame": 7,
+          "x": 119,
+          "y": 65,
+          "width": 184,
+          "height": 329,
+          "footline": 393,
+          "pixels": 30867
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 68,
+        "y": 57,
+        "width": 126,
+        "height": 190,
+        "footline": 246,
+        "pixels": 10070
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "andreas",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for andreas.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Middle-aged man with short receding dark brown hair, neatly trimmed full dark brown beard and moustache, friendly smiling eyes. Plain black crew-neck short-sleeve T-shirt, black jeans, black belt and black shoes. No hat. Preserve receding hairline and average mature adult body proportions.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-8da63ce3-982f-4b8a-9c46-d25e621bea72.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/andreas-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 155,
+          "y": 57,
+          "width": 195,
+          "height": 340,
+          "footline": 396,
+          "pixels": 33351
+        },
+        {
+          "frame": 1,
+          "x": 123,
+          "y": 57,
+          "width": 194,
+          "height": 340,
+          "footline": 396,
+          "pixels": 33273
+        },
+        {
+          "frame": 2,
+          "x": 103,
+          "y": 57,
+          "width": 194,
+          "height": 340,
+          "footline": 396,
+          "pixels": 33202
+        },
+        {
+          "frame": 3,
+          "x": 80,
+          "y": 57,
+          "width": 194,
+          "height": 340,
+          "footline": 396,
+          "pixels": 33372
+        },
+        {
+          "frame": 4,
+          "x": 155,
+          "y": 49,
+          "width": 195,
+          "height": 340,
+          "footline": 388,
+          "pixels": 33317
+        },
+        {
+          "frame": 5,
+          "x": 123,
+          "y": 49,
+          "width": 194,
+          "height": 340,
+          "footline": 388,
+          "pixels": 33245
+        },
+        {
+          "frame": 6,
+          "x": 103,
+          "y": 49,
+          "width": 194,
+          "height": 340,
+          "footline": 388,
+          "pixels": 33375
+        },
+        {
+          "frame": 7,
+          "x": 80,
+          "y": 49,
+          "width": 194,
+          "height": 340,
+          "footline": 388,
+          "pixels": 33402
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 69,
+        "y": 52,
+        "width": 120,
+        "height": 195,
+        "footline": 246,
+        "pixels": 9795
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "wakala",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for wakala.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Wakala, small stocky fantastical stitched ivory plush rabbit monster with two long upright rabbit ears, thick black seam stitches down center of face and torso, bulging large white eyes with red irises, enormous broad red-rimmed toothy black smile with pointed ivory teeth. Brown paws with black curved claws and light tan feet. Preserve unmistakable compact toy/mascot shape. Minimal idle breathing, clawed paws gently curled in guard; retain both full ears and all toes in every frame. No gore.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-094431d7-1087-4f66-bce2-801327760285.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/wakala-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 89,
+          "y": 40,
+          "width": 282,
+          "height": 378,
+          "footline": 417,
+          "pixels": 63309
+        },
+        {
+          "frame": 1,
+          "x": 82,
+          "y": 40,
+          "width": 279,
+          "height": 378,
+          "footline": 417,
+          "pixels": 63779
+        },
+        {
+          "frame": 2,
+          "x": 73,
+          "y": 40,
+          "width": 279,
+          "height": 378,
+          "footline": 417,
+          "pixels": 62532
+        },
+        {
+          "frame": 3,
+          "x": 67,
+          "y": 43,
+          "width": 278,
+          "height": 375,
+          "footline": 417,
+          "pixels": 62932
+        },
+        {
+          "frame": 4,
+          "x": 89,
+          "y": 27,
+          "width": 283,
+          "height": 380,
+          "footline": 406,
+          "pixels": 62473
+        },
+        {
+          "frame": 5,
+          "x": 78,
+          "y": 29,
+          "width": 280,
+          "height": 378,
+          "footline": 406,
+          "pixels": 63807
+        },
+        {
+          "frame": 6,
+          "x": 75,
+          "y": 27,
+          "width": 277,
+          "height": 380,
+          "footline": 406,
+          "pixels": 63808
+        },
+        {
+          "frame": 7,
+          "x": 64,
+          "y": 32,
+          "width": 278,
+          "height": 375,
+          "footline": 406,
+          "pixels": 62354
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 48,
+        "y": 30,
+        "width": 166,
+        "height": 217,
+        "footline": 246,
+        "pixels": 19257
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    },
+    {
+      "id": "graumacher",
+      "prompt": "Use case: identity-preserve. Asset type: polished arcade fighting-game sprite sheet, IDLE ready-stance breathing loop for graumacher.\nReference image 1 is the existing base sprite sheet: preserve its exact clothing, body type and proportions. Reference image 2 is portrait: preserve face and hair identity but simplify into clean pixel clusters. Reference image 3 is walk sheet: preserve its stature and head/body scale.\nSubject: Graumacher, compact grumpy grey cloud humanoid with thick sculpted swirling cloud-hair curls, pale grey face with thick angled black eyebrows and bright cyan eyes. Dark navy flowing ragged cape with silver trim and a large silver cogwheel clasp with cyan central gem, dark mechanical gauntlets and heavy mechanical boots, grey cloud belly. Hands in guard. Keep full cape and cloud hair within each frame and compact mascot body proportions. Cyan glow only inside eyes and gems, no external effects or auras.\nRedraw this character in beautifully clean expressive SNES/32-bit pixel art. Very crisp dark pixel outlines, large readable graphic color clusters, coherent limited 3-4 tone ramps per material. Attractive sharply readable eyes, brows, nose and mouth, deliberate clean hair shapes. NOT a noisy detailed painting, no blur, no soft shading, no excessive dithering, no upscaled photographic texture.\nCreate EXACTLY EIGHT full-body idle frames, ordered left-to-right top row then bottom row in a uniform FOUR COLUMNS by TWO ROWS grid. Canvas exactly 2048x1024, each invisible cell 512x512. Intended final native sheet 1024x512 with 256x256 cells after one reduction. Each character faces RIGHT, three-quarter side view, feet planted shoulder-width, knees very slightly bent, both hands held in a gentle fighter guard. Frames 1-8 show only subtle natural breathing and small weight shifts; smooth looping 0,1,2,1,0,-1,-2,-1 pixel shoulder motions at final size, no walking, no attacks, no big arm changes. Same stature, same face scale, same feet location across all eight frames.\nCharacter body must have approximately the same height relative to the cell as WALK reference, groundline y=492 in each 512 cell (final y=246). Center near x=256 in each cell. Keep all hair, hands, toes entirely inside their own cell with ample side padding. Every frame full body and identical overall drawing scale.\nBackground must be perfectly uniform solid bright chroma-key green #00FF00 RGB(0,255,0), including gaps between limbs. No checkerboard. Green screen will be technically removed after generation. No scenery, no text, no labels, no grid lines, no frame borders, no ground ellipse, no shadow except shading within the character, no effects, no props unless worn in reference. Output only the sprite sheet.",
+      "generatedPath": "C:\\Users\\andy_\\.codex\\generated_images\\01a07892-40a3-7cf0-89a1-9f952c09bd30\\exec-4a3d10eb-8c0a-418a-89de-8b018397f7ad.png",
+      "sourcePath": "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/crisp-idle-v4/graumacher-source.png",
+      "actualSize": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBackground": "solid chroma green; alpha keying required",
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "x": 88,
+          "y": 83,
+          "width": 278,
+          "height": 321,
+          "footline": 403,
+          "pixels": 56067
+        },
+        {
+          "frame": 1,
+          "x": 73,
+          "y": 83,
+          "width": 276,
+          "height": 321,
+          "footline": 403,
+          "pixels": 55497
+        },
+        {
+          "frame": 2,
+          "x": 62,
+          "y": 88,
+          "width": 274,
+          "height": 316,
+          "footline": 403,
+          "pixels": 55238
+        },
+        {
+          "frame": 3,
+          "x": 52,
+          "y": 88,
+          "width": 272,
+          "height": 316,
+          "footline": 403,
+          "pixels": 55404
+        },
+        {
+          "frame": 4,
+          "x": 95,
+          "y": 41,
+          "width": 269,
+          "height": 322,
+          "footline": 362,
+          "pixels": 55833
+        },
+        {
+          "frame": 5,
+          "x": 79,
+          "y": 41,
+          "width": 270,
+          "height": 322,
+          "footline": 362,
+          "pixels": 55651
+        },
+        {
+          "frame": 6,
+          "x": 67,
+          "y": 44,
+          "width": 269,
+          "height": 319,
+          "footline": 362,
+          "pixels": 55312
+        },
+        {
+          "frame": 7,
+          "x": 56,
+          "y": 44,
+          "width": 268,
+          "height": 319,
+          "footline": 362,
+          "pixels": 55361
+        }
+      ],
+      "walkReferenceFrame0": {
+        "frame": 0,
+        "x": 13,
+        "y": 52,
+        "width": 170,
+        "height": 195,
+        "footline": 246,
+        "pixels": 18904
+      },
+      "preprocessing": "None: byte-for-byte copied generated source. Parent integration performs chroma removal and common animation-wide normalization once."
+    }
+  ],
+  "assetCount": 22,
+  "expectedGrid": {
+    "columns": 4,
+    "rows": 2,
+    "requestedSourceWidth": 2048,
+    "requestedSourceHeight": 1024,
+    "intendedCellSize": 256,
+    "intendedSheetWidth": 1024,
+    "intendedSheetHeight": 512,
+    "targetFootline": 246
+  }
+}

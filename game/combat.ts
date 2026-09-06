@@ -26,7 +26,7 @@ export const activeMove=(a:Actor)=>movesFor(a.id)[a.activeMove]??movesFor(a.id)[
 export type Hitbox={x:number;y:number;w:number;h:number};
 export const boxesOverlap=(a:Hitbox,b:Hitbox)=>a.x<b.x+b.w&&a.x+a.w>b.x&&a.y<b.y+b.h&&a.y+a.h>b.y;
 export const hurtbox=(a:Actor):Hitbox=>{const mascot=['ed','snorri','wakala'].includes(a.id),width=mascot?84:62,height=a.action==='crouch'?104:mascot?168:178;return {x:a.x-width/2,y:a.y-height,w:width,h:height}};
-/** Shared collision geometry: training draws the same boxes used to resolve hits. */
+/** Shared collision geometry for combat resolution. Debug boxes are never drawn in the game. */
 export function activeHitbox(a:Actor):Hitbox|null {
  const d=fighter(a.id),move=activeMove(a);let reach=0,top=95,height=70,behind=0;
  if(a.action==='punch'&&a.age>=8&&a.age<=12&&!a.attackHit){reach=d.reach;top=145;height=30}
