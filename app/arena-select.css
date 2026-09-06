@@ -5,3 +5,6 @@
 /* Center the portal itself in the console. No chained percentage translations. */
 #game-screen [data-slot=dialog-portal]{position:absolute;inset:0;display:grid;place-items:center;z-index:80}
 #game-screen [data-slot=dialog-portal] .game-dialog{position:relative!important;inset:auto!important;left:auto!important;top:auto!important;transform:none!important;translate:none!important;scale:none!important;margin:0!important;grid-area:1/1;align-self:center;justify-self:center;max-width:calc(100% - 72px)!important;max-height:648px!important}
+/* The production CSS optimizer lowers literal translate:none into transform.
+   Keep an independent translate reset and neutralize the popup's utility offsets. */
+#game-screen [data-slot=dialog-portal] .game-dialog{--game-dialog-offset:0px 0px;--tw-translate-x:0px!important;--tw-translate-y:0px!important;translate:var(--game-dialog-offset)!important}
