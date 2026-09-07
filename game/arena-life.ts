@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 import {COASTERS} from './coasters';
 import {arenaLifeProfile,ridePose} from './arena-life-profiles';
+import {crowdGroundPose} from './arena-crowd-layout';
 type Mood='sun'|'water'|'mist'|'night'|'sparks';
 type Life={mood:Mood;water?:[number,number,number,number];crowd:number[];color:number};
 const moods:Mood[]=['water','sun','mist','night','water','night','water','sun','mist','night','night','sparks','sun','night','night','water','water','night','night','water','sun'];
@@ -34,16 +35,17 @@ export class ArenaLife {
   if(this.environment.ride&&scene.textures.exists('arena-props'))this.ride=scene.add.sprite(0,0,'arena-props',this.environment.ride.frame).setOrigin(.5,119/128).setVisible(false);
   if(scene.textures.exists('arena-crowd')){
    scene.textures.get('arena-crowd').setFilter(Phaser.Textures.FilterMode.NEAREST);
-   this.people=this.environment.crowd.map((x,i)=>{
-    this.shadows.push(scene.add.ellipse(x*960,402,45,9,0x142039,.26));
-    return scene.add.sprite(x*960,this.environment.feet,'arena-crowd',i*4).setOrigin(.5,154/160).setFlipX(i===1).setTint(this.environment.night?0xc8d7ed:0xffffff);
+   this.people=this.environment.crowd.map((spot,i)=>{
+    const ground=crowdGroundPose(spot);
+    this.shadows.push(scene.add.ellipse(ground.x,ground.shadowY,42,7,0x142039,.34));
+    return scene.add.sprite(ground.x,ground.y,'arena-crowd',i*4).setOrigin(.5,154/160).setFlipX(i===1).setTint(this.environment.night?0xc8d7ed:0xffffff);
    });
   }
  }
  cheer(tick:number){this.celebrateUntil=tick+100}
  draw(tick:number,pan:number){
   const time=this.reduced?0:tick/60,active=tick<this.celebrateUntil;
-  this.people.forEach((person,i)=>{const phase=Math.floor(time*(active?6:2.5)+i*.8)%4;person.setFrame(i*4+(this.reduced?0:active?[0,1,2,3][phase]:[0,1,0,3][phase]));person.x=Math.round(this.environment.crowd[i]*960-pan);this.shadows[i].x=person.x;});
+  this.people.forEach((person,i)=>{const phase=Math.floor(time*(active?6:2.5)+i*.8)%4,ground=crowdGroundPose(this.environment.crowd[i],pan);person.setFrame(i*4+(this.reduced?0:active?[0,1,2,3][phase]:[0,1,0,3][phase])).setPosition(ground.x,ground.y);this.shadows[i].setPosition(ground.x,ground.shadowY);});
   if(this.ride&&this.environment.ride){const p=this.reduced?null:ridePose(this.environment.ride,tick);this.ride.setVisible(!!p);if(p)this.ride.setPosition(Math.round(p.x-pan),Math.round(p.y)).setFlipX(p.flip).setRotation(p.angle+(p.flip?Math.PI:0)).setAlpha(p.alpha);}
   this.ink.clear();if(this.reduced)return;
   const {mood,color,water}=this.style;

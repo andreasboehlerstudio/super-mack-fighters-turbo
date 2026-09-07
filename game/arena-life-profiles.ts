@@ -1,8 +1,9 @@
 import {COASTERS} from './coasters.ts';
+import {ARENA_CROWD_SPOTS,type CrowdSpot} from './arena-crowd-layout.ts';
 export type SceneryEvent='leaves'|'fireflies'|'fountain'|'steam'|'electric'|'harbor'|'lamps';
 type Point=readonly [number,number];
 export type Ride={frame:number;path:readonly Point[];duration:number;period:number;rotate?:boolean};
-export type ArenaLifeProfile={area:string;event:SceneryEvent;night:boolean;feet:number;crowd:readonly number[];sources:readonly Point[];ride?:Ride};
+export type ArenaLifeProfile={area:string;event:SceneryEvent;night:boolean;crowd:readonly CrowdSpot[];sources:readonly Point[];ride?:Ride};
 const events:SceneryEvent[]=['harbor','leaves','fountain','fountain','harbor','fireflies','lamps','leaves','harbor','fountain','fireflies','electric','fountain','fountain','leaves','steam','harbor','steam','steam','lamps','fountain'];
 const sources:Record<number,Point[]>={2:[[.28,.715]],3:[[.32,.69],[.59,.70]],9:[[.21,.61],[.30,.62]],12:[[.42,.64],[.58,.64]],13:[[.11,.68],[.88,.68]],15:[[.74,.42]],17:[[.80,.42]],18:[[.26,.27],[.68,.24]],20:[[.28,.65]]};
 const rides:Record<number,Ride>={
@@ -17,7 +18,7 @@ export function arenaLifeProfile(id:string):ArenaLifeProfile{
  const special:Record<string,string>={'stage-svalgurok':'park-8','stage-batavia':'park-6','stage-skyport':'park-1','stage-cosmic':'park-3','stage-blue-fire':'park-8','stage-hq':'park-1','stage-traumatica':'park-5'};
  const area=COASTERS.find(c=>c.id===id)?.area??special[id]??id,index=Number(area.split('-')[1]),valid=Number.isInteger(index)&&index>=0&&index<21?index:1;
  // Paths are authored for the matching backdrop only; coaster close-ups keep their own effects.
- return {area:`park-${valid}`,event:events[valid],night:[3,5,6,10,11,13,17,18,19].includes(valid),feet:404,crowd:valid%2?[.125,.865]:[.15,.835],sources:id===area?sources[valid]??[]:[],ride:id===area?rides[valid]:undefined};
+ return {area:`park-${valid}`,event:id==='park-17'?'lamps':events[valid],night:[3,5,6,10,11,13,17,18,19].includes(valid),crowd:ARENA_CROWD_SPOTS[id]??ARENA_CROWD_SPOTS['park-'+valid],sources:id===area&&id!=='park-17'?sources[valid]??[]:[],ride:id===area?rides[valid]:undefined};
 }
 export function ridePose(ride:Ride,tick:number){
  const seconds=tick/60,phase=(seconds+2)%ride.period;
