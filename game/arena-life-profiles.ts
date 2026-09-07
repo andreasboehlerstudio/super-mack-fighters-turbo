@@ -8,10 +8,10 @@ const sources:Record<number,Point[]>={2:[[.28,.715]],3:[[.32,.69],[.59,.70]],9:[
 const rides:Record<number,Ride>={
  2:{frame:2,path:[[.355,.45],[.58,.355],[.82,.256],[1.08,.155]],duration:9,period:19,rotate:true},
  4:{frame:0,path:[[.807,.327],[.837,.27],[.866,.226],[.895,.184],[.926,.166],[.960,.168],[1.045,.214]],duration:3.8,period:16,rotate:true},
- 8:{frame:4,path:[[.38,.615],[.50,.62],[.66,.62]],duration:17,period:29},
+ 8:{frame:4,path:[[.07,.718],[.13,.72],[.20,.728]],duration:17,period:29},
  11:{frame:3,path:[[1.05,.116],[.966,.17],[.90,.227],[.842,.297],[.79,.376],[.75,.447],[.71,.508]],duration:4.5,period:17,rotate:true},
  12:{frame:6,path:[[.12,.19],[.28,.15],[.46,.11]],duration:22,period:35},
- 16:{frame:5,path:[[.30,.60],[.45,.62],[.64,.63]],duration:13,period:25}
+ 16:{frame:5,path:[[.32,.711],[.45,.696],[.58,.668]],duration:13,period:25}
 };
 export function arenaLifeProfile(id:string):ArenaLifeProfile{
  const special:Record<string,string>={'stage-svalgurok':'park-8','stage-batavia':'park-6','stage-skyport':'park-1','stage-cosmic':'park-3','stage-blue-fire':'park-8','stage-hq':'park-1','stage-traumatica':'park-5'};
