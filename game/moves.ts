@@ -4,6 +4,7 @@ export type MoveInput='quarter-punch'|'quarter-kick'|'charge';
 export interface MoveDef {name:string;kind:SpecialKind;input:MoveInput;power:number;speed:number;cooldown:number;startup:number;duration:number;reach:number;}
 const names:Record<FighterId,[string,string,string]>={
  ed:['Sternenbogen','Mäuseblitz','EUROPA-STERNENFEST'],
+ edda:['Schleifenpirouette','Paraden-Sprint','EDDAS STERNENPARADE'],
  snorri:['Tentakel-Torpedo','Lagunenstrom','RULANTICA-FLUT'],
  roland:['Schienenwirbel','Coaster-Express','GRAND-PARK-FINALE'],
  marianne:['Herzstrahl','Lichtermeer','TAUSEND HERZFUNKEN'],
@@ -23,12 +24,13 @@ const names:Record<FighterId,[string,string,string]>={
  reinhold:['Bassimpuls','Subwoofer-Welle','BASS-FINALE'],
  nathalie:['Farbwirbel','Prismenflug','FARBENFEST'],
  andreas:['Renderbogen','Frame-Wirbel','MASTER RENDER'],
+ karsten:['Dolly-Fahrt','Kran-Schwenk','ONE TAKE'],
  wakala:['Nachtfunken','Hasen-Haken','WAKALAS WUNDERLAND'],
  graumacher:['Grauschleier-Sprint','Stillstandsblitz','LETZTER SCHATTEN']
 };
 const other:Record<SpecialKind,[SpecialKind,SpecialKind]>={dash:['arc','burst'],wave:['dash','bolt'],arc:['burst','dash'],burst:['bolt','wave'],bolt:['wave','dash']};
 export function movesFor(id:FighterId):[MoveDef,MoveDef,MoveDef]{
- const d=fighter(id),[second,third]=other[d.kind];
+ const d=fighter(id),[second,third]:[SpecialKind,SpecialKind]=id==='karsten'?['dash','arc']:other[d.kind];
  return [
   {name:d.special,kind:d.kind,input:'quarter-punch',power:d.power,speed:d.shotSpeed,cooldown:d.cooldown,startup:id==='graumacher'?44:18,duration:id==='graumacher'?76:53,reach:d.kind==='burst'?165:d.reach},
   {name:names[id][0],kind:second,input:'quarter-kick',power:Math.round(d.power*.78),speed:d.shotSpeed*.92,cooldown:Math.round(d.cooldown*.82),startup:13,duration:43,reach:second==='burst'?170:d.reach+10},

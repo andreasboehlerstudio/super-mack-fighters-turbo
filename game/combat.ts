@@ -7,7 +7,7 @@ export type Input={left:boolean;right:boolean;down:boolean;jump:boolean;punch:bo
 export const neutral=():Input=>({left:false,right:false,down:false,jump:false,punch:false,kick:false,block:false,parry:false,ultra:false,tag:false});
 export interface Token{key:'down'|'forward'|'punch'|'kick';tick:number}
 export interface Actor{id:FighterId;x:number;y:number;vy:number;vx:number;face:1|-1;hp:number;action:Action;age:number;lock:number;specialCd:number;attackHit:boolean;buffer:Token[];last:Input;wins:number;combo:number;lastHit:number;activeMove:number;chargeTicks:number;chargeGrace:number;chargeFace:number;queued:{key:"punch"|"kick"|"jump"|"ultra";tick:number}|null;parryTicks:number;parryCd:number;invuln:number}
-export interface Projectile{id:number;owner:number;x:number;y:number;originY:number;vx:number;age:number;kind:string;damage:number;radius:number;color:string;ultra?:boolean}
+export interface Projectile{id:number;owner:number;sourceId?:FighterId;x:number;y:number;originY:number;vx:number;age:number;kind:string;damage:number;radius:number;color:string;ultra?:boolean}
 export type CombatEvent={type:'punch'|'kick'|'jump'|'hit'|'block'|'special'|'round'|'win'|'ko'|'parry'|'ultra'|'tag';player?:number;x?:number;y?:number;label?:string};
 export const comboName=(hits:number)=>hits>=6?'ULTRA COMBO':hits>=4?'TURBO COMBO':hits===3?'TRIPLE HIT':'DOUBLE HIT';
 export interface MatchOptions{training?:boolean;parry?:boolean;turbo?:number;stageId?:string;partners?:[FighterId|null,FighterId|null]}
@@ -54,7 +54,7 @@ function damage(m:Match,attacker:number,defender:number,amount:number,x:number,y
 function launch(m:Match,a:Actor,index:number,move:Pick<MoveDef,'kind'|'power'|'speed'|'reach'>,superHit=false){
  const height=move.kind==='wave'?20:move.kind==='arc'?90:65;
  if(move.kind==='burst'){const b=m.actors[1-index];if(boxesOverlap({x:a.x-move.reach,y:a.y-120,w:move.reach*2,h:120},hurtbox(b)))damage(m,index,1-index,move.power,b.x,FLOOR+b.y-65,true,superHit)}
- else if(move.kind!=='dash')m.projectiles.push({id:++m.serial,owner:index,x:a.x+a.face*42,y:a.y-height,originY:a.y-height,vx:a.face*move.speed,age:0,kind:move.kind,damage:move.power,radius:superHit?29:move.kind==='wave'?25:19,color:fighter(a.id).color,ultra:superHit});
+ else if(move.kind!=='dash')m.projectiles.push({id:++m.serial,owner:index,sourceId:a.id,x:a.x+a.face*42,y:a.y-height,originY:a.y-height,vx:a.face*move.speed,age:0,kind:move.kind,damage:move.power,radius:superHit?29:move.kind==='wave'?25:19,color:fighter(a.id).color,ultra:superHit});
 }
 function tag(m:Match,index:number,forced=false){
  const outgoing=m.actors[index],incoming=m.bench[index];if(!incoming||incoming.hp<=0||!forced&&(m.tagCd[index]>0||outgoing.lock>0||outgoing.y<0))return false;

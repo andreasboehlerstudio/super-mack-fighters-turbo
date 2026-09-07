@@ -2,6 +2,7 @@ import type {CSSProperties, ReactNode} from 'react';
 import {HEROES, fighter, type FighterId} from './data';
 import {FighterPortrait} from './FighterPortrait';
 import {MoveList} from './MoveList';
+import {SELECT_COLUMNS} from './select-layout';
 import type {GameMode} from './match-setup';
 import type {GameRules} from './rules';
 
@@ -38,7 +39,7 @@ export function PlayerSelect({mode,p1,p2,picking,rules,onPickSeat,onSelect,onTog
    <PortraitPanel id={leftId} label={picking === 2 ? '1P · PARTNER' : 'PLAYER 1'} active={picking === 0 || picking === 2} player={0} showMoves={!solo}/>
    <div className="select-roster">
     <div className="select-roster-caption" aria-live="polite"><strong>{selectedSeat?.label} WÄHLT</strong><span>{rules.tag ? 'TAG-TEAM' : '1 GEGEN 1'}</span></div>
-    <div className="select-grid" aria-label="Figurenauswahl">
+    <div className="select-grid" style={{'--select-columns':SELECT_COLUMNS} as CSSProperties} aria-label="Figurenauswahl">
      {HEROES.map(hero => {
       const badges = seats.filter(seat => seat.id === hero.id);
       return <button key={hero.id} aria-label={`${hero.name} auswählen`} aria-pressed={hero.id === selectedId}

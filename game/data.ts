@@ -1,9 +1,10 @@
-export type FighterId = 'ed'|'snorri'|'roland'|'marianne'|'juergen'|'mauritia'|'michael'|'thomas'|'annkathrin'|'frederik'|'alexia'|'miriam'|'katja'|'nicolas'|'max'|'matthias'|'laurent'|'reinhold'|'nathalie'|'andreas'|'wakala'|'graumacher';
+export type FighterId = 'ed'|'edda'|'snorri'|'roland'|'marianne'|'juergen'|'mauritia'|'michael'|'thomas'|'annkathrin'|'frederik'|'alexia'|'miriam'|'katja'|'nicolas'|'max'|'matthias'|'laurent'|'reinhold'|'nathalie'|'andreas'|'karsten'|'wakala'|'graumacher';
 export type SpecialKind = 'bolt'|'wave'|'dash'|'burst'|'arc';
 export interface FighterDef {id:FighterId;name:string;short:string;color:string;special:string;kind:SpecialKind;speed:number;power:number;reach:number;shotSpeed:number;cooldown:number;tag:string;note:string;}
 const f=(id:FighterId,name:string,color:string,special:string,kind:SpecialKind,speed:number,power:number,reach:number,shotSpeed:number,cooldown:number,tag:string,note:string):FighterDef=>({id,name,short:name.replace(' Mack',''),color,special,kind,speed,power,reach,shotSpeed,cooldown,tag,note});
 export const FIGHTERS:FighterDef[]=[
  f('ed','Ed Euromaus','#ffd35a','Sternen-Sprint','dash',260,16,85,560,150,'FLINK & MUTIG','Ein schneller Vorstoß. Überwinde Distanz und erwische offene Deckung.'),
+ f('edda','Edda Euromausi','#ff8dcc','Schleifenbogen','arc',265,17,88,535,150,'MUT & SCHWUNG','Ein pinker Funkelbogen. Mit Pirouette und Sprint bleibt Edda in Bewegung.'),
  f('snorri','Snorri','#51dceb','Sechsarm-Strudel','wave',205,20,113,310,175,'REICHWEITE & WASSER','Eine tiefe Wasserwelle. Der Gegner kann darüber springen.'),
  f('roland','Roland Mack','#ffac60','Achterbahn-Welle','arc',215,22,102,410,180,'SCHWUNG & KRAFT','Ein goldener Energie-Bogen in Achterbahnform.'),
  f('marianne','Marianne Mack','#fb9dc4','Herzfunkeln','burst',225,18,88,340,150,'NÄHE & FUNKEN','Ein funkelnder Rundumschlag mit kurzer Reichweite.'),
@@ -23,6 +24,7 @@ export const FIGHTERS:FighterDef[]=[
  f('reinhold','Reinhold Lamers','#72e0d0','Bassdruck','burst',195,27,112,320,220,'BASS & NÄHE','Ein kräftiger türkisfarbener Klangstoß in alle Richtungen.'),
  f('nathalie','Nathalie Ruder','#ffb2dc','Farbflug','arc',255,18,90,550,150,'FARBE & BOGEN','Ein pinker Farbfunke schwingt durch die Luft.'),
  f('andreas','Andreas Böhler','#bd9cff','Render-Rush','dash',250,21,97,580,185,'RHYTHMUS & SCHUB','Ein violetter Vorstoß hinterlässt eine leuchtende Spur.'),
+ f('karsten','Karsten Mosner','#ffe1a0','Objektivblitz','bolt',230,21,96,540,175,'LICHT & BEWEGUNG','Gebündeltes Licht, ein schneller Dolly-Vorstoß und ein aufsteigender Kran-Schwenk.'),
  f('wakala','Wakala','#c5a1ee','Wunderland-Sprung','dash',225,22,105,510,185,'TRICK & SCHRECK','Der unheimliche Hase aus Traumatica. Täuscht an und springt nach vorn.'),
  f('graumacher','Der Graumacher','#c5c8d8','Stillstands-Welle','wave',165,24,116,330,210,'FINALHERAUSFORDERUNG','Erst leuchtet der Boden, dann kommt die Welle. Springe oder blocke!'),
 ];
@@ -36,4 +38,4 @@ export const STATIONS:Station[]=areaNames.map((name,i)=>({id:'park-'+i,name,kind
 export const SHORT_TOUR=['park-9','park-4','park-19','park-6','park-15','park-20','park-3','park-1'];
 export const FULL_TOUR=['park-1','park-9','park-2','park-7','park-5','park-12','park-14','park-0','park-16','park-13','park-11','park-4','park-18','park-3','park-8','park-19','park-17','park-6','park-10','park-15','park-20'];
 export const station=(id:string)=>STATIONS.find(s=>s.id===id)??STATIONS[9];
-export const SOURCES=[{label:'21 offizielle Themenbereiche',url:park},{label:'Die zwölf aktuellen Familienmitglieder',url:'https://mack.group/de/ueber-uns/familie-mack'},{label:'Wakala · offizielle Traumatica-Referenz',url:'https://mack.group/de/presse-medien/pressemitteilungen/2025-09-05/traumatica-festival-of-fear-1'},{label:'Snorri: der Sixtopus',url:'https://www.europapark.de/de/rulantica/infos/media-unterhaltung/story/snorri'}];
+export const SOURCES=[{label:'Ed & Edda · offizielle Maskottchen-Referenz',url:'https://mack.group/de/mack-gruppe/geschaeftsfelder/wir-erzaehlen-erlebnisse/ed-edda'},{label:'21 offizielle Themenbereiche',url:park},{label:'Die zwölf aktuellen Familienmitglieder',url:'https://mack.group/de/ueber-uns/familie-mack'},{label:'Wakala · offizielle Traumatica-Referenz',url:'https://mack.group/de/presse-medien/pressemitteilungen/2025-09-05/traumatica-festival-of-fear-1'},{label:'Snorri: der Sixtopus',url:'https://www.europapark.de/de/rulantica/infos/media-unterhaltung/story/snorri'}];

@@ -1,0 +1,303 @@
+[
+  {
+    "stage": "karstenJobs",
+    "clip": "portrait",
+    "prompt": "Edit this portrait: REMOVE the cinema camera completely, including every grip, handle and raised hand. Replace its area with his plain olive green T-shirt and natural chest/shoulder shape. Preserve exactly this face, cap, black glasses, beard, screen-right gaze, composition, crisp pixel style, gold rim lighting and blue-teal diagonal background. No props or straps. One finished vertical portrait, no text or frame.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-abc9451c-d15f-4923-bf47-cb2dd4a00293.png"
+    ]
+  },
+  {
+    "stage": "karstenJobs",
+    "clip": "idle",
+    "prompt": "Pixel-art game asset for Super Mack Fighters Turbo. Match Karsten in reference 1: grey baseball cap with navy flat brim and tan diamond patch, black rectangular glasses, sandy-brown full beard, olive green plain T-shirt, blue jeans, black sneakers with beige soles. IMPORTANT: no camera, strap, bag, tools or props ANYWHERE. Bare empty hands only. Match the game's existing sharp hand-pixelled 32-bit SNES arcade style, readable enlarged head, stable colors and outlines, no photo texture, blur, glow, white outline or dithering noise. Reference 2 gives ONLY the sprite face/body proportions and drawing style. REMOVE its camera and shoulder strap entirely. Create exactly eight distinct sequential IDLE guard/breathing frames. Both bare fists raised, both feet planted in the same places; shoulders and elbows move subtly through a smooth breathing loop. Uniform 4 columns by 2 rows grid, landscape 2:1. All full body and facing screen RIGHT, about 3.5 heads tall, identical stature and pixel size in every frame, no pose clipping or touching adjacent cells. Each square cell 256x256, planned cap-to-sole standing body height196 pixels and sole baseline246. NO resizing one pose smaller than others. True transparent alpha background. No checkerboard painted into the image, no floor or shadow, no text, frame lines, effects or extra objects.",
+    "refs": [
+      "C:/Users/andy_/Desktop/CharacterSheet_Karsten_Monser_ChatGPT_v2_4K_HighFidelity.png",
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-8d29fb11-26f8-405f-99c2-e63e0ffbe814.png"
+    ]
+  },
+  {
+    "stage": "karstenJobs",
+    "clip": "walk",
+    "prompt": "Pixel-art game asset for Super Mack Fighters Turbo. Match Karsten in reference 1: grey baseball cap with navy flat brim and tan diamond patch, black rectangular glasses, sandy-brown full beard, olive green plain T-shirt, blue jeans, black sneakers with beige soles. IMPORTANT: no camera, strap, bag, tools or props ANYWHERE. Bare empty hands only. Match the game's existing sharp hand-pixelled 32-bit SNES arcade style, readable enlarged head, stable colors and outlines, no photo texture, blur, glow, white outline or dithering noise. Reference 2 gives ONLY the sprite face/body proportions and drawing style. REMOVE its camera and shoulder strap entirely. Create exactly eight distinct sequential WALK frames moving screen RIGHT. 0 left heel forward/right toe back, 1 weight down, 2 feet pass with right knee bent, 3 right leg swinging, 4 right heel forward/left toe back, 5 weight down, 6 feet pass left knee bent, 7 left leg swings forward. Anatomically clear alternating footfalls, no sliding, never cross or fuse legs. Upper body facing right with relaxed fighting fists, head remains same size. Uniform 4 columns by 2 rows grid, landscape 2:1. All full body and facing screen RIGHT, about 3.5 heads tall, identical stature and pixel size in every frame, no pose clipping or touching adjacent cells. Each square cell 256x256, planned cap-to-sole standing body height196 pixels and sole baseline246. NO resizing one pose smaller than others. True transparent alpha background. No checkerboard painted into the image, no floor or shadow, no text, frame lines, effects or extra objects.",
+    "refs": [
+      "C:/Users/andy_/Desktop/CharacterSheet_Karsten_Monser_ChatGPT_v2_4K_HighFidelity.png",
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-8d29fb11-26f8-405f-99c2-e63e0ffbe814.png"
+    ]
+  },
+  {
+    "stage": "newCharacterJobs",
+    "id": "karsten",
+    "clip": "punch",
+    "prompt": "Use case: stylized-concept. Production game sprite sheet, 1990s arcade/SNES-inspired 32-bit pixel art. Output 1536x1024 landscape, exactly EIGHT full-body poses in 4 columns by 2 rows, read left-to-right top-to-bottom. Each isolated pose fits its own 384x512 cell with ample transparent margin, no overlapping neighboring cells, all heads and feet fully visible. TRUE transparent background alpha, no scene, no ground shadow, no glow, no blur, no labels, no grid lines. CRISP square pixel clusters, clean 1-2px dark contours, deliberately limited color ramps, no smooth painterly shading. SAME character, head size, anatomy, clothing and pixel density in EVERY frame. Consistent side-view, character always facing RIGHT. Do not mirror alternating frames. Anatomically coherent motion, hands closed or open as required but no objects. All artwork self-contained; lighting fixed upper-left. Keep full upright height about 410-430px of each 512px cell; allocate width for outstretched strikes without shrinking the character. Crouched/jumping poses naturally shorter without changing anatomy. Karsten Mosner from reference 1 (identity/costume) and reference 2 (pixel design and proportion lock). Adult light-skinned sandy brown bearded man, black rectangular glasses, grey baseball cap/navy flat brim/tiny tan diamond, plain olive green T-shirt, blue jeans, black sneakers with cream soles. Bare hands ONLY. Absolutely NO CAMERA, strap, equipment, bag, tripod, rig or ANY PROP anywhere, even for special attacks. Match the same skull size and clothing as idle. Eight consecutive frames of ONE grounded straight punch: 1 relaxed guard, 2 shoulder winds back, 3 elbow advances, 4 fist fully extended to right at face height with rear hand guarding, 5 held contact with subtle shoulder follow-through, 6 fist retracts halfway, 7 elbow folds back, 8 settles to guard. Planted back foot, tiny torso rotation, not eight unrelated punches.",
+    "refs": [
+      "C:/Users/andy_/Desktop/CharacterSheet_Karsten_Monser_ChatGPT_v2_4K_HighFidelity.png",
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-cc0badb5-b3dd-4ce7-a9a6-ea06a4307483.png"
+    ]
+  },
+  {
+    "stage": "newCharacterJobs",
+    "id": "karsten",
+    "clip": "kick",
+    "prompt": "Use case: stylized-concept. Production game sprite sheet, 1990s arcade/SNES-inspired 32-bit pixel art. Output 1536x1024 landscape, exactly EIGHT full-body poses in 4 columns by 2 rows, read left-to-right top-to-bottom. Each isolated pose fits its own 384x512 cell with ample transparent margin, no overlapping neighboring cells, all heads and feet fully visible. TRUE transparent background alpha, no scene, no ground shadow, no glow, no blur, no labels, no grid lines. CRISP square pixel clusters, clean 1-2px dark contours, deliberately limited color ramps, no smooth painterly shading. SAME character, head size, anatomy, clothing and pixel density in EVERY frame. Consistent side-view, character always facing RIGHT. Do not mirror alternating frames. Anatomically coherent motion, hands closed or open as required but no objects. All artwork self-contained; lighting fixed upper-left. Keep full upright height about 410-430px of each 512px cell; allocate width for outstretched strikes without shrinking the character. Crouched/jumping poses naturally shorter without changing anatomy. Karsten Mosner from reference 1 (identity/costume) and reference 2 (pixel design and proportion lock). Adult light-skinned sandy brown bearded man, black rectangular glasses, grey baseball cap/navy flat brim/tiny tan diamond, plain olive green T-shirt, blue jeans, black sneakers with cream soles. Bare hands ONLY. Absolutely NO CAMERA, strap, equipment, bag, tripod, rig or ANY PROP anywhere, even for special attacks. Match the same skull size and clothing as idle. Eight consecutive frames of ONE grounded front kick: 1 guard, 2 hip loads and knee lifts, 3 knee raised, 4 leg fully extends right at midriff height with supporting foot grounded, 5 contact follow-through, 6 lower leg folds back, 7 foot lowers, 8 guard. Stable supporting leg length and same torso/head size; no giant foot.",
+    "refs": [
+      "C:/Users/andy_/Desktop/CharacterSheet_Karsten_Monser_ChatGPT_v2_4K_HighFidelity.png",
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-cc0badb5-b3dd-4ce7-a9a6-ea06a4307483.png"
+    ]
+  },
+  {
+    "stage": "newCharacterJobs",
+    "id": "karsten",
+    "clip": "airpunch",
+    "prompt": "Use case: stylized-concept. Production game sprite sheet, 1990s arcade/SNES-inspired 32-bit pixel art. Output 1536x1024 landscape, exactly EIGHT full-body poses in 4 columns by 2 rows, read left-to-right top-to-bottom. Each isolated pose fits its own 384x512 cell with ample transparent margin, no overlapping neighboring cells, all heads and feet fully visible. TRUE transparent background alpha, no scene, no ground shadow, no glow, no blur, no labels, no grid lines. CRISP square pixel clusters, clean 1-2px dark contours, deliberately limited color ramps, no smooth painterly shading. SAME character, head size, anatomy, clothing and pixel density in EVERY frame. Consistent side-view, character always facing RIGHT. Do not mirror alternating frames. Anatomically coherent motion, hands closed or open as required but no objects. All artwork self-contained; lighting fixed upper-left. Keep full upright height about 410-430px of each 512px cell; allocate width for outstretched strikes without shrinking the character. Crouched/jumping poses naturally shorter without changing anatomy. Karsten Mosner from reference 1 (identity/costume) and reference 2 (pixel design and proportion lock). Adult light-skinned sandy brown bearded man, black rectangular glasses, grey baseball cap/navy flat brim/tiny tan diamond, plain olive green T-shirt, blue jeans, black sneakers with cream soles. Bare hands ONLY. Absolutely NO CAMERA, strap, equipment, bag, tripod, rig or ANY PROP anywhere, even for special attacks. Match the same skull size and clothing as idle. Eight consecutive frames of ONE jumping punch, detached from floor. 1 airborne tucked-knee guard, 2 shoulder draws back, 3 fist travels forward, 4 airborne fist extended right, 5 small follow-through, 6 arm folds halfway, 7 landing preparation with legs lowering, 8 knees bent landing anticipation. Keep head/torso same size as idle, don't stretch tucked legs. No motion trails or detached effects.",
+    "refs": [
+      "C:/Users/andy_/Desktop/CharacterSheet_Karsten_Monser_ChatGPT_v2_4K_HighFidelity.png",
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-cc0badb5-b3dd-4ce7-a9a6-ea06a4307483.png"
+    ]
+  },
+  {
+    "stage": "newCharacterJobs",
+    "id": "karsten",
+    "clip": "airkick",
+    "prompt": "Use case: stylized-concept. Production game sprite sheet, 1990s arcade/SNES-inspired 32-bit pixel art. Output 1536x1024 landscape, exactly EIGHT full-body poses in 4 columns by 2 rows, read left-to-right top-to-bottom. Each isolated pose fits its own 384x512 cell with ample transparent margin, no overlapping neighboring cells, all heads and feet fully visible. TRUE transparent background alpha, no scene, no ground shadow, no glow, no blur, no labels, no grid lines. CRISP square pixel clusters, clean 1-2px dark contours, deliberately limited color ramps, no smooth painterly shading. SAME character, head size, anatomy, clothing and pixel density in EVERY frame. Consistent side-view, character always facing RIGHT. Do not mirror alternating frames. Anatomically coherent motion, hands closed or open as required but no objects. All artwork self-contained; lighting fixed upper-left. Keep full upright height about 410-430px of each 512px cell; allocate width for outstretched strikes without shrinking the character. Crouched/jumping poses naturally shorter without changing anatomy. Karsten Mosner from reference 1 (identity/costume) and reference 2 (pixel design and proportion lock). Adult light-skinned sandy brown bearded man, black rectangular glasses, grey baseball cap/navy flat brim/tiny tan diamond, plain olive green T-shirt, blue jeans, black sneakers with cream soles. Bare hands ONLY. Absolutely NO CAMERA, strap, equipment, bag, tripod, rig or ANY PROP anywhere, even for special attacks. Match the same skull size and clothing as idle. Eight consecutive frames of ONE jumping side kick. 1 airborne knees tucked, 2 hip opens, 3 striking leg unfolds, 4 rightward horizontal extended kick while other knee tucked, 5 contact follow-through, 6 kick retracts, 7 knees descend for landing, 8 landing anticipation. Same head and torso scale in all frames. No added effects.",
+    "refs": [
+      "C:/Users/andy_/Desktop/CharacterSheet_Karsten_Monser_ChatGPT_v2_4K_HighFidelity.png",
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-cc0badb5-b3dd-4ce7-a9a6-ea06a4307483.png"
+    ]
+  },
+  {
+    "stage": "newCharacterJobs",
+    "id": "karsten",
+    "clip": "reactions",
+    "prompt": "Use case: stylized-concept. Production game sprite sheet, 1990s arcade/SNES-inspired 32-bit pixel art. Output 1536x1024 landscape, exactly EIGHT full-body poses in 4 columns by 2 rows, read left-to-right top-to-bottom. Each isolated pose fits its own 384x512 cell with ample transparent margin, no overlapping neighboring cells, all heads and feet fully visible. TRUE transparent background alpha, no scene, no ground shadow, no glow, no blur, no labels, no grid lines. CRISP square pixel clusters, clean 1-2px dark contours, deliberately limited color ramps, no smooth painterly shading. SAME character, head size, anatomy, clothing and pixel density in EVERY frame. Consistent side-view, character always facing RIGHT. Do not mirror alternating frames. Anatomically coherent motion, hands closed or open as required but no objects. All artwork self-contained; lighting fixed upper-left. Keep full upright height about 410-430px of each 512px cell; allocate width for outstretched strikes without shrinking the character. Crouched/jumping poses naturally shorter without changing anatomy. Karsten Mosner from reference 1 (identity/costume) and reference 2 (pixel design and proportion lock). Adult light-skinned sandy brown bearded man, black rectangular glasses, grey baseball cap/navy flat brim/tiny tan diamond, plain olive green T-shirt, blue jeans, black sneakers with cream soles. Bare hands ONLY. Absolutely NO CAMERA, strap, equipment, bag, tripod, rig or ANY PROP anywhere, even for special attacks. Match the same skull size and clothing as idle. Eight DIFFERENT reaction/utility states in this EXACT order: 1 jumping with knees naturally bent, 2 deep crouch bare hands guarding, 3 standing block both forearms covering face, 4 standing hit reaction leaning back, 5 special windup bare cupped hands near chest, 6 special release palms pushed to right with absolutely EMPTY hands (no light effects baked into sheet), 7 defeated kneeling slumped but fully visible no gore, 8 victorious both empty fists raised. No camera, object, device or physical prop in any pose.",
+    "refs": [
+      "C:/Users/andy_/Desktop/CharacterSheet_Karsten_Monser_ChatGPT_v2_4K_HighFidelity.png",
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-cc0badb5-b3dd-4ce7-a9a6-ea06a4307483.png"
+    ]
+  },
+  {
+    "stage": "newCharacterJobs",
+    "id": "edda",
+    "clip": "portrait",
+    "prompt": "Use case: stylized-concept. Make a full-bleed 3:4 vertical character select portrait for Super Mack Fighters Turbo. EDDA EUROMAUSI from official reference photos 1-2: friendly anthropomorphic grey female mouse mascot of Europa-Park. Very large round ears with warm peach-orange inner ears, round black nose, lively large eyes with eyelashes, little grey forelock, magenta-pink bow on top of head. Lavender short open jacket over white tunic/dress with large magenta pink flower shapes, grey leggings and pink low flat shoes, white gloves, thin long grey mouse tail. NO human body, no human skin, no wings, no extra appendages. Reference 3 (Ed portrait) and 4 (Ed walk) define EXACT game pixel style, friendly face abstraction, palette economy and chibi mascot proportions (roughly 2.5 heads tall, head+ears prominent). Edda must look from the same game as Ed, while recognizable as the female mouse.  Use reference 3 for composition: close cropped chest-up three-quarter profile facing RIGHT, eyes looking right, head/ears/bow filling upper 75%, slight warm confident smile, shoulders along bottom edge. Same deep navy upper backdrop and diagonal teal/cyan pixel streaks, warm gold rim light. Crisp 1990s arcade 32-bit pixel art with obvious sharp square clusters, controlled limited stepped ramps, NO blur or smooth paint, no text, no border, no badges, no prop, no camera. Preserve the bow and both ears within canvas with small margins. 768x1024 or same 3:4 aspect.",
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/karsten-edda/edda-official.webp",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/karsten-edda/edda-summer.webp",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/portraits/ed.png"
+    ]
+  },
+  {
+    "stage": "newCharacterJobs",
+    "id": "edda",
+    "clip": "idle",
+    "prompt": "Use case: stylized-concept. Production game sprite sheet, 1990s arcade/SNES-inspired 32-bit pixel art. Output 1536x1024 landscape, exactly EIGHT full-body poses in 4 columns by 2 rows, read left-to-right top-to-bottom. Each isolated pose fits its own 384x512 cell with ample transparent margin, no overlapping neighboring cells, all heads and feet fully visible. TRUE transparent background alpha, no scene, no ground shadow, no glow, no blur, no labels, no grid lines. CRISP square pixel clusters, clean 1-2px dark contours, deliberately limited color ramps, no smooth painterly shading. SAME character, head size, anatomy, clothing and pixel density in EVERY frame. Consistent side-view, character always facing RIGHT. Do not mirror alternating frames. Anatomically coherent motion, hands closed or open as required but no objects. All artwork self-contained; lighting fixed upper-left. Keep full upright height about 410-430px of each 512px cell; allocate width for outstretched strikes without shrinking the character. Crouched/jumping poses naturally shorter without changing anatomy. Edda the friendly grey cartoon mouse in reference 1. Reference 2 sets Ed's matching small pixel-game mascot proportions. Pink bow, large round orange-inner grey ears, eyelashes, black round nose, lavender jacket, white short floral tunic with magenta flowers, grey legs, pink flat sneakers, white gloves, thin grey tail. Create 8 consecutive subtle idle breathing frames with her white-gloved hands raised loosely in a friendly ready pose. Feet planted, consistent silhouette and same head dimensions throughout, tiny breathing and eye movements only. Three-quarter side view facing RIGHT. Each full body should be 410px tall in its 512px cell, crisp pixel clusters, actual transparent alpha background. No weapons, no objects, no text. The result is a cheerful family-friendly game sprite sheet, not a photo.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-c2b057e2-774d-4364-ad7a-32aa7f076a27.png",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/walk/ed.png"
+    ]
+  },
+  {
+    "stage": "newCharacterJobs",
+    "id": "edda",
+    "clip": "walk",
+    "prompt": "Use case: stylized-concept. Production game sprite sheet, 1990s arcade/SNES-inspired 32-bit pixel art. Output 1536x1024 landscape, exactly EIGHT full-body poses in 4 columns by 2 rows, read left-to-right top-to-bottom. Each isolated pose fits its own 384x512 cell with ample transparent margin, no overlapping neighboring cells, all heads and feet fully visible. TRUE transparent background alpha, no scene, no ground shadow, no glow, no blur, no labels, no grid lines. CRISP square pixel clusters, clean 1-2px dark contours, deliberately limited color ramps, no smooth painterly shading. SAME character, head size, anatomy, clothing and pixel density in EVERY frame. Consistent side-view, character always facing RIGHT. Do not mirror alternating frames. Anatomically coherent motion, hands closed or open as required but no objects. All artwork self-contained; lighting fixed upper-left. Keep full upright height about 410-430px of each 512px cell; allocate width for outstretched strikes without shrinking the character. Crouched/jumping poses naturally shorter without changing anatomy. Reference 1 is the approved EDDA pixel sprite design; reference 2 is her portrait. Preserve this exact friendly grey mouse, large round peach-orange-inner ears, white gloves, pink bow, lavender short jacket, white magenta-flower dress, grey legs, pink sneakers and slender grey tail. Same grey muzzle, black nose, long eyelashes, eye shapes and anatomy. Short chibi mascot proportions roughly 2.5 heads tall, identical HEAD SIZE to reference. Make a new sheet of the SAME Edda, consistent pixel colors/shading, all facing right, no objects. Actual transparent background alpha, keep reference's transparency; do not show grey checks. Eight consecutive frames of a looping walk to the RIGHT: 1 left heel contacts forward right leg behind, 2 left foot flat taking weight, 3 right foot passes planted left at midstride, 4 right heel prepares forward contact, 5 right heel contacts forward left leg behind, 6 right foot flat taking weight, 7 left foot passes planted right, 8 left heel prepares forward contact. Feet clearly contact an implied level floor, same head height within about 8 source pixels, no bouncing or floating, small alternating arm swing, tail counterbalances gently. Keep skirt and face design consistent.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-dc2cda11-8ea3-4156-be90-fb51b53afecd.png",
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-c2b057e2-774d-4364-ad7a-32aa7f076a27.png"
+    ]
+  },
+  {
+    "stage": "newCharacterJobs",
+    "id": "edda",
+    "clip": "punch",
+    "prompt": "Use case: stylized-concept. Production game sprite sheet, 1990s arcade/SNES-inspired 32-bit pixel art. Output 1536x1024 landscape, exactly EIGHT full-body poses in 4 columns by 2 rows, read left-to-right top-to-bottom. Each isolated pose fits its own 384x512 cell with ample transparent margin, no overlapping neighboring cells, all heads and feet fully visible. TRUE transparent background alpha, no scene, no ground shadow, no glow, no blur, no labels, no grid lines. CRISP square pixel clusters, clean 1-2px dark contours, deliberately limited color ramps, no smooth painterly shading. SAME character, head size, anatomy, clothing and pixel density in EVERY frame. Consistent side-view, character always facing RIGHT. Do not mirror alternating frames. Anatomically coherent motion, hands closed or open as required but no objects. All artwork self-contained; lighting fixed upper-left. Keep full upright height about 410-430px of each 512px cell; allocate width for outstretched strikes without shrinking the character. Crouched/jumping poses naturally shorter without changing anatomy. Reference 1 is the approved EDDA pixel sprite design; reference 2 is her portrait. Preserve this exact friendly grey mouse, large round peach-orange-inner ears, white gloves, pink bow, lavender short jacket, white magenta-flower dress, grey legs, pink sneakers and slender grey tail. Same grey muzzle, black nose, long eyelashes, eye shapes and anatomy. Short chibi mascot proportions roughly 2.5 heads tall, identical HEAD SIZE to reference. Make a new sheet of the SAME Edda, consistent pixel colors/shading, all facing right, no objects. Actual transparent background alpha, keep reference's transparency; do not show grey checks. Eight consecutive frames of ONE grounded straight punch: 1 relaxed guard, 2 shoulder winds back, 3 elbow advances, 4 fist fully extended to right at face height with rear hand guarding, 5 held contact with subtle shoulder follow-through, 6 fist retracts halfway, 7 elbow folds back, 8 settles to guard. Planted back foot, tiny torso rotation, not eight unrelated punches.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-dc2cda11-8ea3-4156-be90-fb51b53afecd.png",
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-c2b057e2-774d-4364-ad7a-32aa7f076a27.png"
+    ]
+  },
+  {
+    "stage": "newCharacterJobs",
+    "id": "edda",
+    "clip": "kick",
+    "prompt": "Use case: stylized-concept. Production game sprite sheet, 1990s arcade/SNES-inspired 32-bit pixel art. Output 1536x1024 landscape, exactly EIGHT full-body poses in 4 columns by 2 rows, read left-to-right top-to-bottom. Each isolated pose fits its own 384x512 cell with ample transparent margin, no overlapping neighboring cells, all heads and feet fully visible. TRUE transparent background alpha, no scene, no ground shadow, no glow, no blur, no labels, no grid lines. CRISP square pixel clusters, clean 1-2px dark contours, deliberately limited color ramps, no smooth painterly shading. SAME character, head size, anatomy, clothing and pixel density in EVERY frame. Consistent side-view, character always facing RIGHT. Do not mirror alternating frames. Anatomically coherent motion, hands closed or open as required but no objects. All artwork self-contained; lighting fixed upper-left. Keep full upright height about 410-430px of each 512px cell; allocate width for outstretched strikes without shrinking the character. Crouched/jumping poses naturally shorter without changing anatomy. Reference 1 is the approved EDDA pixel sprite design; reference 2 is her portrait. Preserve this exact friendly grey mouse, large round peach-orange-inner ears, white gloves, pink bow, lavender short jacket, white magenta-flower dress, grey legs, pink sneakers and slender grey tail. Same grey muzzle, black nose, long eyelashes, eye shapes and anatomy. Short chibi mascot proportions roughly 2.5 heads tall, identical HEAD SIZE to reference. Make a new sheet of the SAME Edda, consistent pixel colors/shading, all facing right, no objects. Actual transparent background alpha, keep reference's transparency; do not show grey checks. Eight consecutive frames of ONE grounded front kick: 1 guard, 2 hip loads and knee lifts, 3 knee raised, 4 leg fully extends right at midriff height with supporting foot grounded, 5 contact follow-through, 6 lower leg folds back, 7 foot lowers, 8 guard. Stable supporting leg length and same torso/head size; no giant foot.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-dc2cda11-8ea3-4156-be90-fb51b53afecd.png",
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-c2b057e2-774d-4364-ad7a-32aa7f076a27.png"
+    ]
+  },
+  {
+    "stage": "newCharacterJobs",
+    "id": "edda",
+    "clip": "airpunch",
+    "prompt": "Use case: stylized-concept. Production game sprite sheet, 1990s arcade/SNES-inspired 32-bit pixel art. Output 1536x1024 landscape, exactly EIGHT full-body poses in 4 columns by 2 rows, read left-to-right top-to-bottom. Each isolated pose fits its own 384x512 cell with ample transparent margin, no overlapping neighboring cells, all heads and feet fully visible. TRUE transparent background alpha, no scene, no ground shadow, no glow, no blur, no labels, no grid lines. CRISP square pixel clusters, clean 1-2px dark contours, deliberately limited color ramps, no smooth painterly shading. SAME character, head size, anatomy, clothing and pixel density in EVERY frame. Consistent side-view, character always facing RIGHT. Do not mirror alternating frames. Anatomically coherent motion, hands closed or open as required but no objects. All artwork self-contained; lighting fixed upper-left. Keep full upright height about 410-430px of each 512px cell; allocate width for outstretched strikes without shrinking the character. Crouched/jumping poses naturally shorter without changing anatomy. Reference 1 is the approved EDDA pixel sprite design; reference 2 is her portrait. Preserve this exact friendly grey mouse, large round peach-orange-inner ears, white gloves, pink bow, lavender short jacket, white magenta-flower dress, grey legs, pink sneakers and slender grey tail. Same grey muzzle, black nose, long eyelashes, eye shapes and anatomy. Short chibi mascot proportions roughly 2.5 heads tall, identical HEAD SIZE to reference. Make a new sheet of the SAME Edda, consistent pixel colors/shading, all facing right, no objects. Actual transparent background alpha, keep reference's transparency; do not show grey checks. Eight consecutive frames of ONE jumping punch, detached from floor. 1 airborne tucked-knee guard, 2 shoulder draws back, 3 fist travels forward, 4 airborne fist extended right, 5 small follow-through, 6 arm folds halfway, 7 landing preparation with legs lowering, 8 knees bent landing anticipation. Keep head/torso same size as idle, don't stretch tucked legs. No motion trails or detached effects.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-dc2cda11-8ea3-4156-be90-fb51b53afecd.png",
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-c2b057e2-774d-4364-ad7a-32aa7f076a27.png"
+    ]
+  },
+  {
+    "stage": "newCharacterJobs",
+    "id": "edda",
+    "clip": "airkick",
+    "prompt": "Use case: stylized-concept. Production game sprite sheet, 1990s arcade/SNES-inspired 32-bit pixel art. Output 1536x1024 landscape, exactly EIGHT full-body poses in 4 columns by 2 rows, read left-to-right top-to-bottom. Each isolated pose fits its own 384x512 cell with ample transparent margin, no overlapping neighboring cells, all heads and feet fully visible. TRUE transparent background alpha, no scene, no ground shadow, no glow, no blur, no labels, no grid lines. CRISP square pixel clusters, clean 1-2px dark contours, deliberately limited color ramps, no smooth painterly shading. SAME character, head size, anatomy, clothing and pixel density in EVERY frame. Consistent side-view, character always facing RIGHT. Do not mirror alternating frames. Anatomically coherent motion, hands closed or open as required but no objects. All artwork self-contained; lighting fixed upper-left. Keep full upright height about 410-430px of each 512px cell; allocate width for outstretched strikes without shrinking the character. Crouched/jumping poses naturally shorter without changing anatomy. Reference 1 is the approved EDDA pixel sprite design; reference 2 is her portrait. Preserve this exact friendly grey mouse, large round peach-orange-inner ears, white gloves, pink bow, lavender short jacket, white magenta-flower dress, grey legs, pink sneakers and slender grey tail. Same grey muzzle, black nose, long eyelashes, eye shapes and anatomy. Short chibi mascot proportions roughly 2.5 heads tall, identical HEAD SIZE to reference. Make a new sheet of the SAME Edda, consistent pixel colors/shading, all facing right, no objects. Actual transparent background alpha, keep reference's transparency; do not show grey checks. Eight consecutive frames of ONE jumping side kick. 1 airborne knees tucked, 2 hip opens, 3 striking leg unfolds, 4 rightward horizontal extended kick while other knee tucked, 5 contact follow-through, 6 kick retracts, 7 knees descend for landing, 8 landing anticipation. Same head and torso scale in all frames. No added effects.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-dc2cda11-8ea3-4156-be90-fb51b53afecd.png",
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-c2b057e2-774d-4364-ad7a-32aa7f076a27.png"
+    ]
+  },
+  {
+    "stage": "newCharacterJobs",
+    "id": "edda",
+    "clip": "reactions",
+    "prompt": "Use case: stylized-concept. Production game sprite sheet, 1990s arcade/SNES-inspired 32-bit pixel art. Output 1536x1024 landscape, exactly EIGHT full-body poses in 4 columns by 2 rows, read left-to-right top-to-bottom. Each isolated pose fits its own 384x512 cell with ample transparent margin, no overlapping neighboring cells, all heads and feet fully visible. TRUE transparent background alpha, no scene, no ground shadow, no glow, no blur, no labels, no grid lines. CRISP square pixel clusters, clean 1-2px dark contours, deliberately limited color ramps, no smooth painterly shading. SAME character, head size, anatomy, clothing and pixel density in EVERY frame. Consistent side-view, character always facing RIGHT. Do not mirror alternating frames. Anatomically coherent motion, hands closed or open as required but no objects. All artwork self-contained; lighting fixed upper-left. Keep full upright height about 410-430px of each 512px cell; allocate width for outstretched strikes without shrinking the character. Crouched/jumping poses naturally shorter without changing anatomy. Reference 1 is the approved EDDA pixel sprite design; reference 2 is her portrait. Preserve this exact friendly grey mouse, large round peach-orange-inner ears, white gloves, pink bow, lavender short jacket, white magenta-flower dress, grey legs, pink sneakers and slender grey tail. Same grey muzzle, black nose, long eyelashes, eye shapes and anatomy. Short chibi mascot proportions roughly 2.5 heads tall, identical HEAD SIZE to reference. Make a new sheet of the SAME Edda, consistent pixel colors/shading, all facing right, no objects. Actual transparent background alpha, keep reference's transparency; do not show grey checks. Eight DIFFERENT reaction/utility states in this EXACT order: 1 jumping with knees naturally bent, 2 deep crouch bare hands guarding, 3 standing block both forearms covering face, 4 standing hit reaction leaning back, 5 special windup bare cupped hands near chest, 6 special release palms pushed to right with absolutely EMPTY hands (no light effects baked into sheet), 7 defeated kneeling slumped but fully visible no gore, 8 victorious both empty fists raised. No camera, object, device or physical prop in any pose.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-dc2cda11-8ea3-4156-be90-fb51b53afecd.png",
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-c2b057e2-774d-4364-ad7a-32aa7f076a27.png"
+    ]
+  },
+  {
+    "stage": "karstenExtractJobs",
+    "id": "karsten",
+    "clip": "punch",
+    "prompt": "Use case: background-extraction. Edit the referenced sheet only by removing its pale grey-and-white checkerboard background. Preserve all eight Karsten sprites EXACTLY, same poses, layout, silhouette, scale, colors, detail, outlines, face and clothing. Actual transparent PNG RGBA alpha=0 outside silhouettes, including between limbs. Do NOT draw any checkerboard or colored/blurred backdrop. No shadows. Keep the entire canvas 1536x1024, all eight sprites intact. Absolutely no camera or prop. This is an exact asset cutout, no redrawing or redesigning.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-86e18e37-beb7-4e7e-8100-206585fc84ab.png"
+    ]
+  },
+  {
+    "stage": "karstenExtractJobs",
+    "id": "karsten",
+    "clip": "kick",
+    "prompt": "Use case: background-extraction. Edit the referenced sheet only by removing its pale grey-and-white checkerboard background. Preserve all eight Karsten sprites EXACTLY, same poses, layout, silhouette, scale, colors, detail, outlines, face and clothing. Actual transparent PNG RGBA alpha=0 outside silhouettes, including between limbs. Do NOT draw any checkerboard or colored/blurred backdrop. No shadows. Keep the entire canvas 1536x1024, all eight sprites intact. Absolutely no camera or prop. This is an exact asset cutout, no redrawing or redesigning.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-e97fa825-47db-4c79-9b2d-573e9f2c8ace.png"
+    ]
+  },
+  {
+    "stage": "karstenExtractJobs",
+    "id": "karsten",
+    "clip": "airpunch",
+    "prompt": "Use case: background-extraction. Edit the referenced sheet only by removing its pale grey-and-white checkerboard background. Preserve all eight Karsten sprites EXACTLY, same poses, layout, silhouette, scale, colors, detail, outlines, face and clothing. Actual transparent PNG RGBA alpha=0 outside silhouettes, including between limbs. Do NOT draw any checkerboard or colored/blurred backdrop. No shadows. Keep the entire canvas 1536x1024, all eight sprites intact. Absolutely no camera or prop. This is an exact asset cutout, no redrawing or redesigning.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-683bd0d8-27c5-4499-94fe-087975cf1b1f.png"
+    ]
+  },
+  {
+    "stage": "karstenExtractJobs",
+    "id": "karsten",
+    "clip": "airkick",
+    "prompt": "Use case: background-extraction. Edit the referenced sheet only by removing its pale grey-and-white checkerboard background. Preserve all eight Karsten sprites EXACTLY, same poses, layout, silhouette, scale, colors, detail, outlines, face and clothing. Actual transparent PNG RGBA alpha=0 outside silhouettes, including between limbs. Do NOT draw any checkerboard or colored/blurred backdrop. No shadows. Keep the entire canvas 1536x1024, all eight sprites intact. Absolutely no camera or prop. This is an exact asset cutout, no redrawing or redesigning.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-aff24639-bf08-4ff6-b888-71c71254a493.png"
+    ]
+  },
+  {
+    "stage": "karstenExtractJobs",
+    "id": "karsten",
+    "clip": "reactions",
+    "prompt": "Use case: background-extraction. Edit the referenced sheet only by removing its pale grey-and-white checkerboard background. Preserve all eight Karsten sprites EXACTLY, same poses, layout, silhouette, scale, colors, detail, outlines, face and clothing. Actual transparent PNG RGBA alpha=0 outside silhouettes, including between limbs. Do NOT draw any checkerboard or colored/blurred backdrop. No shadows. Keep the entire canvas 1536x1024, all eight sprites intact. Absolutely no camera or prop. This is an exact asset cutout, no redrawing or redesigning.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-62c50dd9-cef5-45a7-8275-016c92735059.png"
+    ]
+  },
+  {
+    "stage": "eddaExtractJobs",
+    "id": "edda",
+    "clip": "walk",
+    "prompt": "Exact background-only edit of the attached sprite sheet. Preserve every character, each pose, its position, shape, colors and resolution perfectly. Remove the fake white/grey checkerboard background and make the background genuinely transparent (PNG alpha 0). Preserve white gloves, shoes, eyes and clothing as opaque. Keep all 8 full silhouettes, the exact 1536x1024 canvas, 4 columns and 2 rows. No new content, no text, no shadow, no checkerboard pattern in the output. This is an alpha extraction task only.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-62769829-dc44-4f93-806d-e3a795cb5561.png"
+    ]
+  },
+  {
+    "stage": "eddaExtractJobs",
+    "id": "edda",
+    "clip": "punch",
+    "prompt": "Exact background-only edit of the attached sprite sheet. Preserve every character, each pose, its position, shape, colors and resolution perfectly. Remove the fake white/grey checkerboard background and make the background genuinely transparent (PNG alpha 0). Preserve white gloves, shoes, eyes and clothing as opaque. Keep all 8 full silhouettes, the exact 1536x1024 canvas, 4 columns and 2 rows. No new content, no text, no shadow, no checkerboard pattern in the output. This is an alpha extraction task only.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-d6021060-0aeb-4002-93f5-2ff42ddfb94d.png"
+    ]
+  },
+  {
+    "stage": "eddaExtractJobs",
+    "id": "edda",
+    "clip": "kick",
+    "prompt": "Exact background-only edit of the attached sprite sheet. Preserve every character, each pose, its position, shape, colors and resolution perfectly. Remove the fake white/grey checkerboard background and make the background genuinely transparent (PNG alpha 0). Preserve white gloves, shoes, eyes and clothing as opaque. Keep all 8 full silhouettes, the exact 1536x1024 canvas, 4 columns and 2 rows. No new content, no text, no shadow, no checkerboard pattern in the output. This is an alpha extraction task only.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-af281b6a-f2c2-4616-a22a-e6b72bbdd7d7.png"
+    ]
+  },
+  {
+    "stage": "eddaExtractJobs",
+    "id": "edda",
+    "clip": "airpunch",
+    "prompt": "Exact background-only edit of the attached sprite sheet. Preserve every character, each pose, its position, shape, colors and resolution perfectly. Remove the fake white/grey checkerboard background and make the background genuinely transparent (PNG alpha 0). Preserve white gloves, shoes, eyes and clothing as opaque. Keep all 8 full silhouettes, the exact 1536x1024 canvas, 4 columns and 2 rows. No new content, no text, no shadow, no checkerboard pattern in the output. This is an alpha extraction task only.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-4efec9d7-6994-4dc3-92ae-663308535bad.png"
+    ]
+  },
+  {
+    "stage": "eddaExtractJobs",
+    "id": "edda",
+    "clip": "airkick",
+    "prompt": "Exact background-only edit of the attached sprite sheet. Preserve every character, each pose, its position, shape, colors and resolution perfectly. Remove the fake white/grey checkerboard background and make the background genuinely transparent (PNG alpha 0). Preserve white gloves, shoes, eyes and clothing as opaque. Keep all 8 full silhouettes, the exact 1536x1024 canvas, 4 columns and 2 rows. No new content, no text, no shadow, no checkerboard pattern in the output. This is an alpha extraction task only.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-29a3e803-5df2-4671-95d3-58bf03d3273d.png"
+    ]
+  },
+  {
+    "stage": "eddaExtractJobs",
+    "id": "edda",
+    "clip": "reactions",
+    "prompt": "Exact background-only edit of the attached sprite sheet. Preserve every character, each pose, its position, shape, colors and resolution perfectly. Remove the fake white/grey checkerboard background and make the background genuinely transparent (PNG alpha 0). Preserve white gloves, shoes, eyes and clothing as opaque. Keep all 8 full silhouettes, the exact 1536x1024 canvas, 4 columns and 2 rows. No new content, no text, no shadow, no checkerboard pattern in the output. This is an alpha extraction task only.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-d981d52f-fa6a-4383-9853-e539febb129c.png"
+    ]
+  },
+  {
+    "stage": "eddaKeyJobs",
+    "id": "edda",
+    "clip": "walk",
+    "prompt": "BACKGROUND-ONLY EDIT: keep the attached 8-frame mascot sprite sheet exactly identical in all character pixels, poses, spacing and 1536x1024 size. Replace ALL white/grey checkerboard background with ONE perfectly flat solid chroma green #00FF00. No transparency and no checkerboard. Preserve the character white gloves, shoes, eyes, white dress and every black outline fully opaque. No green spill, no shadows, no green on the character, no text. 4 columns, 2 rows, same 8 poses. Do not redesign or move any body part.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-62769829-dc44-4f93-806d-e3a795cb5561.png"
+    ]
+  },
+  {
+    "stage": "eddaKeyJobs",
+    "id": "edda",
+    "clip": "punch",
+    "prompt": "BACKGROUND-ONLY EDIT: keep the attached 8-frame mascot sprite sheet exactly identical in all character pixels, poses, spacing and 1536x1024 size. Replace ALL white/grey checkerboard background with ONE perfectly flat solid chroma green #00FF00. No transparency and no checkerboard. Preserve the character white gloves, shoes, eyes, white dress and every black outline fully opaque. No green spill, no shadows, no green on the character, no text. 4 columns, 2 rows, same 8 poses. Do not redesign or move any body part.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-d6021060-0aeb-4002-93f5-2ff42ddfb94d.png"
+    ]
+  },
+  {
+    "stage": "eddaKeyJobs",
+    "id": "edda",
+    "clip": "kick",
+    "prompt": "BACKGROUND-ONLY EDIT: keep the attached 8-frame mascot sprite sheet exactly identical in all character pixels, poses, spacing and 1536x1024 size. Replace ALL white/grey checkerboard background with ONE perfectly flat solid chroma green #00FF00. No transparency and no checkerboard. Preserve the character white gloves, shoes, eyes, white dress and every black outline fully opaque. No green spill, no shadows, no green on the character, no text. 4 columns, 2 rows, same 8 poses. Do not redesign or move any body part.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-af281b6a-f2c2-4616-a22a-e6b72bbdd7d7.png"
+    ]
+  },
+  {
+    "stage": "eddaKeyJobs",
+    "id": "edda",
+    "clip": "airkick",
+    "prompt": "BACKGROUND-ONLY EDIT: keep the attached 8-frame mascot sprite sheet exactly identical in all character pixels, poses, spacing and 1536x1024 size. Replace ALL white/grey checkerboard background with ONE perfectly flat solid chroma green #00FF00. No transparency and no checkerboard. Preserve the character white gloves, shoes, eyes, white dress and every black outline fully opaque. No green spill, no shadows, no green on the character, no text. 4 columns, 2 rows, same 8 poses. Do not redesign or move any body part.",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-29a3e803-5df2-4671-95d3-58bf03d3273d.png"
+    ]
+  },
+  {
+    "id": "karsten",
+    "clip": "airkick",
+    "refs": [
+      "C:/Users/andy_/.codex/generated_images/01a072a6-0d91-7531-9a43-64247f8c8fb4/exec-0f290f9c-a182-4959-9935-bf5e43b26116.png"
+    ],
+    "prompt": "Precise background edit of this eight-pose sprite sheet. Replace ONLY the plain white background with a uniform pure bright GREEN chroma key (#00FF00). This green color must fill all background, including gaps between arms and legs. Preserve every sprite pixel, clothing color, outlines, pose and scale. Do not touch the olive shirt. Exact same 1536x1024 image with eight fully intact sprites. No shadow, no gradient, no checkerboard, no border. All background pixels must be solid saturated #00FF00, NOT transparency.",
+    "stage": "karstenChromaExtraction"
+  }
+]

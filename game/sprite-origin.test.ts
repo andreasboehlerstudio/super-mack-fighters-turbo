@@ -3,10 +3,10 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {spriteOrigin} from './sprite-origin.ts';
 import {animationPose,animationOrigin} from './animation-sheets.ts';
-import type {FighterId} from './data.ts';
+import {FIGHTERS,type FighterId} from './data.ts';
 const art=JSON.parse(readFileSync(new URL('../public/assets/animations/combat-v5.json',import.meta.url),'utf8'));
-test('all 22 fighters have four distinct eight-pose attacks and eight reactions at native detail',()=>{
- assert.equal(art.sheets.length,110);
+test('every fighter has four distinct eight-pose attacks and eight reactions at native detail',()=>{
+ assert.equal(art.sheets.length,FIGHTERS.length*5);
  for(const sheet of art.sheets){assert.ok(sheet.scale>0&&sheet.scale<=1,sheet.id);assert.equal(sheet.frames.length,8);assert.equal(new Set(sheet.frames.map((f:any)=>f.hash)).size,8);for(const f of sheet.frames){assert.ok(f.nativeBodyHeight>=180);assert.equal(f.scale,sheet.scale);assert.ok(f.left>=2&&f.top>=2&&f.left+f.width<=254&&f.bottom<=253);}}
 });
 test('rendered origins match each authored sole anchor through grounded attacks and reactions',()=>{

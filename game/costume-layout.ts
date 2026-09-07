@@ -6,7 +6,7 @@ export type Placement={src:Rect;dest:Rect};
 /** Pose-specific attachments; the full sprite can also contain distant effects. */
 export function costumePlacements(id:string,costume:Costume,a:CostumeAnchor,items:CostumeItems):Placement[]{
  if(costume==='classic')return [];
- const mascot=id==='ed'||id==='snorri'||id==='wakala',h=a.head,n=a.neck,cx=h.x+h.w*.5,result:Placement[]=[];
+ const mascot=id==='ed'||id==='edda'||id==='snorri'||id==='wakala',h=a.head,n=a.neck,cx=h.x+h.w*.5,result:Placement[]=[];
  const add=(src:Rect,width:number,center:number,top:number)=>{const y=Math.max(1,Math.min(250,top)),fit=Math.min(width,253,(254-y)*src.w/src.h);const w=Math.max(1,Math.round(fit)),hh=Math.max(1,Math.round(fit*src.h/src.w));result.push({src,dest:{x:Math.round(Math.max(1,Math.min(255-w,center-w/2))),y:Math.round(y),w,h:hh}})};
  const hat=(src:Rect,width:number,bottom:number)=>{const fit=Math.min(width,(bottom-1)*src.w/src.h);add(src,Math.max(12,fit),cx,bottom-Math.max(12,fit)*src.h/src.w)};
  if(costume==='summer'){

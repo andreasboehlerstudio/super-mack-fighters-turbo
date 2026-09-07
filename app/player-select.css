@@ -24,7 +24,7 @@
 .select-roster{min-width:0;display:flex;flex-direction:column}
 .select-roster-caption{height:25px;display:flex;justify-content:space-between;color:#9ebbd5;font:14px/1 var(--pixel);letter-spacing:1px}
 .select-roster-caption strong{color:#ffe094;font-weight:400}
-.select-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;align-content:start;width:648px;max-width:100%;align-self:center}
+.select-grid{display:grid;grid-template-columns:repeat(var(--select-columns),minmax(0,1fr));gap:8px;align-content:start;width:648px;max-width:100%;align-self:center}
 .select-tile{position:relative;min-width:0;width:100%;aspect-ratio:3/4;padding:0;border:2px solid #5a7490;border-top-color:#95a8ba;border-left-color:#95a8ba;border-radius:0;background:#0c1830;box-shadow:2px 3px #060e23;cursor:pointer}
 .select-tile .fighter-portrait{position:absolute;inset:0;width:100%;height:100%;object-position:50% 35%;object-fit:cover;transform:none}
 .select-tile.has-p1{border-color:#f5ce70}.select-tile.has-p2{border-color:#7ddbea}.select-tile.has-p1.has-p2{border-color:#f5ce70 #7ddbea #7ddbea #f5ce70}
