@@ -12,14 +12,16 @@ export const ANIMATION_SHEETS={
  airpunch:{kind:'motion',frames:sequence(32,8)},airkick:{kind:'motion',frames:sequence(40,8)},
  jump:{kind:'action',frames:[4]},land:{kind:'action',frames:[5]},crouch:{kind:'action',frames:[5]},block:{kind:'action',frames:[10]},
  hit:{kind:'action',frames:[11]},special:{kind:'action',frames:[12,13]},ultra:{kind:'action',frames:[12,13]},
- parry:{kind:'action',frames:[10]},tag:{kind:'action',frames:[0]},defeat:{kind:'action',frames:[14]},victory:{kind:'action',frames:[15]}
+ parry:{kind:'action',frames:[10]},tag:{kind:'motion',frames:[0]},defeat:{kind:'action',frames:[14]},victory:{kind:'action',frames:[15]}
 } as const;
 export type AnimationClip=keyof typeof ANIMATION_SHEETS;
-export const animationUrl=(id:FighterId,clip:AnimationClip)=>`/assets/animations/${id}/${clip}.png?v=clips-2`;
-export function animationPose(action:Action,age:number,walkPhase:number,specialStartup=18){
+export const animationUrl=(id:FighterId,clip:AnimationClip)=>`/assets/animations/${id}/${clip}.webp?v=clips-5`;
+export function animationPose(action:Action,age:number,walkPhase:number,specialStartup=18,id?:FighterId){
  const clip:AnimationClip=action;
  const motion=motionFrame(action,age,walkPhase);
- const frame=action==='walk'?walkFrame(walkPhase):motion!==null?motion%8:action==='special'?Number(age>=specialStartup):action==='ultra'?Number(age>=28):0;
+ let frame=action==='walk'?walkFrame(walkPhase):motion!==null?motion%8:action==='special'?Number(age>=specialStartup):action==='ultra'?Number(age>=28):0;
+ // Jürgen's new air-punch has two anticipation, two contact and four recovery drawings.
+ if(id==='juergen'&&action==='airpunch')frame=age<6?Math.min(1,Math.floor(age/3)):age<12?2+Math.min(1,Math.floor((age-6)/3)):4+Math.min(3,Math.floor((age-12)/3));
  const spec=ANIMATION_SHEETS[clip];
  return {clip,frame,kind:spec.kind,sourceFrame:spec.frames[frame]};
 }

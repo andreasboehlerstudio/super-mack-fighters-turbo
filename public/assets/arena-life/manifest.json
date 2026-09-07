@@ -1,0 +1,1560 @@
+{
+  "frameSize": 160,
+  "foot": 154,
+  "areas": [
+    {
+      "id": "park-0",
+      "name": "Abenteuerland",
+      "people": [
+        "a park expedition guide in a tan shirt, brown vest and safari hat",
+        "a visitor in a coral shirt, navy shorts and small daypack"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 349,
+          "height": 138,
+          "scale": 0.3942857142857143,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 349,
+          "height": 138,
+          "scale": 0.3942857142857143,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 350,
+          "height": 138,
+          "scale": 0.3942857142857143,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 349,
+          "height": 138,
+          "scale": 0.3942857142857143,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 341,
+          "height": 138,
+          "scale": 0.40350877192982454,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 341,
+          "height": 138,
+          "scale": 0.40350877192982454,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 342,
+          "height": 138,
+          "scale": 0.40350877192982454,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 341,
+          "height": 138,
+          "scale": 0.40350877192982454,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-1",
+      "name": "Deutschland",
+      "people": [
+        "a welcoming park host in a burgundy waistcoat and cream shirt",
+        "a visitor in a blue jacket and dark trousers"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 376,
+          "height": 138,
+          "scale": 0.3670212765957447,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 376,
+          "height": 138,
+          "scale": 0.3670212765957447,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 376,
+          "height": 138,
+          "scale": 0.3670212765957447,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 376,
+          "height": 138,
+          "scale": 0.3670212765957447,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 380,
+          "height": 138,
+          "scale": 0.3631578947368421,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 380,
+          "height": 138,
+          "scale": 0.3631578947368421,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 380,
+          "height": 138,
+          "scale": 0.3631578947368421,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 380,
+          "height": 138,
+          "scale": 0.3631578947368421,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-10",
+      "name": "Königreich der Minimoys",
+      "people": [
+        "a fantasy garden performer in a brown leaf-shaped vest, ochre tunic and pointy cap",
+        "an explorer visitor with purple jacket and a small backpack"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 376,
+          "height": 138,
+          "scale": 0.3660477453580902,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 375,
+          "height": 137,
+          "scale": 0.3660477453580902,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 377,
+          "height": 138,
+          "scale": 0.3660477453580902,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 377,
+          "height": 138,
+          "scale": 0.3660477453580902,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 370,
+          "height": 138,
+          "scale": 0.3719676549865229,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 371,
+          "height": 138,
+          "scale": 0.3719676549865229,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 370,
+          "height": 138,
+          "scale": 0.3719676549865229,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 371,
+          "height": 138,
+          "scale": 0.3719676549865229,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-11",
+      "name": "Kroatien",
+      "people": [
+        "a Tesla ride technician in a blue work jacket, copper details and goggles on forehead",
+        "a visitor in a burgundy shirt and light beige trousers"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 376,
+          "height": 138,
+          "scale": 0.3670212765957447,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 375,
+          "height": 138,
+          "scale": 0.3670212765957447,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 375,
+          "height": 138,
+          "scale": 0.3670212765957447,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 375,
+          "height": 138,
+          "scale": 0.3670212765957447,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 386,
+          "height": 138,
+          "scale": 0.35751295336787564,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 385,
+          "height": 138,
+          "scale": 0.35751295336787564,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 386,
+          "height": 138,
+          "scale": 0.35751295336787564,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 386,
+          "height": 138,
+          "scale": 0.35751295336787564,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-12",
+      "name": "Liechtenstein",
+      "people": [
+        "a balloon ride host in a royal-blue waistcoat, white shirt and gold tie",
+        "a visitor in a rose-pink cardigan and blue jeans"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 361,
+          "height": 138,
+          "scale": 0.38227146814404434,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 361,
+          "height": 138,
+          "scale": 0.38227146814404434,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 361,
+          "height": 138,
+          "scale": 0.38227146814404434,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 361,
+          "height": 138,
+          "scale": 0.38227146814404434,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 361,
+          "height": 138,
+          "scale": 0.3812154696132597,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 362,
+          "height": 138,
+          "scale": 0.3812154696132597,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 361,
+          "height": 138,
+          "scale": 0.3812154696132597,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 362,
+          "height": 138,
+          "scale": 0.3812154696132597,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-13",
+      "name": "Luxemburg",
+      "people": [
+        "a pavilion host in a teal waistcoat, white shirt and dark bow tie",
+        "a visitor in a cream jacket, blue scarf and dark jeans"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 362,
+          "height": 138,
+          "scale": 0.3812154696132597,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 362,
+          "height": 138,
+          "scale": 0.3812154696132597,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 362,
+          "height": 138,
+          "scale": 0.3812154696132597,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 362,
+          "height": 138,
+          "scale": 0.3812154696132597,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 360,
+          "height": 138,
+          "scale": 0.38333333333333336,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 360,
+          "height": 138,
+          "scale": 0.38333333333333336,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 360,
+          "height": 138,
+          "scale": 0.38333333333333336,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 360,
+          "height": 138,
+          "scale": 0.38333333333333336,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-14",
+      "name": "Monaco",
+      "people": [
+        "a motorsport ride marshal in a red and white jacket and navy cap",
+        "a visitor in a cream polo shirt, sunglasses and blue trousers"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 364,
+          "height": 138,
+          "scale": 0.3791208791208791,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 364,
+          "height": 138,
+          "scale": 0.3791208791208791,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 364,
+          "height": 138,
+          "scale": 0.3791208791208791,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 364,
+          "height": 138,
+          "scale": 0.3791208791208791,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 361,
+          "height": 138,
+          "scale": 0.3812154696132597,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 361,
+          "height": 138,
+          "scale": 0.3812154696132597,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 361,
+          "height": 138,
+          "scale": 0.3812154696132597,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 362,
+          "height": 138,
+          "scale": 0.3812154696132597,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-15",
+      "name": "Österreich",
+      "people": [
+        "an alpine ride host in a brown hiking vest, cream shirt and felt hiking hat",
+        "a visitor in a rust-orange hiking jacket and navy trousers"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 386,
+          "height": 138,
+          "scale": 0.35751295336787564,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 386,
+          "height": 138,
+          "scale": 0.35751295336787564,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 386,
+          "height": 138,
+          "scale": 0.35751295336787564,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 386,
+          "height": 138,
+          "scale": 0.35751295336787564,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 378,
+          "height": 138,
+          "scale": 0.36507936507936506,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 378,
+          "height": 138,
+          "scale": 0.36507936507936506,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 378,
+          "height": 138,
+          "scale": 0.36507936507936506,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 378,
+          "height": 138,
+          "scale": 0.36507936507936506,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-16",
+      "name": "Portugal",
+      "people": [
+        "a harbor attendant in a navy coat, red sash and cream shirt",
+        "a visitor in a turquoise blouse and white trousers"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 359,
+          "height": 138,
+          "scale": 0.38440111420612816,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 359,
+          "height": 138,
+          "scale": 0.38440111420612816,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 359,
+          "height": 138,
+          "scale": 0.38440111420612816,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 359,
+          "height": 138,
+          "scale": 0.38440111420612816,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 362,
+          "height": 138,
+          "scale": 0.3812154696132597,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 362,
+          "height": 138,
+          "scale": 0.3812154696132597,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 362,
+          "height": 138,
+          "scale": 0.3812154696132597,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 362,
+          "height": 138,
+          "scale": 0.3812154696132597,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-17",
+      "name": "Russland",
+      "people": [
+        "a railway attendant in a navy uniform with brass buttons and peaked cap",
+        "a visitor in a purple jacket, pale scarf and dark trousers"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 390,
+          "height": 138,
+          "scale": 0.35384615384615387,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 390,
+          "height": 138,
+          "scale": 0.35384615384615387,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 390,
+          "height": 138,
+          "scale": 0.35384615384615387,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 390,
+          "height": 138,
+          "scale": 0.35384615384615387,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 381,
+          "height": 138,
+          "scale": 0.3612565445026178,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 382,
+          "height": 138,
+          "scale": 0.3612565445026178,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 382,
+          "height": 138,
+          "scale": 0.3612565445026178,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 382,
+          "height": 138,
+          "scale": 0.3612565445026178,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-18",
+      "name": "Schweiz",
+      "people": [
+        "a mountain ride host in a red vest, cream shirt and brown hiking trousers",
+        "a visitor in a blue fleece jacket and light trousers"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 393,
+          "height": 138,
+          "scale": 0.3511450381679389,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 393,
+          "height": 138,
+          "scale": 0.3511450381679389,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 393,
+          "height": 138,
+          "scale": 0.3511450381679389,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 393,
+          "height": 138,
+          "scale": 0.3511450381679389,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 394,
+          "height": 138,
+          "scale": 0.3493670886075949,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 394,
+          "height": 138,
+          "scale": 0.3493670886075949,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 395,
+          "height": 138,
+          "scale": 0.3493670886075949,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 394,
+          "height": 138,
+          "scale": 0.3493670886075949,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-19",
+      "name": "Skandinavien",
+      "people": [
+        "a dock attendant in an ochre raincoat and navy knit beanie",
+        "a visitor in a burgundy knit sweater and gray trousers"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 373,
+          "height": 138,
+          "scale": 0.3699731903485255,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 373,
+          "height": 138,
+          "scale": 0.3699731903485255,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 373,
+          "height": 138,
+          "scale": 0.3699731903485255,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 373,
+          "height": 138,
+          "scale": 0.3699731903485255,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 387,
+          "height": 138,
+          "scale": 0.35658914728682173,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 386,
+          "height": 138,
+          "scale": 0.35658914728682173,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 386,
+          "height": 138,
+          "scale": 0.35658914728682173,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 386,
+          "height": 138,
+          "scale": 0.35658914728682173,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-2",
+      "name": "England",
+      "people": [
+        "a park attendant in a navy waistcoat, striped tie and flat cap",
+        "a visitor with a yellow rain jacket and navy jeans"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 358,
+          "height": 138,
+          "scale": 0.3854748603351955,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 358,
+          "height": 138,
+          "scale": 0.3854748603351955,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 358,
+          "height": 138,
+          "scale": 0.3854748603351955,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 358,
+          "height": 138,
+          "scale": 0.3854748603351955,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 358,
+          "height": 138,
+          "scale": 0.3854748603351955,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 358,
+          "height": 138,
+          "scale": 0.3854748603351955,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 357,
+          "height": 138,
+          "scale": 0.3854748603351955,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 357,
+          "height": 138,
+          "scale": 0.3854748603351955,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-20",
+      "name": "Spanien",
+      "people": [
+        "a park show performer in a fitted red jacket and black trousers",
+        "a visitor in a saffron summer dress and straw sunhat"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 372,
+          "height": 138,
+          "scale": 0.3709677419354839,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 372,
+          "height": 138,
+          "scale": 0.3709677419354839,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 372,
+          "height": 138,
+          "scale": 0.3709677419354839,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 372,
+          "height": 138,
+          "scale": 0.3709677419354839,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 371,
+          "height": 138,
+          "scale": 0.3709677419354839,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 370,
+          "height": 137,
+          "scale": 0.3709677419354839,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 371,
+          "height": 138,
+          "scale": 0.3709677419354839,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 372,
+          "height": 138,
+          "scale": 0.3709677419354839,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-3",
+      "name": "Frankreich",
+      "people": [
+        "a plaza host in a plum waistcoat and crisp white shirt",
+        "a woman visitor in a cream blouse and burgundy skirt"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 377,
+          "height": 138,
+          "scale": 0.3660477453580902,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 377,
+          "height": 138,
+          "scale": 0.3660477453580902,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 377,
+          "height": 138,
+          "scale": 0.3660477453580902,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 377,
+          "height": 138,
+          "scale": 0.3660477453580902,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 381,
+          "height": 138,
+          "scale": 0.36220472440944884,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 381,
+          "height": 138,
+          "scale": 0.36220472440944884,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 381,
+          "height": 138,
+          "scale": 0.36220472440944884,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 381,
+          "height": 138,
+          "scale": 0.36220472440944884,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-4",
+      "name": "Griechenland",
+      "people": [
+        "a harbor attendant in a white linen shirt, blue sash and navy trousers",
+        "a visitor in a sky-blue sundress and straw hat"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 356,
+          "height": 138,
+          "scale": 0.3865546218487395,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 356,
+          "height": 138,
+          "scale": 0.3865546218487395,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 357,
+          "height": 138,
+          "scale": 0.3865546218487395,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 356,
+          "height": 138,
+          "scale": 0.3865546218487395,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 368,
+          "height": 138,
+          "scale": 0.375,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 368,
+          "height": 138,
+          "scale": 0.375,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 368,
+          "height": 138,
+          "scale": 0.375,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 368,
+          "height": 138,
+          "scale": 0.375,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-5",
+      "name": "Grimms Märchenwald",
+      "people": [
+        "a storybook performer in a burgundy cape, brown tunic and soft felt hat",
+        "a woman visitor in a lilac jacket and dark jeans"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 379,
+          "height": 138,
+          "scale": 0.3631578947368421,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 379,
+          "height": 138,
+          "scale": 0.3631578947368421,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 379,
+          "height": 138,
+          "scale": 0.3631578947368421,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 380,
+          "height": 138,
+          "scale": 0.3631578947368421,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 396,
+          "height": 138,
+          "scale": 0.3484848484848485,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 396,
+          "height": 138,
+          "scale": 0.3484848484848485,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 396,
+          "height": 138,
+          "scale": 0.3484848484848485,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 396,
+          "height": 138,
+          "scale": 0.3484848484848485,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-6",
+      "name": "Holland",
+      "people": [
+        "a harbor host in a navy striped shirt and red neckerchief",
+        "a visitor in a mustard cardigan and blue jeans"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 379,
+          "height": 138,
+          "scale": 0.3641160949868074,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 379,
+          "height": 138,
+          "scale": 0.3641160949868074,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 379,
+          "height": 138,
+          "scale": 0.3641160949868074,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 379,
+          "height": 138,
+          "scale": 0.3641160949868074,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 379,
+          "height": 138,
+          "scale": 0.3631578947368421,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 380,
+          "height": 138,
+          "scale": 0.3631578947368421,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 380,
+          "height": 138,
+          "scale": 0.3631578947368421,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 379,
+          "height": 138,
+          "scale": 0.3631578947368421,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-7",
+      "name": "Irland",
+      "people": [
+        "a park host in a russet tweed waistcoat, cream shirt and flat cap",
+        "a visitor in a teal blue jacket and navy trousers"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 357,
+          "height": 138,
+          "scale": 0.3865546218487395,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 357,
+          "height": 138,
+          "scale": 0.3865546218487395,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 357,
+          "height": 138,
+          "scale": 0.3865546218487395,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 357,
+          "height": 138,
+          "scale": 0.3865546218487395,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 360,
+          "height": 138,
+          "scale": 0.38333333333333336,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 360,
+          "height": 138,
+          "scale": 0.38333333333333336,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 360,
+          "height": 138,
+          "scale": 0.38333333333333336,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 360,
+          "height": 138,
+          "scale": 0.38333333333333336,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-8",
+      "name": "Island",
+      "people": [
+        "a ride technician in a navy utility jacket with orange trim",
+        "a visitor in a red weatherproof jacket, knit beanie and dark trousers"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 356,
+          "height": 138,
+          "scale": 0.38764044943820225,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 356,
+          "height": 138,
+          "scale": 0.38764044943820225,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 356,
+          "height": 138,
+          "scale": 0.38764044943820225,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 356,
+          "height": 138,
+          "scale": 0.38764044943820225,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 365,
+          "height": 138,
+          "scale": 0.3780821917808219,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 365,
+          "height": 138,
+          "scale": 0.3780821917808219,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 365,
+          "height": 138,
+          "scale": 0.3780821917808219,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 365,
+          "height": 138,
+          "scale": 0.3780821917808219,
+          "foot": 154
+        }
+      ]
+    },
+    {
+      "id": "park-9",
+      "name": "Italien",
+      "people": [
+        "a gondolier performer in a cream and navy striped shirt, straw boater hat and red scarf",
+        "a cafe visitor in a terracotta summer dress"
+      ],
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "nativeHeight": 385,
+          "height": 138,
+          "scale": 0.35844155844155845,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "nativeHeight": 385,
+          "height": 138,
+          "scale": 0.35844155844155845,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "nativeHeight": 385,
+          "height": 138,
+          "scale": 0.35844155844155845,
+          "foot": 154
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "nativeHeight": 385,
+          "height": 138,
+          "scale": 0.35844155844155845,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "nativeHeight": 380,
+          "height": 138,
+          "scale": 0.3631578947368421,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "nativeHeight": 380,
+          "height": 138,
+          "scale": 0.3631578947368421,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "nativeHeight": 380,
+          "height": 138,
+          "scale": 0.3631578947368421,
+          "foot": 154
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "nativeHeight": 380,
+          "height": 138,
+          "scale": 0.3631578947368421,
+          "foot": 154
+        }
+      ]
+    }
+  ]
+}

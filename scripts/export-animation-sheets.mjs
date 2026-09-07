@@ -1,5 +1,5 @@
 import {createRequire} from 'node:module';
-import {mkdir,writeFile} from 'node:fs/promises';
+import {mkdir,writeFile,unlink} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {FIGHTERS} from '../game/data.ts';
@@ -12,7 +12,16 @@ for(const {id} of FIGHTERS){
  for(const [clip,{kind,frames}] of Object.entries(ANIMATION_SHEETS)){
   const src=path.join(assets,kind==='action'?'':kind,`${id}.png`),columns=kind==='motion'?8:4,width=Math.min(4,frames.length)*256,height=Math.ceil(frames.length/4)*256;
   const cells=await Promise.all(frames.map(async(frame,i)=>({input:await sharp(src).extract({left:frame%columns*256,top:Math.floor(frame/columns)*256,width:256,height:256}).png().toBuffer(),left:i%4*256,top:Math.floor(i/4)*256})));
-  await sharp({create:{width,height,channels:4,background:'#00000000'}}).composite(cells).png().toFile(path.join(folder,`${clip}.png`));
+  const original=await sharp({create:{width,height,channels:4,background:'#00000000'}}).composite(cells).raw().toBuffer();
+  // Transparent RGB carries no visible information and is canonicalized before encoding.
+  for(let p=0;p<original.length;p+=4)if(original[p+3]===0)original.fill(0,p,p+3);
+  const target=path.join(folder,`${clip}.webp`);
+  await sharp(original,{raw:{width,height,channels:4}}).webp({lossless:true,effort:6}).toFile(target);
+  const decoded=await sharp(target).ensureAlpha().raw().toBuffer();
+  for(let p=0;p<decoded.length;p+=4)if(decoded[p+3]===0)decoded.fill(0,p,p+3);
+  if(!original.equals(decoded))throw Error(`Lossless round-trip failed: ${id}/${clip}`);
+  // Remove only this verified clip's obsolete PNG, within the explicit animation folder.
+  await unlink(path.join(folder,`${clip}.png`)).catch(e=>{if(e.code!=='ENOENT')throw e});
   manifest.fighters[id][clip]={frames:frames.length,width,height,source:kind};
  }
 }

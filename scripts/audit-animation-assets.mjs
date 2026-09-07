@@ -9,11 +9,11 @@ await mkdir('../work',{recursive:true});
 let count=0;const montage=[];
 for(const [row,{id}] of FIGHTERS.entries()){
  for(const [clip,spec] of Object.entries(ANIMATION_SHEETS)){
- const raw=await sharp(`public/assets/animations/${id}/${clip}.png`).ensureAlpha().raw().toBuffer({resolveWithObject:true});
+ const raw=await sharp(`public/assets/animations/${id}/${clip}.webp`).ensureAlpha().raw().toBuffer({resolveWithObject:true});
  for(let f=0;f<spec.frames.length;f++){let pixels=0;for(let y=0;y<256;y++)for(let x=0;x<256;x++)if(raw.data[(((Math.floor(f/4)*256+y)*raw.info.width+f%4*256+x)*4)+3]>128)pixels++;if(pixels<500)throw Error(`Empty or missing pose: ${id}/${clip}/${f}`);count++;}
  }
  for(const [column,[clip,frame]] of [['idle',0],['walk',0],['walk',2],['kick',3]].entries()){
- const input=await sharp(`public/assets/animations/${id}/${clip}.png`).extract({left:frame%4*256,top:Math.floor(frame/4)*256,width:256,height:256}).png().toBuffer();
+ const input=await sharp(`public/assets/animations/${id}/${clip}.webp`).extract({left:frame%4*256,top:Math.floor(frame/4)*256,width:256,height:256}).png().toBuffer();
  montage.push({input,left:column*256,top:row*256});
  }
 }

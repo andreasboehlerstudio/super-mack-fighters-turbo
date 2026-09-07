@@ -1,8 +1,10 @@
 import type {FighterId} from './data.ts';
+import {COMBAT_ART_ORIGINS} from './combat-art-origins.ts';
 export type SpriteKind='action'|'walk'|'motion';
 const jumpFeet:Partial<Record<FighterId,number>>={roland:242,marianne:243,juergen:212,mauritia:205,thomas:206,katja:205,wakala:212};
 /** Authored foot anchors, not pose-dependent stretching or alpha-box normalization. */
 export function spriteOrigin(id:FighterId,kind:SpriteKind,frame:number){
+ const authored=COMBAT_ART_ORIGINS[id]?.[`${kind}-${frame}`];if(authored)return authored;
  if(kind==='motion'){
   if(frame<8)return {x:128,y:246};
   // These complete kick rows were shifted together to leave room for the extended shoe.

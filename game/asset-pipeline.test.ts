@@ -21,9 +21,9 @@ function losslessWebpSize(bytes:Buffer){
 test('all fighters have a native sheet for every action and all frame references are valid',()=>{
  assert.equal(FIGHTER_DISPLAY_SIZE*COMBAT_RENDER_ZOOM,256);
  for(const f of FIGHTERS)for(const clip of Object.keys(ANIMATION_SHEETS) as AnimationClip[]){
-  const spec=ANIMATION_SHEETS[clip],png=readFileSync(asset(`animations/${f.id}/${clip}.png`));
-  assert.equal(png.readUInt32BE(16),Math.min(4,spec.frames.length)*256,`${f.id}/${clip} width`);
-  assert.equal(png.readUInt32BE(20),Math.ceil(spec.frames.length/4)*256,`${f.id}/${clip} height`);
+  const spec=ANIMATION_SHEETS[clip],size=losslessWebpSize(readFileSync(asset(`animations/${f.id}/${clip}.webp`)));
+  assert.equal(size.width,Math.min(4,spec.frames.length)*256,`${f.id}/${clip} width`);
+  assert.equal(size.height,Math.ceil(spec.frames.length/4)*256,`${f.id}/${clip} height`);
   for(let age=0;age<240;age++){
    const p=animationPose(clip,age,age/120);assert.ok(p.frame>=0&&p.frame<spec.frames.length,`${clip}:${age}`);assert.notEqual(p.sourceFrame,undefined);
    const origin=animationOrigin(f.id,clip,p.frame);assert.ok(Number.isFinite(origin.x)&&Number.isFinite(origin.y));

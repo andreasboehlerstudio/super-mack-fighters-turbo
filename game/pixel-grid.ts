@@ -12,7 +12,7 @@ export function pixelScreenScale(width:number,height:number,dpr=1,pixelPerfect=t
  return magnification>=1?magnification*RASTER_WIDTH/(CONSOLE_WIDTH*ratio):fit;
 }
 export const snapCombatPixel=(value:number)=>Math.round(value*COMBAT_RENDER_ZOOM)/COMBAT_RENDER_ZOOM;
-export function pixelScreenFrame(width:number,height:number,dpr=1,pixelPerfect=true){
- const ratio=Number.isFinite(dpr)&&dpr>0?dpr:1,scale=pixelScreenScale(width,height,ratio,pixelPerfect);
+export function pixelScreenFrame(width:number,height:number,dpr=1,pixelPerfect=true,expanded=true){
+ const ratio=Number.isFinite(dpr)&&dpr>0?dpr:1,space=expanded?1:.78,scale=pixelScreenScale(width*space,height*space,ratio,pixelPerfect);
  return {scale,left:Math.round((width-CONSOLE_WIDTH*scale)*ratio/2)/ratio,top:Math.round((height-CONSOLE_HEIGHT*scale)*ratio/2)/ratio};
 }

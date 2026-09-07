@@ -1,0 +1,15 @@
+import {createRoot} from 'react-dom/client';
+import Arcade from '../game/Arcade';
+import {ParkAtlas} from '../game/ParkAtlas';
+import '../app/globals.css';
+import '../app/console.css';
+import '../app/park-world.css';
+import '../app/title-screen.css';
+import '../app/roster.css';
+import '../app/turbo.css';
+import '../app/modes.css';
+import '../app/player-select.css';
+import '../app/park-atlas.css';
+import '../app/arena-select.css';
+const atlas=new URLSearchParams(location.search).has('atlas');
+createRoot(document.getElementById('root')!).render(atlas?<main className="atlas-page"><header><a href="./">◀ ZUM SPIEL</a><h1>EUROPA-PARK</h1><span>PIXEL-PARKATLAS</span></header><ParkAtlas route={[]} index={0}/></main>:<Arcade/>);
