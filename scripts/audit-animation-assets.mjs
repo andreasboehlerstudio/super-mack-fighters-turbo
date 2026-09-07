@@ -17,7 +17,7 @@ for(const [row,{id}] of FIGHTERS.entries()){
  montage.push({input,left:column*256,top:row*256});
  }
 }
-for(let page=0;page<4;page++){
+for(let page=0;page<Math.ceil(FIGHTERS.length/6);page++){
  const rows=FIGHTERS.slice(page*6,page*6+6);await sharp({create:{width:1024,height:rows.length*256,channels:4,background:'#172333'}}).composite(montage.filter(m=>m.top>=page*6*256&&m.top<(page+1)*6*256).map(m=>({...m,top:m.top-page*6*256}))).png().toFile(`../work/animation-audit-${page+1}.png`);
 }
 console.log(`Checked ${count} non-empty native animation poses across all fighters.`);

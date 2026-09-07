@@ -190,5 +190,13 @@
     "maxBreathingHeightDifference": 3,
     "baseline": 246,
     "originX": 128
+  },
+  {
+    "id": "scholz",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 4,
+    "baseline": 246,
+    "originX": 128
   }
 ]

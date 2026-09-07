@@ -25,6 +25,7 @@ const names:Record<FighterId,[string,string,string]>={
  nathalie:['Farbwirbel','Prismenflug','FARBENFEST'],
  andreas:['Renderbogen','Frame-Wirbel','MASTER RENDER'],
  karsten:['Dolly-Fahrt','Kran-Schwenk','ONE TAKE'],
+ scholz:['Allee-Sprint','Qualitätskontrolle','PIONIERGEIST 73'],
  wakala:['Nachtfunken','Hasen-Haken','WAKALAS WUNDERLAND'],
  graumacher:['Grauschleier-Sprint','Stillstandsblitz','LETZTER SCHATTEN']
 };

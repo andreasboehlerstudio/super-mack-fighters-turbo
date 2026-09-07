@@ -5,15 +5,17 @@ import {movesFor,ultraFor} from './moves.ts';
 import {HEROES,type FighterId} from './data.ts';
 import {SELECT_COLUMNS} from './select-layout.ts';
 
-test('Karsten cinema moves have distinct trajectories and Edda has a complete move set',()=>{
+test('Karsten, Edda and Michael Scholz have themed move sets and fit the portrait grid',()=>{
  assert.deepEqual(movesFor('karsten').map(m=>[m.name,m.kind]),[['Objektivblitz','bolt'],['Dolly-Fahrt','dash'],['Kran-Schwenk','arc']]);
  assert.equal(ultraFor('karsten').name,'ONE TAKE');
  assert.deepEqual(movesFor('edda').map(m=>m.kind),['arc','burst','dash']);
+ assert.deepEqual(movesFor('scholz').map(m=>[m.name,m.kind]),[['Pionier-Impuls','wave'],['Allee-Sprint','dash'],['Qualitätskontrolle','bolt']]);
+ assert.equal(ultraFor('scholz').name,'PIONIERGEIST 73');
  assert.equal(Math.ceil(HEROES.length/SELECT_COLUMNS),3);
 });
 
 test('new fighters execute all three specials and retain projectile identity after a tag',()=>{
- for(const id of ['karsten','edda'] as FighterId[])for(let move=0;move<3;move++){
+ for(const id of ['karsten','edda','scholz'] as FighterId[])for(let move=0;move<3;move++){
   const m=createMatch(id,'roland',19,{training:true,partners:['ed',null]});
   for(let i=0;i<150;i++)step(m,[neutral(),neutral()]);
   m.actors[0].x=400;m.actors[1].x=560;

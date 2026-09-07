@@ -4,9 +4,10 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {COMBAT_ART_ORIGINS} from '../game/combat-art-origins.ts';
 import {ANIMATION_SHEETS} from '../game/animation-sheets.ts';
-const repo=path.resolve(import.meta.dirname,'..'),dir=path.join(repo,'../work/karsten-edda'),assets=path.join(repo,'public/assets');
-const jobs=[];for(const id of ['karsten','edda']){const folder=path.join(repo,'art-source/characters',id);const records=JSON.parse(await readFile(path.join(folder,'prompts.json'),'utf8'));jobs.push(...records.map(j=>({...j,source:path.join(folder,j.clip+'.png')})));}
 const selected=process.argv.slice(2),ids=selected.length?selected:['karsten','edda'];
+if(ids.some(id=>!/^[a-z]+$/.test(id)))throw Error('Expected character IDs');
+const repo=path.resolve(import.meta.dirname,'..'),dir=path.join(repo,'../work',ids.join('-')),assets=path.join(repo,'public/assets');
+const jobs=[];for(const id of ids){const folder=path.join(repo,'art-source/characters',id);const records=JSON.parse(await readFile(path.join(folder,'prompts.json'),'utf8'));jobs.push(...records.map(j=>({...j,source:path.join(folder,j.clip+'.png')})));}
 const median=a=>[...a].sort((a,b)=>a-b)[Math.floor(a.length/2)];
 function bounds(d,w,h,y0=0,y1=h){let l=w,r=-1,t=h,b=-1,count=0;for(let y=Math.max(0,y0);y<Math.min(h,y1);y++)for(let x=0;x<w;x++)if(d[(y*w+x)*4+3]>128){l=Math.min(l,x);r=Math.max(r,x);t=Math.min(t,y);b=Math.max(b,y);count++;}return {left:l,top:t,width:r-l+1,height:b-t+1,bottom:b,count};}
 async function decodeSheet(j){
@@ -38,7 +39,8 @@ for(const id of ids){
  const all=jobs.filter(j=>j.id===id),portrait=all.find(j=>j.clip==='portrait');if(!portrait)throw Error('Missing portrait '+id);
  const framesByClip={},measurements={},sources={};for(const j of all.filter(j=>j.clip!=='portrait'))sources[j.clip]=await decodeSheet(j);
  for(const clip of ['idle','walk','punch','kick','airpunch','airkick','reactions'])if(!sources[clip])throw Error('Missing '+id+'/'+clip);
- const height=196,headBand=id==='edda'?.34:.16,idleScale=height/median(sources.idle.map(f=>f.b.height));
+ // Scholz's raised elbow reaches his glasses; use the crown band to anchor the skull.
+ const height=196,headBand=id==='edda'?.34:id==='scholz'?.12:.16,idleScale=height/median(sources.idle.map(f=>f.b.height));
  const sourceHead=f=>bounds(f.data,f.info.width,f.info.height,f.b.top,f.b.top+Math.round(f.b.height*headBand));
  const targetHead=median(sources.idle.map(f=>sourceHead(f).width))*idleScale;
  for(const [clip,src] of Object.entries(sources)){
