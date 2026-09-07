@@ -198,5 +198,69 @@
     "maxBreathingHeightDifference": 4,
     "baseline": 246,
     "originX": 128
+  },
+  {
+    "id": "bobo",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 2,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "mross",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 2,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "freudenreich",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 4,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "robbemond",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 3,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "olli",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 1,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "boeckli",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 1,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "louis",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 0,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "tesla",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 2,
+    "baseline": 246,
+    "originX": 128
   }
 ]

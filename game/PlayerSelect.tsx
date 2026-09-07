@@ -12,15 +12,20 @@ type Props = {
  onToggleTag: () => void; children: ReactNode;
 };
 
-function PortraitPanel({id, label, active, player, side=player, showMoves}: {
+function PortraitPanel({id, label, active, player, side=player, showMoves, partner, partnerActive, onPickLead, onPickPartner}: {
  id: FighterId; label: string; active: boolean; player: number; side?: number; showMoves: boolean;
+ partner?: FighterId; partnerActive?: boolean; onPickLead: () => void; onPickPartner: () => void;
 }) {
- const hero = fighter(id);
- return <aside className={`select-hero ${active ? 'is-active' : ''} side-${side}`} style={{'--hero-color':hero.color} as CSSProperties}>
-  <div className="select-hero-label">{label}<span>{active ? 'WÄHLT' : 'BEREIT'}</span></div>
-  <div className="select-hero-art"><FighterPortrait id={id}/></div>
-  <h2>{hero.name}</h2>
-  {showMoves ? <MoveList id={id} player={player}/> : <><strong className="select-hero-tag">{hero.tag}</strong><p className="select-hero-note">{hero.note}</p></>}
+ const hero = fighter(partnerActive && partner ? partner : id);
+ const teammate = partner ? fighter(partnerActive ? id : partner) : null;
+ return <aside className={`select-hero ${active ? 'is-active' : ''} ${partner ? 'has-partner' : ''} side-${side}`} style={{'--hero-color':hero.color} as CSSProperties}>
+  <button className="select-hero-label select-lead-choice" onClick={onPickLead} aria-pressed={active && !partnerActive} aria-label={`${label} Hauptfigur wählen`}>{label}<span>{active ? (partnerActive ? 'PARTNER WÄHLT' : 'WÄHLT') : 'BEREIT'}</span></button>
+  <div className="select-hero-art"><FighterPortrait id={hero.id}/></div>
+  <h2 className={hero.name.length > 18 ? 'long-name' : ''}>{hero.name}</h2>
+  {teammate && <button className="select-partner" onClick={partnerActive ? onPickLead : onPickPartner} aria-label={`${label} ${partnerActive ? 'Hauptfigur' : 'Partner'} ${teammate.name} wählen`}>
+   <FighterPortrait id={teammate.id}/><span><small>{partnerActive ? 'HAUPTFIGUR' : 'TAG-PARTNER'}</small>{teammate.short}</span><b>↔</b>
+  </button>}
+  {showMoves ? <MoveList id={hero.id} player={player}/> : <><strong className="select-hero-tag">{hero.tag}</strong><p className="select-hero-note">{hero.note}</p></>}
  </aside>;
 }
 
@@ -28,15 +33,13 @@ export function PlayerSelect({mode,p1,p2,picking,rules,onPickSeat,onSelect,onTog
  const solo = mode === 'arcade';
  const opponent = mode === 'versus' ? '2P' : 'CPU';
  const selectedId = picking === 0 ? p1 : picking === 1 ? p2 : picking === 2 ? rules.partner1 : rules.partner2;
- const leftId = picking === 2 ? rules.partner1 : p1;
- const rightId = picking === 3 ? rules.partner2 : p2;
  const seats = [{slot:0,id:p1,label:'1P'}, ...(rules.tag ? [{slot:2,id:rules.partner1,label:'1P PARTNER'}] : []),
   ...(!solo ? [{slot:1,id:p2,label:opponent}, ...(rules.tag ? [{slot:3,id:rules.partner2,label:opponent+' PARTNER'}] : [])] : [])];
  const selectedSeat = seats.find(seat => seat.slot === picking)!;
  return <section className="player-select" aria-label="Charakterauswahl">
-  <header className="select-heading"><h1>PLAYER SELECT</h1><span>{solo ? 'ARCADE' : mode === 'training' ? 'TRAINING' : 'VERSUS'}</span></header>
+  <header className="select-heading"><h1>PLAYER SELECT</h1><div className="select-mode"><button className="select-tag-toggle" aria-pressed={rules.tag} onClick={onToggleTag}>TAG-TEAM {rules.tag ? 'AN' : 'AUS'}</button><span>{solo ? 'ARCADE' : mode === 'training' ? 'TRAINING' : 'VERSUS'}</span></div></header>
   <div className="select-stage">
-   <PortraitPanel id={leftId} label={picking === 2 ? '1P · PARTNER' : 'PLAYER 1'} active={picking === 0 || picking === 2} player={0} showMoves={!solo}/>
+   <PortraitPanel id={p1} label="PLAYER 1" active={picking === 0 || picking === 2} player={0} showMoves={!solo} partner={rules.tag ? rules.partner1 : undefined} partnerActive={picking === 2} onPickLead={() => onPickSeat(0)} onPickPartner={() => onPickSeat(2)}/>
    <div className="select-roster">
     <div className="select-roster-caption" aria-live="polite"><strong>{selectedSeat?.label} WÄHLT</strong><span>{rules.tag ? 'TAG-TEAM' : '1 GEGEN 1'}</span></div>
     <div className="select-grid" style={{'--select-columns':SELECT_COLUMNS} as CSSProperties} aria-label="Figurenauswahl">
@@ -51,15 +54,10 @@ export function PlayerSelect({mode,p1,p2,picking,rules,onPickSeat,onSelect,onTog
       </button>;
      })}
     </div>
-    <div className="select-seats">
-     {seats.map(seat => <button key={seat.slot} className={picking === seat.slot ? 'is-current' : ''} aria-pressed={picking === seat.slot}
-      onClick={() => onPickSeat(seat.slot)}><small>{seat.label}</small><strong>{fighter(seat.id).short}</strong></button>)}
-     <button className="select-tag-toggle" aria-pressed={rules.tag} onClick={onToggleTag}>TAG-TEAM<br/>{rules.tag ? 'AN' : 'AUS'}</button>
-    </div>
     <p className="select-input-hint">← ↑ ↓ → WÄHLEN <span>ENTER / A BESTÄTIGEN</span></p>
    </div>
    {solo ? <aside className="select-moves"><div className="select-hero-label">SPECIAL MOVES</div><h2>{fighter(selectedId).short}</h2><MoveList id={selectedId}/><p>↓ ↘ → Viertelkreis<br/>← halten, → Charge</p>{rules.tag && <p className="select-tag-hint">E / LT<br/>PARTNER WECHSELN</p>}</aside> :
-    <PortraitPanel id={rightId} label={picking === 3 ? opponent+' · PARTNER' : mode === 'versus' ? 'PLAYER 2' : 'COMPUTER'} active={picking === 1 || picking === 3} player={mode === 'versus' ? 1 : 0} side={1} showMoves/>}
+    <PortraitPanel id={p2} label={mode === 'versus' ? 'PLAYER 2' : 'COMPUTER'} active={picking === 1 || picking === 3} player={mode === 'versus' ? 1 : 0} side={1} showMoves partner={rules.tag ? rules.partner2 : undefined} partnerActive={picking === 3} onPickLead={() => onPickSeat(1)} onPickPartner={() => onPickSeat(3)}/>}
   </div>
   <div className="select-settings">{children}</div>
  </section>;

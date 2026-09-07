@@ -45,3 +45,5 @@
 .game-screen canvas,.game-screen .fighter-portrait{image-rendering:pixelated}
 
 .jukebox-title-theme{grid-column:1/-1;display:flex;gap:22px;align-items:center;border-top:2px solid #526581;padding-top:12px;color:#ffe2a0}.jukebox-title-theme strong{margin-right:auto;font-size:14px}
+
+.game-build-stamp{position:absolute;right:10px;bottom:2px;z-index:80;font:10px/1.2 var(--pixel);letter-spacing:.4px;color:#c5d5e7;background:#071326db;padding:2px 5px;text-decoration:none;white-space:nowrap}.game-build-stamp:hover,.game-build-stamp:focus-visible{color:#fff;outline:1px solid #29e4ff}

@@ -1,8 +1,12 @@
 import type {CombatEvent} from './combat.ts';
+import type {FighterId} from './data.ts';
+import {AttackVoices,isAttackCall} from './fighter-voice.ts';
 import {SnesMusic} from './snes-music.ts';
 import {areaScore} from './area-music.ts';
 import {midiScore,originalScore,type MusicScore,type MusicMode as AudioMode} from './music-score.ts';
 export class ArcadeAudio {
+ private attackVoices:AttackVoices|null=null;
+ combat(event:CombatEvent,id:FighterId){this.sound(event.type);if(this.context&&this.fxGain&&this.effects>0&&!this.paused&&event.player!==undefined&&isAttackCall(event.type)){this.attackVoices??=new AttackVoices(this.context,this.fxGain);this.attackVoices.play(id,event.type,event.player);}}
  context:AudioContext|null=null;musicGain:GainNode|null=null;fxGain:GainNode|null=null;music=.38;effects=.7;mode:AudioMode='menu';timer:ReturnType<typeof setInterval>|null=null;paused=false;private soundtrack:SnesMusic|null=null;private arrangements=new Map<AudioMode,MusicScore>();
  async unlock(){if(!this.context){this.context=new AudioContext();this.musicGain=this.context.createGain();this.fxGain=this.context.createGain();const compressor=this.context.createDynamicsCompressor();compressor.threshold.value=-12;compressor.ratio.value=8;this.musicGain.connect(compressor);this.fxGain.connect(compressor);compressor.connect(this.context.destination);this.soundtrack=new SnesMusic(this.context,this.musicGain);this.soundtrack.setScore(this.currentScore());this.soundtrack.pause(this.paused);this.apply();}await this.context.resume();if(!this.timer){this.timer=setInterval(()=>this.schedule(),30);}}
  apply(){if(this.context){this.musicGain!.gain.setTargetAtTime(this.paused?0:this.music*.35,this.context.currentTime,.06);this.fxGain!.gain.setTargetAtTime(this.effects*.6,this.context.currentTime,.03);}}

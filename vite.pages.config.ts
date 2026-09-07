@@ -1,4 +1,5 @@
 import {defineConfig} from 'vite';
+import {buildVersion} from './build-version';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/postcss';
 import path from 'node:path';
@@ -9,7 +10,7 @@ const prefixAssets=(code:string)=>code.replace(/(["'`(])\/assets\//g,'$1'+base+'
 export default defineConfig({
  root:path.join(root,'pages-src'),base,publicDir:path.join(root,'public'),
  resolve:{alias:{'@':root}},
- define:{'process.env.NEXT_PUBLIC_STATIC_EXPORT':JSON.stringify('true')},
+ define:{'process.env.NEXT_PUBLIC_STATIC_EXPORT':JSON.stringify('true'),'__GAME_BUILD__':JSON.stringify(buildVersion())},
  css:{postcss:{plugins:[tailwindcss()]}},
   plugins:[{name:'game-pages-paths',enforce:'pre',transform(code,id){if(id.replaceAll('\\','/').startsWith(root.replaceAll('\\','/'))&&!id.includes('node_modules')&&/\.(tsx?|css|json)(\?|$)/.test(id))return prefixAssets(code)},async closeBundle(){
   const dir=path.join(root,'dist-pages');

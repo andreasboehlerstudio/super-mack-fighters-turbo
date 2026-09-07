@@ -1,4 +1,4 @@
-export type FighterId = 'ed'|'edda'|'snorri'|'roland'|'marianne'|'juergen'|'mauritia'|'michael'|'thomas'|'annkathrin'|'frederik'|'alexia'|'miriam'|'katja'|'nicolas'|'max'|'matthias'|'laurent'|'reinhold'|'nathalie'|'andreas'|'karsten'|'scholz'|'wakala'|'graumacher';
+export type FighterId = 'ed'|'edda'|'snorri'|'roland'|'marianne'|'juergen'|'mauritia'|'michael'|'thomas'|'annkathrin'|'frederik'|'alexia'|'miriam'|'katja'|'nicolas'|'max'|'matthias'|'laurent'|'reinhold'|'nathalie'|'andreas'|'karsten'|'scholz'|'wakala'|'bobo'|'mross'|'freudenreich'|'robbemond'|'olli'|'boeckli'|'louis'|'tesla'|'graumacher';
 export type SpecialKind = 'bolt'|'wave'|'dash'|'burst'|'arc';
 export interface FighterDef {id:FighterId;name:string;short:string;color:string;special:string;kind:SpecialKind;speed:number;power:number;reach:number;shotSpeed:number;cooldown:number;tag:string;note:string;}
 const f=(id:FighterId,name:string,color:string,special:string,kind:SpecialKind,speed:number,power:number,reach:number,shotSpeed:number,cooldown:number,tag:string,note:string):FighterDef=>({id,name,short:name.replace(' Mack',''),color,special,kind,speed,power,reach,shotSpeed,cooldown,tag,note});
@@ -6,6 +6,13 @@ export const FIGHTERS:FighterDef[]=[
  f('ed','Ed Euromaus','#ffd35a','Sternen-Sprint','dash',260,16,85,560,150,'FLINK & MUTIG','Ein schneller Vorstoß. Überwinde Distanz und erwische offene Deckung.'),
  f('edda','Edda Euromausi','#ff8dcc','Schleifenbogen','arc',265,17,88,535,150,'MUT & SCHWUNG','Ein pinker Funkelbogen. Mit Pirouette und Sprint bleibt Edda in Bewegung.'),
  f('snorri','Snorri','#51dceb','Sechsarm-Strudel','wave',205,20,113,310,175,'REICHWEITE & WASSER','Eine tiefe Wasserwelle. Der Gegner kann darüber springen.'),
+ {...f('freudenreich','Madame Freudenreich','#ef91b5','Dino-Stampfer','wave',190,26,108,350,205,'DINO & WUCHT','Eine Dino-Spur rollt am Boden entlang. Langsamer Gang, kräftige Überraschungen.'),short:'Madame F.'},
+ {...f('robbemond','Van Robbemond','#ff9d74','Batavia-Vorstoß','dash',250,21,103,570,185,'PIRAT & SCHWUNG','Ein entschlossener Ausfall, eine Schatzmünze und eine Hafenwelle.'),short:'Robbemond'},
+ f('tesla','Nikola Tesla','#a6b5ff','Spulenblitz','bolt',225,22,98,640,185,'STROM & DISTANZ','Der Voltron-Erfinder schickt einen kantigen Blitz voraus und folgt mit einem Spannungssprung.'),
+ f('wakala','Wakala','#c5a1ee','Wunderland-Sprung','dash',225,22,105,510,185,'TRICK & SCHRECK','Der unheimliche Hase aus Traumatica. Täuscht an und springt nach vorn.'),
+ f('olli','Olli Eurofant','#8abefc','Rüsselgriff','burst',185,27,116,320,215,'GRIFF & NÄHE','Ein kurzer Rüsselgriff zieht offene Gegner heran. Die Stampfwelle deckt den Boden ab.'),
+ f('boeckli','Böckli','#ffd68f','Gipfelsturm','dash',260,20,98,590,175,'HÖRNER & ANLAUF','Ein schneller Ansturm, ein Alpenbogen und ein kräftiger Hornwirbel.'),
+ f('louis','Louis','#ff947f','Federbogen','arc',280,16,84,570,140,'FEDERN & FLINKHEIT','Der flinke Hahn wirbelt Federn durch die Luft und setzt mit einem Sprint nach.'),
  f('roland','Roland Mack','#ffac60','Achterbahn-Welle','arc',215,22,102,410,180,'SCHWUNG & KRAFT','Ein goldener Energie-Bogen in Achterbahnform.'),
  f('marianne','Marianne Mack','#fb9dc4','Herzfunkeln','burst',225,18,88,340,150,'NÄHE & FUNKEN','Ein funkelnder Rundumschlag mit kurzer Reichweite.'),
  f('juergen','Jürgen Mack','#85b5ff','Taktgeber','bolt',210,23,97,440,190,'RUHE & PRÄZISION','Ein langsamer vorbereiteter, kräftiger Energieimpuls.'),
@@ -18,6 +25,9 @@ export const FIGHTERS:FighterDef[]=[
  f('miriam','Miriam Mack','#70e4d0','Adria-Welle','wave',235,21,102,380,170,'WASSER & WEITE','Eine türkisfarbene Welle entlang des Bodens.'),
  f('katja','Katja Mack','#ffa0d0','Sternenpirouette','burst',260,18,96,400,155,'TANZ & NÄHE','Ein schneller Sternenwirbel in beide Richtungen.'),
  f('nicolas','Nicolas Mack','#c3dd7b','Resonanzring','arc',225,20,104,510,175,'BOGEN & WEITE','Ein grüner Ring mit schwingender Flugbahn.'),
+ f('scholz','Michael Scholz','#f2ce79','Pionier-Impuls','wave',200,23,104,420,185,'ERFAHRUNG & WEITBLICK','Der Parkpionier: Eine goldene Bodenwelle schafft Raum für seinen nächsten Schritt.'),
+ f('bobo','DJ BoBo','#63e9ff','Dancefloor-Slide','dash',275,17,88,610,155,'TANZ & TEMPO','Schnelle Tanzschritte, ein Beat-Bogen und ein Bassdrop bringen die Arena in Bewegung.'),
+ f('mross','Stefan Mross','#ffcb69','Sonntags-Fanfare','bolt',220,22,100,480,180,'FANFARE & TAKT','Eine goldene Klangfanfare hält Abstand. Der Bühnen-Sprint überbrückt ihn wieder.'),
  f('max','Max Mager','#ffb064','Schnitt-Sprint','dash',270,17,90,640,155,'SCHNITT & SPRINT','Ein orangefarbener Schnitt durch die Arena. Schnell heran, schnell treffen.'),
  f('matthias','Matthias Schilling','#76cafa','Fokusblitz','bolt',220,24,104,520,195,'FOKUS & KRAFT','Ein gebündelter blauer Lichtimpuls mit großer Reichweite.'),
  f('laurent','Laurent Kuhn','#ffe380','Lichtkante','wave',240,19,99,510,170,'LICHT & BODEN','Eine goldene Lichtkante fliegt knapp über dem Boden.'),
@@ -25,8 +35,6 @@ export const FIGHTERS:FighterDef[]=[
  f('nathalie','Nathalie Ruder','#ffb2dc','Farbflug','arc',255,18,90,550,150,'FARBE & BOGEN','Ein pinker Farbfunke schwingt durch die Luft.'),
  f('andreas','Andreas Böhler','#bd9cff','Render-Rush','dash',250,21,97,580,185,'RHYTHMUS & SCHUB','Ein violetter Vorstoß hinterlässt eine leuchtende Spur.'),
  f('karsten','Karsten Mosner','#ffe1a0','Objektivblitz','bolt',230,21,96,540,175,'LICHT & BEWEGUNG','Gebündeltes Licht, ein schneller Dolly-Vorstoß und ein aufsteigender Kran-Schwenk.'),
- f('scholz','Michael Scholz','#f2ce79','Pionier-Impuls','wave',200,23,104,420,185,'ERFAHRUNG & WEITBLICK','Der Parkpionier: Eine goldene Bodenwelle schafft Raum für seinen nächsten Schritt.'),
- f('wakala','Wakala','#c5a1ee','Wunderland-Sprung','dash',225,22,105,510,185,'TRICK & SCHRECK','Der unheimliche Hase aus Traumatica. Täuscht an und springt nach vorn.'),
  f('graumacher','Der Graumacher','#c5c8d8','Stillstands-Welle','wave',165,24,116,330,210,'FINALHERAUSFORDERUNG','Erst leuchtet der Boden, dann kommt die Welle. Springe oder blocke!'),
 ];
 export const HEROES=FIGHTERS.filter(f=>f.id!=='graumacher');

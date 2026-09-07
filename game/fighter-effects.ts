@@ -1,9 +1,11 @@
 import type Phaser from 'phaser';
 import type {Actor,Projectile} from './combat.ts';
 import type {FighterId} from './data.ts';
+import {drawGuestSpecial,drawGuestProjectile} from './guest-effects';
 
 /** Character themes are expressed through transient effects, never attached props. */
 export function drawFighterSpecial(g:Phaser.GameObjects.Graphics,a:Actor,ground:number){
+ drawGuestSpecial(g,a,ground);
  if(a.id==='scholz'){
   if((a.action==='special'||a.action==='ultra')&&a.age<36){
    const spread=Math.floor(a.age/3),alpha=Math.min(1,a.age/5,(36-a.age)/10);
@@ -32,6 +34,7 @@ export function drawFighterSpecial(g:Phaser.GameObjects.Graphics,a:Actor,ground:
 }
 
 export function drawFighterProjectile(g:Phaser.GameObjects.Graphics,p:Projectile,id:FighterId,ground:number):boolean {
+ if(drawGuestProjectile(g,p,id,ground))return true;
  if(id!=='karsten'&&id!=='edda'&&id!=='scholz')return false;
  const x=Math.round(p.x),y=Math.round(ground+p.y),r=Math.round(p.radius),direction=Math.sign(p.vx);
  if(id==='karsten'){

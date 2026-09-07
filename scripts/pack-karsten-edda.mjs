@@ -15,17 +15,18 @@ async function decodeSheet(j){
  const {data,info}=await sharp(j.source).ensureAlpha().raw().toBuffer({resolveWithObject:true}),{width:w,height:h}=info;
  if(data[3]>128&&!j.chromaKey)throw Error('Background is opaque '+j.source);
  for(let p=0;p<data.length;p+=4){const key=j.chromaKey&&data[p+1]>110&&data[p+1]>data[p]+35&&data[p+1]>data[p+2]+35;data[p+3]=!key&&data[p+3]>128?255:0;if(!data[p+3])data.fill(0,p,p+3);}
- const seen=new Uint8Array(w*h),queue=new Int32Array(w*h),parts=[];
+ const seen=new Int32Array(w*h),queue=new Int32Array(w*h),parts=[];
  for(let p=0;p<w*h;p++)if(!seen[p]&&data[p*4+3]){
-  let first=0,last=1,l=w,r=0,t=h,b=0;queue[0]=p;seen[p]=1;
+  const label=p+1;let first=0,last=1,l=w,r=0,t=h,b=0;queue[0]=p;seen[p]=label;
   while(first<last){const q=queue[first++],x=q%w,y=Math.floor(q/w);l=Math.min(l,x);r=Math.max(r,x);t=Math.min(t,y);b=Math.max(b,y);
-   for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++){const nx=x+dx,ny=y+dy;if(nx<0||nx>=w||ny<0||ny>=h)continue;const n=ny*w+nx;if(!seen[n]&&data[n*4+3]){seen[n]=1;queue[last++]=n;}}
-  }if(last>=6)parts.push({l,r,t,b,n:last});
+   for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++){const nx=x+dx,ny=y+dy;if(nx<0||nx>=w||ny<0||ny>=h)continue;const n=ny*w+nx;if(!seen[n]&&data[n*4+3]){seen[n]=label;queue[last++]=n;}}
+  }if(last>=6)parts.push({l,r,t,b,n:last,label,labels:new Set([label])});
  }
  const main=parts.filter(p=>p.n>2500).sort((a,b)=>b.n-a.n).slice(0,8);if(main.length!==8)throw Error(`${j.id}/${j.clip}: ${main.length} silhouettes`);
  main.sort((a,b)=>a.t+a.b-b.t-b.b);const sorted=[...main.slice(0,4).sort((a,b)=>a.l-b.l),...main.slice(4).sort((a,b)=>a.l-b.l)];
- for(const p of parts.filter(p=>!main.includes(p))){const ranked=main.map(m=>({m,d:Math.max(0,m.l-p.r,p.l-m.r)**2+Math.max(0,m.t-p.b,p.t-m.b)**2})).sort((a,b)=>a.d-b.d);if(ranked[0].d<24**2){const m=ranked[0].m;m.l=Math.min(m.l,p.l);m.r=Math.max(m.r,p.r);m.t=Math.min(m.t,p.t);m.b=Math.max(m.b,p.b);}}
- const frames=[];for(const p of sorted){const cell=await sharp(data,{raw:info}).extract({left:p.l,top:p.t,width:p.r-p.l+1,height:p.b-p.t+1}).raw().toBuffer({resolveWithObject:true});frames.push({...cell,b:bounds(cell.data,cell.info.width,cell.info.height)});}
+ for(const p of parts.filter(p=>!main.includes(p))){const ranked=main.map(m=>({m,d:Math.max(0,m.l-p.r,p.l-m.r)**2+Math.max(0,m.t-p.b,p.t-m.b)**2})).sort((a,b)=>a.d-b.d);if(ranked[0].d<24**2){const m=ranked[0].m;m.l=Math.min(m.l,p.l);m.r=Math.max(m.r,p.r);m.t=Math.min(m.t,p.t);m.b=Math.max(m.b,p.b);m.labels.add(p.label);}}
+ // Bounding boxes can overlap when a neighboring fist extends left. Keep only this silhouette's pixels.
+ const frames=[];for(const p of sorted){const cell=await sharp(data,{raw:info}).extract({left:p.l,top:p.t,width:p.r-p.l+1,height:p.b-p.t+1}).raw().toBuffer({resolveWithObject:true});for(let y=0;y<cell.info.height;y++)for(let x=0;x<cell.info.width;x++)if(!p.labels.has(seen[(p.t+y)*w+p.l+x]))cell.data.fill(0,(y*cell.info.width+x)*4,(y*cell.info.width+x+1)*4);frames.push({...cell,b:bounds(cell.data,cell.info.width,cell.info.height)});}
  return frames;
 }
 await mkdir(path.join(dir,'normalized'),{recursive:true});
@@ -40,7 +41,7 @@ for(const id of ids){
  const framesByClip={},measurements={},sources={};for(const j of all.filter(j=>j.clip!=='portrait'))sources[j.clip]=await decodeSheet(j);
  for(const clip of ['idle','walk','punch','kick','airpunch','airkick','reactions'])if(!sources[clip])throw Error('Missing '+id+'/'+clip);
  // Scholz's raised elbow reaches his glasses; use the crown band to anchor the skull.
- const height=196,headBand=id==='edda'?.34:id==='scholz'?.12:.16,idleScale=height/median(sources.idle.map(f=>f.b.height));
+ const height=196,headBand=id==='edda'?.34:id==='scholz'?.12:id==='robbemond'?.10:.16,idleScale=height/median(sources.idle.map(f=>f.b.height));
  const sourceHead=f=>bounds(f.data,f.info.width,f.info.height,f.b.top,f.b.top+Math.round(f.b.height*headBand));
  const targetHead=median(sources.idle.map(f=>sourceHead(f).width))*idleScale;
  for(const [clip,src] of Object.entries(sources)){
@@ -65,7 +66,7 @@ for(const id of ids){
    const b=bounds(out,256,256),headHeight=Math.round(height*(id==='edda'?.43:.30));
    const fullHead=bounds(out,256,256,b.top,b.top+headHeight);
    const anchor={head:{x:fullHead.left,y:fullHead.top,w:fullHead.width,h:headHeight},neck:{x:Math.round(fullHead.left+fullHead.width/2),y:b.top+headHeight}};
-   ms.push({...b,frame:i,origin:{x:128+shiftX+x-desiredX,y:246+shiftY},headWidth:p.head.width,headX:x+p.head.left+p.head.width/2,scale,nativeBodyHeight:p.f.b.height,hash:createHash('sha256').update(out).digest('hex'),anchor});
+   ms.push({...b,frame:i,origin:{x:128+shiftX+x-desiredX,y:246+shiftY},headWidth:p.head.width,headX:x+p.head.left+p.head.width/2,scale,nativeBodyHeight:p.f.b.height,nativeSpan:Math.max(p.f.b.height,p.f.b.width),hash:createHash('sha256').update(out).digest('hex'),anchor});
    frames.push(await sharp(out,{raw:{width:256,height:256,channels:4}}).png().toBuffer());
   }
   if(new Set(ms.map(f=>f.hash)).size!==8)throw Error('Duplicate frames '+id+'/'+clip);

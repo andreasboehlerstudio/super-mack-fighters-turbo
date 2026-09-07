@@ -25,7 +25,7 @@ export const teamHealth=(m:Match,i:number)=>m.actors[i].hp+(m.bench[i]?.hp??0);
 export const activeMove=(a:Actor)=>movesFor(a.id)[a.activeMove]??movesFor(a.id)[0];
 export type Hitbox={x:number;y:number;w:number;h:number};
 export const boxesOverlap=(a:Hitbox,b:Hitbox)=>a.x<b.x+b.w&&a.x+a.w>b.x&&a.y<b.y+b.h&&a.y+a.h>b.y;
-export const hurtbox=(a:Actor):Hitbox=>{const mascot=['ed','snorri','wakala'].includes(a.id),width=mascot?84:62,height=a.action==='crouch'?104:mascot?168:178;return {x:a.x-width/2,y:a.y-height,w:width,h:height}};
+export const hurtbox=(a:Actor):Hitbox=>{const mascot=['ed','edda','snorri','wakala','olli','boeckli','louis'].includes(a.id),width=mascot?84:62,height=a.action==='crouch'?104:mascot?168:178;return {x:a.x-width/2,y:a.y-height,w:width,h:height}};
 /** Shared collision geometry for combat resolution. Debug boxes are never drawn in the game. */
 export function activeHitbox(a:Actor):Hitbox|null {
  const d=fighter(a.id),move=activeMove(a);let reach=0,top=95,height=70,behind=0;
@@ -34,7 +34,7 @@ export function activeHitbox(a:Actor):Hitbox|null {
  else if(a.action==='airpunch'&&a.age>=6&&a.age<=11&&!a.attackHit){reach=d.reach+8;top=132;height=58}
  else if(a.action==='airkick'&&a.age>=9&&a.age<=17&&!a.attackHit){reach=d.reach+42;top=102;height=60}
  else if(a.action==='special'&&move.kind==='dash'&&a.age>=move.startup&&a.age<move.startup+18&&!a.attackHit){reach=move.reach;behind=24}
- else if(a.action==='special'&&move.kind==='burst'&&a.age===move.startup)return {x:a.x-move.reach,y:a.y-120,w:move.reach*2,h:120};
+ else if(a.action==='special'&&move.kind==='burst'&&a.age===move.startup)return a.id==='olli'&&a.activeMove===0?{x:a.face>0?a.x:a.x-move.reach,y:a.y-120,w:move.reach,h:120}:{x:a.x-move.reach,y:a.y-120,w:move.reach*2,h:120};
  else if(a.action==='ultra'&&d.kind==='dash'&&a.age>=28&&a.age<50&&!a.attackHit){reach=d.reach+35;behind=24;top=105;height=85}
  else if(a.action==='ultra'&&d.kind==='burst'&&[28,36,44].includes(a.age))return {x:a.x-250,y:a.y-120,w:500,h:120};
  else return null;
@@ -53,7 +53,15 @@ function damage(m:Match,attacker:number,defender:number,amount:number,x:number,y
 }
 function launch(m:Match,a:Actor,index:number,move:Pick<MoveDef,'kind'|'power'|'speed'|'reach'>,superHit=false){
  const height=move.kind==='wave'?20:move.kind==='arc'?90:65;
- if(move.kind==='burst'){const b=m.actors[1-index];if(boxesOverlap({x:a.x-move.reach,y:a.y-120,w:move.reach*2,h:120},hurtbox(b)))damage(m,index,1-index,move.power,b.x,FLOOR+b.y-65,true,superHit)}
+ if(move.kind==='burst'){
+  const b=m.actors[1-index],grip=a.id==='olli'&&!superHit&&a.activeMove===0;
+  const area=grip?{x:a.face>0?a.x:a.x-move.reach,y:a.y-120,w:move.reach,h:120}:{x:a.x-move.reach,y:a.y-120,w:move.reach*2,h:120};
+  if(boxesOverlap(area,hurtbox(b))){
+   const open=b.action!=='block'&&b.invuln===0&&!(m.rules.parry&&b.parryTicks>0),hp=b.hp;
+   damage(m,index,1-index,move.power,b.x,FLOOR+b.y-65,true,superHit);
+   if(grip&&open&&b.hp>0&&b.hp<hp){b.x=Math.max(LEFT,Math.min(RIGHT,a.x+a.face*78));b.vx=0;}
+  }
+ }
  else if(move.kind!=='dash')m.projectiles.push({id:++m.serial,owner:index,sourceId:a.id,x:a.x+a.face*42,y:a.y-height,originY:a.y-height,vx:a.face*move.speed,age:0,kind:move.kind,damage:move.power,radius:superHit?29:move.kind==='wave'?25:19,color:fighter(a.id).color,ultra:superHit});
 }
 function tag(m:Match,index:number,forced=false){

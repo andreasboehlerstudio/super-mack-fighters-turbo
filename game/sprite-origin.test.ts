@@ -7,7 +7,7 @@ import {FIGHTERS,type FighterId} from './data.ts';
 const art=JSON.parse(readFileSync(new URL('../public/assets/animations/combat-v5.json',import.meta.url),'utf8'));
 test('every fighter has four distinct eight-pose attacks and eight reactions at native detail',()=>{
  assert.equal(art.sheets.length,FIGHTERS.length*5);
- for(const sheet of art.sheets){assert.ok(sheet.scale>0&&sheet.scale<=1,sheet.id);assert.equal(sheet.frames.length,8);assert.equal(new Set(sheet.frames.map((f:any)=>f.hash)).size,8);for(const f of sheet.frames){assert.ok(f.nativeBodyHeight>=180);assert.equal(f.scale,sheet.scale);assert.ok(f.left>=2&&f.top>=2&&f.left+f.width<=254&&f.bottom<=253);}}
+ for(const sheet of art.sheets){assert.ok(sheet.scale>0&&sheet.scale<=1,sheet.id);assert.equal(sheet.frames.length,8);assert.equal(new Set(sheet.frames.map((f:any)=>f.hash)).size,8);for(const f of sheet.frames){assert.ok((f.nativeSpan??f.nativeBodyHeight)>=180,`${sheet.id}/${sheet.clip}/${f.frame} native detail`);assert.equal(f.scale,sheet.scale);assert.ok(f.left>=2&&f.top>=2&&f.left+f.width<=254&&f.bottom<=253);}}
 });
 test('rendered origins match each authored sole anchor through grounded attacks and reactions',()=>{
  for(const sheet of art.sheets){for(const f of sheet.frames){const reaction=sheet.clip==='reactions',frame=reaction?[4,5,10,11,12,13,14,15][f.frame]:({punch:16,kick:24,airpunch:32,airkick:40} as Record<string,number>)[sheet.clip]+f.frame;assert.deepEqual(spriteOrigin(sheet.id as FighterId,reaction?'action':'motion',frame),f.origin);if(['punch','kick'].includes(sheet.clip)||reaction&&f.frame!==0)assert.equal(f.bottom-f.origin.y,0,`${sheet.id}/${sheet.clip}/${f.frame}`);}}
