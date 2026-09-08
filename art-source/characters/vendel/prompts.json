@@ -1,0 +1,75 @@
+[
+  {
+    "id": "vendel",
+    "clip": "portrait",
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/vendel/references/character-sheet.png",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/portraits/roland.png"
+    ],
+    "prompt": "Create a finished vertical 3:4 game-select head and chest portrait. Reference 1 is IDENTITY, reference 2 is exact hand-pixelled 32-bit arcade STYLE only. Michael Vendel exactly from the character sheet: broad sturdy adult male, tousled wavy side-swept dark brown hair, short full brown beard, hazel eyes, broad friendly face. Muted gray-sage olive crewneck T-shirt, LIGHT BLUE knee-length denim shorts, black ankle socks, white lowtop sneakers. Preserve his mild belly and sturdy natural build, no muscles added. No cap, no glasses, no props. Face three-quarter looking RIGHT, friendly confident expression, head fills frame, crop mid chest. Match Roland's crisp pixel density, limited palette, angular readable planes, navy and turquoise diagonal streak background and thin golden rim lighting. No photographic texture, blur, text, border or UI."
+  },
+  {
+    "id": "vendel",
+    "clip": "idle",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/vendel/references/character-sheet.jpg",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/otto/idle.png"
+    ],
+    "prompt": "Create a production game animation SPRITESHEET, reference 1 IDENTITY, reference 2 exact pixel STYLE and layout only. Michael Vendel exactly from the character sheet: broad sturdy adult male, tousled wavy side-swept dark brown hair, short full brown beard, hazel eyes, broad friendly face. Muted gray-sage olive crewneck T-shirt, LIGHT BLUE knee-length denim shorts, black ankle socks, white lowtop sneakers. Preserve his mild belly and sturdy natural build, no muscles added. No cap, no glasses, no props. Eight distinct subtle guard/breathing poses forming a seamless IDLE loop, hands raised, both feet planted, slight chest breathing and hand shifts. Exactly FOUR columns TWO rows on 1536x1024 canvas, each full body ~420px tall, consistent scale head size baseline and body proportions in all frames, at least 40px clear spacing. RIGHT-facing three-quarter side view. Crisp hand-pixelled 32-bit arcade style, controlled pixel clusters, no blur. Background perfectly UNIFORM SATURATED CHROMA GREEN #00ff00, including gaps between limbs. Clothing stays muted GRAY sage (low saturation), never bright green. No shadows, floor, text, grid, particles, props or other people."
+  },
+  {
+    "id": "vendel",
+    "clip": "walk",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/vendel/idle.png"
+    ],
+    "prompt": "Produce a production spritesheet of this EXACT Michael Vendel from the reference, preserve face, stocky build, gray-sage T-shirt, light blue denim shorts, black ankle socks, white sneakers. Eight progressive WALK combat footwork frames in a seamless cycle: 0 left foot forward contact,1 down weight transfer,2 passing feet,3 right knee forward up,4 right foot forward contact,5 down transfer,6 passing feet,7 left knee forward up. Feet alternate grounded, guard hands stay raised. Natural shallow stride, NO exaggerated marching, no translating the figure, no shrinking. Exactly FOUR columns TWO rows (8 separate drawings), canvas1536x1024, full body approx420px tall upright, minimum40px clear spacing, all extremities remain inside their cell. RIGHT-facing three-quarter side view. Identical crisp hand-pixelled32-bit arcade style and pixel density, no blur. Uniform SATURATED #00FF00 chroma green background including enclosed gaps, clothing stays low-saturation GRAY sage. NO shadows, floor, text, grid, captions, particles, props, other people."
+  },
+  {
+    "id": "vendel",
+    "clip": "punch",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/vendel/idle.png"
+    ],
+    "prompt": "Produce a production spritesheet of this EXACT Michael Vendel from the reference, preserve face, stocky build, gray-sage T-shirt, light blue denim shorts, black ankle socks, white sneakers. Eight progressive grounded PUNCH frames:0 guard,1 winding back fist,2 half extended,3 full straight punch to RIGHT,4 followthrough,5 half retraction,6 recovery,7 guard. Torso rotates naturally, feet planted, keep punching arm anatomically connected. Exactly FOUR columns TWO rows (8 separate drawings), canvas1536x1024, full body approx420px tall upright, minimum40px clear spacing, all extremities remain inside their cell. RIGHT-facing three-quarter side view. Identical crisp hand-pixelled32-bit arcade style and pixel density, no blur. Uniform SATURATED #00FF00 chroma green background including enclosed gaps, clothing stays low-saturation GRAY sage. NO shadows, floor, text, grid, captions, particles, props, other people."
+  },
+  {
+    "id": "vendel",
+    "clip": "kick",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/vendel/idle.png"
+    ],
+    "prompt": "Produce a production spritesheet of this EXACT Michael Vendel from the reference, preserve face, stocky build, gray-sage T-shirt, light blue denim shorts, black ankle socks, white sneakers. Eight progressive grounded KICK frames:0 guard,1 weight load,2 knee lifted,3 full leg extended waist-high to RIGHT,4 followthrough,5 knee retracts,6 leg lowers,7 guard. Supporting foot grounded. Preserve torso and head size as reference. Exactly FOUR columns TWO rows (8 separate drawings), canvas1536x1024, full body approx420px tall upright, minimum40px clear spacing, all extremities remain inside their cell. RIGHT-facing three-quarter side view. Identical crisp hand-pixelled32-bit arcade style and pixel density, no blur. Uniform SATURATED #00FF00 chroma green background including enclosed gaps, clothing stays low-saturation GRAY sage. NO shadows, floor, text, grid, captions, particles, props, other people."
+  },
+  {
+    "id": "vendel",
+    "clip": "airpunch",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/vendel/idle.png"
+    ],
+    "prompt": "Produce a production spritesheet of this EXACT Michael Vendel from the reference, preserve face, stocky build, gray-sage T-shirt, light blue denim shorts, black ankle socks, white sneakers. Eight progressive airborne PUNCH frames:0 rising with bent knees,1 windup,2 extending shoulder,3 fully extended fist to RIGHT with bent legs,4 followthrough,5 retract,6 landing preparation,7 landing guard. Every full figure visible, same body proportions and head size. Exactly FOUR columns TWO rows (8 separate drawings), canvas1536x1024, full body approx420px tall upright, minimum40px clear spacing, all extremities remain inside their cell. RIGHT-facing three-quarter side view. Identical crisp hand-pixelled32-bit arcade style and pixel density, no blur. Uniform SATURATED #00FF00 chroma green background including enclosed gaps, clothing stays low-saturation GRAY sage. NO shadows, floor, text, grid, captions, particles, props, other people."
+  },
+  {
+    "id": "vendel",
+    "clip": "airkick",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/vendel/idle.png"
+    ],
+    "prompt": "Produce a production spritesheet of this EXACT Michael Vendel from the reference, preserve face, stocky build, gray-sage T-shirt, light blue denim shorts, black ankle socks, white sneakers. Eight progressive airborne KICK frames:0 rising knees,1 chamber,2 leg partly extended,3 full flying kick to RIGHT rear leg tucked,4 followthrough,5 knee retracts,6 landing prep,7 landing. Same head size and body proportions, do not resize smaller for wider poses. Exactly FOUR columns TWO rows (8 separate drawings), canvas1536x1024, full body approx420px tall upright, minimum40px clear spacing, all extremities remain inside their cell. RIGHT-facing three-quarter side view. Identical crisp hand-pixelled32-bit arcade style and pixel density, no blur. Uniform SATURATED #00FF00 chroma green background including enclosed gaps, clothing stays low-saturation GRAY sage. NO shadows, floor, text, grid, captions, particles, props, other people."
+  },
+  {
+    "id": "vendel",
+    "clip": "reactions",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/vendel/idle.png"
+    ],
+    "prompt": "Produce a production spritesheet of this EXACT Michael Vendel from the reference, preserve face, stocky build, gray-sage T-shirt, light blue denim shorts, black ankle socks, white sneakers. Eight distinct REACTION poses in this EXACT order:0 upward jump with bent knees,1 deep defensive crouch,2 standing crossed-arm block,3 recoiling from a hit,4 standing double-palm energy push to RIGHT (hands only NO effect),5 standing forward shoulder power lunge,6 defeated low kneeling with hanging head,7 standing victory raised fist. The torso/head size MUST match reference even when crouching. No injury. Exactly FOUR columns TWO rows (8 separate drawings), canvas1536x1024, full body approx420px tall upright, minimum40px clear spacing, all extremities remain inside their cell. RIGHT-facing three-quarter side view. Identical crisp hand-pixelled32-bit arcade style and pixel density, no blur. Uniform SATURATED #00FF00 chroma green background including enclosed gaps, clothing stays low-saturation GRAY sage. NO shadows, floor, text, grid, captions, particles, props, other people."
+  }
+]

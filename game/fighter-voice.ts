@@ -18,6 +18,7 @@ export const FIGHTER_VOICES:Record<FighterId,Voice>={
  nathalie:human(248),andreas:human(155),karsten:human(124,.2),scholz:human(116,.25),
  bobo:human(169,.16),mross:human(145),freudenreich:human(205,.26),
  otto:human(192,.2),ross:human(198,.1),
+ vendel:human(148,.18),
  robbemond:human(103,.3),tesla:human(132,.18),
 };
 export function isAttackCall(type:string):type is AttackCall{return ['punch','kick','special','ultra'].includes(type)}

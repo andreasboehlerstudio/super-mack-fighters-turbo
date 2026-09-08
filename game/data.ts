@@ -1,4 +1,4 @@
-export type FighterId = 'ed'|'edda'|'snorri'|'roland'|'marianne'|'juergen'|'mauritia'|'michael'|'thomas'|'annkathrin'|'frederik'|'alexia'|'miriam'|'katja'|'nicolas'|'max'|'matthias'|'laurent'|'reinhold'|'nathalie'|'andreas'|'karsten'|'scholz'|'wakala'|'bobo'|'mross'|'otto'|'ross'|'freudenreich'|'robbemond'|'olli'|'boeckli'|'louis'|'tesla'|'graumacher';
+export type FighterId = 'ed'|'edda'|'snorri'|'roland'|'marianne'|'juergen'|'mauritia'|'michael'|'thomas'|'annkathrin'|'frederik'|'alexia'|'miriam'|'katja'|'nicolas'|'max'|'matthias'|'laurent'|'reinhold'|'nathalie'|'andreas'|'karsten'|'vendel'|'scholz'|'wakala'|'bobo'|'mross'|'otto'|'ross'|'freudenreich'|'robbemond'|'olli'|'boeckli'|'louis'|'tesla'|'graumacher';
 export type SpecialKind = 'bolt'|'wave'|'dash'|'burst'|'arc';
 export interface FighterDef {id:FighterId;name:string;short:string;color:string;special:string;kind:SpecialKind;speed:number;power:number;reach:number;shotSpeed:number;cooldown:number;tag:string;note:string;}
 const f=(id:FighterId,name:string,color:string,special:string,kind:SpecialKind,speed:number,power:number,reach:number,shotSpeed:number,cooldown:number,tag:string,note:string):FighterDef=>({id,name,short:name.replace(' Mack',''),color,special,kind,speed,power,reach,shotSpeed,cooldown,tag,note});
@@ -37,6 +37,7 @@ export const FIGHTERS:FighterDef[]=[
  f('nathalie','Nathalie Ruder','#ffb2dc','Farbflug','arc',255,18,90,550,150,'FARBE & BOGEN','Ein pinker Farbfunke schwingt durch die Luft.'),
  f('andreas','Andreas Böhler','#bd9cff','Render-Rush','dash',250,21,97,580,185,'RHYTHMUS & SCHUB','Ein violetter Vorstoß hinterlässt eine leuchtende Spur.'),
  f('karsten','Karsten Mosner','#ffe1a0','Objektivblitz','bolt',230,21,96,540,175,'LICHT & BEWEGUNG','Gebündeltes Licht, ein schneller Dolly-Vorstoß und ein aufsteigender Kran-Schwenk.'),
+ f('vendel','Michael Vendel','#b8dbc2','Impulswelle','wave',220,22,102,460,180,'STAND & SCHUB','Eine Bodenwelle schafft Raum. Kraft-Sprint und Druckwirbel bringen Michael wieder in den Nahkampf.'),
  f('graumacher','Der Graumacher','#c5c8d8','Stillstands-Welle','wave',165,24,116,330,210,'FINALHERAUSFORDERUNG','Erst leuchtet der Boden, dann kommt die Welle. Springe oder blocke!'),
 ];
 export const HEROES=FIGHTERS.filter(f=>f.id!=='graumacher');

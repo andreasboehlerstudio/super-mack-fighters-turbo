@@ -2,6 +2,16 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.2-alpha — 2026-09-08
+
+### Charaktere
+- Michael Vendel ist als 35. Kämpfer auswählbar, direkt nach Karsten Mosner.
+- Eigenes Imagegen-Pixelportrait und sieben Animationsblätter mit je acht Zeichnungen anhand seines Character Sheets: graugrünes Shirt, Jeansshorts, schwarze Socken und weiße Sneaker.
+- Separate verlustfreie Animationsdateien mit festen Ankerpunkten für Lauf-, Boden- und Luftangriffe sowie Reaktionen.
+- Drei Spezialangriffe: Impulswelle, Kraft-Sprint und Druckwirbel. Ultra: Voller Einsatz.
+- Eigener Arcade-Abschluss „Mit vollem Einsatz“ und synthetischer Angriffsruf.
+- Geprüft: 95 automatisierte Tests inklusive Spezialangriffen, Ultra, Stimmen und Sprite-Geometrie; TypeScript und Pages-Build; Charakterwahl, Probekampf, Sprungtritt, Ultra und Move-Liste im Browser ohne Laufzeitfehler.
+
 ## 0.2.1-alpha — 2026-09-08
 
 ### Charaktere

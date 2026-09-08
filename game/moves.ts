@@ -25,6 +25,7 @@ const names:Record<FighterId,[string,string,string]>={
  nathalie:['Farbwirbel','Prismenflug','FARBENFEST'],
  andreas:['Renderbogen','Frame-Wirbel','MASTER RENDER'],
  karsten:['Dolly-Fahrt','Kran-Schwenk','ONE TAKE'],
+ vendel:['Kraft-Sprint','Druckwirbel','VOLLER EINSATZ'],
  scholz:['Allee-Sprint','Qualitätskontrolle','PIONIERGEIST 73'],
  wakala:['Nachtfunken','Hasen-Haken','WAKALAS WUNDERLAND'],
  bobo:['Beat-Bogen','Bassdrop','DANCEFLOOR FINALE'],
@@ -41,7 +42,7 @@ const names:Record<FighterId,[string,string,string]>={
 };
 const other:Record<SpecialKind,[SpecialKind,SpecialKind]>={dash:['arc','burst'],wave:['dash','bolt'],arc:['burst','dash'],burst:['bolt','wave'],bolt:['wave','dash']};
 export function movesFor(id:FighterId):[MoveDef,MoveDef,MoveDef]{
- const variants:Partial<Record<FighterId,[SpecialKind,SpecialKind]>>={karsten:['dash','arc'],mross:['dash','wave'],otto:['wave','burst'],ross:['wave','dash'],freudenreich:['arc','burst'],robbemond:['arc','wave'],olli:['wave','dash'],tesla:['arc','dash']};
+ const variants:Partial<Record<FighterId,[SpecialKind,SpecialKind]>>={vendel:['dash','burst'],karsten:['dash','arc'],mross:['dash','wave'],otto:['wave','burst'],ross:['wave','dash'],freudenreich:['arc','burst'],robbemond:['arc','wave'],olli:['wave','dash'],tesla:['arc','dash']};
  const d=fighter(id),[second,third]:[SpecialKind,SpecialKind]=variants[id]??other[d.kind];
  return [
   {name:d.special,kind:d.kind,input:'quarter-punch',power:d.power,speed:d.shotSpeed,cooldown:d.cooldown,startup:id==='graumacher'?44:18,duration:id==='graumacher'?76:53,reach:id==='olli'?115:d.kind==='burst'?165:d.reach},
