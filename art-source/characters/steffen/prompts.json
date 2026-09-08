@@ -1,0 +1,77 @@
+[
+  {
+    "id": "steffen",
+    "clip": "portrait",
+    "chromaKey": false,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/team-s/references/steffen-opening.png",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/portraits/roland.png"
+    ],
+    "prompt": "Create a finished vertical 3:4 game-select head and chest portrait. Reference 1 IDENTITY only, reference 2 exact hand-pixelled 32-bit arcade STYLE only. Steffen Weber is the MAN on the LEFT in reference 1: light skin, lean build, narrow elongated face, dark short curly swept-up hair with some gray at temples, neatly trimmed short dark beard, prominent nose, no glasses. Change his white T-shirt to a bright YELLOW POLO with a LARGE RED capital S centered on chest. Dark navy slim trousers and white sneakers. No cap, no props. Face three-quarter looking RIGHT, confident slight smile. Head fills frame, crop mid chest with S visible. Match Roland's crisp pixel density, limited palette, angular readable planes, navy/turquoise diagonal streaks and golden rim lighting. No photo texture, blur, other people, UI, border or text except S."
+  },
+  {
+    "id": "steffen",
+    "clip": "idle",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/team-s/references/steffen-opening.png",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/vendel/idle.png"
+    ],
+    "prompt": "Create a production game animation SPRITESHEET. Reference 1 IDENTITY only, reference 2 exact pixel STYLE and layout only. Steffen Weber is the MAN on the LEFT in reference 1: light skin, lean build, narrow elongated face, dark short curly swept-up hair with some gray at temples, neatly trimmed short dark beard, prominent nose, no glasses. Change his white T-shirt to a bright YELLOW POLO with a LARGE RED capital S centered on chest. Dark navy slim trousers and white sneakers. No cap, no props. Eight distinct subtle guard/breathing poses forming seamless IDLE, fists raised, feet planted, mild chest breathing and hand shifts. Exactly FOUR columns TWO rows on 1536x1024 canvas, full body ~420px tall, consistent head size baseline and proportions, at least40px clear spacing. RIGHT-facing three-quarter side view. Crisp hand-pixelled32-bit arcade style, controlled pixel clusters, no blur. Background perfectly UNIFORM SATURATED CHROMA GREEN #00ff00 including enclosed gaps. Yellow shirt must stay golden YELLOW, not green. Large red S remains consistent. No shadows, floor, labels, grid, particles, props or other people."
+  },
+  {
+    "id": "steffen",
+    "clip": "walk",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/steffen/idle.png"
+    ],
+    "prompt": "Produce a production game spritesheet of this EXACT Steffen Weber: slim man, swept-up dark curly hair gray temples, short beard, yellow red-S polo, navy trousers white sneakers. Preserve reference face body clothing. Eight progressive WALK combat footwork frames seamless cycle:0 left foot forward contact,1 down weight transfer,2 passing feet,3 right foot forward rising,4 right foot contact,5 down transfer,6 passing feet,7 left foot forward rising. Feet alternate grounded, hands stay in chest-height guard. Natural shallow stride NO marching, NO translating or shrinking. ExactlyFOUR columns TWO rows (8separate drawings) canvas1536x1024 fullbodyapprox420pxtall upright, minimum40pxclearspacing. RIGHT-facing threequarter. Identical crisp hand-pixelled32-bit arcade and consistentpixel density, no blur. Everylimbinsideitscell. UniformSATURATED#00FF00chroma green background includingclosedgaps, yellowshirtNOTgreen. Red capital S onchest staysconsistent allframes. NO shadows floor text grid labels particles props orotherpeople."
+  },
+  {
+    "id": "steffen",
+    "clip": "punch",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/steffen/idle.png"
+    ],
+    "prompt": "Produce a production game spritesheet of this EXACT Steffen Weber: slim man, swept-up dark curly hair gray temples, short beard, yellow red-S polo, navy trousers white sneakers. Preserve reference face body clothing. Eight progressive grounded PUNCH frames:0 guard,1 windup fist back,2 half extension,3 full straight punch RIGHT,4 followthrough,5 half retract,6 recovery,7 guard. Feet stay grounded, torso rotates, arm anatomically attached. ExactlyFOUR columns TWO rows (8separate drawings) canvas1536x1024 fullbodyapprox420pxtall upright, minimum40pxclearspacing. RIGHT-facing threequarter. Identical crisp hand-pixelled32-bit arcade and consistentpixel density, no blur. Everylimbinsideitscell. UniformSATURATED#00FF00chroma green background includingclosedgaps, yellowshirtNOTgreen. Red capital S onchest staysconsistent allframes. NO shadows floor text grid labels particles props orotherpeople."
+  },
+  {
+    "id": "steffen",
+    "clip": "kick",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/steffen/idle.png"
+    ],
+    "prompt": "Produce a production game spritesheet of this EXACT Steffen Weber: slim man, swept-up dark curly hair gray temples, short beard, yellow red-S polo, navy trousers white sneakers. Preserve reference face body clothing. Eight progressive grounded KICK frames:0 guard,1 weight loading,2 knee up,3 full forward horizontal kick RIGHT,4 followthrough,5 bend kicking knee to retract,6 lower foot,7 guard. Supporting foot stays planted, head size constant. ExactlyFOUR columns TWO rows (8separate drawings) canvas1536x1024 fullbodyapprox420pxtall upright, minimum40pxclearspacing. RIGHT-facing threequarter. Identical crisp hand-pixelled32-bit arcade and consistentpixel density, no blur. Everylimbinsideitscell. UniformSATURATED#00FF00chroma green background includingclosedgaps, yellowshirtNOTgreen. Red capital S onchest staysconsistent allframes. NO shadows floor text grid labels particles props orotherpeople."
+  },
+  {
+    "id": "steffen",
+    "clip": "airpunch",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/steffen/idle.png"
+    ],
+    "prompt": "Produce a production game spritesheet of this EXACT Steffen Weber: slim man, swept-up dark curly hair gray temples, short beard, yellow red-S polo, navy trousers white sneakers. Preserve reference face body clothing. Eight progressive AIR PUNCH frames:0 rising with knees bent,1 windup,2 shoulder turns,3 full straight punch RIGHT while airborne,4 followthrough,5 return hand,6 landing preparation,7 landing guard. No jumping trail or effects. ExactlyFOUR columns TWO rows (8separate drawings) canvas1536x1024 fullbodyapprox420pxtall upright, minimum40pxclearspacing. RIGHT-facing threequarter. Identical crisp hand-pixelled32-bit arcade and consistentpixel density, no blur. Everylimbinsideitscell. UniformSATURATED#00FF00chroma green background includingclosedgaps, yellowshirtNOTgreen. Red capital S onchest staysconsistent allframes. NO shadows floor text grid labels particles props orotherpeople."
+  },
+  {
+    "id": "steffen",
+    "clip": "airkick",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/steffen/idle.png"
+    ],
+    "prompt": "Produce a production game spritesheet of this EXACT Steffen Weber: slim man, swept-up dark curly hair gray temples, short beard, yellow red-S polo, navy trousers white sneakers. Preserve reference face body clothing. Eight progressive AIR KICK frames:0 rising,1 chamber front knee,2 half extension,3 full horizontal kick RIGHT with other leg tucked behind,4 followthrough,5 retract bent knee,6 landing preparation,7 landing guard. Constant body and head scale. ExactlyFOUR columns TWO rows (8separate drawings) canvas1536x1024 fullbodyapprox420pxtall upright, minimum40pxclearspacing. RIGHT-facing threequarter. Identical crisp hand-pixelled32-bit arcade and consistentpixel density, no blur. Everylimbinsideitscell. UniformSATURATED#00FF00chroma green background includingclosedgaps, yellowshirtNOTgreen. Red capital S onchest staysconsistent allframes. NO shadows floor text grid labels particles props orotherpeople."
+  },
+  {
+    "id": "steffen",
+    "clip": "reactions",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/steffen/idle.png"
+    ],
+    "prompt": "Produce a production game spritesheet of this EXACT Steffen Weber: slim man, swept-up dark curly hair gray temples, short beard, yellow red-S polo, navy trousers white sneakers. Preserve reference face body clothing. Eight DIFFERENT reaction/action poses in exact order:0 jump rising knees bent hands guard,1 deep crouch guard,2 standing forearms block,3 standing recoiling from hit,4 standing both palms forward releasing energy (no effects),5 lunging forward special strike (no effects),6 kneeling defeated,7 standing victorious one fist raised. Wholebody visible. ExactlyFOUR columns TWO rows (8separate drawings) canvas1536x1024 fullbodyapprox420pxtall upright, minimum40pxclearspacing. RIGHT-facing threequarter. Identical crisp hand-pixelled32-bit arcade and consistentpixel density, no blur. Everylimbinsideitscell. UniformSATURATED#00FF00chroma green background includingclosedgaps, yellowshirtNOTgreen. Red capital S onchest staysconsistent allframes. NO shadows floor text grid labels particles props orotherpeople.",
+    "scaleMultiplier": 0.83
+  }
+]

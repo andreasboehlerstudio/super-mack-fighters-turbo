@@ -1,0 +1,80 @@
+[
+  {
+    "id": "schaer",
+    "clip": "portrait",
+    "chromaKey": false,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/team-s/references/nathalie-portrait.jpg",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/team-s/references/nathalie-braids.jpg",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/portraits/roland.png"
+    ],
+    "prompt": "Create vertical3:4 finished head-and-chest game portrait. Photos1+2 identity; image3 pixel STYLE only. Nathalie Schär from photos1+2: preserve her distinctive elongated natural adult face, long narrow straight nose with rounded tip, small pale blue gray eyes, thin light brows, broad open toothy smile with visible upper teeth, rounded long chin, light skin. Hair is LIGHT ASH BROWN/dark blonde, center parted into TWO long braids with lighter blonde ends as photo2. No black hair, no heavy dark eyebrows, no huge cartoon eyes, no idealized generic anime woman. No glasses (match photos1+2), no hat. Yellow POLO with a LARGE RED S centered on chest, white-gray vertically striped calf-length culottes, flat dark sandals, slim natural build, no props. Three-quarter lookingRIGHT friendly open smile. Head fills frame cropmidchest, S visible. Same crisp32-bit pixel arcade style as Roland, angular flat colorclusters, warmgoldrimlight, navy/turquoise diagonal streak background. No blur phototexture UI border or text except S. Prioritize likeness over beautification.",
+    "revisionPrompt": "Edit reference1 game portrait. Reference2 is exact target PIXEL STYLE and COARSENESS. Preserve Nathalie's APPROVED EXACT face likeness: long natural face, toothy smile, nose eyes light brown/blonde two braids, yellow polo red S. Do not beautify, redesign or change expression. Match reference2 Roland: deliberate larger square pixel clusters, simplify skin into fewer broad warm shadow planes, remove microscopic dithering/skin noise and tiny details. Crisp real low resolution pixel art at native192x256grid shown nearestneighbor4x to768x1024. Every pixel aligns tosamegrid, no blurrededges or smooth vectorlines. Three-quarter lookingRIGHT and navy/turquoise diagonalstreaks goldenrim stay. No text/UI/border; exact S stays."
+  },
+  {
+    "id": "schaer",
+    "clip": "idle",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/team-s/references/nathalie-portrait.jpg",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/team-s/references/nathalie-braids.jpg",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/vendel/idle.png"
+    ],
+    "prompt": "Create game IDLE spritesheet. Photos1+2 identity only, image3 exactpixelstyleandlayout only. Nathalie Schär from photos1+2: preserve her distinctive elongated natural adult face, long narrow straight nose with rounded tip, small pale blue gray eyes, thin light brows, broad open toothy smile with visible upper teeth, rounded long chin, light skin. Hair is LIGHT ASH BROWN/dark blonde, center parted into TWO long braids with lighter blonde ends as photo2. No black hair, no heavy dark eyebrows, no huge cartoon eyes, no idealized generic anime woman. No glasses (match photos1+2), no hat. Yellow POLO with a LARGE RED S centered on chest, white-gray vertically striped calf-length culottes, flat dark sandals, slim natural build, no props. Eight progressive breathing/guard frames, natural BOXING GUARD bothfists at CHEST HEIGHT, elbows down, slightlybentknees, staggered plantedfeet. NO arms overhead, no cheering pose. Fourcolumns tworows canvas1536x1024, eachhead-to-soleheight~420px,40pxclearspacing, sameheadsize andproportions. FaceRIGHTthreequarter. Crisphandpixelled32bitarcadepixels notblur. Perfectlyflat #00FF00 greenbackground includinggaps, no floor shadows glow labels grid particles orotherpeople."
+  },
+  {
+    "id": "schaer",
+    "clip": "walk",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/schaer/idle.png"
+    ],
+    "prompt": "Produce a production game spritesheet of this EXACT Nathalie Schär: long natural face, light brown/blonde two braids, yellow red-S polo, gray-white striped calf-length culottes, dark flat sandals. Preserve reference face body clothing. Eight progressive WALK combat footwork frames seamless cycle:0 left foot forward contact,1 down weight transfer,2 passing feet,3 right foot forward rising,4 right foot contact,5 down transfer,6 passing feet,7 left foot forward rising. Feet alternate grounded, hands stay in chest-height guard. Natural shallow stride NO marching, NO translating or shrinking. ExactlyFOUR columns TWO rows (8separate drawings) canvas1536x1024 fullbodyapprox420pxtall upright, minimum40pxclearspacing. RIGHT-facing threequarter. Identical crisp hand-pixelled32-bit arcade and consistentpixel density, no blur. Everylimbinsideitscell. UniformSATURATED#00FF00chroma green background includingclosedgaps, yellowshirtNOTgreen. Red capital S onchest staysconsistent allframes. NO shadows floor text grid labels particles props orotherpeople."
+  },
+  {
+    "id": "schaer",
+    "clip": "punch",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/schaer/idle.png"
+    ],
+    "prompt": "Produce a production game spritesheet of this EXACT Nathalie Schär: long natural face, light brown/blonde two braids, yellow red-S polo, gray-white striped calf-length culottes, dark flat sandals. Preserve reference face body clothing. Eight progressive grounded PUNCH frames:0 guard,1 windup fist back,2 half extension,3 full straight punch RIGHT,4 followthrough,5 half retract,6 recovery,7 guard. Feet stay grounded, torso rotates, arm anatomically attached. ExactlyFOUR columns TWO rows (8separate drawings) canvas1536x1024 fullbodyapprox420pxtall upright, minimum40pxclearspacing. RIGHT-facing threequarter. Identical crisp hand-pixelled32-bit arcade and consistentpixel density, no blur. Everylimbinsideitscell. UniformSATURATED#00FF00chroma green background includingclosedgaps, yellowshirtNOTgreen. Red capital S onchest staysconsistent allframes. NO shadows floor text grid labels particles props orotherpeople."
+  },
+  {
+    "id": "schaer",
+    "clip": "kick",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/schaer/idle.png"
+    ],
+    "prompt": "Produce a production game spritesheet of this EXACT Nathalie Schär: long natural face, light brown/blonde two braids, yellow red-S polo, gray-white striped calf-length culottes, dark flat sandals. Preserve reference face body clothing. Eight progressive grounded KICK frames:0 guard,1 weight loading,2 knee up,3 full forward horizontal kick RIGHT,4 followthrough,5 bend kicking knee to retract,6 lower foot,7 guard. Supporting foot stays planted, head size constant. ExactlyFOUR columns TWO rows (8separate drawings) canvas1536x1024 fullbodyapprox420pxtall upright, minimum40pxclearspacing. RIGHT-facing threequarter. Identical crisp hand-pixelled32-bit arcade and consistentpixel density, no blur. Everylimbinsideitscell. UniformSATURATED#00FF00chroma green background includingclosedgaps, yellowshirtNOTgreen. Red capital S onchest staysconsistent allframes. NO shadows floor text grid labels particles props orotherpeople."
+  },
+  {
+    "id": "schaer",
+    "clip": "airpunch",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/schaer/idle.png"
+    ],
+    "prompt": "Produce a production game spritesheet of this EXACT Nathalie Schär: long natural face, light brown/blonde two braids, yellow red-S polo, gray-white striped calf-length culottes, dark flat sandals. Preserve reference face body clothing. Eight progressive AIR PUNCH frames:0 rising with knees bent,1 windup,2 shoulder turns,3 full straight punch RIGHT while airborne,4 followthrough,5 return hand,6 landing preparation,7 landing guard. No jumping trail or effects. ExactlyFOUR columns TWO rows (8separate drawings) canvas1536x1024 fullbodyapprox420pxtall upright, minimum40pxclearspacing. RIGHT-facing threequarter. Identical crisp hand-pixelled32-bit arcade and consistentpixel density, no blur. Everylimbinsideitscell. UniformSATURATED#00FF00chroma green background includingclosedgaps, yellowshirtNOTgreen. Red capital S onchest staysconsistent allframes. NO shadows floor text grid labels particles props orotherpeople."
+  },
+  {
+    "id": "schaer",
+    "clip": "airkick",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/schaer/idle.png"
+    ],
+    "prompt": "Produce a production game spritesheet of this EXACT Nathalie Schär: long natural face, light brown/blonde two braids, yellow red-S polo, gray-white striped calf-length culottes, dark flat sandals. Preserve reference face body clothing. Eight progressive AIR KICK frames:0 rising,1 chamber front knee,2 half extension,3 full horizontal kick RIGHT with other leg tucked behind,4 followthrough,5 retract bent knee,6 landing preparation,7 landing guard. Constant body and head scale. ExactlyFOUR columns TWO rows (8separate drawings) canvas1536x1024 fullbodyapprox420pxtall upright, minimum40pxclearspacing. RIGHT-facing threequarter. Identical crisp hand-pixelled32-bit arcade and consistentpixel density, no blur. Everylimbinsideitscell. UniformSATURATED#00FF00chroma green background includingclosedgaps, yellowshirtNOTgreen. Red capital S onchest staysconsistent allframes. NO shadows floor text grid labels particles props orotherpeople."
+  },
+  {
+    "id": "schaer",
+    "clip": "reactions",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/schaer/idle.png"
+    ],
+    "prompt": "Produce a production game spritesheet of this EXACT Nathalie Schär: long natural face, light brown/blonde two braids, yellow red-S polo, gray-white striped calf-length culottes, dark flat sandals. Preserve reference face body clothing. Eight DIFFERENT reaction/action poses in exact order:0 jump rising knees bent hands guard,1 deep crouch guard,2 standing forearms block,3 standing recoiling from hit,4 standing both palms forward releasing energy (no effects),5 lunging forward special strike (no effects),6 kneeling defeated,7 standing victorious one fist raised. Wholebody visible. ExactlyFOUR columns TWO rows (8separate drawings) canvas1536x1024 fullbodyapprox420pxtall upright, minimum40pxclearspacing. RIGHT-facing threequarter. Identical crisp hand-pixelled32-bit arcade and consistentpixel density, no blur. Everylimbinsideitscell. UniformSATURATED#00FF00chroma green background includingclosedgaps, yellowshirtNOTgreen. Red capital S onchest staysconsistent allframes. NO shadows floor text grid labels particles props orotherpeople.",
+    "scaleMultiplier": 0.95
+  }
+]

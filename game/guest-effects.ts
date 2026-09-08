@@ -2,7 +2,7 @@ import type Phaser from 'phaser';
 import type {Actor,Projectile} from './combat.ts';
 import {fighter,type FighterId} from './data.ts';
 
-const guests=new Set<FighterId>(['bobo','mross','otto','ross','freudenreich','robbemond','olli','boeckli','louis','tesla']);
+const guests=new Set<FighterId>(['schaer','glen','steffen','bobo','mross','otto','ross','freudenreich','robbemond','olli','boeckli','louis','tesla']);
 type Graphics=Phaser.GameObjects.Graphics;
 const color=(id:FighterId)=>parseInt(fighter(id).color.slice(1),16);
 
@@ -10,7 +10,19 @@ const color=(id:FighterId)=>parseInt(fighter(id).color.slice(1),16);
 function motif(g:Graphics,id:FighterId,x:number,y:number,size:number,alpha=1){
  x=Math.round(x);y=Math.round(y);const u=Math.max(2,Math.round(size/8));
  g.fillStyle(color(id),alpha);
- if(id==='otto'){
+ if(id==='schaer'){
+  // Heart made from solid, shared-raster pixel clusters.
+  g.fillRect(x-3*u,y-2*u,2*u,u);g.fillRect(x,y-2*u,2*u,u);
+  g.fillRect(x-4*u,y-u,7*u,2*u);g.fillRect(x-3*u,y+u,5*u,u);
+  g.fillRect(x-2*u,y+2*u,3*u,u);g.fillRect(x-u,y+3*u,u,u);
+ }else if(id==='glen'){
+  g.fillRect(x-4*u,y-3*u,8*u,5*u);g.fillRect(x-2*u,y+2*u,2*u,u);g.fillRect(x-2*u,y+3*u,u,u);
+  g.fillStyle(0x17263a,alpha);for(let i=0;i<3;i++)g.fillRect(x+(i*2-2)*u,y-u,u,u);
+ }else if(id==='steffen'){
+  // A hashtag stays readable in projectiles and at low resolution.
+  g.fillRect(x-2*u,y-4*u,u,8*u);g.fillRect(x+u,y-4*u,u,8*u);
+  g.fillRect(x-4*u,y-2*u,8*u,u);g.fillRect(x-4*u,y+u,8*u,u);
+ }else if(id==='otto'){
   // A tiny comic elephant with round ears, four feet and an upturned trunk.
   g.fillRect(x-3*u,y-2*u,5*u,4*u);g.fillRect(x+u,y-3*u,3*u,4*u);
   g.fillRect(x+3*u,y,2*u,2*u);g.fillRect(x+4*u,y-u,u,3*u);

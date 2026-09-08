@@ -2,6 +2,20 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.3-alpha — 2026-09-08
+
+### Social-Media-Team S
+- Nathalie Schär, Glen Homburg und Steffen Weber sind als drei eigenständige Kämpfer spielbar: gelbe Poloshirts mit großem roten S, ohne dauerhaftes Requisit.
+- Freigegebene Pixelportraits: Nathalies Gesicht nach den zusätzlichen Fotovorlagen, Glen mit schmalerer Gesichtsform und vereinfachten Pixelclustern passend zu den bestehenden Portraits.
+- Je sieben neue Animationsblätter mit acht Zeichnungen und separate verlustfreie Dateien für die Spielaktionen. Größen und Bodenanker zwischen Stand, Lauf und Angriffen abgeglichen; Glens Luftschlag verkleinert die Figur nicht mehr.
+- Nathalie: Reel-Rush, Story-Bogen, Hashtag-Wirbel und Trend-Takeover. Glen: Kommentar-Stopp, Share-Welle, Community-Boost und Community-Power. Steffen: Like-Impuls, Feed-Sprint, Reichweiten-Welle und Viral!
+- Eigene Herz-, Sprechblasen- und Hashtag-Effekte, synthetische Angriffsrufe und Arcade-Abschlüsse.
+
+### Charakterauswahl
+- 38 Figuren auf zwei Seiten mit jeweils maximal 27 unverändert großen Portraitkacheln.
+- Seitenwechsel per Bildschirm-Pfeilen, Bild-Auf/Bild-Ab oder LB/RB; Tag-Partner bleiben an den seitlichen Portraits wählbar.
+- Geprüft: 96 automatisierte Tests, TypeScript und Pages-Build sowie Auswahl, Probekämpfe, Luftangriffe, Ultras, Tag-Wechsel und Pause-Menü im Browser ohne protokollierte Laufzeitfehler.
+
 ## 0.2.2-alpha — 2026-09-08
 
 ### Charaktere

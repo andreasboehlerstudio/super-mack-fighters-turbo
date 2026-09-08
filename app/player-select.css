@@ -28,6 +28,10 @@
 .select-roster{min-width:0;display:flex;flex-direction:column}
 .select-roster-caption{height:25px;display:flex;justify-content:space-between;color:#9ebbd5;font:14px/1 var(--pixel);letter-spacing:1px}
 .select-roster-caption strong{color:#ffe094;font-weight:400}
+.select-pages{display:flex;align-items:center;gap:8px}
+.select-pages button{padding:0 4px;border:0;background:none;color:#9fe6ed;font:14px/1 var(--pixel);cursor:pointer}
+.select-pages button:focus-visible{outline:2px solid #ffe094;outline-offset:2px}
+.select-page-hint{font:12px/1 var(--pixel);color:#9ebbd5;margin:10px 0 0}
 .select-grid{display:grid;grid-template-columns:repeat(var(--select-columns),minmax(0,1fr));gap:7px;align-content:start;width:672px;max-width:100%;align-self:center}
 .select-tile{position:relative;min-width:0;width:100%;aspect-ratio:3/4;padding:0;border:2px solid #5a7490;border-top-color:#95a8ba;border-left-color:#95a8ba;border-radius:0;background:#0c1830;box-shadow:2px 3px #060e23;cursor:pointer}
 .select-tile .fighter-portrait{position:absolute;inset:0;width:100%;height:100%;object-position:50% 35%;object-fit:cover;transform:none}

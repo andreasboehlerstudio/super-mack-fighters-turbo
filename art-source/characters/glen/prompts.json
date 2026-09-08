@@ -1,0 +1,80 @@
+[
+  {
+    "id": "glen",
+    "clip": "portrait",
+    "chromaKey": false,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/team-s/references/glen-portrait.jpg",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/portraits/roland.png"
+    ],
+    "prompt": "Create vertical3:4 game select head/chest portrait. Photo1 IDENTITY, image2 exactpixel STYLE. Glen Homburg from reference photo: fully BALD light skinned adult man, full soft oval face, high smooth rounded forehead, small light blue eyes, very light almost invisible eyebrows, softly rounded cheeks, broad smooth jaw and rounded chin, small thin relaxed lips and gentle closed-mouth smile. Completely clean-shaven, normal sturdy build. Preserve facial softness and likeness, NO angular gaunt face, NO sharp heroic jaw, no fierce grimace. Bright YELLOW short sleeve POLO with one LARGE RED S centered on chest. Light gray full length chinos and pale gray sneakers. No glasses cap or props. Face3/4 lookingRIGHT, gentleconfidentexpression, headfillsframe,cropmidchestSvisible. Crisphandpixelled32bitarcade, limitedpaletteandcontrolledclusters,noblu r, goldenrimlighting, navy/turquoise diagonalbackground likeRoland. No photograph texture, text exceptS, UI or border.",
+    "revisionPrompt": "Edit reference1 game portrait. Reference2 is exact target PIXEL STYLE and COARSENESS. Preserve Glen's identity, bald head, small blue eyes and relaxed expression. Make ONLY cheeks and jaw MODERATELY SLIMMER, about10percent narrower lowerface, natural subtle notgaunt. Keep yellow polo and red S. Match reference2 Roland: deliberate larger square pixel clusters, simplify skin into fewer broad warm shadow planes, remove microscopic dithering/skin noise and tiny details. Crisp real low resolution pixel art at native192x256grid shown nearestneighbor4x to768x1024. Every pixel aligns tosamegrid, no blurrededges or smooth vectorlines. Three-quarter lookingRIGHT and navy/turquoise diagonalstreaks goldenrim stay. No text/UI/border; exact S stays."
+  },
+  {
+    "id": "glen",
+    "clip": "idle",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/team-s/references/glen-portrait.jpg",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/vendel/idle.png"
+    ],
+    "prompt": "Create production IDLE game SPRITESHEET. Photo1 IDENTITY only, image2 pixelstyle andlayout only. Glen Homburg from reference photo: fully BALD light skinned adult man, full soft oval face, high smooth rounded forehead, small light blue eyes, very light almost invisible eyebrows, softly rounded cheeks, broad smooth jaw and rounded chin, small thin relaxed lips and gentle closed-mouth smile. Completely clean-shaven, normal sturdy build. Preserve facial softness and likeness, NO angular gaunt face, NO sharp heroic jaw, no fierce grimace. Bright YELLOW short sleeve POLO with one LARGE RED S centered on chest. Light gray full length chinos and pale gray sneakers. No glasses cap or props. Eight distinct subtle guard/breathing poses seamless IDLE, normal boxingguard,fistsnear chest, elbowsdown, feetstaggeredplanted,kneesbentslightly. Four columns two rows canvas1536x1024, eachfullbody~420pxtall, minimum40pxclearspacing, sameheadsize proportionsbaseline. FaceRIGHT3/4. Crisphandpixelled32bitarcade, nophoto texture orblur. PERFECTLY FLAT SOLID #00FF00 chroma green background everywhere outsidecharacter includinglimbgaps, NO gradients, NO shadows/glow/floor/text/grid/particles.",
+    "revisionPrompt": "Edit reference1 spritesheet: make Glen's face and jaw in ALL EIGHT frames match the slimmer approved portrait in reference2. Slightly narrower cheeks/lower face, bald, small light blue eyes, light brows, thin relaxed smile, clean-shaven, natural adult head. Keep all8guardposes body scale yellow red-S polo graychinos whitesneakers exactly. Keep4columns2rows green#00FF00solidbackground. Crisp pixelstyle, no blur, no otherchanges."
+  },
+  {
+    "id": "glen",
+    "clip": "walk",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/glen/idle.png"
+    ],
+    "prompt": "Production game spritesheet of this EXACT Glen Homburg from reference. Preserve slimmed bald face, small light eyes, subtle smile, clean-shaven, yellow polo RED S, light gray chinos pale gray sneakers, normalbuild. Eight progressive WALK combat footwork frames seamless cycle:0 left foot forward contact,1 down weight transfer,2 passing feet,3 right foot forward rising,4 right foot contact,5 down transfer,6 passing feet,7 left foot forward rising. Feet alternate grounded, hands stay in chest-height guard. Natural shallow stride NO marching, NO translating or shrinking. ExactlyFOURcolumns TWOrows eight separated drawings canvas1536x1024. Fullbody~420pxtall upright, constantheadbodyproportions,40pxclearspacing. RIGHT-facingthreequarter. Crisphandpixelled32bitarcade,samepixeldensity,no blur. Background PERFECTLY FLAT #00FF00 chromagreen, no gradients/shadows/glow/floor/text/grid/particles/props. Yellow shirt stays YELLOW, red S consistently onchest."
+  },
+  {
+    "id": "glen",
+    "clip": "punch",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/glen/idle.png"
+    ],
+    "prompt": "Production game spritesheet of this EXACT Glen Homburg from reference. Preserve slimmed bald face, small light eyes, subtle smile, clean-shaven, yellow polo RED S, light gray chinos pale gray sneakers, normalbuild. Eight progressive grounded PUNCH frames:0 guard,1 windup fist back,2 half extension,3 full straight punch RIGHT,4 followthrough,5 half retract,6 recovery,7 guard. Feet stay grounded, torso rotates, arm anatomically attached. ExactlyFOURcolumns TWOrows eight separated drawings canvas1536x1024. Fullbody~420pxtall upright, constantheadbodyproportions,40pxclearspacing. RIGHT-facingthreequarter. Crisphandpixelled32bitarcade,samepixeldensity,no blur. Background PERFECTLY FLAT #00FF00 chromagreen, no gradients/shadows/glow/floor/text/grid/particles/props. Yellow shirt stays YELLOW, red S consistently onchest."
+  },
+  {
+    "id": "glen",
+    "clip": "kick",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/glen/idle.png"
+    ],
+    "prompt": "Production game spritesheet of this EXACT Glen Homburg from reference. Preserve slimmed bald face, small light eyes, subtle smile, clean-shaven, yellow polo RED S, light gray chinos pale gray sneakers, normalbuild. Eight progressive grounded KICK frames:0 guard,1 weight loading,2 knee up,3 full forward horizontal kick RIGHT,4 followthrough,5 bend kicking knee to retract,6 lower foot,7 guard. Supporting foot stays planted, head size constant. ExactlyFOURcolumns TWOrows eight separated drawings canvas1536x1024. Fullbody~420pxtall upright, constantheadbodyproportions,40pxclearspacing. RIGHT-facingthreequarter. Crisphandpixelled32bitarcade,samepixeldensity,no blur. Background PERFECTLY FLAT #00FF00 chromagreen, no gradients/shadows/glow/floor/text/grid/particles/props. Yellow shirt stays YELLOW, red S consistently onchest."
+  },
+  {
+    "id": "glen",
+    "clip": "airpunch",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/glen/idle.png"
+    ],
+    "prompt": "Production game spritesheet of this EXACT Glen Homburg from reference. Preserve slimmed bald face, small light eyes, subtle smile, clean-shaven, yellow polo RED S, light gray chinos pale gray sneakers, normalbuild. Eight progressive AIR PUNCH frames:0 rising with knees bent,1 windup,2 shoulder turns,3 full straight punch RIGHT while airborne,4 followthrough,5 return hand,6 landing preparation,7 landing guard. No jumping trail or effects. ExactlyFOURcolumns TWOrows eight separated drawings canvas1536x1024. Fullbody~420pxtall upright, constantheadbodyproportions,40pxclearspacing. RIGHT-facingthreequarter. Crisphandpixelled32bitarcade,samepixeldensity,no blur. Background PERFECTLY FLAT #00FF00 chromagreen, no gradients/shadows/glow/floor/text/grid/particles/props. Yellow shirt stays YELLOW, red S consistently onchest.",
+    "scaleMultiplier": 1.28
+  },
+  {
+    "id": "glen",
+    "clip": "airkick",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/glen/idle.png"
+    ],
+    "prompt": "Production game spritesheet of this EXACT Glen Homburg from reference. Preserve slimmed bald face, small light eyes, subtle smile, clean-shaven, yellow polo RED S, light gray chinos pale gray sneakers, normalbuild. Eight progressive AIR KICK frames:0 rising,1 chamber front knee,2 half extension,3 full horizontal kick RIGHT with other leg tucked behind,4 followthrough,5 retract bent knee,6 landing preparation,7 landing guard. Constant body and head scale. ExactlyFOURcolumns TWOrows eight separated drawings canvas1536x1024. Fullbody~420pxtall upright, constantheadbodyproportions,40pxclearspacing. RIGHT-facingthreequarter. Crisphandpixelled32bitarcade,samepixeldensity,no blur. Background PERFECTLY FLAT #00FF00 chromagreen, no gradients/shadows/glow/floor/text/grid/particles/props. Yellow shirt stays YELLOW, red S consistently onchest."
+  },
+  {
+    "id": "glen",
+    "clip": "reactions",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/glen/idle.png"
+    ],
+    "prompt": "Production game spritesheet of this EXACT Glen Homburg from reference. Preserve slimmed bald face, small light eyes, subtle smile, clean-shaven, yellow polo RED S, light gray chinos pale gray sneakers, normalbuild. Eight DIFFERENT reaction/action poses in exact order:0 jump rising knees bent hands guard,1 deep crouch guard,2 standing forearms block,3 standing recoiling from hit,4 standing both palms forward releasing energy (no effects),5 lunging forward special strike (no effects),6 kneeling defeated,7 standing victorious one fist raised. Wholebody visible. ExactlyFOURcolumns TWOrows eight separated drawings canvas1536x1024. Fullbody~420pxtall upright, constantheadbodyproportions,40pxclearspacing. RIGHT-facingthreequarter. Crisphandpixelled32bitarcade,samepixeldensity,no blur. Background PERFECTLY FLAT #00FF00 chromagreen, no gradients/shadows/glow/floor/text/grid/particles/props. Yellow shirt stays YELLOW, red S consistently onchest.",
+    "scaleMultiplier": 0.86
+  }
+]

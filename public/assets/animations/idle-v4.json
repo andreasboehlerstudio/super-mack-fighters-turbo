@@ -286,5 +286,29 @@
     "maxBreathingHeightDifference": 4,
     "baseline": 246,
     "originX": 128
+  },
+  {
+    "id": "schaer",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 3,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "glen",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 3,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "steffen",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 4,
+    "baseline": 246,
+    "originX": 128
   }
 ]
