@@ -1,4 +1,4 @@
-export type FighterId = 'ed'|'edda'|'snorri'|'roland'|'marianne'|'juergen'|'mauritia'|'michael'|'thomas'|'annkathrin'|'frederik'|'alexia'|'miriam'|'katja'|'nicolas'|'max'|'matthias'|'laurent'|'reinhold'|'nathalie'|'andreas'|'karsten'|'scholz'|'wakala'|'bobo'|'mross'|'freudenreich'|'robbemond'|'olli'|'boeckli'|'louis'|'tesla'|'graumacher';
+export type FighterId = 'ed'|'edda'|'snorri'|'roland'|'marianne'|'juergen'|'mauritia'|'michael'|'thomas'|'annkathrin'|'frederik'|'alexia'|'miriam'|'katja'|'nicolas'|'max'|'matthias'|'laurent'|'reinhold'|'nathalie'|'andreas'|'karsten'|'scholz'|'wakala'|'bobo'|'mross'|'otto'|'ross'|'freudenreich'|'robbemond'|'olli'|'boeckli'|'louis'|'tesla'|'graumacher';
 export type SpecialKind = 'bolt'|'wave'|'dash'|'burst'|'arc';
 export interface FighterDef {id:FighterId;name:string;short:string;color:string;special:string;kind:SpecialKind;speed:number;power:number;reach:number;shotSpeed:number;cooldown:number;tag:string;note:string;}
 const f=(id:FighterId,name:string,color:string,special:string,kind:SpecialKind,speed:number,power:number,reach:number,shotSpeed:number,cooldown:number,tag:string,note:string):FighterDef=>({id,name,short:name.replace(' Mack',''),color,special,kind,speed,power,reach,shotSpeed,cooldown,tag,note});
@@ -28,6 +28,8 @@ export const FIGHTERS:FighterDef[]=[
  f('scholz','Michael Scholz','#f2ce79','Pionier-Impuls','wave',200,23,104,420,185,'ERFAHRUNG & WEITBLICK','Der Parkpionier: Eine goldene Bodenwelle schafft Raum für seinen nächsten Schritt.'),
  f('bobo','DJ BoBo','#63e9ff','Dancefloor-Slide','dash',275,17,88,610,155,'TANZ & TEMPO','Schnelle Tanzschritte, ein Beat-Bogen und ein Bassdrop bringen die Arena in Bewegung.'),
  f('mross','Stefan Mross','#ffcb69','Sonntags-Fanfare','bolt',220,22,100,480,180,'FANFARE & TAKT','Eine goldene Klangfanfare hält Abstand. Der Bühnen-Sprint überbrückt ihn wieder.'),
+ f('otto','Otto Waalkes','#ffb56c','Friesen-Sprung','dash',255,19,96,540,165,'TRICKS & OTTIFANTEN','Ein frecher Vorstoß, eine Ottifanten-Welle und ein überraschender Ostfriesen-Wirbel.'),
+ f('ross','Ross Antony','#f5a1ed','Glitzerwirbel','burst',270,18,91,515,155,'SHOW & FUNKELN','Ein schneller Glitzerwirbel. Weihnachtssterne halten Abstand, der Show-Sprint bringt Ross wieder heran.'),
  f('max','Max Mager','#ffb064','Schnitt-Sprint','dash',270,17,90,640,155,'SCHNITT & SPRINT','Ein orangefarbener Schnitt durch die Arena. Schnell heran, schnell treffen.'),
  f('matthias','Matthias Schilling','#76cafa','Fokusblitz','bolt',220,24,104,520,195,'FOKUS & KRAFT','Ein gebündelter blauer Lichtimpuls mit großer Reichweite.'),
  f('laurent','Laurent Kuhn','#ffe380','Lichtkante','wave',240,19,99,510,170,'LICHT & BODEN','Eine goldene Lichtkante fliegt knapp über dem Boden.'),

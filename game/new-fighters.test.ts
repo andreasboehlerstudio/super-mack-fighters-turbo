@@ -11,12 +11,12 @@ test('Karsten, Edda and Michael Scholz have themed move sets and fit the portrai
  assert.deepEqual(movesFor('edda').map(m=>m.kind),['arc','burst','dash']);
  assert.deepEqual(movesFor('scholz').map(m=>[m.name,m.kind]),[['Pionier-Impuls','wave'],['Allee-Sprint','dash'],['Qualitätskontrolle','bolt']]);
  assert.equal(ultraFor('scholz').name,'PIONIERGEIST 73');
- assert.equal(HEROES.length,32);
+ assert.equal(HEROES.length,34);
  assert.equal(Math.ceil(HEROES.length/SELECT_COLUMNS),4);
 });
 
 test('new fighters execute all three specials and retain projectile identity after a tag',()=>{
- for(const id of ['karsten','edda','scholz','bobo','mross','freudenreich','robbemond','olli','boeckli','louis','tesla'] as FighterId[])for(let move=0;move<3;move++){
+ for(const id of ['karsten','edda','scholz','bobo','mross','otto','ross','freudenreich','robbemond','olli','boeckli','louis','tesla'] as FighterId[])for(let move=0;move<3;move++){
   const m=createMatch(id,'roland',19,{training:true,partners:['ed',null]});
   for(let i=0;i<150;i++)step(m,[neutral(),neutral()]);
   m.actors[0].x=400;m.actors[1].x=id==='olli'?535:560;

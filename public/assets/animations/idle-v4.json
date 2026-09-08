@@ -262,5 +262,21 @@
     "maxBreathingHeightDifference": 2,
     "baseline": 246,
     "originX": 128
+  },
+  {
+    "id": "otto",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 1,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "ross",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 2,
+    "baseline": 246,
+    "originX": 128
   }
 ]

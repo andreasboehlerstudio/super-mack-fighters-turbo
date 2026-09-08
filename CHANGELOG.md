@@ -2,6 +2,17 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.1-alpha — 2026-09-08
+
+### Charaktere
+- Otto Waalkes und Ross Antony sind als neue Kämpfer in der Promi-Gruppe auswählbar.
+- Beide erhalten eigene Imagegen-Pixelportraits und je acht Zeichnungen für Idle, Laufen, Schlag, Tritt, Luftschlag, Lufttritt und Reaktionsposen, exportiert als separate verlustfreie Animationsblätter.
+- Otto: Friesen-Sprung, Ottifanten-Ansturm, Ostfriesen-Wirbel und die Ultra Ottifanten-Parade, mit kleinen Ottifanten-Effekten.
+- Ross: Glitzerwirbel, Weihnachts-Welle, Show-Sprint und die Ultra Crazy Christmas Finale, mit funkelnden Sternen-Effekten.
+- Eigene Arcade-Endings und synthetische Angriffsrufe für beide Figuren.
+- Die Auswahl zeigt 34 Kämpfer auf vier Reihen mit neun Spalten. Tastatur und Gamepad verwenden dieselbe Anordnung.
+- Geprüft: 95 automatisierte Tests, TypeScript, Pages-Build sowie Auswahl, Probekampf, Ultras und Pause-Menü im Browser.
+
 ## 0.2.0-alpha — 2026-09-07
 
 ### Parkwelt

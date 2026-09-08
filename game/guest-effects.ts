@@ -2,7 +2,7 @@ import type Phaser from 'phaser';
 import type {Actor,Projectile} from './combat.ts';
 import {fighter,type FighterId} from './data.ts';
 
-const guests=new Set<FighterId>(['bobo','mross','freudenreich','robbemond','olli','boeckli','louis','tesla']);
+const guests=new Set<FighterId>(['bobo','mross','otto','ross','freudenreich','robbemond','olli','boeckli','louis','tesla']);
 type Graphics=Phaser.GameObjects.Graphics;
 const color=(id:FighterId)=>parseInt(fighter(id).color.slice(1),16);
 
@@ -10,7 +10,19 @@ const color=(id:FighterId)=>parseInt(fighter(id).color.slice(1),16);
 function motif(g:Graphics,id:FighterId,x:number,y:number,size:number,alpha=1){
  x=Math.round(x);y=Math.round(y);const u=Math.max(2,Math.round(size/8));
  g.fillStyle(color(id),alpha);
- if(id==='bobo'||id==='mross'){
+ if(id==='otto'){
+  // A tiny comic elephant with round ears, four feet and an upturned trunk.
+  g.fillRect(x-3*u,y-2*u,5*u,4*u);g.fillRect(x+u,y-3*u,3*u,4*u);
+  g.fillRect(x+3*u,y,2*u,2*u);g.fillRect(x+4*u,y-u,u,3*u);
+  g.fillRect(x-3*u,y+2*u,u,u);g.fillRect(x,y+2*u,u,u);
+  g.fillStyle(0xffe1af,alpha);g.fillRect(x,y-2*u,2*u,3*u);
+  g.fillStyle(0x182337,alpha);g.fillRect(x+2*u,y-2*u,u,u);
+ }else if(id==='ross'){
+  // Faceted stars also read as snowflakes during the Christmas wave.
+  g.fillRect(x-u,y-4*u,2*u,8*u);g.fillRect(x-4*u,y-u,8*u,2*u);
+  for(const s of [-1,1])for(const t of [-1,1])g.fillRect(x+s*2*u,y+t*2*u,u,u);
+  g.fillStyle(0xfff4d6,alpha);g.fillRect(x-u,y-u,2*u,2*u);
+ }else if(id==='bobo'||id==='mross'){
   g.fillRect(x-u,y-4*u,u,5*u);g.fillRect(x-u,y-4*u,4*u,u);
   g.fillRect(x+2*u,y-4*u,u,4*u);g.fillRect(x-3*u,y,3*u,2*u);g.fillRect(x,y-u,3*u,2*u);
  }else if(id==='tesla'){

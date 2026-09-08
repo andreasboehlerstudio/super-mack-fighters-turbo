@@ -48,6 +48,9 @@ for(const id of ids){
   const isAir=clip.startsWith('air'),reactions=clip==='reactions';
   const nativeHead=sourceHead(src[0]).width;
   let scale=clip==='idle'?idleScale:clip==='walk'?height/median(src.map(f=>f.b.height)):isAir?targetHead/nativeHead:height/median((reactions?[2,4,5]:[0,1,7]).map(i=>src[i].b.height));
+  // A crouched reaction sheet can share the idle head size without sharing its standing height.
+  // Calibrate the whole authored clip once; never resize individual poses during playback.
+  scale*=all.find(j=>j.clip===clip)?.scaleMultiplier??1;
   if(!(scale>0&&scale<=1))throw Error('Invalid scale '+id+'/'+clip);
   const prepared=[];
   for(let i=0;i<8;i++){

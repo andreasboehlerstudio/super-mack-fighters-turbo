@@ -1,0 +1,74 @@
+[
+  {
+    "id": "otto",
+    "clip": "portrait",
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/otto-ross/references/otto.webp",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/portraits/roland.png"
+    ],
+    "prompt": "Create a production game character select portrait for Super Mack Fighters Turbo. Reference 1 is IDENTITY of Otto Waalkes; reference 2 is exact pixel art STYLE , not identity. Otto Waalkes, elderly slim German comedian, recognizable long pale blond/white hair peeking under black baseball cap with thin yellow brim edge, lively narrow eyes, distinctive long face and nose and broad mischievous grin, no beard. Navy zip hoodie, light stone-gray straight trousers, dark sneakers. No guitar, strap, microphone or hat attachments. Faithful likeness but hand-pixeled late SNES / 32-bit arcade illustration, controlled crisp pixel clusters, coherent limited palette, strong thin dark outlines, no photographic texture or blur. Single 3:4 vertical head and upper chest portrait, face three-quarter looking to the RIGHT, head fills frame, warm golden rim light, identical navy and turquoise diagonal streak background to Roland reference. No text, no border."
+  },
+  {
+    "id": "otto",
+    "clip": "idle",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/otto/idle.png"
+    ],
+    "prompt": "Preserve these exact eight guard/breathing drawings and their size and placement. ONLY replace the entire gray/white checkerboard backdrop with perfectly uniform saturated chroma green #00ff00, including enclosed gaps between arms and torso. No checkerboard remains. No new drawing or resized body."
+  },
+  {
+    "id": "otto",
+    "clip": "walk",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/otto/idle.png"
+    ],
+    "prompt": "Produce a production animation SPRITESHEET matching this exact Otto Waalkes pixel character from the reference in every detail (face, proportions, colors, outfit, cap/hair). Eight progressive WALKING combat footwork frames in a complete seamless cycle: 0 left foot forward contact,1 down weight transfer,2 passing feet,3 right knee forward up,4 right foot forward contact,5 down transfer,6 passing feet,7 left knee forward up. Feet alternate grounded, guard hands stay raised. NO idle repetitions, NO translating figure within cell. Same head size and straight-leg height as reference, slight natural knee bending only. Exactly FOUR columns and TWO rows, eight separate distinct drawings. Full body approximately420px tall if upright, canvas1536x1024, evenly spaced cells, minimum40px clear spacing between silhouettes; every extremity must remain in its cell. RIGHT-facing 3/4 game sideview, identical crisp hand-pixelled 32-bit arcade style and pixel density, limited colors, no blur, smooth strong readable silhouette. Background MUST be uniform saturated #00FF00 chroma green, not transparent and NOT a checkerboard. NO shadows, text, grid lines, captions, gradients, particles, prop, microphone, other characters."
+  },
+  {
+    "id": "otto",
+    "clip": "punch",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/otto/idle.png"
+    ],
+    "prompt": "Produce a production animation SPRITESHEET matching this exact Otto Waalkes pixel character from the reference in every detail (face, proportions, colors, outfit, cap/hair). Eight sequential standing straight PUNCH animation frames:0 guard,1 small windup,2 forward shoulder turn and half extended arm,3 fully extended fist to RIGHT,4 full extension follow-through,5 half retraction,6 recovery,7 guard. Keep torso mostly upright and head same scale. Hands remain attached. Action arc compact enough all limbs inside cell. Exactly FOUR columns and TWO rows, eight separate distinct drawings. Full body approximately420px tall if upright, canvas1536x1024, evenly spaced cells, minimum40px clear spacing between silhouettes; every extremity must remain in its cell. RIGHT-facing 3/4 game sideview, identical crisp hand-pixelled 32-bit arcade style and pixel density, limited colors, no blur, smooth strong readable silhouette. Background MUST be uniform saturated #00FF00 chroma green, not transparent and NOT a checkerboard. NO shadows, text, grid lines, captions, gradients, particles, prop, microphone, other characters."
+  },
+  {
+    "id": "otto",
+    "clip": "kick",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/otto/idle.png"
+    ],
+    "prompt": "Produce a production animation SPRITESHEET matching this exact Otto Waalkes pixel character from the reference in every detail (face, proportions, colors, outfit, cap/hair). Eight sequential standing front KICK frames:0 guard,1 load weight,2 knee lifted,3 leg straight extended RIGHT waist level,4 extended followthrough,5 knee retracts,6 leg lowers,7 guard. Same upper body height and head scale as reference. Other foot grounded. Do not miniaturize kicking poses. Exactly FOUR columns and TWO rows, eight separate distinct drawings. Full body approximately420px tall if upright, canvas1536x1024, evenly spaced cells, minimum40px clear spacing between silhouettes; every extremity must remain in its cell. RIGHT-facing 3/4 game sideview, identical crisp hand-pixelled 32-bit arcade style and pixel density, limited colors, no blur, smooth strong readable silhouette. Background MUST be uniform saturated #00FF00 chroma green, not transparent and NOT a checkerboard. NO shadows, text, grid lines, captions, gradients, particles, prop, microphone, other characters."
+  },
+  {
+    "id": "otto",
+    "clip": "airpunch",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/otto/idle.png"
+    ],
+    "prompt": "Produce a production animation SPRITESHEET matching this exact Otto Waalkes pixel character from the reference in every detail (face, proportions, colors, outfit, cap/hair). Eight sequential airborne PUNCH frames:0 rising bent knees,1 fists wind up,2 forward shoulder turn,3 straight forward fist extended to RIGHT,4 airborne punch followthrough,5 retract fist,6 knees extend downward ready landing,7 landing guard. All frames FULL BODY same head scale as reference, no ground or effects. Bent knees shorten silhouette naturally without shrinking torso/head. Exactly FOUR columns and TWO rows, eight separate distinct drawings. Full body approximately420px tall if upright, canvas1536x1024, evenly spaced cells, minimum40px clear spacing between silhouettes; every extremity must remain in its cell. RIGHT-facing 3/4 game sideview, identical crisp hand-pixelled 32-bit arcade style and pixel density, limited colors, no blur, smooth strong readable silhouette. Background MUST be uniform saturated #00FF00 chroma green, not transparent and NOT a checkerboard. NO shadows, text, grid lines, captions, gradients, particles, prop, microphone, other characters."
+  },
+  {
+    "id": "otto",
+    "clip": "airkick",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/otto/idle.png"
+    ],
+    "prompt": "Produce a production animation SPRITESHEET matching this exact Otto Waalkes pixel character from the reference in every detail (face, proportions, colors, outfit, cap/hair). Eight sequential airborne KICK frames:0 knees rise,1 chamber front leg,2 partially extend front leg,3 extended rightward aerial kick with rear knee tucked,4 kick followthrough,5 retract knee,6 legs prepare landing,7 landing guard. All full bodies SAME head and torso scale as reference, NO shrinking kick poses. Keep compact athletic pose within each cell. Exactly FOUR columns and TWO rows, eight separate distinct drawings. Full body approximately420px tall if upright, canvas1536x1024, evenly spaced cells, minimum40px clear spacing between silhouettes; every extremity must remain in its cell. RIGHT-facing 3/4 game sideview, identical crisp hand-pixelled 32-bit arcade style and pixel density, limited colors, no blur, smooth strong readable silhouette. Background MUST be uniform saturated #00FF00 chroma green, not transparent and NOT a checkerboard. NO shadows, text, grid lines, captions, gradients, particles, prop, microphone, other characters."
+  },
+  {
+    "id": "otto",
+    "clip": "reactions",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/otto/idle.png"
+    ],
+    "prompt": "Produce a production animation SPRITESHEET matching this exact Otto Waalkes pixel character from the reference in every detail (face, proportions, colors, outfit, cap/hair). Exactly8 separate full body utility poses in reading order: TOP ROW:0 jumping knees bent fist up;1 low crouch;2 upright blocking both forearms shielding face;3 standing hit recoil leaning back. BOTTOM ROW:4 special attack summon one palm forward;5 second special attack both palms forward;6 DEFEAT lying horizontal on floor knees bent to fit cell;7 VICTORY upright joyous one raised fist. All face RIGHT. All heads and torsos SAME scale as reference even crouch/jump/defeat. No effects or props. Exactly FOUR columns and TWO rows, eight separate distinct drawings. Full body approximately420px tall if upright, canvas1536x1024, evenly spaced cells, minimum40px clear spacing between silhouettes; every extremity must remain in its cell. RIGHT-facing 3/4 game sideview, identical crisp hand-pixelled 32-bit arcade style and pixel density, limited colors, no blur, smooth strong readable silhouette. Background MUST be uniform saturated #00FF00 chroma green, not transparent and NOT a checkerboard. NO shadows, text, grid lines, captions, gradients, particles, prop, microphone, other characters."
+  }
+]
