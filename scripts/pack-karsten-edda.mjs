@@ -66,6 +66,15 @@ for(const id of ids){
    const p=prepared[i],desiredX=p.x+shiftX,x=Math.max(2-p.b.left,Math.min(253-(p.b.left+p.b.width-1),desiredX)),y=p.y+shiftY,out=Buffer.alloc(256*256*4);
    let clipped=0;for(let sy=0;sy<p.h;sy++)for(let sx=0;sx<p.w;sx++){const at=(sy*p.w+sx)*4;if(p.data[at+3]){const dx=x+sx,dy=y+sy;if(dx<2||dx>253||dy<2||dy>253){clipped++;continue;}p.data.copy(out,(dy*256+dx)*4,at,at+4);}}
    if(clipped)throw Error(`${id}/${clip}/${i}: ${clipped} clipped pixels`);
+   // Optional fixed raster for newly authored pixel art. Keep the common sole at y=246.
+   if(all.find(j=>j.clip===clip)?.pixelStep===2){
+    const raster=Buffer.alloc(out.length);
+    for(let gy=1;gy<255;gy+=2)for(let gx=0;gx<256;gx+=2){
+     const sample=((gy+1)*256+gx+1)*4;
+     for(let dy=0;dy<2;dy++)for(let dx=0;dx<2;dx++)out.copy(raster,((gy+dy)*256+gx+dx)*4,sample,sample+4);
+    }
+    raster.copy(out);
+   }
    const b=bounds(out,256,256),headHeight=Math.round(height*(id==='edda'?.43:.30));
    const fullHead=bounds(out,256,256,b.top,b.top+headHeight);
    const anchor={head:{x:fullHead.left,y:fullHead.top,w:fullHead.width,h:headHeight},neck:{x:Math.round(fullHead.left+fullHead.width/2),y:b.top+headHeight}};
@@ -100,7 +109,10 @@ for(const id of ids){
   manifest.fighters[id][clip]={frames:frames.length,width,height,source:spec.kind};
  }
  idleAudit.push({id,frames:8,bodyHeight:height,maxBreathingHeightDifference:Math.max(...measurements.idle.map(f=>f.height))-Math.min(...measurements.idle.map(f=>f.height)),baseline:246,originX:128});
- await copyFile(portrait.source,path.join(assets,'portraits',id+'.png'));
+ if(portrait.nativeWidth){
+  const native=await sharp(portrait.source).resize(portrait.nativeWidth,Math.round(portrait.nativeWidth*4/3),{kernel:'nearest'}).png().toBuffer();
+  await sharp(native).resize(portrait.nativeWidth*4,Math.round(portrait.nativeWidth*4/3)*4,{kernel:'nearest'}).png().toFile(path.join(assets,'portraits',id+'.png'));
+ }else await copyFile(portrait.source,path.join(assets,'portraits',id+'.png'));
  // Sources are retained next to prompts.json; rebuilding leaves them untouched.
 
  const montage=[];for(const [row,clip]of ['idle','walk','punch','kick','airpunch','airkick','reactions'].entries())for(let i=0;i<8;i++)montage.push({input:framesByClip[clip][i],left:i*256,top:row*256});

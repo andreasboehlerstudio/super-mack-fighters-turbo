@@ -11,11 +11,13 @@ test('portrait pages expose every fighter once and preserve the partial final pa
  assert.deepEqual(seen,HEROES.map(f=>f.id));
  for(let i=0;i<HEROES.length;i++)for(const dir of [-1,1]){
   const next=pageTarget(i,dir,HEROES.length);assert.ok(next>=0&&next<HEROES.length);
-  assert.notEqual(selectPage(next),selectPage(i));
+  if(HEROES.length>SELECT_PAGE_SIZE)assert.notEqual(selectPage(next),selectPage(i));
+  else assert.equal(next,i);
  }
- assert.equal(pageTarget(0,1,38),27);
- assert.equal(pageTarget(26,1,38),37);
- assert.equal(pageTarget(27,-1,38),0);
- assert.equal(pageTarget(0,-1,38),27);
+ assert.equal(SELECT_PAGE_SIZE,45);
+ assert.equal(pageTarget(0,1,52),45);
+ assert.equal(pageTarget(44,1,52),51);
+ assert.equal(pageTarget(45,-1,52),0);
+ assert.equal(pageTarget(0,-1,52),45);
  assert.equal(pageTarget(0,1,1),0);
 });

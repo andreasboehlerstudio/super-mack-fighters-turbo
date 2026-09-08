@@ -4,7 +4,7 @@ const {Midi}=MidiPackage;
 export type MusicMode='menu'|'fight'|'boss'|'victory';
 export type Instrument='flute'|'brass'|'strings'|'pluck'|'bass'|'mandolin'|'guitar'|'bell'|'accordion'|'organ'|'synth'|'marimba'|'kick'|'snare'|'hat';
 export interface MusicNote {time:number;duration:number;midi:number;velocity:number;instrument:Instrument;pan:number}
-export interface MusicScore {title:string;duration:number;notes:MusicNote[]}
+export interface MusicScore {title:string;duration:number;notes:MusicNote[];mix?:'combat'}
 export const isDrum=(instrument:Instrument)=>['kick','snare','hat'].includes(instrument);
 export const MIDI_PROGRAMS:Record<Instrument,number>={flute:73,brass:61,strings:48,pluck:10,bass:33,mandolin:105,guitar:24,bell:8,accordion:21,organ:16,synth:81,marimba:12,kick:0,snare:0,hat:0};
 

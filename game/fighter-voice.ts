@@ -18,7 +18,7 @@ export const FIGHTER_VOICES:Record<FighterId,Voice>={
  nathalie:human(248),andreas:human(155),karsten:human(124,.2),scholz:human(116,.25),
  bobo:human(169,.16),mross:human(145),freudenreich:human(205,.26),
  otto:human(192,.2),ross:human(198,.1),
- vendel:human(148,.18),
+ vendel:human(148,.18),valentina:human(236,.09),
  schaer:human(228,.1),glen:human(130,.18),steffen:human(158,.15),
  robbemond:human(103,.3),tesla:human(132,.18),
 };

@@ -1,0 +1,87 @@
+[
+  {
+    "clip": "portrait",
+    "chromaKey": false,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/valentina/face-reference.png",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/valentina/reference.png",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/portraits/roland.png"
+    ],
+    "prompt": "Edit target: first image, approved Valentina Sachs pixel-art portrait. Preserve her recognizable narrow oval face, long slender nose, natural hazel eyes, modest closed lips, dark shoulder-length wavy hair, and coral summer wrap dress EXACTLY. Make one targeted change: turn her head and shoulders to a clearly visible three-quarter view toward SCREEN RIGHT, and have BOTH eyes looking screen right slightly above horizontal, away from the viewer, matching the direction and angle of Roland in reference image 2. Do NOT copy Roland's facial features. Current portrait looks at viewer; new one must clearly gaze to the right. Same chest-up composition, dark navy background with ascending teal diagonal streaks and thin warm golden rim light. Authentic crisp retro fighting game pixel art, consistent square pixel grid, simplified clean color clusters, no blurry airbrush, no noise, no photoreal skin, no text or frame. Match first image identity and approved costume, second image pose direction only. Portrait 3:4.\n",
+    "id": "valentina",
+    "nativeWidth": 192
+  },
+  {
+    "clip": "idle",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/valentina/face-reference.png",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/valentina/reference.png"
+    ],
+    "prompt": "Create EIGHT-frame character idle sprite sheet, 1536x1024 4columns2rows. Authoritative face reference1 and bodyreference2. This is Valentina Sachs. Her likeness must remain unmistakable: longer narrow oval face, softly tapering narrow jaw and small rounded chin, straight relatively long slender nose with natural tip, large but HUMAN hazel olive-brown eyes with natural spacing, softly arched thin dark brows, closed natural modest lips with defined cupid bow, subtle under-eye and cheek planes, pale warm skin. Dark brown shoulder-length loose wavy hair parted centrally. Do NOT beautify into a generic young anime heroine, do NOT shorten nose or enlarge lips, no toothy grin. Calm slight closed-mouth smile. Fullbody slim adult woman normal7headproportions; CORAL summer knee-length wrap dress shortflutter sleeves modestV neck tiedwaist and flat tan sandals. Feminine relaxed fighting guard handsraised, all facingRIGHT 3/4, eight distinct small breathing/weightchange poses. IMPORTANT actual PIXEL ART: each character drawn as if 96x192nativegrid magnified2.3x for source, large deliberate uniform square blocks, max32colors, 4skin shades, stepped hard outlines, minimal highlights. No smooth drawing, no antialiasing, no tiny noise, no anime face or massiveeyes. Hair as chunky darkpixelmasses, dress3redtones. Same440pxstandingheight in everycell384x512, same baseline, generous margins. Pure GREEN #00ff00 background no shadows floor textlabels gridlines. Fullheadfeet visible. Sheetidentity consistency takespriority.",
+    "id": "valentina",
+    "pixelStep": 2
+  },
+  {
+    "id": "valentina",
+    "clip": "walk",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/valentina/idle.png"
+    ],
+    "prompt": "Use case: stylized-concept. Build separate walk game animation sheet. Reference image is exact IDENTITY, DESIGN, SCALE and PIXEL STYLE to preserve. Valentina, shoulder-length dark brown wavy hair, coral red short flutter-sleeved knee-length wrap summer dress tied at waist, tan flat sandals. NO CHANGE to face/outfit. 1536x1024 FOUR columns TWO rows, exactly EIGHT distinct fullbody drawings ordered left-to-right top row then bottom. Each cell384x512. Eight phase forward walking loop: left heel contact, left foot flat loading, right leg passing, right heel lifting forward, right heel contact, right loading, left passing, left swing. Guard hands. Feet visibly alternate. Dress follows leg motion with slight hem swing, torso remains same height, NO bouncing or crouching. All face RIGHT threequarter. Deliberate clean 32bit arcade pixel clusters like reference, limited tones, no blur, no smooth airbrush or texture noise. Character upright height about480px per cell, equal face size allframes. Generous green margins no cropped feet,hair,fists; no overlappingneighbor. Solid flat neon GREEN #00ff00 background, no cast shadows, no floor, gridlines,text,labels,props. Clothing stays coral and must not contain green. CRITICAL UPDATED STYLE: match the NEW reference exactly: visibly chunky 96x192 style square clusters, calm small closedmouth smile, long narrow face/nose, natural hazel eyes NOT anime eyes. Each source pixel is square, no tiny subpixels. Do not use earlier smooth sprite style. 32colorpalette, 4skin tones, 3dress tones. Same headshape and color clusters in EVERY frame.",
+    "pixelStep": 2
+  },
+  {
+    "id": "valentina",
+    "clip": "punch",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/valentina/idle.png"
+    ],
+    "prompt": "Use case: stylized-concept. Build separate punch game animation sheet. Reference image is exact IDENTITY, DESIGN, SCALE and PIXEL STYLE to preserve. Valentina, shoulder-length dark brown wavy hair, coral red short flutter-sleeved knee-length wrap summer dress tied at waist, tan flat sandals. NO CHANGE to face/outfit. 1536x1024 FOUR columns TWO rows, exactly EIGHT distinct fullbody drawings ordered left-to-right top row then bottom. Each cell384x512. Eight phases of one straight right-facing punch: guard, windup, early extension, contact, full extension, recoil, recovery, guard variant. Torso rotates modestly, both feet grounded, no extra arms. All face RIGHT threequarter. Deliberate clean 32bit arcade pixel clusters like reference, limited tones, no blur, no smooth airbrush or texture noise. Character upright height about480px per cell, equal face size allframes. Generous green margins no cropped feet,hair,fists; no overlappingneighbor. Solid flat neon GREEN #00ff00 background, no cast shadows, no floor, gridlines,text,labels,props. Clothing stays coral and must not contain green. CRITICAL UPDATED STYLE: match the NEW reference exactly: visibly chunky 96x192 style square clusters, calm small closedmouth smile, long narrow face/nose, natural hazel eyes NOT anime eyes. Each source pixel is square, no tiny subpixels. Do not use earlier smooth sprite style. 32colorpalette, 4skin tones, 3dress tones. Same headshape and color clusters in EVERY frame.",
+    "pixelStep": 2
+  },
+  {
+    "id": "valentina",
+    "clip": "kick",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/valentina/idle.png"
+    ],
+    "prompt": "Use case: stylized-concept. Build separate kick game animation sheet. Reference image is exact IDENTITY, DESIGN, SCALE and PIXEL STYLE to preserve. Valentina, shoulder-length dark brown wavy hair, coral red short flutter-sleeved knee-length wrap summer dress tied at waist, tan flat sandals. NO CHANGE to face/outfit. 1536x1024 FOUR columns TWO rows, exactly EIGHT distinct fullbody drawings ordered left-to-right top row then bottom. Each cell384x512. Eight phases of one forward waist-height kick: guard, weight shift, knee lift, extension, full contact kick, retract knee, lowering, guard. Rear foot grounded. Dress drapes naturally over upper thighs, no exposed underwear, no extra legs. All face RIGHT threequarter. Deliberate clean 32bit arcade pixel clusters like reference, limited tones, no blur, no smooth airbrush or texture noise. Character upright height about480px per cell, equal face size allframes. Generous green margins no cropped feet,hair,fists; no overlappingneighbor. Solid flat neon GREEN #00ff00 background, no cast shadows, no floor, gridlines,text,labels,props. Clothing stays coral and must not contain green. CRITICAL UPDATED STYLE: match the NEW reference exactly: visibly chunky 96x192 style square clusters, calm small closedmouth smile, long narrow face/nose, natural hazel eyes NOT anime eyes. Each source pixel is square, no tiny subpixels. Do not use earlier smooth sprite style. 32colorpalette, 4skin tones, 3dress tones. Same headshape and color clusters in EVERY frame.",
+    "pixelStep": 2
+  },
+  {
+    "id": "valentina",
+    "clip": "airpunch",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/valentina/idle.png"
+    ],
+    "prompt": "Use case: stylized-concept. Build separate airpunch game animation sheet. Reference image is exact IDENTITY, DESIGN, SCALE and PIXEL STYLE to preserve. Valentina, shoulder-length dark brown wavy hair, coral red short flutter-sleeved knee-length wrap summer dress tied at waist, tan flat sandals. NO CHANGE to face/outfit. 1536x1024 FOUR columns TWO rows, exactly EIGHT distinct fullbody drawings ordered left-to-right top row then bottom. Each cell384x512. Eight phases jumping punch: takeoff bent knees, airborne windup, early punch, extended contact, followthrough, punch recoil, descending guard, landing upright guard. Preserve exact HEAD and BODY scale of idle, NEVER shrink whole airborne figure. Bent knees shorten silhouette naturally. All face RIGHT threequarter. Deliberate clean 32bit arcade pixel clusters like reference, limited tones, no blur, no smooth airbrush or texture noise. Character upright height about480px per cell, equal face size allframes. Generous green margins no cropped feet,hair,fists; no overlappingneighbor. Solid flat neon GREEN #00ff00 background, no cast shadows, no floor, gridlines,text,labels,props. Clothing stays coral and must not contain green. CRITICAL UPDATED STYLE: match the NEW reference exactly: visibly chunky 96x192 style square clusters, calm small closedmouth smile, long narrow face/nose, natural hazel eyes NOT anime eyes. Each source pixel is square, no tiny subpixels. Do not use earlier smooth sprite style. 32colorpalette, 4skin tones, 3dress tones. Same headshape and color clusters in EVERY frame.",
+    "pixelStep": 2,
+    "scaleMultiplier": 1.065
+  },
+  {
+    "id": "valentina",
+    "clip": "airkick",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/valentina/idle.png"
+    ],
+    "prompt": "Use case: stylized-concept. Build separate airkick game animation sheet. Reference image is exact IDENTITY, DESIGN, SCALE and PIXEL STYLE to preserve. Valentina, shoulder-length dark brown wavy hair, coral red short flutter-sleeved knee-length wrap summer dress tied at waist, tan flat sandals. NO CHANGE to face/outfit. 1536x1024 FOUR columns TWO rows, exactly EIGHT distinct fullbody drawings ordered left-to-right top row then bottom. Each cell384x512. Eight phases jumping kick: takeoff, knee lift, airborne extension, full horizontal kick, followthrough, retract, descent, landing guard. Dress billows naturally and modestly, no exposed underwear. Same head/body scale as idle no shrinking. All face RIGHT threequarter. Deliberate clean 32bit arcade pixel clusters like reference, limited tones, no blur, no smooth airbrush or texture noise. Character upright height about480px per cell, equal face size allframes. Generous green margins no cropped feet,hair,fists; no overlappingneighbor. Solid flat neon GREEN #00ff00 background, no cast shadows, no floor, gridlines,text,labels,props. Clothing stays coral and must not contain green. CRITICAL UPDATED STYLE: match the NEW reference exactly: visibly chunky 96x192 style square clusters, calm small closedmouth smile, long narrow face/nose, natural hazel eyes NOT anime eyes. Each source pixel is square, no tiny subpixels. Do not use earlier smooth sprite style. 32colorpalette, 4skin tones, 3dress tones. Same headshape and color clusters in EVERY frame.",
+    "pixelStep": 2,
+    "scaleMultiplier": 1.18
+  },
+  {
+    "id": "valentina",
+    "clip": "reactions",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/valentina/idle.png"
+    ],
+    "prompt": "Use case: stylized-concept. Build separate reactions game animation sheet. Reference image is exact IDENTITY, DESIGN, SCALE and PIXEL STYLE to preserve. Valentina, shoulder-length dark brown wavy hair, coral red short flutter-sleeved knee-length wrap summer dress tied at waist, tan flat sandals. NO CHANGE to face/outfit. 1536x1024 FOUR columns TWO rows, exactly EIGHT distinct fullbody drawings ordered left-to-right top row then bottom. Each cell384x512. Eight DIFFERENT poses in this exact order: 1 jump tucked legs, 2 crouching low guard, 3 standing block arms protecting face, 4 flinch torso slightly back, 5 both palms pushing forward magic casting, 6 forward lunge fist, 7 defeat kneeling, 8 victory one fist high. Fullbody all visible, exact same head/body scale as idle, only posture changes. No effects. All face RIGHT threequarter. Deliberate clean 32bit arcade pixel clusters like reference, limited tones, no blur, no smooth airbrush or texture noise. Character upright height about480px per cell, equal face size allframes. Generous green margins no cropped feet,hair,fists; no overlappingneighbor. Solid flat neon GREEN #00ff00 background, no cast shadows, no floor, gridlines,text,labels,props. Clothing stays coral and must not contain green. CRITICAL UPDATED STYLE: match the NEW reference exactly: visibly chunky 96x192 style square clusters, calm small closedmouth smile, long narrow face/nose, natural hazel eyes NOT anime eyes. Each source pixel is square, no tiny subpixels. Do not use earlier smooth sprite style. 32colorpalette, 4skin tones, 3dress tones. Same headshape and color clusters in EVERY frame.",
+    "pixelStep": 2
+  }
+]

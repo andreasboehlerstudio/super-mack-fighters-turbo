@@ -1,6 +1,6 @@
 /** Keep the portrait grid and keyboard/gamepad row movement in sync. */
 export const SELECT_COLUMNS=9;
-export const SELECT_ROWS=3;
+export const SELECT_ROWS=5;
 export const SELECT_PAGE_SIZE=SELECT_COLUMNS*SELECT_ROWS;
 export const selectPage=(index:number)=>Math.floor(Math.max(0,index)/SELECT_PAGE_SIZE);
 /** Page changes keep the local slot where possible, including a partial last page. */

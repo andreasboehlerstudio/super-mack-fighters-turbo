@@ -1,8 +1,8 @@
 /* One 1280 × 720 console surface; the cabinet applies the only viewport scale. */
-.player-select{position:absolute;inset:0 0 55px;padding:22px 28px 0;color:#f9edca;font-family:var(--pixel);display:grid;grid-template-rows:54px 1fr 71px;gap:16px;background:linear-gradient(125deg,#081429e8,#172944dc 55%,#0b1736ed)}
+.player-select{position:absolute;inset:0 0 55px;padding:18px 28px 0;color:#f9edca;font-family:var(--pixel);display:grid;grid-template-rows:44px minmax(0,1fr) 48px;gap:10px;background:linear-gradient(125deg,#081429e8,#172944dc 55%,#0b1736ed)}
 .select-heading{display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid #758ea7;box-shadow:0 3px #050e23;padding-bottom:10px}
 .select-heading h1{margin:0;font:italic 700 40px/1 var(--pixel);letter-spacing:2px;color:#ffdf91;text-shadow:2px 3px #aa5c44,4px 5px #121829}
-.select-mode{display:flex;align-items:center;gap:24px}
+.select-mode{display:flex;align-items:center;gap:12px}
 .select-mode>span{font-size:18px;letter-spacing:4px;color:#9fdbe8;border-left:3px solid #74a7c2;padding-left:20px}
 .select-tag-toggle{padding:8px 10px;border:2px solid #526d87;border-radius:0;background:#132a43;color:#abdcca;font:14px/1 var(--pixel);cursor:pointer}
 .select-tag-toggle[aria-pressed=true]{border-color:#8ce3d1;background:#24453f;color:#d3fff3}
@@ -32,13 +32,13 @@
 .select-pages button{padding:0 4px;border:0;background:none;color:#9fe6ed;font:14px/1 var(--pixel);cursor:pointer}
 .select-pages button:focus-visible{outline:2px solid #ffe094;outline-offset:2px}
 .select-page-hint{font:12px/1 var(--pixel);color:#9ebbd5;margin:10px 0 0}
-.select-grid{display:grid;grid-template-columns:repeat(var(--select-columns),minmax(0,1fr));gap:7px;align-content:start;width:672px;max-width:100%;align-self:center}
+.select-grid{display:grid;grid-template-columns:repeat(var(--select-columns),minmax(0,1fr));gap:7px;align-content:start;width:642px;max-width:100%;align-self:center}
 .select-tile{position:relative;min-width:0;width:100%;aspect-ratio:3/4;padding:0;border:2px solid #5a7490;border-top-color:#95a8ba;border-left-color:#95a8ba;border-radius:0;background:#0c1830;box-shadow:2px 3px #060e23;cursor:pointer}
 .select-tile .fighter-portrait{position:absolute;inset:0;width:100%;height:100%;object-position:50% 35%;object-fit:cover;transform:none}
 .select-tile.has-p1{border-color:#f5ce70}.select-tile.has-p2{border-color:#7ddbea}.select-tile.has-p1.has-p2{border-color:#f5ce70 #7ddbea #7ddbea #f5ce70}
 .select-tile.is-current{outline:2px solid #fff3be;outline-offset:2px;z-index:3;box-shadow:0 0 0 4px #906936,3px 5px #030b20}
 .select-tile:hover,.select-tile:focus-visible{outline:2px solid #fff5ce;outline-offset:2px;filter:brightness(1.12);z-index:4}
-.select-tile-name{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;min-height:26px;padding:3px 1px;background:#061127e8;font:14px/1 var(--pixel);color:#f7e7c0;text-align:center;text-shadow:1px 1px #000}
+.select-tile-name{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;min-height:26px;padding:3px 1px;background:#061127e8;font:12px/1.05 var(--pixel);overflow-wrap:anywhere;color:#f7e7c0;text-align:center;text-shadow:1px 1px #000}
 .select-tile-badges{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;gap:1px;pointer-events:none}
 .select-tile-badges b{background:#ffe196;color:#17263a;font:700 12px/1 var(--pixel);padding:3px 2px}
 .select-tile-badges .badge-p2{background:#88e6f2;margin-left:auto}
@@ -65,5 +65,5 @@
 .game-screen .select-settings .choice-buttons span{font:17px/1.1 var(--pixel);color:#f5e5c0;text-align:center}
 .game-screen .select-settings .choice-buttons button{font:16px var(--pixel);color:#ffe19a;min-width:24px;padding:4px;border:0;background:none}
 .game-screen .select-settings>.arcade-button{min-width:172px;font-size:19px;padding:10px 13px;white-space:nowrap}
-.game-screen .select-settings>.rules-trigger{font-size:15px;min-width:175px}
+.select-random{margin-top:8px}.select-random button{background:#132a43;color:#9fe6ed;border:2px solid #526d87;padding:5px 7px;font:13px var(--pixel)}.select-random p{margin:6px 0;font:12px/1.3 var(--pixel);color:#9ebbd5}.select-settings .console-choice{min-width:0;flex:1}.select-settings .choice-buttons>span{min-width:0}
 .select-tag-toggle:focus-visible,.select-lead-choice:focus-visible,.select-partner:focus-visible,.select-settings button:focus-visible{outline:2px solid #fff0b5;outline-offset:2px}

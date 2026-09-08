@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import MidiPackage from '@tonejs/midi';
 const {Midi}=MidiPackage;
-import {midiScore,originalScore,scoreWindow,MIDI_PROGRAMS,scoreMidi,type Instrument} from './music-score.ts';
+import {midiScore,originalScore,scoreWindow,MIDI_PROGRAMS,scoreMidi,isDrum,type Instrument} from './music-score.ts';
 import {instrumentSamples,SnesMusic} from './snes-music.ts';
 import {AREA_THEMES,areaScore,melodyTokens} from './area-music.ts';
 import {STATIONS} from './data.ts';
@@ -36,6 +36,21 @@ test('all 21 areas have individual complete melodies and 32-bar MIDI loops',()=>
   assert.ok(score.notes.length>500);assert.equal(restored.notes.length,score.notes.length);assert.ok(Math.abs(restored.duration-score.duration)<.001,theme.id+' loop length');assert.ok(score.notes.every(n=>n.midi>=0&&n.midi<=127&&n.duration>0&&n.time+n.duration<=score.duration+.001));
  }
 });
+test('all arena arrangements keep melody below the piercing register and foreground bass and drums',()=>{
+ for(const theme of AREA_THEMES){
+  const score=areaScore(theme.id),melody=score.notes.filter(n=>!isDrum(n.instrument)&&n.instrument!=='bass'&&n.instrument!=='strings');
+  assert.equal(score.mix,'combat');assert.ok(melody.every(n=>n.midi<=74&&n.velocity<=.52));
+  const bass=score.notes.filter(n=>n.instrument==='bass'),snare=score.notes.filter(n=>n.instrument==='snare'),kick=score.notes.filter(n=>n.instrument==='kick');
+  assert.ok(bass.every(n=>n.midi>=36&&n.midi<=54));assert.ok(bass.length>=96);
+  assert.ok(snare.length>=64&&kick.length>=64);
+  for(let bar=0;bar<32;bar++){const start=bar*theme.beats*60/theme.bpm,end=(bar+1)*theme.beats*60/theme.bpm;
+   assert.ok(kick.some(n=>n.time>=start-1e-6&&n.time<end-1e-6),theme.id+' missing kick bar '+bar);
+   assert.ok(snare.some(n=>n.time>=start-1e-6&&n.time<end-1e-6),theme.id+' missing snare bar '+bar);
+  }
+ }
+ for(const instrument of ['kick','snare','bass'] as Instrument[]){const a=instrumentSamples(instrument,true);assert.ok(a.every(n=>Number.isFinite(n)&&Math.abs(n)<=1));assert.ok(a.some(n=>Math.abs(n)>.1));}
+});
+
 test('arena and jukebox changes restore the correct gameplay or menu theme',()=>{
  const audio=new ArcadeAudio();audio.setArena('park-9');assert.equal(audio.trackTitle,'Piazza Dorata');audio.previewArea('park-17');assert.equal(audio.trackTitle,'Orbit 17');audio.previewArea(null);assert.equal(audio.trackTitle,'Piazza Dorata');audio.setMode('menu');assert.match(audio.trackTitle,/menu/);audio.previewArea('park-20');audio.previewArea(null);assert.match(audio.trackTitle,/menu/);audio.setArena('park-3',true);assert.equal(audio.trackTitle,'Étoiles de Paris');assert.throws(()=>audio.setArena('missing'));assert.equal(audio.trackTitle,'Étoiles de Paris');
 });

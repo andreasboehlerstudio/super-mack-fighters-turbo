@@ -15,8 +15,8 @@ const manifest=[],measurements=[];
 for(const t of AREA_THEMES){
  for(const text of [t.a,t.b])if(melodyTokens(text).reduce((s,n)=>s+n.length,0)!==t.beats*2)throw new Error('Unvollständiger Takt: '+t.id);
  const score=areaScore(t.id),midi=scoreMidi(score,t.bpm,t.beats,t.groove==='jig');await fs.writeFile(path.join(out,t.id+'.mid'),midi);
- const rate=32000,length=Math.round(score.duration*rate),c=new OfflineAudioContext(2,length*2,rate),gain=c.createGain();gain.gain.value=1;gain.connect(c.destination);
- const synth=new SnesMusic(c,gain);
+ const rate=32000,length=Math.round(score.duration*rate),c=new OfflineAudioContext(2,length*2,rate),gain=c.createGain();gain.gain.value=.6;gain.connect(c.destination);
+ const synth=new SnesMusic(c,gain);synth.setScore(score);
  for(let loop=0;loop<2;loop++)for(const note of score.notes)synth.play(note,note.time+loop*score.duration);
  const rendered=await c.startRendering(),channels=[0,1].map(i=>rendered.getChannelData(i).slice(length,length*2));
  // Render a warm second pass: echo and release tails already cross the loop boundary.

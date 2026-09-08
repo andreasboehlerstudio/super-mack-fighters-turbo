@@ -310,5 +310,13 @@
     "maxBreathingHeightDifference": 4,
     "baseline": 246,
     "originX": 128
+  },
+  {
+    "id": "valentina",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 2,
+    "baseline": 246,
+    "originX": 128
   }
 ]

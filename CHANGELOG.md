@@ -2,6 +2,25 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.4-alpha — 2026-09-08
+
+### Valentina Sachs
+- Als 39. Figur spielbar: korallrotes Sommerkleid und Sandalen, Gesicht anhand des bereitgestellten Character Sheets. Das Portrait blickt wie die anderen nach rechts.
+- Sieben neue Animationsblätter mit je acht Posen, 17 separate verlustfreie Spielclips und feste Pixelblöcke. Boden- und Luftangriffe im Maßstab abgeglichen; Portrait auf einem einheitlichen 192 × 256 Raster exportiert.
+- Sonnenbogen, Sommerbrise, Blütenwirbel und Ultra „Sommerleuchten“, mit Blüteneffekten, synthetischer Stimme und eigenem Arcade-Abschluss.
+
+### Auswahl und Regeln
+- Fünf Portraitreihen mit Platz für 45 Figuren; alle aktuellen Charaktere stehen auf einer Seite. Seitenwechsel bleibt für weitere Figuren erhalten.
+- Großen „1V1 · Regeln & Kostüme“-Button entfernt. Tempo, Parry und Tag-Team sind direkt in der Kopfzeile einstellbar; Partner bleiben an den seitlichen Portraits wählbar.
+- Kostümauswahl und Vorschauen vorerst entfernt. Gespeicherte Kostüme und Festival-Touren verwenden die normalen Charaktergrafiken.
+- Versus gegen den Computer lost beim Einstieg und nach abgeschlossenen Kämpfen einen Gegner aus. „Gegner auslosen“ zieht erneut; die manuelle Auswahl über das Computerportrait bleibt erhalten.
+
+### Kampfmusik
+- Alle 21 Themenbereiche neu arrangiert: Melodien eine Oktave tiefer, weniger kurze Verzierungen und hohe Begleitnoten, kräftigerer Bass und deutlich stärkere Kick/Snare.
+- Eigener dunklerer Kampfmix mit reduzierten Höhen und weniger Echo. Die individuellen Themen und Taktarten bleiben erhalten.
+- Alle 21 MIDI-Dateien, OGG-Hörproben und der gemeinsame MIDI-Download aktualisiert. Titelthema „Feel Free“ bleibt erhalten.
+- Geprüft: 100 automatisierte Tests, TypeScript und Pages-Build; fünf Auswahlreihen, Zufallsgegner und manuelle Wahl, Tag-Team-Regler, Training, Luftangriffe, Ultra und Pause im Browser. Alle 21 Musikfassungen offline gerendert und auf endliche Pegel ohne Übersteuerung geprüft.
+
 ## 0.2.3-alpha — 2026-09-08
 
 ### Social-Media-Team S

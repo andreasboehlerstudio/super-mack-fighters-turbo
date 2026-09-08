@@ -9,12 +9,12 @@ import type {GameRules} from './rules';
 type Props = {
  mode: GameMode; p1: FighterId; p2: FighterId; picking: number; rules: GameRules;
  onPickSeat: (seat: number) => void; onSelect: (id: FighterId) => void;
- onToggleTag: () => void; children: ReactNode;
+ onToggleTag: () => void; onTempo: () => void; onParry: () => void; onRandomOpponent: () => void; children: ReactNode;
 };
 
-function PortraitPanel({id, label, active, player, side=player, showMoves, partner, partnerActive, onPickLead, onPickPartner}: {
+function PortraitPanel({id, label, active, player, side=player, showMoves, partner, partnerActive, onPickLead, onPickPartner, onRandom}: {
  id: FighterId; label: string; active: boolean; player: number; side?: number; showMoves: boolean;
- partner?: FighterId; partnerActive?: boolean; onPickLead: () => void; onPickPartner: () => void;
+ partner?: FighterId; partnerActive?: boolean; onPickLead: () => void; onPickPartner: () => void; onRandom?: () => void;
 }) {
  const hero = fighter(partnerActive && partner ? partner : id);
  const teammate = partner ? fighter(partnerActive ? id : partner) : null;
@@ -26,10 +26,11 @@ function PortraitPanel({id, label, active, player, side=player, showMoves, partn
    <FighterPortrait id={teammate.id}/><span><small>{partnerActive ? 'HAUPTFIGUR' : 'TAG-PARTNER'}</small>{teammate.short}</span><b>↔</b>
   </button>}
   {showMoves ? <MoveList id={hero.id} player={player}/> : <><strong className="select-hero-tag">{hero.tag}</strong><p className="select-hero-note">{hero.note}</p></>}
+  {onRandom && <div className="select-random"><button onClick={onRandom}>↻ GEGNER AUSLOSEN</button><p>COMPUTER: selbst wählen</p></div>}
  </aside>;
 }
 
-export function PlayerSelect({mode,p1,p2,picking,rules,onPickSeat,onSelect,onToggleTag,children}:Props) {
+export function PlayerSelect({mode,p1,p2,picking,rules,onPickSeat,onSelect,onToggleTag,onTempo,onParry,onRandomOpponent,children}:Props) {
  const solo = mode === 'arcade';
  const opponent = mode === 'versus' ? '2P' : 'CPU';
  const selectedId = picking === 0 ? p1 : picking === 1 ? p2 : picking === 2 ? rules.partner1 : rules.partner2;
@@ -40,7 +41,7 @@ export function PlayerSelect({mode,p1,p2,picking,rules,onPickSeat,onSelect,onTog
  const visibleHeroes=HEROES.slice(page*SELECT_PAGE_SIZE,(page+1)*SELECT_PAGE_SIZE);
  const turnPage=(direction:number)=>onSelect(HEROES[pageTarget(selectedIndex,direction,HEROES.length)].id);
  return <section className="player-select" aria-label="Charakterauswahl">
-  <header className="select-heading"><h1>PLAYER SELECT</h1><div className="select-mode"><button className="select-tag-toggle" aria-pressed={rules.tag} onClick={onToggleTag}>TAG-TEAM {rules.tag ? 'AN' : 'AUS'}</button><span>{solo ? 'ARCADE' : mode === 'training' ? 'TRAINING' : 'VERSUS'}</span></div></header>
+  <header className="select-heading"><h1>PLAYER SELECT</h1><div className="select-mode"><button className="select-tag-toggle" onClick={onTempo} aria-label="Kampftempo ändern">TEMPO: {rules.turbo===1?'KLASSISCH':rules.turbo===1.18?'TURBO':'HYPER'}</button><button className="select-tag-toggle" aria-pressed={rules.parry} onClick={onParry}>PARRY {rules.parry?'AN':'AUS'}</button><button className="select-tag-toggle" aria-pressed={rules.tag} onClick={onToggleTag}>TAG-TEAM {rules.tag ? 'AN' : 'AUS'}</button><span>{solo ? 'ARCADE' : mode === 'training' ? 'TRAINING' : 'VERSUS'}</span></div></header>
   <div className="select-stage">
    <PortraitPanel id={p1} label="PLAYER 1" active={picking === 0 || picking === 2} player={0} showMoves={!solo} partner={rules.tag ? rules.partner1 : undefined} partnerActive={picking === 2} onPickLead={() => onPickSeat(0)} onPickPartner={() => onPickSeat(2)}/>
    <div className="select-roster">
@@ -61,7 +62,7 @@ export function PlayerSelect({mode,p1,p2,picking,rules,onPickSeat,onSelect,onTog
     {pages>1 && <p className="select-page-hint">BILD ↑ / ↓ · LB / RB · SEITE WECHSELN</p>}
    </div>
    {solo ? <aside className="select-moves"><div className="select-hero-label">SPECIAL MOVES</div><h2>{fighter(selectedId).short}</h2><MoveList id={selectedId}/><p>↓ ↘ → Viertelkreis<br/>← halten, → Charge</p>{rules.tag && <p className="select-tag-hint">E / LT<br/>PARTNER WECHSELN</p>}</aside> :
-    <PortraitPanel id={p2} label={mode === 'versus' ? 'PLAYER 2' : 'COMPUTER'} active={picking === 1 || picking === 3} player={mode === 'versus' ? 1 : 0} side={1} showMoves partner={rules.tag ? rules.partner2 : undefined} partnerActive={picking === 3} onPickLead={() => onPickSeat(1)} onPickPartner={() => onPickSeat(3)}/>}
+    <PortraitPanel id={p2} label={mode === 'versus' ? 'PLAYER 2' : 'COMPUTER'} active={picking === 1 || picking === 3} player={mode === 'versus' ? 1 : 0} side={1} showMoves partner={rules.tag ? rules.partner2 : undefined} partnerActive={picking === 3} onPickLead={() => onPickSeat(1)} onPickPartner={() => onPickSeat(3)} onRandom={mode==='cpu'?onRandomOpponent:undefined}/>}
   </div>
   <div className="select-settings">{children}</div>
  </section>;

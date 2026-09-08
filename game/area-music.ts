@@ -48,10 +48,8 @@ export function areaScore(id:string):MusicScore {
   const instrument=section===2?t.answer:t.lead;
   for(let i=0;i<melody.length;i++){
    const n=melody[i];if(n.degree!==null){
-    // A few grace notes in the final return, never a second full lead competing with it.
-    const ornament=section===3&&i===2&&n.length>=.5&&['mandolin','guitar','flute'].includes(instrument);
-    if(ornament)add(beat,.11,pitch(t,n.degree+1)+12,instrument,.48,-.08);
-    add(beat+(ornament?.125:0),n.length*(instrument==='strings'?.88:.81)-(ornament?.125:0),pitch(t,n.degree)+12,instrument,section===2?.67:.83,-.08);
+    // Keep the regional motif in the middle register, with breathing room between short notes.
+    if(n.length>=1||i%2===0)add(beat,Math.max(.4,n.length*.86),Math.min(74,pitch(t,n.degree)),instrument,section===2?.38:.52,-.08);
    }beat+=n.length;
   }
  }
@@ -60,30 +58,31 @@ export function areaScore(id:string):MusicScore {
   const electronic=['space','race','industrial','breakbeat','disco','island'].includes(t.groove);
   const triad=[0,2,4].map(i=>pitch(t,chord+i));
   // Two-note voicings leave space for bass, melody, counterline and percussion on eight voices.
-  for(const [i,p] of [triad[1],triad[2]].entries())add(start,t.beats-.18,p+12,'strings',.14*energy,i===0?-.45:.45);
-  const bassBeats=t.beats===3?[0,1.5]:electronic?[0,.75,1.5,2,2.75,3.5]:t.groove==='rumba'||t.groove==='adventure'?[0,1.5,2.5,3]:[0,2];
-  bassBeats.forEach((b,i)=>add(start+b,electronic?.36:.72,root-12+(i%2?7:0),'bass',.78*energy));
+  for(const [i,p] of [triad[1],triad[2]].entries())add(start,t.beats-.18,p,'strings',.10*energy,i===0?-.45:.45);
+  const bassRoot=36+((root%12)+12)%12;
+  const bassBeats=t.beats===3?[0,1,1.5,2.5]:electronic?[0,.75,1.5,2,2.75,3.5]:t.groove==='rumba'||t.groove==='adventure'?[0,1.5,2.5,3]:[0,.75,2,2.75];
+  bassBeats.forEach((b,i)=>add(start+b,electronic?.56:.78,bassRoot+(i%3===2?7:0),'bass',.92*energy));
   const arpInstrument=t.groove==='space'?'synth':t.groove==='fairy'?'bell':t.groove==='adventure'?'marimba':['waltz','folk'].includes(t.groove)?'pluck':'guitar';
-  const arpStep=electronic?.5:t.groove==='jig'?.5:1;
+  const arpStep=2;
   for(let b=.5,i=0;b<t.beats;b+=arpStep,i++){
    if(soft&&i%2===1)continue;
-   add(start+b,Math.min(.26,arpStep*.6),triad[(i+bar)%3]+(i%3===2?24:12),arpInstrument,.28*energy,.5);
+   add(start+b,Math.min(.26,arpStep*.6),Math.min(72,triad[(i+bar)%3]),arpInstrument,.17*energy,.5);
   }
   // Small responses at the ends of phrases rather than constant decorative notes.
-  if(bar%4===3&&section!==2)for(let i=0;i<2;i++)add(start+t.beats-1+i*.5,.2,pitch(t,chord+4-i)+24,t.answer,.28,-.48);
+  if(bar%4===3&&section!==2)add(start+t.beats-1,.65,Math.min(72,pitch(t,chord+2)),t.answer,.2,-.48);
   let kicks:number[],snares:number[],hats:number[];
-  if(t.beats===3){kicks=[0];snares=t.groove==='jig'?[1.5]:[2];hats=[.5,1,1.5,2.5];}
+  if(t.beats===3){kicks=[0,1.5];snares=t.groove==='jig'?[1.5,2.5]:[1,2];hats=[.5,1.5,2.5];}
   else if(['space','disco','race'].includes(t.groove)){kicks=[0,1,2,3];snares=[1,3];hats=[.5,1.5,2.5,3.5];}
   else if(t.groove==='breakbeat'){kicks=[0,1.75,2.5];snares=[1,3];hats=[.5,1.5,2,2.75,3.5];}
   else if(t.groove==='industrial'){kicks=[0,.75,2,2.5];snares=[1,3];hats=[.5,1.5,2.75,3.5];}
   else if(['island','rumba','adventure'].includes(t.groove)){kicks=[0,1.5,3];snares=[1,2.5];hats=[.5,1.75,2,3.5];}
-  else if(['sea','nordic'].includes(t.groove)){kicks=[0,2.5];snares=[3];hats=[1.5,3.5];}
-  else{kicks=[0,2];snares=[1,3];hats=[.5,1.5,2.5,3.5];}
-  kicks.filter((_,i)=>!soft||i===0).forEach(b=>add(start+b,.18,36,'kick',.8*energy));
-  snares.forEach(b=>add(start+b,.16,38,'snare',(t.beats===3?.25:.42)*energy,.14));
-  hats.forEach((b,i)=>add(start+b,.055,42,'hat',(i%2?.24:.17)*energy,-.4));
-  if(bar%8===7&&!soft)for(let i=0;i<3;i++)add(start+t.beats-.75+i*.25,.09,38,'snare',(.22+i*.06)*energy,.2);
+  else if(['sea','nordic'].includes(t.groove)){kicks=[0,1.5,2.5];snares=[1,3];hats=[1.5,3.5];}
+  else{kicks=[0,1.5,2.5];snares=[1,3];hats=[.5,1.5,2.5,3.5];}
+  kicks.forEach(b=>add(start+b,.3,36,'kick',Math.min(1,.96*energy)));
+  snares.forEach(b=>add(start+b,.22,38,'snare',.76*energy,.08));
+  hats.forEach((b,i)=>add(start+b,.055,42,'hat',(i%2?.16:.11)*energy,-.4));
+  if(bar%8===7&&!soft)for(let i=0;i<3;i++)add(start+t.beats-.75+i*.25,.09,38,'snare',(.4+i*.09)*energy,.2);
  }
  notes.sort((a,b)=>a.time-b.time);
- const score={title:t.title,duration:total*quarter,notes};cached.set(id,score);return score;
+ const score:MusicScore={title:t.title,duration:total*quarter,notes,mix:'combat'};cached.set(id,score);return score;
 }
