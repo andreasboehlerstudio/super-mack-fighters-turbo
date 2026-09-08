@@ -4,7 +4,7 @@
 .atlas-toolbar button,.atlas-zoom button,.atlas-area-picker button{border:0;border-radius:0;background:none;color:#e8dcba;font:14px var(--pixel);padding:4px 6px;cursor:pointer}
 .atlas-toolbar>div button{border:1px solid #59758f;min-width:26px;padding:2px 6px}.atlas-toolbar button[aria-pressed=true]{color:#122138;background:#ffe29b;border-color:#fff1bf}
 .atlas-viewport{position:relative;flex:1;min-height:0;width:100%;overflow:hidden;touch-action:none;cursor:grab;background:#123841;outline:none}.atlas-viewport:active{cursor:grabbing}.atlas-viewport:focus-visible{box-shadow:inset 0 0 0 3px #ffdf90}
-.atlas-artboard{position:absolute;top:0;left:0;transform-origin:0 0;will-change:transform}.atlas-artboard>img{display:block;width:100%;height:100%;image-rendering:pixelated;pointer-events:none;user-select:none}
+.atlas-artboard{position:absolute;top:0;left:0;transform-origin:0 0;will-change:transform}.atlas-artboard>:is(img,canvas,.pixel-art){display:block;width:100%;height:100%;image-rendering:pixelated;pointer-events:none;user-select:none}
 .atlas-route{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .atlas-marker{position:absolute;transform-origin:center;z-index:2;width:23px;height:23px;display:grid;place-items:center;border:2px solid #e7d398;background:#15283ce0;color:#fff1b6;font:17px/1 var(--pixel);padding:0;border-radius:0;cursor:pointer;box-shadow:1px 2px #102231}
 .atlas-marker.outside{opacity:.65}.atlas-marker.current{background:#ffd77b;color:#31272b;border-color:#fff1ad}.atlas-marker.done{background:#286a50;color:#c0ffe0}.atlas-marker.is-selected{outline:2px solid #fff6cc;outline-offset:2px;z-index:3}
@@ -18,7 +18,8 @@
 .atlas-page>header{display:flex;align-items:center;justify-content:space-between;gap:15px;min-height:42px;flex:none}.atlas-page h1{font:700 26px var(--pixel);margin:0;letter-spacing:3px}.atlas-page header a,.atlas-page header>span{font:14px var(--pixel);color:#accfdf;text-decoration:none}.atlas-page>.park-atlas{flex:1;min-height:0;height:auto}
 .atlas-page .atlas-toolbar{height:42px}.atlas-page .atlas-caption{height:37px}.atlas-page .atlas-area-picker{height:44px}.atlas-page .atlas-marker{width:26px;height:26px}
 .game-screen .game-dialog .park-atlas{height:448px}
-/* Route cyan, destination magenta, visited green: readable on golden sand. */
-.atlas-marker.current,.atlas-marker.current.is-selected,.game-screen .map-pin.current{background:#be167f;color:#fff;border:3px solid #fff;box-shadow:0 0 0 2px #311236,3px 4px #081326;z-index:20}
-.game-screen .map-pin.current b{background:#be167f;color:#fff;border:2px solid #fff}
+/* Route cyan, destination turquoise, visited green: readable on golden sand. */
+.atlas-marker.current,.atlas-marker.current.is-selected,.game-screen .map-pin.current{background:#36f0bc;color:#14203e;border:3px solid #fff;box-shadow:0 0 0 2px #14203e,3px 4px #081326;z-index:20}
+.game-screen .map-pin.current b{background:#36f0bc;color:#14203e;border:2px solid #fff}
 @media(max-width:650px){.atlas-page{padding:8px;gap:8px}.atlas-page h1{font-size:19px;letter-spacing:1px}.atlas-page header>span,.atlas-count{display:none}.atlas-page header a{font-size:12px}.atlas-toolbar{gap:5px;padding:3px 5px}.atlas-toolbar button{font-size:12px}.atlas-toolbar>div{gap:4px}.atlas-caption{height:49px;align-items:start;justify-content:center;flex-direction:column;gap:4px}.atlas-area-picker>span{display:none}.atlas-area-picker>strong{font-size:14px}.atlas-area-picker>button:last-child{display:none}}
+.game-screen .map-pin.current:before{color:#36f0bc}

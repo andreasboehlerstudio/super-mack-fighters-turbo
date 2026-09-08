@@ -19,7 +19,7 @@ function losslessWebpSize(bytes:Buffer){
  throw Error('Expected a lossless WebP image');
 }
 test('all fighters have a native sheet for every action and all frame references are valid',()=>{
- assert.equal(FIGHTER_DISPLAY_SIZE*COMBAT_RENDER_ZOOM,256);
+ assert.equal(FIGHTER_DISPLAY_SIZE*COMBAT_RENDER_ZOOM,128);
  for(const f of FIGHTERS)for(const clip of Object.keys(ANIMATION_SHEETS) as AnimationClip[]){
   const spec=ANIMATION_SHEETS[clip],size=losslessWebpSize(readFileSync(asset(`animations/${f.id}/${clip}.webp`)));
   assert.equal(size.width,Math.min(4,spec.frames.length)*256,`${f.id}/${clip} width`);

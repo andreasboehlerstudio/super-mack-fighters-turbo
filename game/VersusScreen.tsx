@@ -1,4 +1,5 @@
 'use client';
+import {PixelArt} from './PixelArt';
 import {useEffect,useRef} from 'react';
 import {fighter,station} from './data';
 import {FighterPortrait} from './FighterPortrait';
@@ -13,7 +14,7 @@ export function VersusScreen({battle,onReady}:{battle:BattleConfig;onReady:()=>v
   window.addEventListener('keydown',key);raf=requestAnimationFrame(draw);return()=>{cancelAnimationFrame(raf);window.removeEventListener('keydown',key)};
  },[]);
  return <section className="versus-screen" aria-label={`${fighter(battle.p1).name} gegen ${fighter(battle.p2).name}`} onClick={()=>ready.current()}>
-  <img className="versus-backdrop" src={arenaImage(battle.stationId)} alt=""/>
+  <PixelArt className="versus-backdrop" src={arenaImage(battle.stationId)} alt=""/>
   <div className="versus-arena"><span>{bossLabel(battle.boss)}</span><strong>{station(battle.stationId).name.toUpperCase()}</strong></div>
   <div className="versus-player one"><FighterPortrait id={battle.p1}/><div><small>1P</small><strong>{fighter(battle.p1).name}</strong></div></div>
   <div className="versus-player two"><FighterPortrait id={battle.p2}/><div><small>{battle.cpu?'CPU':'2P'}</small><strong>{fighter(battle.p2).name}</strong></div></div>

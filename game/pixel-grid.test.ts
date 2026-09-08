@@ -1,11 +1,17 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {pixelScreenScale,pixelScreenFrame,COMBAT_RENDER_ZOOM,snapCombatPixel} from './pixel-grid.ts';
+import {pixelScreenScale,pixelScreenFrame,COMBAT_RENDER_ZOOM,snapCombatPixel,RASTER_WIDTH,artRasterSize} from './pixel-grid.ts';
+
+test('portraits and scene art share the same density at every display size',()=>{
+ assert.deepEqual(artRasterSize(1280,720),{width:480,height:270});
+ assert.deepEqual(artRasterSize(256,256),{width:96,height:96});
+ assert.equal(256*COMBAT_RENDER_ZOOM,128);
+});
 test('pixel mode fits the viewport and produces integer physical pixels at different DPI',()=>{
  for(const dpr of [1,1.25,1.5,2,3])for(const [w,h] of [[1280,720],[1920,1080],[1265,700],[2560,1440]]){
   const scale=pixelScreenScale(w,h,dpr);
   assert.ok(scale*1280<=w+.001&&scale*720<=h+.001);
-  assert.ok(Math.abs(scale*1280/960*dpr-Math.round(scale*1280/960*dpr))<.0001);
+  assert.ok(Math.abs(scale*1280/RASTER_WIDTH*dpr-Math.round(scale*1280/RASTER_WIDTH*dpr))<.0001);
  }
 });
 test('centering cannot place the output raster on half a physical pixel',()=>{

@@ -1,5 +1,5 @@
 import type {Point} from './park-layout';
-export const ROUTE_COLOR='#29e4ff',TARGET_COLOR='#ff4bc4',GUIDE_OUTLINE='#14203e';
+export const ROUTE_COLOR='#29e4ff',TARGET_COLOR='#36f0bc',GUIDE_OUTLINE='#14203e';
 /** Same high-contrast route treatment in the world and the overview. */
 export function drawParkGuide(ctx:CanvasRenderingContext2D,points:Point[],width=2){
  if(points.length<2)return;

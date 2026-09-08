@@ -7,6 +7,7 @@ import {findWalkRoute,arenaGate} from './park-world';
 import {loadParkCollision} from './park-collision';
 import {ROUTE_COLOR,GUIDE_OUTLINE} from './park-guide';
 import {mapStatus} from './park-map';
+import {PixelArt} from './PixelArt';
 import {WORLD_ART} from './park-render';
 
 const variants=['Klassische Oberwelt','Kompakte Spielkarte','Grüne Parklandschaft','Abendzauber'];
@@ -41,7 +42,7 @@ export function ParkAtlas({route,index,position,onWalkingMap}:{route:string[];in
   <div ref={viewport} className="atlas-viewport" tabIndex={0} aria-label="Karte: ziehen zum Verschieben, Mausrad oder Plus und Minus zum Zoomen, Pfeiltasten zum Verschieben, 0 für Übersicht." onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up} onLostPointerCapture={up}
    onKeyDown={e=>{const offsets:Record<string,[number,number]>={ArrowLeft:[60,0],ArrowRight:[-60,0],ArrowUp:[0,60],ArrowDown:[0,-60]};if(offsets[e.key]){e.preventDefault();e.stopPropagation();const [x,y]=offsets[e.key];changeCamera(clampAtlas({...cameraRef.current,x:cameraRef.current.x+x,y:cameraRef.current.y+y},size))}else if(['+','=','-','0'].includes(e.key)){e.preventDefault();e.stopPropagation();e.key==='0'?reset():zoom(e.key==='-'?-.4:.4)}}}>
    <div className="atlas-artboard" style={{width:ATLAS_SIZE.width,height:ATLAS_SIZE.height,transform:`translate(${size.width/2+camera.x}px,${size.height/2+camera.y}px) scale(${scale}) translate(-50%,-50%)`}}>
-    <img key={variant} src={variant===0?WORLD_ART:`/assets/atlas/park-${variant+1}.webp`} alt={`${variants[variant]}: Europa-Park als Pixel-Oberwelt mit 21 Themenbereichen`} width={1484} height={1060} draggable={false} onLoad={()=>setReady(true)} onError={()=>{setFailed(true);setReady(true)}}/>
+    <PixelArt key={variant} density={scale} src={variant===0?WORLD_ART:`/assets/atlas/park-${variant+1}.webp`} alt={`${variants[variant]}: Europa-Park als Pixel-Oberwelt mit 21 Themenbereichen`} onLoad={()=>setReady(true)} onError={()=>{setFailed(true);setReady(true)}}/>
     {variant===0&&guide.length>1&&<svg className="atlas-route" viewBox={`0 0 ${WORLD_WIDTH} ${WORLD_HEIGHT}`} aria-label="Cyanfarbene Route zum nächsten Kampf"><polyline points={guide.map(p=>`${p.x},${p.y}`).join(' ')} fill="none" stroke={GUIDE_OUTLINE} strokeWidth={9}/><polyline points={guide.map(p=>`${p.x},${p.y}`).join(' ')} fill="none" stroke={ROUTE_COLOR} strokeWidth={5}/></svg>}
     {variant===0&&position&&<span className="map-player-location" style={{left:position.x/WORLD_WIDTH*100+'%',top:position.y/WORLD_HEIGHT*100+'%',transform:`translate(-50%,-50%) scale(${1/scale})`}} aria-label="Dein Standort">●</span>}
     {ready&&!failed&&STATIONS.map(area=>{const p=points[Number(area.id.replace('park-',''))];if(!p)return null;const state=mapStatus(area.id,route,index);return <button key={area.id} className={`atlas-marker ${state} ${selected===area.id?'is-selected':''}`} style={{left:p[0]*100+'%',top:p[1]*100+'%',transform:`translate(-50%,-50%) scale(${1/scale})`}} aria-label={area.name+' heranzoomen'} aria-pressed={selected===area.id} onPointerDown={e=>e.stopPropagation()} onClick={()=>focus(area.id)}>{state==='done'?'✓':route.length&&area.id===current?'◆':'+'}</button>})}

@@ -2,6 +2,21 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.5-alpha — 2026-09-08
+
+### Bewegung und Parkwege
+- Valentinas Laufgeschwindigkeit von 255 auf 290 erhöht (rund 14 %), einschließlich der davon abhängigen Luftsteuerung.
+- Bei schrägem Laufen gegen einen Wegrand führt eine vorausschauende Wegassistenz entlang der nahen Weglinie weiter. Kein Teleportieren durch Hecken; Bewegung bleibt auf passierbaren Verbindungen.
+- Fußabstand zur Weggrenze reduziert, damit enge Kurven besser passierbar sind. Beide oberen Seiten am zentralen Schloss mit wiederholtem diagonalem Input geprüft.
+- Routen mit kleinen, kollisionsgeprüften Rundungen versehen. Anzeige und automatischer Lauf verwenden dieselbe geglättete Strecke; Endpunkte bleiben exakt erhalten.
+- Zielmarker in Parkwelt, Minikarte und Atlas von Pink auf Türkis umgestellt, mit kontrastreicher Einfassung.
+
+### Gemeinsames Pixelraster
+- Kämpfe, Parkwelt, Titel und Endings auf ein gemeinsames 480 × 270 Ausgaberaster vereinheitlicht. Figuren, Hintergründe, Zuschauer und Effekte werden gemeinsam scharf auf ganze Bildschirm-Pixel skaliert.
+- Portraits und Menübilder verwenden dieselbe sichtbare Pixeldichte; Atlasbilder werden beim Zoomen neu abgetastet. Originaldateien bleiben erhalten.
+- Alle 40 Figuren inklusive Endgegner, 680 Animationsclips und 2.440 Posen geprüft. Reproduzierbares Audit und Rastervorgaben in `PIXEL_ART.md`. Das technische Raster ist vereinheitlicht; Unterschiede in den gezeichneten Farbflächen und Schattierungen sind damit nicht automatisch neu gestaltet.
+- Geprüft: 103 automatisierte Tests, Bewegung an den Schlosskurven, keine Hecken-Durchquerung, Routen aller Themenbereiche, Pixel-Skalierung bei verschiedenen Bildschirmgrößen, TypeScript und Pages-Build. Auswahl, Arena-Vorschau, Training, Parklauf und Zielankunft im Browser geprüft.
+
 ## 0.2.4-alpha — 2026-09-08
 
 ### Valentina Sachs
