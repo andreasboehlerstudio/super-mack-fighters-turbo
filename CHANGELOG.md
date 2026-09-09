@@ -2,6 +2,13 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.7-alpha — 2026-09-09
+
+- Jans aufgezogenen Filmrahmen bei Spezialangriffen entfernt. Stattdessen laufen transparente Pixel-Sprites mit je acht Bildern: Schlagbogen, Bodensplitter und Trefferblitz, goldfarben in der normalen Form und grün als Riese.
+- Effekte erscheinen zum aktiven Angriff, folgen Position und Blickrichtung und blenden kurz aus. Jans Projektile verwenden ebenfalls die neuen Sprites. Native Pixelgröße ohne Strecken; Animation folgt Kampfpause und K.-o.-Zeitlupe.
+- Sprite-Blätter werden einmal beim Laden einer Arena mit Jan erzeugt und wiederverwendet; keine zusätzlichen Bilddownloads. Die bisherigen Körperanimationen bleiben unverändert.
+- Geprüft: 115 Tests, TypeScript und Pages-Build; im Browser Jans normaler Ultra und grüne Bodenwelle gegen Snorri, Verwandlung und Rücksetzen im Training, keine Konsolenfehler.
+
 ## 0.2.6-alpha — 2026-09-09
 
 - Jan Reiff als 40. spielbare Figur: normales Regie-Moveset und Verwandlung nach zwei ungeblockten Treffern. Grüne Energiesäule, Bodenwelle und Partikel begleiten den Schriftzug „You made jan angry now“; reduzierte Bewegung wird berücksichtigt.

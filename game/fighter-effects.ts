@@ -8,7 +8,6 @@ export function drawFighterSpecial(g:Phaser.GameObjects.Graphics,a:Actor,ground:
  drawGuestSpecial(g,a,ground);
  if(a.id==='jan'){
     if(a.hulk&&a.transformTicks===0){const x=Math.round(a.x-a.face*50),y=Math.round(ground+a.y-190);g.fillStyle(0xffd65a,1);g.fillRect(x-3,y-12,6,24);g.fillRect(x-7,y-4,14,8);}
-  if(a.action==='special'||a.action==='ultra'){const x=Math.round(a.x+a.face*75),y=Math.round(ground+a.y-110),spread=Math.min(75,a.age*2);g.lineStyle(3,a.hulk?0x9bf06c:0xffe3a1,.9);g.strokeRect(x-spread,y-35,spread*2,70);for(let k=0;k<4;k++){g.fillStyle(k%2?0xffffff:0x243340,1);g.fillRect(x-spread+k*spread/2,y-43,spread/2,7);}}
   return;
  }
 
