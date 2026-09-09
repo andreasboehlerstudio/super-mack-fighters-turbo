@@ -2,6 +2,16 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.9-alpha — 2026-09-09
+
+- Sébastien Ganzer als 41. spielbare Figur vor dem Social-Media-Team einsortiert: gelbes Polo mit rotem S, Brille, kurzer Bart und kompakte Arcade-Proportionen. Portrait nach rechts gedreht und auf Kopf/Brust zugeschnitten.
+- Sieben eigene Animationsblätter mit 56 Posen, 17 verlustfreie Spielclips, kompakte Portrait-Dateien, Kampfrufe und eigene Endsequenz integriert. Feste Standhöhe und gemeinsame Fußanker; keine Laufzeitvergrößerung einzelner Posen.
+- Sébastiens Moves: Briefing-Impuls, Redaktionsplan, Team-Push und KAMPAGNEN-FINALE. Kurze Pixel-Effekte aus Freigabehaken, Beiträgen und Community-Symbolen begleiten die Angriffe.
+- Valentinas Rolle als Casting-Direktorin für Models und Videodrehs in Beschreibung, Ende und Moves umgesetzt: Casting-Call, Screen-Test, Recall und DIE BESETZUNG STEHT!; Casting-Klappen ersetzen Blüteneffekte.
+- Michael Vendels Spezialangriffe zum Drohnen-Thema umbenannt: Rotor-Impuls, Tiefflug, Orbit-Shot und ONE TAKE AUS DER LUFT!; Beschreibung und Ende angepasst.
+- Lange Namen erhalten in den Auswahlkacheln eine kleinere Schrift, damit etwa Sébastien nicht mitten im Vornamen umbricht.
+- Geprüft: 116 Tests, TypeScript, Pages-Build und 2.562 belegte Animationsposen. Sébastien gegen Roland im Browser auf Darstellung, Angriffe und Konsolenfehler geprüft.
+
 ## 0.2.8-alpha — 2026-09-09
 
 - Jans Beschreibung, HUD, Trefferzähler und Move-Liste verraten keine Überraschungen mehr. Sichtbare Hinweise auf seine besonderen Mechaniken entfernt; Regie-Moves bleiben beschrieben.

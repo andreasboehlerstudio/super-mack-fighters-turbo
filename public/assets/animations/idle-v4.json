@@ -334,5 +334,13 @@
     "maxBreathingHeightDifference": 1,
     "baseline": 246,
     "originX": 128
+  },
+  {
+    "id": "sebastien",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 0,
+    "baseline": 246,
+    "originX": 128
   }
 ]

@@ -490,6 +490,20 @@
     "height": 256
   },
   {
+    "file": "runtime/portraits/sebastien.webp",
+    "bytes": 84066,
+    "sourceBytes": 156747,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/sebastien-thumb.webp",
+    "bytes": 68702,
+    "sourceBytes": 156747,
+    "width": 192,
+    "height": 256
+  },
+  {
     "file": "runtime/portraits/snorri.webp",
     "bytes": 298380,
     "sourceBytes": 1196191,

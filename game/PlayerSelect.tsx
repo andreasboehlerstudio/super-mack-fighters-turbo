@@ -54,7 +54,7 @@ export function PlayerSelect({mode,p1,p2,picking,rules,onPickSeat,onSelect,onTog
        onClick={() => onSelect(hero.id)}>
        <FighterPortrait id={hero.id} thumbnail/>
        <span className="select-tile-badges">{badges.map(seat => <b key={seat.slot} className={seat.slot === 1 || seat.slot === 3 ? 'badge-p2' : ''}>{seat.slot > 1 ? (seat.slot === 2 ? '1P+' : opponent+'+') : seat.label}</b>)}</span>
-       <span className="select-tile-name">{hero.short}</span>
+       <span className={`select-tile-name ${hero.short.split(/\s+/).some(word=>word.length>8)?'select-tile-name-compact':''}`}>{hero.short}</span>
       </button>;
      })}
     </div>

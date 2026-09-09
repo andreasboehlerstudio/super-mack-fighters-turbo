@@ -39,6 +39,7 @@
 .select-tile.is-current{outline:2px solid #fff3be;outline-offset:2px;z-index:3;box-shadow:0 0 0 4px #906936,3px 5px #030b20}
 .select-tile:hover,.select-tile:focus-visible{outline:2px solid #fff5ce;outline-offset:2px;filter:brightness(1.12);z-index:4}
 .select-tile-name{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;min-height:26px;padding:3px 1px;background:#061127e8;font:12px/1.05 var(--pixel);overflow-wrap:anywhere;color:#f7e7c0;text-align:center;text-shadow:1px 1px #000}
+.select-tile-name-compact{font-size:10px}
 .select-tile-badges{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;gap:1px;pointer-events:none}
 .select-tile-badges b{background:#ffe196;color:#17263a;font:700 12px/1 var(--pixel);padding:3px 2px}
 .select-tile-badges .badge-p2{background:#88e6f2;margin-left:auto}

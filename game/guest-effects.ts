@@ -2,19 +2,41 @@ import type Phaser from 'phaser';
 import type {Actor,Projectile} from './combat.ts';
 import {fighter,type FighterId} from './data.ts';
 
-const guests=new Set<FighterId>(['valentina','schaer','glen','steffen','bobo','mross','otto','ross','freudenreich','robbemond','olli','boeckli','louis','tesla']);
+const guests=new Set<FighterId>(['valentina','sebastien','schaer','glen','steffen','bobo','mross','otto','ross','freudenreich','robbemond','olli','boeckli','louis','tesla']);
 type Graphics=Phaser.GameObjects.Graphics;
 const color=(id:FighterId)=>parseInt(fighter(id).color.slice(1),16);
 
 /** Small solid pixel motifs. All coordinates land on the same combat raster. */
-function motif(g:Graphics,id:FighterId,x:number,y:number,size:number,alpha=1){
+function motif(g:Graphics,id:FighterId,x:number,y:number,size:number,alpha=1,variant=0){
  x=Math.round(x);y=Math.round(y);const u=Math.max(2,Math.round(size/8));
  g.fillStyle(color(id),alpha);
  if(id==='valentina'){
-  // Four coral petals around a small golden sun, all on the combat raster.
-  g.fillRect(x-u,y-4*u,2*u,3*u);g.fillRect(x-u,y+u,2*u,3*u);
-  g.fillRect(x-4*u,y-u,3*u,2*u);g.fillRect(x+u,y-u,3*u,2*u);
-  g.fillStyle(0xffe59b,alpha);g.fillRect(x-u,y-u,2*u,2*u);
+  // A casting slate: a brief pixel effect, never a prop attached to the fighter.
+  g.fillRect(x-4*u,y-u,8*u,5*u);
+  for(let i=0;i<4;i++)g.fillRect(x+(i*2-4)*u,y-3*u,2*u,u);
+  g.fillStyle(0xfff4d6,alpha);
+  for(let i=0;i<4;i++)g.fillRect(x+(i*2-4)*u,y-3*u,u,u);
+  g.fillRect(x-2*u,y+u,u,u);g.fillRect(x-u,y+2*u,u,u);
+  g.fillRect(x,y+u,u,u);g.fillRect(x+u,y,u,u);
+ }else if(id==='sebastien'){
+  if(variant===1){
+   // Small scheduled posts, rather than a frame growing around the character.
+   for(let i=0;i<3;i++){
+    g.fillRect(x+(i-1)*3*u,y+(i%2)*u,2*u,3*u);
+    g.fillStyle(0xfff4d6,alpha);g.fillRect(x+(i-1)*3*u,y+(i%2)*u,2*u,u);
+    g.fillStyle(color(id),alpha);
+   }
+  }else if(variant===2){
+   // Three community silhouettes for Team-Push.
+   for(let i=0;i<3;i++){
+    const tx=x+(i-1)*3*u,ty=y+(i===1?-u:0);
+    g.fillRect(tx,ty-2*u,2*u,2*u);g.fillRect(tx-u,ty+u,4*u,2*u);
+   }
+  }else{
+   g.fillRect(x-4*u,y-u,2*u,2*u);g.fillRect(x-2*u,y+u,2*u,2*u);
+   for(let i=0;i<4;i++)g.fillRect(x+(i-1)*u,y+(1-i)*u,2*u,2*u);
+   g.fillStyle(0xfff4d6,alpha);g.fillRect(x-2*u,y+u,u,u);
+  }
  }else if(id==='schaer'){
   // Heart made from solid, shared-raster pixel clusters.
   g.fillRect(x-3*u,y-2*u,2*u,u);g.fillRect(x,y-2*u,2*u,u);
@@ -79,7 +101,7 @@ export function drawGuestSpecial(g:Graphics,a:Actor,ground:number){
  const count=ultra?7:3;
  for(let i=0;i<count;i++){
   const spread=(i-(count-1)/2)*(ultra?40:24),rise=Math.round(progress*35);
-  motif(g,a.id,x+a.face*(30+progress*50)+spread,y-50-rise-(i%2)*30,ultra?25:17,alpha);
+  motif(g,a.id,x+a.face*(30+progress*50)+spread,y-50-rise-(i%2)*30,ultra?25:17,alpha,ultra?i%3:a.activeMove);
  }
 }
 

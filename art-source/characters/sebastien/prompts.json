@@ -1,0 +1,99 @@
+[
+  {
+    "id": "sebastien",
+    "clip": "portrait",
+    "chromaKey": false,
+    "nativeWidth": 192,
+    "refs": [
+      "C:/Users/andy_/Desktop/1559892386087.jpg",
+      "C:/Users/andy_/Desktop/images.jpg",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/portraits/roland.png"
+    ],
+    "prompt": "Create a vertical 3:4 head and chest videogame portrait. Sébastien Ganzer, exact likeness of photos 1 and 2: sturdy adult man, short brown hair, rectangular dark glasses, short brown beard/stubble, broad friendly face. Yellow short-sleeved polo with a large RED capital S on chest, navy jeans, white sneakers. No props. Third image is STYLE reference only: match Roland's deliberate low-resolution arcade pixel clusters, broad warm shadow planes, dark outlines, golden rimlight, navy and turquoise diagonal streak backdrop. Looking RIGHT in three-quarter view like reference. Recognizable face rather than generic handsome hero. Crisp native 192x256 pixel art enlarged nearest-neighbor. No blur, photographic skin texture, borders, labels; only text is S.",
+    "revisionPrompt": "Edit image1 Sébastien portrait. Image2 Roland is EXACT COMPOSITION, body orientation, head scale and crop reference. Preserve Sébastien's approved glasses, short brown hair, friendly face and short beard, yellow polo and RED S. Turn his SHOULDERS AND TORSO toward RIGHT in same three-quarter direction as Roland, head also looking right. Tight HEAD AND UPPER CHEST portrait: same head size, same eye level and same upper-chest crop as Roland. No waist, belt, jeans, knees or legs anywhere in frame. The yellow polo fills lower edge and S visible there. Same pixel-art clusters, navy/teal diagonal background and golden rim as Roland. No border or labels.",
+    "revisionRefs": [
+      "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-05ad35b6-66bd-4f8a-b43b-9c7813f3857d.png",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/portraits/roland.png"
+    ],
+    "generatedSource": "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-64a43cc3-ddfc-4770-bb85-8c4a7989bbe7.png"
+  },
+  {
+    "id": "sebastien",
+    "clip": "idle",
+    "chromaKey": true,
+    "pixelStep": 1,
+    "refs": [
+      "C:/Users/andy_/Desktop/1559892386087.jpg",
+      "C:/Users/andy_/Desktop/images.jpg",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/roland.png"
+    ],
+    "prompt": "Create a game IDLE spritesheet. Sébastien Ganzer, exact likeness of photos 1 and 2: sturdy adult man, short brown hair, rectangular dark glasses, short brown beard/stubble, broad friendly face. Yellow short-sleeved polo with a large RED capital S on chest, navy jeans, white sneakers. No props. Third image provides EXACT compact arcade cartoon body proportions and pixel style, NOT identity. Slightly enlarged head and fists, compact legs, hand-pixelled broad clusters and crisp dark outlines. Eight progressive breathing boxing guard poses, both fists chest height, grounded staggered feet, very subtle changes. Exactly FOUR columns TWO rows on 1536x1024 canvas. Each whole body about420px high with 40px empty separation, same head size and baseline in each row. Face RIGHT threequarter. Flat solid #00FF00 chroma key background including all gaps. No floor shadows, text, grid, particles, props, blur or overlapping figures.",
+    "generatedSource": "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-929d9377-86c6-420d-a77c-0c1a9a0684dd.png"
+  },
+  {
+    "id": "sebastien",
+    "clip": "walk",
+    "chromaKey": true,
+    "pixelStep": 1,
+    "refs": [
+      "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-929d9377-86c6-420d-a77c-0c1a9a0684dd.png"
+    ],
+    "prompt": "Produce a game animation spritesheet of the EXACT Sébastien in reference: compact arcade cartoon proportions, large head dark rectangular glasses short brown hair beard, sturdy body yellow polo large red S navy jeans white sneakers. Preserve exact pixel style and head/body size. Eight progressive grounded WALK combat-footwork frames: left contact, down, passing, rising, right contact, down, passing, rising. Hands remain guard, shallow natural stride. No shrinking. Exactly FOUR columns TWO rows, 8 distinct fullbody drawings, canvas1536x1024. Upright equivalent bodyheight420px;40px empty spacing, no clipping or touching other cells. FaceRIGHTthreequarter throughout. Crisp hand-pixelled broad clusters, no blur. Perfect flat #00FF00 chromakey including gaps. No floor shadows, grid, labels, particles, weapons or props.",
+    "generatedSource": "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-c50ff8df-dee0-4a07-96a5-a68b614471d4.png"
+  },
+  {
+    "id": "sebastien",
+    "clip": "punch",
+    "chromaKey": true,
+    "pixelStep": 1,
+    "refs": [
+      "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-929d9377-86c6-420d-a77c-0c1a9a0684dd.png"
+    ],
+    "prompt": "Produce a game animation spritesheet of the EXACT Sébastien in reference: compact arcade cartoon proportions, large head dark rectangular glasses short brown hair beard, sturdy body yellow polo large red S navy jeans white sneakers. Preserve exact pixel style and head/body size. Eight progressive standing PUNCH frames: guard, windup, extension, full right-facing straight punch, impact, retract, recovery, guard. Feet planted, no projectile or motion streak. Exactly FOUR columns TWO rows, 8 distinct fullbody drawings, canvas1536x1024. Upright equivalent bodyheight420px;40px empty spacing, no clipping or touching other cells. FaceRIGHTthreequarter throughout. Crisp hand-pixelled broad clusters, no blur. Perfect flat #00FF00 chromakey including gaps. No floor shadows, grid, labels, particles, weapons or props.",
+    "generatedSource": "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-acd6229e-d968-4c7e-8a62-6acd184a22c4.png"
+  },
+  {
+    "id": "sebastien",
+    "clip": "kick",
+    "chromaKey": true,
+    "pixelStep": 1,
+    "refs": [
+      "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-929d9377-86c6-420d-a77c-0c1a9a0684dd.png"
+    ],
+    "prompt": "Produce a game animation spritesheet of the EXACT Sébastien in reference: compact arcade cartoon proportions, large head dark rectangular glasses short brown hair beard, sturdy body yellow polo large red S navy jeans white sneakers. Preserve exact pixel style and head/body size. Eight progressive standing KICK frames: guard, windup, lift knee, extend forward leg to right waist height, maximum kick, retract leg, lower, guard. Upper body scale constant; support foot planted. Exactly FOUR columns TWO rows, 8 distinct fullbody drawings, canvas1536x1024. Upright equivalent bodyheight420px;40px empty spacing, no clipping or touching other cells. FaceRIGHTthreequarter throughout. Crisp hand-pixelled broad clusters, no blur. Perfect flat #00FF00 chromakey including gaps. No floor shadows, grid, labels, particles, weapons or props.",
+    "generatedSource": "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-e7be92ea-575e-4fa2-a730-9ab3031b9b74.png"
+  },
+  {
+    "id": "sebastien",
+    "clip": "airpunch",
+    "chromaKey": true,
+    "pixelStep": 1,
+    "refs": [
+      "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-929d9377-86c6-420d-a77c-0c1a9a0684dd.png"
+    ],
+    "prompt": "Produce a game animation spritesheet of the EXACT Sébastien in reference: compact arcade cartoon proportions, large head dark rectangular glasses short brown hair beard, sturdy body yellow polo large red S navy jeans white sneakers. Preserve exact pixel style and head/body size. Eight progressive AIR PUNCH poses: ascending guarded pose, winding fist, extension, full airborne punch right, followthrough, retract, falling guard, descending guard. Both feet airborne, bent legs; fist not above head. Same large head and torso as reference. Exactly FOUR columns TWO rows, 8 distinct fullbody drawings, canvas1536x1024. Upright equivalent bodyheight420px;40px empty spacing, no clipping or touching other cells. FaceRIGHTthreequarter throughout. Crisp hand-pixelled broad clusters, no blur. Perfect flat #00FF00 chromakey including gaps. No floor shadows, grid, labels, particles, weapons or props.",
+    "generatedSource": "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-9c66b51b-45fe-4704-b638-e31a0945a4c0.png"
+  },
+  {
+    "id": "sebastien",
+    "clip": "airkick",
+    "chromaKey": true,
+    "pixelStep": 1,
+    "refs": [
+      "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-929d9377-86c6-420d-a77c-0c1a9a0684dd.png"
+    ],
+    "prompt": "Produce a game animation spritesheet of the EXACT Sébastien in reference: compact arcade cartoon proportions, large head dark rectangular glasses short brown hair beard, sturdy body yellow polo large red S navy jeans white sneakers. Preserve exact pixel style and head/body size. Eight progressive AIR KICK poses: jump bent knees, chamber front knee, extend leg right, full flying side kick, followthrough, retract knee, falling bent legs, descending guard. Both feet airborne. Same head and torso size as reference. Exactly FOUR columns TWO rows, 8 distinct fullbody drawings, canvas1536x1024. Upright equivalent bodyheight420px;40px empty spacing, no clipping or touching other cells. FaceRIGHTthreequarter throughout. Crisp hand-pixelled broad clusters, no blur. Perfect flat #00FF00 chromakey including gaps. No floor shadows, grid, labels, particles, weapons or props.",
+    "generatedSource": "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-026a90c1-0564-4095-a2d8-9818659f567b.png"
+  },
+  {
+    "id": "sebastien",
+    "clip": "reactions",
+    "chromaKey": true,
+    "pixelStep": 1,
+    "refs": [
+      "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-929d9377-86c6-420d-a77c-0c1a9a0684dd.png"
+    ],
+    "prompt": "Produce a game animation spritesheet of the EXACT Sébastien in reference: compact arcade cartoon proportions, large head dark rectangular glasses short brown hair beard, sturdy body yellow polo large red S navy jeans white sneakers. Preserve exact pixel style and head/body size. Eight REACTION poses in this exact order: 0 jumping with knees bent; 1 crouching/landing; 2 standing forearm block; 3 hit recoil; 4 standing special windup with palms at chest; 5 standing special release palms forward toward right; 6 defeated on one knee head down; 7 victory one fist raised. Keep each entirely in its cell. Exactly FOUR columns TWO rows, 8 distinct fullbody drawings, canvas1536x1024. Upright equivalent bodyheight420px;40px empty spacing, no clipping or touching other cells. FaceRIGHTthreequarter throughout. Crisp hand-pixelled broad clusters, no blur. Perfect flat #00FF00 chromakey including gaps. No floor shadows, grid, labels, particles, weapons or props.",
+    "generatedSource": "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-60f872a6-b520-43cc-98bc-7e778ba8f9f0.png"
+  }
+]
