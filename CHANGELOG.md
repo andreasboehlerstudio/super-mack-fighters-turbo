@@ -2,6 +2,12 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.12-alpha — 2026-09-09
+
+- Deutschland-Arena in helles goldenes Abendlicht versetzt: sichtbare tief stehende Sonne, warme Wolken und Fassaden sowie sanfte bläuliche Schatten. Die korrigierte Bodenperspektive und Zuschauerpositionen bleiben erhalten.
+- Spielbild und Vorschaubilder verlustfrei für das gemeinsame Pixelraster exportiert; neue Dateinamen verhindern veraltete Hintergrundbilder aus dem Browsercache.
+- Geprüft: neun Asset- und Arena-Tests, TypeScript und Pages-Build. Training mit Roland und Sebastian auf Helligkeit und Lesbarkeit geprüft; keine Konsolenfehler.
+
 ## 0.2.11-alpha — 2026-09-09
 
 - Deutschland-Arena mit Imagegen neu überarbeitet: flacherer Vorplatz, ruhigere Pflasterperspektive und mehr Tiefe zwischen Fassaden und Kampflinie. Die bisherige Grafik bleibt als Referenz erhalten.

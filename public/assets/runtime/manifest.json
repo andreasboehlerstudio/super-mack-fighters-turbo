@@ -826,6 +826,20 @@
     "height": 90
   },
   {
+    "file": "runtime/arenas/park-1-golden-hour-v3.webp",
+    "bytes": 872418,
+    "sourceBytes": 2602042,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-1-golden-hour-v3-thumb.webp",
+    "bytes": 30572,
+    "sourceBytes": 2602042,
+    "width": 160,
+    "height": 90
+  },
+  {
     "file": "runtime/arenas/park-1-perspective-v2.webp",
     "bytes": 856458,
     "sourceBytes": 2655252,

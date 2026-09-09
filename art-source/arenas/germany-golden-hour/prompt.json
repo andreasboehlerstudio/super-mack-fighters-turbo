@@ -1,0 +1,11 @@
+{
+  "mode": "built-in imagegen",
+  "useCase": "lighting-weather",
+  "reference": "public/assets/arenas/park-1-perspective-v2.webp",
+  "prompt": "Use case: lighting-weather. EDIT the provided pixel-art fighting game Germany arena. Change ONLY time of day, sky colors and illumination to a beautiful BRIGHT golden hour in early evening, not night. Preserve the exact buildings, camera, composition, roof silhouettes, lamps, landscaping, all object positions and especially the recently corrected flat cobblestone perspective and ground height. Warm low sun visibly peeking through a small cloud in the open sky just right of center, above the roofline; soft pale apricot and golden clouds blending into clear light blue higher sky. Honey-colored directional sunlight catches facade edges and sandstone, slate roofs retain blue contrast, trees remain green. Gentle extended lavender-blue shadows on the plaza, but keep the ENTIRE fighting area well exposed and readable, no deep black shadow, no dark vignette, no strong glare over fighters. Restrained atmospheric glow expressed as crisp pixel color clusters, no photographic lens flare or blurry bloom. Mood: inviting sunny late-summer evening, warm and vivid, not orange monochrome or dim sunset. Preserve refined crisp arcade pixel art with a uniform grid and no soft antialiasing. Output 1920x1080 landscape 16:9, no people, fighters, UI, text or new objects other than visible sun. Ground unchanged in geometry.",
+  "export": {
+    "master": "1920x1080 lossless WebP",
+    "runtime": "960x540 nearest-neighbour",
+    "thumbnail": "160x90"
+  }
+}
