@@ -8,7 +8,7 @@ function hit(m:ReturnType<typeof duel>,rear=false,block=false){m.hitstop=0;const
 test('Jan transforms on exactly two unblocked hits; normal actions stay normal beforehand',()=>{
  const m=duel();hit(m,false,true);assert.equal(m.actors[1].hitsReceived,0);assert.equal(m.actors[1].hulk,false);
  hit(m);assert.equal(m.actors[1].hitsReceived,1);assert.equal(m.actors[1].hulk,false);
- hit(m);const jan=m.actors[1];assert.equal(jan.hulk,true);assert.equal(jan.transformTicks,90);assert.equal(jan.hp,100);assert.equal(jan.lock,90);assert.equal(hurtbox(jan).h,284);assert.ok(m.events.some(e=>e.label==='You made jan angry now'));
+ hit(m);const jan=m.actors[1];assert.equal(jan.hulk,true);assert.equal(jan.transformTicks,90);assert.equal(jan.hp,100);assert.equal(jan.lock,90);assert.equal(hurtbox(jan).h,284);assert.ok(m.events.some(e=>e.label==='YOU MADE JAN ANGRY NOW!'));
  for(let i=0;i<103;i++)step(m,[neutral(),neutral()]);assert.equal(jan.transformTicks,0);assert.equal(jan.hulk,true);
 });
 test('Hulk resists front attacks and can be defeated from the back on either facing',()=>{

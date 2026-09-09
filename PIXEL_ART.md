@@ -3,7 +3,6 @@
 Die Spielgrafik wird ab Alpha 0.2.6 auf 960 × 540 Bildpunkten ausgegeben. Kämpfe, Hintergründe,
 Besucher und Effekte teilen denselben Framebuffer. Figuren behalten ihre 256er
 Quellzellen und ihre Körpergröße; die Kamera bildet sie auf 256 × 256 Bildpunkte ab.
-Jans grüne Riesenform verwendet eigene 384er Zellen bei derselben Pixeldichte.
 Parkwelt, Titel und Endings verwenden dasselbe Ausgaberaster. Der Browser skaliert
 den fertigen Bildschirm mit Nearest-Neighbour auf ganze physische Pixel.
 
@@ -33,8 +32,20 @@ Vergleichstafeln liegen anschließend in `../work/pixel-audit/`.
 und erzeugt Vergleichstafeln für Stand, Lauf und Tritt. Die Messwerte sind keine
 automatische Bewertung des Zeichenstils.
 
-Jans zusätzliche Form wird in den Asset-Tests gesondert mit 384er Zellen geprüft.
-Ihre Stand- und Laufbilder sind separat gezeichnet. Spezial- und Reaktionsclips
-verwenden vorerst Standposen; diese Alpha-Einschränkung steht beim Quellmaterial.
 Valentinas sieben Bewegungsblätter wurden für Alpha 0.2.6 auch künstlerisch feiner
 neu gestaltet. Ihr Portrait bleibt unverändert.
+
+<details>
+<summary>Zusätzliche Charaktermechaniken und Asset-Grenzen (Spoiler)</summary>
+
+Jans grüne Riesenform verwendet eigene 384er Zellen bei derselben Pixeldichte.
+Sie wird in den Asset-Tests gesondert geprüft. Ihre Stand- und Laufbilder sind
+separat gezeichnet. Spezial- und Reaktionsclips verwenden vorerst Standposen;
+diese Alpha-Einschränkung steht beim Quellmaterial.
+
+</details>
+
+Der [Zeichenstil-Abgleich vom 9. September](CHARACTER_STYLE_AUDIT.md) dokumentiert
+die weiterhin sichtbaren Unterschiede zwischen den Figurengruppen. Jan ist trotz
+gleicher nativer Pixeldichte noch realistischer gezeichnet als Roland. Der Bericht
+enthält einen unvergrößerten Vergleich und Vorgaben für gezielte Neuzeichnungen.

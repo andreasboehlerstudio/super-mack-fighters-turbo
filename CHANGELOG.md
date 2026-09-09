@@ -2,18 +2,32 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.8-alpha — 2026-09-09
+
+- Jans Beschreibung, HUD, Trefferzähler und Move-Liste verraten keine Überraschungen mehr. Sichtbare Hinweise auf seine besonderen Mechaniken entfernt; Regie-Moves bleiben beschrieben.
+- Jans besonderer Kampfschriftzug zeigt jetzt exakt **YOU MADE JAN ANGRY NOW!**. Ereignis, Anzeige und bestehender Test sind synchron geändert.
+- Übergreifender Zeichenstil-Abgleich mit unvergrößertem Vergleich von Roland, Jan und Michael. Unterschiede, Grenzen der technischen Raster-Messung und Prioritäten für spätere Neuzeichnungen in `CHARACTER_STYLE_AUDIT.md` dokumentiert; Charakterbilder unverändert. Technische Spoiler stehen in eingeklappten Entwicklerabschnitten.
+- Raster-Audit nennt die tatsächliche Figurenanzahl dynamisch und unterscheidet Portrait-Quelldateien von Menübildern.
+- Geprüft: alle 697 normalen Spielclips mit 2.501 belegten Posen; visuelle Stichproben für 41 Figuren und deren Portraits; sechs Jan-Tests, TypeScript und Pages-Build. Auswahl, HUD und Pausenhilfe im Browser ohne Vorab-Hinweise geprüft; keine Konsolenfehler.
+
 ## 0.2.7-alpha — 2026-09-09
 
-- Jans aufgezogenen Filmrahmen bei Spezialangriffen entfernt. Stattdessen laufen transparente Pixel-Sprites mit je acht Bildern: Schlagbogen, Bodensplitter und Trefferblitz, goldfarben in der normalen Form und grün als Riese.
+- Jans aufgezogenen Filmrahmen bei Spezialangriffen entfernt. Stattdessen laufen transparente Pixel-Sprites mit je acht Bildern: Schlagbogen, Bodensplitter und Trefferblitz.
 - Effekte erscheinen zum aktiven Angriff, folgen Position und Blickrichtung und blenden kurz aus. Jans Projektile verwenden ebenfalls die neuen Sprites. Native Pixelgröße ohne Strecken; Animation folgt Kampfpause und K.-o.-Zeitlupe.
 - Sprite-Blätter werden einmal beim Laden einer Arena mit Jan erzeugt und wiederverwendet; keine zusätzlichen Bilddownloads. Die bisherigen Körperanimationen bleiben unverändert.
-- Geprüft: 115 Tests, TypeScript und Pages-Build; im Browser Jans normaler Ultra und grüne Bodenwelle gegen Snorri, Verwandlung und Rücksetzen im Training, keine Konsolenfehler.
+- Geprüft: 115 Tests, TypeScript und Pages-Build; im Browser Jans Ultra und Bodenwelle gegen Snorri sowie Rücksetzen im Training, keine Konsolenfehler.
 
 ## 0.2.6-alpha — 2026-09-09
+
+<details>
+<summary>Jans technische Charakterdetails (Spoiler)</summary>
 
 - Jan Reiff als 40. spielbare Figur: normales Regie-Moveset und Verwandlung nach zwei ungeblockten Treffern. Grüne Energiesäule, Bodenwelle und Partikel begleiten den Schriftzug „You made jan angry now“; reduzierte Bewegung wird berücksichtigt.
 - Jans grüne Form ist rund 50 % größer und nutzt eigene 384er Sprite-Zellen. Drei Spezialangriffe ohne Energiekosten, Ein-Treffer-K.-o. und Rücken-Schwachstelle mit verzögertem Umdrehen. Form bleibt beim Teamwechsel erhalten und wird pro Runde zurückgesetzt.
 - Alpha-Einschränkung: Die Riesenform hat eigene Stand-/Laufbilder; Spezial- und Reaktionsposen verwenden vorerst Standbilder mit Kampfeffekten, da zwei neue Bildblätter vom Bilddienst abgelehnt wurden.
+
+</details>
+
 - Arcade: Frederik Mack zuerst, Michael Mack in der Mitte, Roland Mack zuletzt; alle übrigen Gegner einschließlich Jan werden pro Durchlauf gemischt. Fortsetzen und Wiederholen behalten dieselbe Reihenfolge.
 
 - Feinere gemeinsame Pixel-Ausgabe mit 960 × 540 statt 480 × 270 Bildpunkten. Figuren, Arenen, Parkwelt, Titel und Endings teilen weiterhin ein Raster; keine bilineare Glättung.
@@ -23,7 +37,7 @@ Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts
 - Nach einem Rundenende laufen die aktuelle Angriffsbewegung und die Schwerkraft weiter. Sieger gehen erst nach Erholung und Landung in ihre Siegerpose; neue Angriffe verursachen dabei keinen Schaden.
 - Valentinas sieben Bewegungsblätter in feinerem Pixel-Art-Stil neu gezeichnet und als 17 Spielclips exportiert. Feinere Konturen, Gesichtsschattierung und Kleidfalten; zusätzliche 2 × 2-Vergröberung entfernt. Kampf, Parklauf und Ending laden denselben aktuellen Stand.
 - Beim entscheidenden K.O.-Treffer setzt kurze Zeitlupe ein, die allmählich auf Normaltempo zurückkehrt. Ein Zeitablauf löst keine K.O.-Zeitlupe aus.
-- Geprüft: 115 automatisierte Tests einschließlich Verwandlung, Rücken-Konter, Ein-Treffer-K.-o., Arcade-Reihenfolge, Luft-K.O., Landung, Teamwechsel, Bildcache und Dateigrößen; TypeScript und Pages-Build. Im Browser: Auswahl und Arenastart, Jans Verwandlung mit Schriftzug, größere Form, Pausenmenü sowie Valentinas Luftangriff gegen Snorri; keine Konsolenfehler.
+- Geprüft: 115 automatisierte Tests einschließlich Jans Charaktermechaniken, Arcade-Reihenfolge, Luft-K.O., Landung, Teamwechsel, Bildcache und Dateigrößen; TypeScript und Pages-Build. Im Browser: Auswahl und Arenastart, Jans Charaktermechaniken, Pausenmenü sowie Valentinas Luftangriff gegen Snorri; keine Konsolenfehler.
 
 ## 0.2.5-alpha — 2026-09-08
 

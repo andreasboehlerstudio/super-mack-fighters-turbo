@@ -38,7 +38,7 @@ export const FIGHTERS:FighterDef[]=[
  f('andreas','Andreas Böhler','#bd9cff','Render-Rush','dash',250,21,97,580,185,'RHYTHMUS & SCHUB','Ein violetter Vorstoß hinterlässt eine leuchtende Spur.'),
  f('karsten','Karsten Mosner','#ffe1a0','Objektivblitz','bolt',230,21,96,540,175,'LICHT & BEWEGUNG','Gebündeltes Licht, ein schneller Dolly-Vorstoß und ein aufsteigender Kran-Schwenk.'),
  f('vendel','Michael Vendel','#b8dbc2','Impulswelle','wave',220,22,102,460,180,'STAND & SCHUB','Eine Bodenwelle schafft Raum. Kraft-Sprint und Druckwirbel bringen Michael wieder in den Nahkampf.'),
- f('jan','Jan Reiff','#8cde68','Action!','dash',240,20,102,520,165,'REGIE & VERWANDLUNG','Nach zwei ungeblockten Treffern: grüner Hulk. Nur Rückenangriffe können Jan besiegen. Hulk: Angriffstasten lösen Spezialangriffe mit Ein-Treffer-K.-o. aus; springe hinter ihn während seiner langen Erholung.'),
+ f('jan','Jan Reiff','#8cde68','Action!','dash',240,20,102,520,165,'REGIE & TIMING','Action! Jan setzt mit präzisem Timing zum Vorstoß an. Director’s Cut und Letzte Klappe ergänzen sein Regie-Moveset.'),
  f('valentina','Valentina Sachs','#ff956f','Sonnenbogen','arc',290,19,94,545,160,'SOMMER & SCHWUNG','Ein warmer Sonnenbogen hält Abstand. Sommerbrise überbrückt ihn, Blütenwirbel schützt die Nähe.'),
  f('schaer','Nathalie Schär','#ff8cae','Reel-Rush','dash',275,17,90,580,150,'TEAM S · TEMPO','Ein schneller Reel-Vorstoß. Herzchen fliegen im Story-Bogen, der Hashtag-Wirbel deckt die Nähe ab.'),
  f('glen','Glen Homburg','#ffe079','Kommentar-Stopp','burst',205,24,107,420,195,'TEAM S · KONTROLLE','Ein kurzer Kommentarstoß hält Gegner auf Abstand. Share-Welle und Community-Boost schaffen Platz.'),

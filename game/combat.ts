@@ -53,7 +53,7 @@ function damage(m:Match,attacker:number,defender:number,amount:number,x:number,y
  b.hp=Math.max(b.id==='jan'&&!rear?1:0,b.hp-dealt);setAction(b,blocked?'block':'hit',blocked?9:17);b.x=Math.max(LEFT,Math.min(RIGHT,b.x+a.face*(blocked?8:22)));
  if(!superHit)meter(m,attacker,blocked?3:8);meter(m,defender,blocked?4:Math.round(dealt*.55)+2);
  if(!blocked){a.combo=continuing?a.combo+1:1;a.lastHit=m.tick;}m.events.push({type:blocked?'block':'hit',player:defender,x,y,label:blocked?'BLOCK':a.combo>1?`${a.combo} HITS · ${comboName(a.combo)}`:undefined});m.hitstop=blocked?2:5;
- if(b.id==='jan'&&!b.hulk&&!blocked&&b.hp>0&&++b.hitsReceived>=2){b.hulk=true;b.transformTicks=90;b.hp=100;b.turnTicks=0;b.specialCd=0;b.buffer=[];b.queued=null;setAction(b,'tag',90);b.invuln=90;m.hitstop=12;m.events.push({type:'special',player:defender,label:'You made jan angry now'});}
+ if(b.id==='jan'&&!b.hulk&&!blocked&&b.hp>0&&++b.hitsReceived>=2){b.hulk=true;b.transformTicks=90;b.hp=100;b.turnTicks=0;b.specialCd=0;b.buffer=[];b.queued=null;setAction(b,'tag',90);b.invuln=90;m.hitstop=12;m.events.push({type:'special',player:defender,label:'YOU MADE JAN ANGRY NOW!'});}
  if(b.hp===0){setAction(b,'defeat');m.events.push({type:'ko',player:defender});if((m.bench[defender]?.hp??0)>0)m.pendingTag[defender]=48}
 }
 function launch(m:Match,a:Actor,index:number,move:Pick<MoveDef,'kind'|'power'|'speed'|'reach'>,superHit=false){
