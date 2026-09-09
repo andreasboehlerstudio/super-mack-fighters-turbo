@@ -3,9 +3,9 @@ import assert from 'node:assert/strict';
 import {pixelScreenScale,pixelScreenFrame,COMBAT_RENDER_ZOOM,snapCombatPixel,RASTER_WIDTH,artRasterSize} from './pixel-grid.ts';
 
 test('portraits and scene art share the same density at every display size',()=>{
- assert.deepEqual(artRasterSize(1280,720),{width:480,height:270});
- assert.deepEqual(artRasterSize(256,256),{width:96,height:96});
- assert.equal(256*COMBAT_RENDER_ZOOM,128);
+ assert.deepEqual(artRasterSize(1280,720),{width:960,height:540});
+ assert.deepEqual(artRasterSize(256,256),{width:192,height:192});
+ assert.equal(256*COMBAT_RENDER_ZOOM,256);
 });
 test('pixel mode fits the viewport and produces integer physical pixels at different DPI',()=>{
  for(const dpr of [1,1.25,1.5,2,3])for(const [w,h] of [[1280,720],[1920,1080],[1265,700],[2560,1440]]){

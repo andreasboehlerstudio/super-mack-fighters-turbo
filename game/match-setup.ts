@@ -17,9 +17,9 @@ export type PlayerPads=[number|null,number|null];
 export function localPlayersReady(joined:boolean,pads:PlayerPads,connected:readonly number[]):boolean {
  return joined && (pads[0]===null||pads[1]===null||pads[0]!==pads[1]) && pads.every(p=>p===null||connected.includes(p));
 }
-export function makeBattleConfig(options:{mode:GameMode;p1:FighterId;p2:FighterId;arena:string;route:string[];index:number;difficulty:number;rules:GameRules;pads:PlayerPads}):BattleConfig {
+export function makeBattleConfig(options:{runId?:string;mode:GameMode;p1:FighterId;p2:FighterId;arena:string;route:string[];index:number;difficulty:number;rules:GameRules;pads:PlayerPads}):BattleConfig {
  const {mode,p1,p2,arena,route,index,difficulty,rules,pads}=options,tour=mode==='arcade';
- const current=tour?route[index]:arena,opponent=tour?arcadeOpponent(index,route.length):p2;
+ const current=tour?route[index]:arena,opponent=tour?arcadeOpponent(index,route.length,options.runId):p2;
  const partner1=rules.partner1===p1?HEROES.find(h=>h.id!==p1)!.id:rules.partner1;
  const reserve=tour?(index===route.length-1?'juergen':HEROES[(index*3+3)%HEROES.length].id):rules.partner2;
  const partner2=reserve===opponent?HEROES.find(h=>h.id!==opponent)!.id:reserve;

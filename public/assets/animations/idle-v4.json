@@ -312,10 +312,26 @@
     "originX": 128
   },
   {
+    "id": "jan",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 1,
+    "baseline": 246,
+    "originX": 128
+  },
+  {
+    "id": "janhulk",
+    "frames": 8,
+    "bodyHeight": 294,
+    "maxBreathingHeightDifference": 4,
+    "baseline": 374,
+    "originX": 192
+  },
+  {
     "id": "valentina",
     "frames": 8,
     "bodyHeight": 196,
-    "maxBreathingHeightDifference": 2,
+    "maxBreathingHeightDifference": 1,
     "baseline": 246,
     "originX": 128
   }

@@ -1,18 +1,19 @@
 import {fighter,type FighterId} from './data.ts';
 import {movesFor,ultraFor,type MoveDef} from './moves.ts';
 import {stagePhysics} from './stages.ts';
+import {isJanHulk,hitsJanBack,JAN_HULK_MOVES} from './jan-form.ts';
 export const TICK=1/60,FLOOR=445,LEFT=65,RIGHT=895;
 export type Action='idle'|'walk'|'jump'|'land'|'crouch'|'punch'|'kick'|'airpunch'|'airkick'|'block'|'hit'|'special'|'ultra'|'parry'|'tag'|'defeat'|'victory';
 export type Input={left:boolean;right:boolean;down:boolean;jump:boolean;punch:boolean;kick:boolean;block:boolean;parry:boolean;ultra:boolean;tag:boolean};
 export const neutral=():Input=>({left:false,right:false,down:false,jump:false,punch:false,kick:false,block:false,parry:false,ultra:false,tag:false});
 export interface Token{key:'down'|'forward'|'punch'|'kick';tick:number}
-export interface Actor{id:FighterId;x:number;y:number;vy:number;vx:number;face:1|-1;hp:number;action:Action;age:number;lock:number;specialCd:number;attackHit:boolean;buffer:Token[];last:Input;wins:number;combo:number;lastHit:number;activeMove:number;chargeTicks:number;chargeGrace:number;chargeFace:number;queued:{key:"punch"|"kick"|"jump"|"ultra";tick:number}|null;parryTicks:number;parryCd:number;invuln:number}
-export interface Projectile{id:number;owner:number;sourceId?:FighterId;x:number;y:number;originY:number;vx:number;age:number;kind:string;damage:number;radius:number;color:string;ultra?:boolean}
+export interface Actor{hitsReceived:number;transformTicks:number;hulk:boolean;turnTicks:number;id:FighterId;x:number;y:number;vy:number;vx:number;face:1|-1;hp:number;action:Action;age:number;lock:number;specialCd:number;attackHit:boolean;buffer:Token[];last:Input;wins:number;combo:number;lastHit:number;activeMove:number;chargeTicks:number;chargeGrace:number;chargeFace:number;queued:{key:"punch"|"kick"|"jump"|"ultra";tick:number}|null;parryTicks:number;parryCd:number;invuln:number}
+export interface Projectile{id:number;owner:number;sourceId?:FighterId;x:number;y:number;originY:number;vx:number;age:number;kind:string;damage:number;radius:number;color:string;ultra?:boolean;finisher?:boolean}
 export type CombatEvent={type:'punch'|'kick'|'jump'|'hit'|'block'|'special'|'round'|'win'|'ko'|'parry'|'ultra'|'tag';player?:number;x?:number;y?:number;label?:string};
 export const comboName=(hits:number)=>hits>=6?'ULTRA COMBO':hits>=4?'TURBO COMBO':hits===3?'TRIPLE HIT':'DOUBLE HIT';
 export interface MatchOptions{training?:boolean;parry?:boolean;turbo?:number;stageId?:string;partners?:[FighterId|null,FighterId|null]}
 export interface Match{actors:[Actor,Actor];tick:number;phase:'intro'|'fight'|'roundover'|'complete';phaseTicks:number;round:number;time:number;winner:number|null;roundWinner:number|null;projectiles:Projectile[];events:CombatEvent[];hitstop:number;serial:number;seed:number;meter:[number,number];bench:[Actor|null,Actor|null];tagCd:[number,number];pendingTag:[number,number];teams:[FighterId[],FighterId[]];score:[number,number];rules:{training:boolean;parry:boolean;turbo:number;stageId:string}}
-const actor=(id:FighterId,x:number,face:1|-1):Actor=>({id,x,y:0,vy:0,vx:0,face,hp:100,action:'idle',age:0,lock:0,specialCd:0,attackHit:false,buffer:[],last:neutral(),wins:0,combo:0,lastHit:-999,activeMove:0,chargeTicks:0,chargeGrace:0,chargeFace:face,queued:null,parryTicks:0,parryCd:0,invuln:0});
+const actor=(id:FighterId,x:number,face:1|-1):Actor=>({hitsReceived:0,transformTicks:0,hulk:false,turnTicks:0,id,x,y:0,vy:0,vx:0,face,hp:100,action:'idle',age:0,lock:0,specialCd:0,attackHit:false,buffer:[],last:neutral(),wins:0,combo:0,lastHit:-999,activeMove:0,chargeTicks:0,chargeGrace:0,chargeFace:face,queued:null,parryTicks:0,parryCd:0,invuln:0});
 export function createMatch(a:FighterId,b:FighterId,seed=19,options:MatchOptions={}):Match{
  const partners=options.partners??[null,null];
  return {actors:[actor(a,270,1),actor(b,690,-1)],tick:0,phase:'intro',phaseTicks:150,round:1,time:65*60,winner:null,roundWinner:null,projectiles:[],events:[],hitstop:0,serial:0,seed,meter:options.training?[100,100]:[0,0],bench:[partners[0]?actor(partners[0],270,1):null,partners[1]?actor(partners[1],690,-1):null],tagCd:[0,0],pendingTag:[0,0],teams:[[a,...(partners[0]?[partners[0]]:[])],[b,...(partners[1]?[partners[1]]:[])]],score:[0,0],rules:{training:options.training??false,parry:options.parry??false,turbo:Math.min(1.4,Math.max(1,options.turbo??1.18)),stageId:options.stageId??'park-9'}};
@@ -22,10 +23,10 @@ export function comboReady(buffer:Token[],tick:number,attack:'punch'|'kick'='pun
 const setAction=(a:Actor,action:Action,lock=0)=>{if(a.action!==action||lock){a.action=action;a.age=0}a.lock=lock;a.attackHit=false};
 const meter=(m:Match,i:number,amount:number)=>m.meter[i]=Math.max(0,Math.min(100,m.meter[i]+amount));
 export const teamHealth=(m:Match,i:number)=>m.actors[i].hp+(m.bench[i]?.hp??0);
-export const activeMove=(a:Actor)=>movesFor(a.id)[a.activeMove]??movesFor(a.id)[0];
+export const activeMove=(a:Actor)=>(isJanHulk(a)?JAN_HULK_MOVES:movesFor(a.id))[a.activeMove]??movesFor(a.id)[0];
 export type Hitbox={x:number;y:number;w:number;h:number};
 export const boxesOverlap=(a:Hitbox,b:Hitbox)=>a.x<b.x+b.w&&a.x+a.w>b.x&&a.y<b.y+b.h&&a.y+a.h>b.y;
-export const hurtbox=(a:Actor):Hitbox=>{const mascot=['ed','edda','snorri','wakala','olli','boeckli','louis'].includes(a.id),width=mascot?84:62,height=a.action==='crouch'?104:mascot?168:178;return {x:a.x-width/2,y:a.y-height,w:width,h:height}};
+export const hurtbox=(a:Actor):Hitbox=>{const mascot=['ed','edda','snorri','wakala','olli','boeckli','louis'].includes(a.id),width=isJanHulk(a)?116:mascot?84:62,height=isJanHulk(a)?(a.action==='crouch'?180:284):a.action==='crouch'?104:mascot?168:178;return {x:a.x-width/2,y:a.y-height,w:width,h:height}};
 /** Shared collision geometry for combat resolution. Debug boxes are never drawn in the game. */
 export function activeHitbox(a:Actor):Hitbox|null {
  const d=fighter(a.id),move=activeMove(a);let reach=0,top=95,height=70,behind=0;
@@ -34,35 +35,39 @@ export function activeHitbox(a:Actor):Hitbox|null {
  else if(a.action==='airpunch'&&a.age>=6&&a.age<=11&&!a.attackHit){reach=d.reach+8;top=132;height=58}
  else if(a.action==='airkick'&&a.age>=9&&a.age<=17&&!a.attackHit){reach=d.reach+42;top=102;height=60}
  else if(a.action==='special'&&move.kind==='dash'&&a.age>=move.startup&&a.age<move.startup+18&&!a.attackHit){reach=move.reach;behind=24}
- else if(a.action==='special'&&move.kind==='burst'&&a.age===move.startup)return a.id==='olli'&&a.activeMove===0?{x:a.face>0?a.x:a.x-move.reach,y:a.y-120,w:move.reach,h:120}:{x:a.x-move.reach,y:a.y-120,w:move.reach*2,h:120};
+ else if(a.action==='special'&&move.kind==='burst'&&a.age===move.startup)return (isJanHulk(a)||a.id==='olli'&&a.activeMove===0)?{x:a.face>0?a.x:a.x-move.reach,y:a.y-120,w:move.reach,h:120}:{x:a.x-move.reach,y:a.y-120,w:move.reach*2,h:120};
  else if(a.action==='ultra'&&d.kind==='dash'&&a.age>=28&&a.age<50&&!a.attackHit){reach=d.reach+35;behind=24;top=105;height=85}
  else if(a.action==='ultra'&&d.kind==='burst'&&[28,36,44].includes(a.age))return {x:a.x-250,y:a.y-120,w:500,h:120};
  else return null;
  return {x:a.face>0?a.x-behind:a.x-reach,y:a.y-top,w:reach+behind,h:height};
 }
 const meleeConnects=(a:Actor,b:Actor)=>{const box=activeHitbox(a);return !!box&&boxesOverlap(box,hurtbox(b))};
-function damage(m:Match,attacker:number,defender:number,amount:number,x:number,y:number,guard=true,superHit=false){
+function damage(m:Match,attacker:number,defender:number,amount:number,x:number,y:number,guard=true,superHit=false,sourceX?:number,finisher=false){
  const a=m.actors[attacker],b=m.actors[defender];if(b.hp<=0||b.invuln>0)return;
+ const rear=b.id==='jan'&&hitsJanBack(b,sourceX??a.x);
+ if(isJanHulk(b)&&!rear){m.events.push({type:'block',player:defender,x,y,label:'NUR AM RÜCKEN VERWUNDBAR'});m.hitstop=3;return;}
  if(m.rules.parry&&b.parryTicks>0){b.parryTicks=0;b.invuln=4;b.lock=7;b.parryCd=22;meter(m,defender,14);m.hitstop=6;m.events.push({type:'parry',player:defender,x,y,label:'PARRY!'});if(Math.abs(a.x-b.x)<150)a.lock=Math.max(a.lock,14);return}
  const continuing=b.action==='hit'&&b.lock>0;
- const blocked=guard&&b.y===0&&b.action==='block',dealt=blocked?Math.max(1,Math.round(amount*.12)):amount;
- b.hp=Math.max(0,b.hp-dealt);setAction(b,blocked?'block':'hit',blocked?9:17);b.x=Math.max(LEFT,Math.min(RIGHT,b.x+a.face*(blocked?8:22)));
+ const lethal=finisher||isJanHulk(a)||isJanHulk(b)&&rear;
+ const blocked=!lethal&&guard&&b.y===0&&b.action==='block',dealt=lethal?b.hp:blocked?Math.max(1,Math.round(amount*.12)):amount;
+ b.hp=Math.max(b.id==='jan'&&!rear?1:0,b.hp-dealt);setAction(b,blocked?'block':'hit',blocked?9:17);b.x=Math.max(LEFT,Math.min(RIGHT,b.x+a.face*(blocked?8:22)));
  if(!superHit)meter(m,attacker,blocked?3:8);meter(m,defender,blocked?4:Math.round(dealt*.55)+2);
  if(!blocked){a.combo=continuing?a.combo+1:1;a.lastHit=m.tick;}m.events.push({type:blocked?'block':'hit',player:defender,x,y,label:blocked?'BLOCK':a.combo>1?`${a.combo} HITS · ${comboName(a.combo)}`:undefined});m.hitstop=blocked?2:5;
+ if(b.id==='jan'&&!b.hulk&&!blocked&&b.hp>0&&++b.hitsReceived>=2){b.hulk=true;b.transformTicks=90;b.hp=100;b.turnTicks=0;b.specialCd=0;b.buffer=[];b.queued=null;setAction(b,'tag',90);b.invuln=90;m.hitstop=12;m.events.push({type:'special',player:defender,label:'You made jan angry now'});}
  if(b.hp===0){setAction(b,'defeat');m.events.push({type:'ko',player:defender});if((m.bench[defender]?.hp??0)>0)m.pendingTag[defender]=48}
 }
 function launch(m:Match,a:Actor,index:number,move:Pick<MoveDef,'kind'|'power'|'speed'|'reach'>,superHit=false){
  const height=move.kind==='wave'?20:move.kind==='arc'?90:65;
  if(move.kind==='burst'){
   const b=m.actors[1-index],grip=a.id==='olli'&&!superHit&&a.activeMove===0;
-  const area=grip?{x:a.face>0?a.x:a.x-move.reach,y:a.y-120,w:move.reach,h:120}:{x:a.x-move.reach,y:a.y-120,w:move.reach*2,h:120};
+  const area=(grip||isJanHulk(a))?{x:a.face>0?a.x:a.x-move.reach,y:a.y-120,w:move.reach,h:120}:{x:a.x-move.reach,y:a.y-120,w:move.reach*2,h:120};
   if(boxesOverlap(area,hurtbox(b))){
    const open=b.action!=='block'&&b.invuln===0&&!(m.rules.parry&&b.parryTicks>0),hp=b.hp;
    damage(m,index,1-index,move.power,b.x,FLOOR+b.y-65,true,superHit);
    if(grip&&open&&b.hp>0&&b.hp<hp){b.x=Math.max(LEFT,Math.min(RIGHT,a.x+a.face*78));b.vx=0;}
   }
  }
- else if(move.kind!=='dash')m.projectiles.push({id:++m.serial,owner:index,sourceId:a.id,x:a.x+a.face*42,y:a.y-height,originY:a.y-height,vx:a.face*move.speed,age:0,kind:move.kind,damage:move.power,radius:superHit?29:move.kind==='wave'?25:19,color:fighter(a.id).color,ultra:superHit});
+ else if(move.kind!=='dash')m.projectiles.push({id:++m.serial,owner:index,sourceId:a.id,x:a.x+a.face*42,y:a.y-height,originY:a.y-height,vx:a.face*move.speed,age:0,kind:move.kind,damage:move.power,radius:superHit?29:move.kind==='wave'?25:19,color:fighter(a.id).color,ultra:superHit,finisher:isJanHulk(a)});
 }
 function tag(m:Match,index:number,forced=false){
  const outgoing=m.actors[index],incoming=m.bench[index];if(!incoming||incoming.hp<=0||!forced&&(m.tagCd[index]>0||outgoing.lock>0||outgoing.y<0))return false;
@@ -76,8 +81,8 @@ function nextRound(m:Match){
 }
 function commands(m:Match,index:number,input:Input){
  const a=m.actors[index];if(a.hp<=0)return;
- const other=m.actors[1-index],d=fighter(a.id);a.age++;a.specialCd=Math.max(0,a.specialCd-1);a.lock=Math.max(0,a.lock-1);a.parryTicks=Math.max(0,a.parryTicks-1);a.parryCd=Math.max(0,a.parryCd-1);a.invuln=Math.max(0,a.invuln-1);
- if(!['punch','kick','airpunch','airkick','special','ultra','hit'].includes(a.action))a.face=other.x>=a.x?1:-1;
+ const other=m.actors[1-index],d=fighter(a.id);a.age++;a.transformTicks=Math.max(0,a.transformTicks-1);a.specialCd=Math.max(0,a.specialCd-1);a.lock=Math.max(0,a.lock-1);a.parryTicks=Math.max(0,a.parryTicks-1);a.parryCd=Math.max(0,a.parryCd-1);a.invuln=Math.max(0,a.invuln-1);
+ if(!['punch','kick','airpunch','airkick','special','ultra','hit','tag'].includes(a.action)){const facing=other.x>=a.x?1:-1;if(isJanHulk(a)){if(facing!==a.face){if(++a.turnTicks>=42){a.face=facing;a.turnTicks=0}}else a.turnTicks=0;}else a.face=facing;}
  const forward=a.face===1?input.right:input.left,back=a.face===1?input.left:input.right,lastForward=a.face===1?a.last.right:a.last.left;
  if(a.chargeFace!==a.face){a.chargeTicks=0;a.chargeGrace=0;a.chargeFace=a.face}
  if(back&&!forward){a.chargeTicks=Math.min(90,a.chargeTicks+1);a.chargeGrace=12}else{a.chargeGrace=Math.max(0,a.chargeGrace-1);if(a.chargeGrace===0)a.chargeTicks=0}
@@ -88,6 +93,12 @@ function commands(m:Match,index:number,input:Input){
  if(a.lock>0)return;
  const queued=a.queued&&m.tick-a.queued.tick<=6?a.queued.key:null;a.queued=null;const punch=queued==='punch'||input.punch&&!a.last.punch,kick=queued==='kick'||input.kick&&!a.last.kick;
  if((queued==='jump'||input.jump&&!a.last.jump)&&a.y===0&&a.vy===0){a.vy=-625;a.vx=(Number(input.right)-Number(input.left))*d.speed*.85;setAction(a,'jump');m.events.push({type:'jump',player:index});}
+ if(isJanHulk(a)){
+  if(a.y===0&&a.vy===0&&a.specialCd===0&&(punch||kick||input.ultra&&!a.last.ultra)){a.activeMove=input.ultra?2:kick?1:0;const def=activeMove(a);setAction(a,'special',def.duration);a.specialCd=def.cooldown;a.buffer=[];return;}
+  if(a.y<0||a.vy<0){setAction(a,'jump');return;}
+  if(input.tag&&!a.last.tag&&tag(m,index))return;
+  if(input.left!==input.right){a.x+=(input.right?1:-1)*190*TICK;setAction(a,'walk');}else setAction(a,'idle');return;
+ }
  if(a.y<0||a.vy<0){
   if(punch){setAction(a,'airpunch',24);m.events.push({type:'punch',player:index,label:'LUFTSCHLAG'})}
   else if(kick){setAction(a,'airkick',32);m.events.push({type:'kick',player:index,label:'LUFTTRITT'})}
@@ -107,11 +118,34 @@ function commands(m:Match,index:number,input:Input){
  else if(input.left!==input.right){a.x+=(input.right?1:-1)*d.speed*TICK;setAction(a,a.y<0?'jump':'walk')}
  else setAction(a,a.y<0?'jump':'idle');
 }
+/** Finish existing recovery and gravity after the bell, without accepting new attacks. */
+function settleRound(m:Match,advance=true){
+ const physics=stagePhysics(m.rules.stageId,m.tick);
+ m.actors.forEach((a,i)=>{
+  a.queued=null;a.buffer=[];a.last=neutral();
+  if(advance){
+   a.age++;a.lock=Math.max(0,a.lock-1);a.transformTicks=Math.max(0,a.transformTicks-1);
+   if(a.y<0||a.vy<0){
+    a.x=Math.max(LEFT,Math.min(RIGHT,a.x+(a.vx+physics.wind)*TICK));
+    a.y+=a.vy*TICK;a.vy+=physics.gravity*TICK;
+    if(a.y>=0){a.y=0;a.vx=0;a.vy=0;if(a.hp>0)setAction(a,'land',6)}
+   }else if(a.action==='special'&&activeMove(a).kind==='dash'&&a.age>=activeMove(a).startup&&a.age<activeMove(a).startup+18){
+    a.x=Math.max(LEFT,Math.min(RIGHT,a.x+a.face*activeMove(a).speed*TICK));
+   }else if(a.action==='ultra'&&ultraFor(a.id).kind==='dash'&&a.age>=28&&a.age<50){
+    a.x=Math.max(LEFT,Math.min(RIGHT,a.x+a.face*fighter(a.id).shotSpeed*1.3*TICK));
+   }
+  }
+  if(a.y===0&&a.vy===0&&a.lock===0){
+   a.vx=0;setAction(a,m.roundWinner===null?'idle':i===m.roundWinner?'victory':'defeat');
+  }
+ });
+}
 export function step(m:Match,inputs:[Input,Input]){
  m.events=[];m.tick++;if(m.phase==='complete')return;
  for(const [i,a] of m.actors.entries())for(const key of ['jump','punch','kick','ultra'] as const)if(inputs[i][key]&&!a.last[key])a.queued={key,tick:m.tick};
  if(m.hitstop>0){m.hitstop--;m.actors.forEach((a,i)=>a.last={...inputs[i]});return}
  if(m.phase!=='fight'){
+  if(m.phase==='roundover')settleRound(m);
   m.phaseTicks--;if(m.phaseTicks<=0){if(m.phase==='intro'){m.phase='fight';m.events.push({type:'round'})}else if(m.score.some(w=>w>=2)){m.phase='complete';m.winner=m.score[0]>=2?0:1;m.events.push({type:'win',player:m.winner})}else nextRound(m)}return;
  }
  if(!m.rules.training)m.time--;else m.meter=[100,100];
@@ -136,12 +170,14 @@ export function step(m:Match,inputs:[Input,Input]){
  });
  const [a,b]=m.actors;
  if(a.hp>0&&b.hp>0&&Math.abs(a.x-b.x)<72&&Math.abs(a.y-b.y)<90){const dir=a.x<=b.x?1:-1,push=(72-Math.abs(a.x-b.x))/2;a.x=Math.max(LEFT,Math.min(RIGHT,a.x-push*dir));b.x=Math.max(LEFT,Math.min(RIGHT,b.x+push*dir))}
- m.projectiles=m.projectiles.filter(p=>{p.age++;p.x+=p.vx*TICK;if(p.kind==='arc')p.y=p.originY-Math.sin(p.age*.075)*43;const target=m.actors[1-p.owner];if(target.hp>0&&boxesOverlap({x:p.x-p.radius,y:p.y-p.radius,w:p.radius*2,h:p.radius*2},hurtbox(target))){damage(m,p.owner,1-p.owner,p.damage,target.x,FLOOR+p.y,true,!!p.ultra);return false}return p.x>-60&&p.x<1020&&p.age<220});
+ m.projectiles=m.projectiles.filter(p=>{p.age++;p.x+=p.vx*TICK;if(p.kind==='arc')p.y=p.originY-Math.sin(p.age*.075)*43;const target=m.actors[1-p.owner];if(target.hp>0&&boxesOverlap({x:p.x-p.radius,y:p.y-p.radius,w:p.radius*2,h:p.radius*2},hurtbox(target))){damage(m,p.owner,1-p.owner,p.damage,target.x,FLOOR+p.y,true,!!p.ultra,p.x-Math.sign(p.vx)*p.radius,!!p.finisher);return false}return p.x>-60&&p.x<1020&&p.age<220});
  m.actors.forEach((a,i)=>a.last={...inputs[i]});
  if(m.rules.training){if(m.actors.some(a=>a.hp<=0)){m.phase='intro';m.phaseTicks=90;m.projectiles=[];m.actors=m.teams.map((ids,i)=>actor(ids[0],i?610:350,i?-1:1)) as [Actor,Actor];m.bench=m.teams.map((ids,i)=>ids[1]?actor(ids[1],i?610:350,i?-1:1):null) as [Actor|null,Actor|null];}return;}
  if(teamHealth(m,0)<=0||teamHealth(m,1)<=0||m.time<=0){
   m.phase='roundover';m.phaseTicks=145;const left=teamHealth(m,0)/m.teams[0].length,right=teamHealth(m,1)/m.teams[1].length;m.roundWinner=left===right?null:left>right?0:1;
-  if(m.roundWinner!==null){if(m.actors[m.roundWinner].hp===0&&(m.bench[m.roundWinner]?.hp??0)>0)tag(m,m.roundWinner,true);m.score[m.roundWinner]++;m.actors.forEach((a,i)=>{a.wins=m.score[i];setAction(a,i===m.roundWinner?'victory':'defeat')})}m.projectiles=[];m.pendingTag=[0,0];
+  // A living Jan cannot lose solely through the timer; his back must be hit to finish him.
+  if(m.time<=0&&m.roundWinner!==null){const losing=1-m.roundWinner;if([m.actors[losing],m.bench[losing]].some(a=>a?.id==='jan'&&a.hp>0))m.roundWinner=null;}
+  if(m.roundWinner!==null){if(m.actors[m.roundWinner].hp===0&&(m.bench[m.roundWinner]?.hp??0)>0)tag(m,m.roundWinner,true);m.score[m.roundWinner]++;m.actors.forEach((a,i)=>{a.wins=m.score[i]})}m.projectiles=[];m.pendingTag=[0,0];settleRound(m,false);
  }
 }
 export function random(m:Match){m.seed=(Math.imul(m.seed,1664525)+1013904223)>>>0;return m.seed/4294967296}
@@ -159,6 +195,8 @@ export function aiInput(m:Match,index:number,difficulty:number,brain:Brain):Inpu
  const pressure=!recovering&&['punch','kick','airpunch','airkick','special','ultra'].includes(b.action)&&distance<190&&Math.abs(a.y-b.y)<150;
  if(a.action==='hit'){brain.comboStep=0;brain.chargeUntil=0;brain.hold=neutral();brain.next=Math.max(brain.next,m.tick+8)}
  if(a.lock>0)return neutral();
+ if(isJanHulk(a)){const out=neutral();if(a.face!==(b.x>=a.x?1:-1))return out;if(m.tick<brain.next)return out;brain.next=m.tick+28;if(distance>230)out[forward]=true;else if(a.specialCd===0){out[distance<150?'punch':'kick']=true;}return out;}
+ if(isJanHulk(b)&&distance<230){const out=neutral();if((a.x-b.x)*b.face>0){out[forward]=true;out.jump=a.y===0&&!a.last.jump;}else if(b.lock>0){out[forward]=distance>100;out.punch=true;}return out;}
  if(brain.chargeUntil){const out=neutral();if(m.tick<brain.chargeUntil){out[back]=spaceBehind>30;out.down=true;}else{out[forward]=true;out.punch=true;brain.chargeUntil=0;brain.next=m.tick+22;}return out}
  if(brain.comboStep>0){if(m.tick<brain.comboAt)return neutral();const out=neutral();if(brain.comboStep===1)out.down=true;if(brain.comboStep===2)out[a.face===1?'right':'left']=true;if(brain.comboStep===3)out[brain.attack]=true;brain.comboStep=brain.comboStep===3?0:brain.comboStep+1;brain.comboAt=m.tick+7;return out}
  if(m.tick<brain.next){const held={...brain.hold,punch:false,kick:false,jump:false,parry:false,ultra:false,tag:false};if(brain.intent==='retreat'&&(spaceBehind<28||distance>330))held[back]=false;if(brain.intent==='approach'&&distance<d.reach+10)held[forward]=false;return held}

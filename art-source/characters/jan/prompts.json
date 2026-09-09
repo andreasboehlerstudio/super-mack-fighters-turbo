@@ -1,0 +1,85 @@
+[
+  {
+    "id": "jan",
+    "clip": "idle",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/jan-reference.jpg",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/michael.png"
+    ],
+    "prompt": "Generate 1536x1024 fighting game sprite sheet FOUR columns TWO rows, exactly EIGHT distinct fullbody idle breathing frames of Jan Reiff from photo reference1, facing RIGHT in three-quarter fighting guard. Identity: middleaged man, shoulderlength sandy blond grey wavy hair, white beard, clear eyeglass frames, light beige crewneck T-shirt, black slim trousers, black sneakers. No props. Reference2 dictates fine detailed 32bit arcade pixel-art shading and dark thin crisp outlines; real recognizable adult proportions, not chibi. Each384x512cell one complete figure standingabout470px tall equal face size and baseline, subtle breathing arm variations, clear margins. Flat neonGREEN#00ff00 background no floor no shadows no lettering. Crisp pixel clusters, richly shaded hair face fabric, no blurry digital painting.",
+    "pixelStep": 1
+  },
+  {
+    "id": "jan",
+    "clip": "portrait",
+    "chromaKey": false,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/work/jan-reference.jpg",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/portraits/michael.png"
+    ],
+    "prompt": "Create a single 768x1024 portrait of Jan Reiff from photo1 in EXACT same detailed arcade pixel art style composition background palette and lighting as portrait2. RIGHT facing threequarter bust, shoulderlength sandyblond grey wavy hair, white beard, translucent clear eyeglass frames, light beige T-shirt. Preserve likeness photo1 not identityof2. Navy diagonal teal lightstreak background, goldrim lighting, crisp fine pixelclusters matched toportrait2, no text border camera or props.",
+    "pixelStep": 1,
+    "nativeWidth": 384
+  },
+  {
+    "id": "jan",
+    "clip": "walk",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/jan/idle.png"
+    ],
+    "prompt": "Create walk animation spritesheet for Jan Reiff EXACT identity outfit pixel-art style of reference. One in-place walking stride: left contact, left down, passing, right lift, right contact, right down, passing, left lift. Alternate legs, consistent soles and head size. Reference adult sandyblond grey shoulderlength hair white beard clear glasses beige T-shirt black trousers black shoes. 1536x1024 FOUR columns TWO rows, EIGHT distinct complete fullbody sprites facing RIGHT threequarter. One per384x512 cell, each standingheight about465px, consistent headscale and limbproportions, enough margins no crop or overlap, no props or text. Fine detailed 32bit arcade pixelart same rendering asreference. Flat solid neonGREEN#00ff00 background without shadows floor or outlines between cells.",
+    "pixelStep": 1
+  },
+  {
+    "id": "jan",
+    "clip": "punch",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/jan/idle.png"
+    ],
+    "prompt": "Create punch animation spritesheet for Jan Reiff EXACT identity outfit pixel-art style of reference. Jab cycle: guard, windup, early extension, fully extended contact, followthrough, retract, recovery, guard. Reference adult sandyblond grey shoulderlength hair white beard clear glasses beige T-shirt black trousers black shoes. 1536x1024 FOUR columns TWO rows, EIGHT distinct complete fullbody sprites facing RIGHT threequarter. One per384x512 cell, each standingheight about465px, consistent headscale and limbproportions, enough margins no crop or overlap, no props or text. Fine detailed 32bit arcade pixelart same rendering asreference. Flat solid neonGREEN#00ff00 background without shadows floor or outlines between cells.",
+    "pixelStep": 1
+  },
+  {
+    "id": "jan",
+    "clip": "kick",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/jan/idle.png"
+    ],
+    "prompt": "Create kick animation spritesheet for Jan Reiff EXACT identity outfit pixel-art style of reference. Kick cycle: guard, weightshift, knee lift, forward kick extension, fullcontact, retraction, lowering, guard. Rear foot grounded. Reference adult sandyblond grey shoulderlength hair white beard clear glasses beige T-shirt black trousers black shoes. 1536x1024 FOUR columns TWO rows, EIGHT distinct complete fullbody sprites facing RIGHT threequarter. One per384x512 cell, each standingheight about465px, consistent headscale and limbproportions, enough margins no crop or overlap, no props or text. Fine detailed 32bit arcade pixelart same rendering asreference. Flat solid neonGREEN#00ff00 background without shadows floor or outlines between cells.",
+    "pixelStep": 1
+  },
+  {
+    "id": "jan",
+    "clip": "airpunch",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/jan/idle.png"
+    ],
+    "prompt": "Create airpunch animation spritesheet for Jan Reiff EXACT identity outfit pixel-art style of reference. Jumping punch: takeoff, windup, earlyextension, contact, followthrough, recoil, descending guard, landing. Keep head/body size equal to idle, bent legs shorten silhouette only. Reference adult sandyblond grey shoulderlength hair white beard clear glasses beige T-shirt black trousers black shoes. 1536x1024 FOUR columns TWO rows, EIGHT distinct complete fullbody sprites facing RIGHT threequarter. One per384x512 cell, each standingheight about465px, consistent headscale and limbproportions, enough margins no crop or overlap, no props or text. Fine detailed 32bit arcade pixelart same rendering asreference. Flat solid neonGREEN#00ff00 background without shadows floor or outlines between cells.",
+    "pixelStep": 1
+  },
+  {
+    "id": "jan",
+    "clip": "airkick",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/jan/idle.png"
+    ],
+    "prompt": "Create airkick animation spritesheet for Jan Reiff EXACT identity outfit pixel-art style of reference. Jumpkick: takeoff, kneeup, extension, fullcontact horizontal kick, followthrough, retract, descend, guard. No shrinking body/head. Reference adult sandyblond grey shoulderlength hair white beard clear glasses beige T-shirt black trousers black shoes. 1536x1024 FOUR columns TWO rows, EIGHT distinct complete fullbody sprites facing RIGHT threequarter. One per384x512 cell, each standingheight about465px, consistent headscale and limbproportions, enough margins no crop or overlap, no props or text. Fine detailed 32bit arcade pixelart same rendering asreference. Flat solid neonGREEN#00ff00 background without shadows floor or outlines between cells.",
+    "pixelStep": 1
+  },
+  {
+    "id": "jan",
+    "clip": "reactions",
+    "chromaKey": true,
+    "refs": [
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/art-source/characters/jan/idle.png"
+    ],
+    "prompt": "Create reactions animation spritesheet for Jan Reiff EXACT identity outfit pixel-art style of reference. Eight DIFFERENT poses exact order: jumping tucked knees, crouching guard, standing block with raised forearms, standing hitrecoil, standing palms gathering energy, standing palms pushing forward releasing energy, kneeling defeat, standing victory fist raised. Reference adult sandyblond grey shoulderlength hair white beard clear glasses beige T-shirt black trousers black shoes. 1536x1024 FOUR columns TWO rows, EIGHT distinct complete fullbody sprites facing RIGHT threequarter. One per384x512 cell, each standingheight about465px, consistent headscale and limbproportions, enough margins no crop or overlap, no props or text. Fine detailed 32bit arcade pixelart same rendering asreference. Flat solid neonGREEN#00ff00 background without shadows floor or outlines between cells.",
+    "pixelStep": 1
+  }
+]

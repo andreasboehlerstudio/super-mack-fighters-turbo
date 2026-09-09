@@ -11,7 +11,7 @@ test('Karsten, Edda and Michael Scholz have themed move sets and fit the portrai
  assert.deepEqual(movesFor('edda').map(m=>m.kind),['arc','burst','dash']);
  assert.deepEqual(movesFor('scholz').map(m=>[m.name,m.kind]),[['Pionier-Impuls','wave'],['Allee-Sprint','dash'],['Qualitätskontrolle','bolt']]);
  assert.equal(ultraFor('scholz').name,'PIONIERGEIST 73');
- assert.equal(HEROES.length,39);
+ assert.equal(HEROES.length,40);
  assert.equal(SELECT_PAGE_SIZE,SELECT_COLUMNS*SELECT_ROWS);assert.equal(Math.ceil(HEROES.length/SELECT_PAGE_SIZE),1);
 });
 

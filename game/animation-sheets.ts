@@ -15,7 +15,7 @@ export const ANIMATION_SHEETS={
  parry:{kind:'action',frames:[10]},tag:{kind:'motion',frames:[0]},defeat:{kind:'action',frames:[14]},victory:{kind:'action',frames:[15]}
 } as const;
 export type AnimationClip=keyof typeof ANIMATION_SHEETS;
-export const animationUrl=(id:FighterId,clip:AnimationClip)=>`/assets/animations/${id}/${clip}.webp?v=clips-5`;
+export const animationUrl=(id:FighterId,clip:AnimationClip)=>`/assets/animations/${id}/${clip}.webp?v=${id==='valentina'?'clips-6':'clips-5'}`;
 export function animationPose(action:Action,age:number,walkPhase:number,specialStartup=18,id?:FighterId){
  const clip:AnimationClip=action;
  const motion=motionFrame(action,age,walkPhase);

@@ -1,5 +1,5 @@
 /** One art raster for the complete scene: actors, scenery, crowds and effects. */
-export const RASTER_WIDTH=480,RASTER_HEIGHT=270;
+export const RASTER_WIDTH=960,RASTER_HEIGHT=540;
 export const CONSOLE_WIDTH=1280,CONSOLE_HEIGHT=720;
 export const COMBAT_RENDER_ZOOM=RASTER_WIDTH/960;
 export const FIGHTER_DISPLAY_SIZE=256;

@@ -19,7 +19,7 @@ function losslessWebpSize(bytes:Buffer){
  throw Error('Expected a lossless WebP image');
 }
 test('all fighters have a native sheet for every action and all frame references are valid',()=>{
- assert.equal(FIGHTER_DISPLAY_SIZE*COMBAT_RENDER_ZOOM,128);
+ assert.equal(FIGHTER_DISPLAY_SIZE*COMBAT_RENDER_ZOOM,256);
  for(const f of FIGHTERS)for(const clip of Object.keys(ANIMATION_SHEETS) as AnimationClip[]){
   const spec=ANIMATION_SHEETS[clip],size=losslessWebpSize(readFileSync(asset(`animations/${f.id}/${clip}.webp`)));
   assert.equal(size.width,Math.min(4,spec.frames.length)*256,`${f.id}/${clip} width`);
@@ -32,8 +32,15 @@ test('all fighters have a native sheet for every action and all frame references
 });
 test('new idle stature matches the walk sheets without shrinking individual frames',()=>{
  const audit=JSON.parse(readFileSync(asset('animations/idle-v4.json'),'utf8'));
- assert.equal(audit.length,FIGHTERS.length);
+ assert.equal(audit.length,FIGHTERS.length+1);assert.equal(audit.find((v:{id:string})=>v.id==='janhulk').bodyHeight,294);
  for(const f of FIGHTERS){const a=audit.find((v:{id:string})=>v.id===f.id);assert.ok(a);assert.equal(a.frames,8);assert.ok(a.maxBreathingHeightDifference<=6);for(let frame=0;frame<8;frame++)assert.deepEqual(animationOrigin(f.id,'idle',frame),{x:128,y:246});}
+});
+
+test('Jan giant form uses larger native cells without coarse runtime enlargement',()=>{
+ for(const [clip,spec] of Object.entries(ANIMATION_SHEETS)){
+  const size=losslessWebpSize(readFileSync(asset(`animations/janhulk/${clip}.webp`)));
+  assert.equal(size.width,Math.min(4,spec.frames.length)*384);assert.equal(size.height,Math.ceil(spec.frames.length/4)*384);
+ }
 });
 test('map tiles join without gaps, cover every camera view and retain native detail',()=>{
  const manifest=JSON.parse(readFileSync(asset('atlas/detail/manifest.json'),'utf8'));

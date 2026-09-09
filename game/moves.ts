@@ -26,6 +26,7 @@ const names:Record<FighterId,[string,string,string]>={
  andreas:['Renderbogen','Frame-Wirbel','MASTER RENDER'],
  karsten:['Dolly-Fahrt','Kran-Schwenk','ONE TAKE'],
  vendel:['Kraft-Sprint','Druckwirbel','VOLLER EINSATZ'],
+ jan:['Director’s Cut','Letzte Klappe','FINAL TAKE'],
  valentina:['Sommerbrise','Blütenwirbel','SOMMERLEUCHTEN'],
  schaer:['Story-Bogen','Hashtag-Wirbel','TREND-TAKEOVER'],
  glen:['Share-Welle','Community-Boost','COMMUNITY-POWER'],

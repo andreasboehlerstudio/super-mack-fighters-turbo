@@ -40,7 +40,8 @@ test('all tours open with Frederik, meet Michael at midpoint and end with Roland
   const ladder=arcadeLadder(route.length);assert.equal(ladder.length,route.length);assert.equal(new Set(ladder).size,route.length);assert.equal(ladder[0],'frederik');assert.equal(ladder[Math.floor(route.length/2)],'michael');assert.equal(ladder.at(-1),'roland');
   for(let index=0;index<route.length;index++){const config=makeBattleConfig({mode:'arcade',p1:'ed',p2:'max',arena:'park-9',route,index,difficulty:.12,rules:{...DEFAULT_RULES,tag:true},pads:[null,null]});assert.equal(config.p2,ladder[index]);assert.equal(config.boss,arcadeBoss(index,route.length));assert.notEqual(config.partners![1],config.p2);assert.ok(config.difficulty>=.12&&config.difficulty<=.92)}
  }
- // New selectable entrants do not add stations or displace the authored 21 opponents.
- assert.deepEqual(arcadeLadder(21),['frederik','max','matthias','andreas','nathalie','laurent','reinhold','ed','snorri','wakala','michael','alexia','annkathrin','nicolas','katja','miriam','thomas','mauritia','marianne','juergen','roland']);
+ // A run is stable when resumed, while a new run varies its non-boss opponents.
+ assert.deepEqual(arcadeLadder(21,'same-run'),arcadeLadder(21,'same-run'));
+ assert.notDeepEqual(arcadeLadder(21,'same-run'),arcadeLadder(21,'new-run'));
  assert.ok(arcadeLadder(21).every(id=>HEROES.some(f=>f.id===id)));assert.deepEqual(arcadeLadder(1),['roland']);assert.deepEqual(arcadeLadder(2),['frederik','roland']);
 });

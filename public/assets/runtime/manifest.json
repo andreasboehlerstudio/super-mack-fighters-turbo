@@ -1,0 +1,1269 @@
+[
+  {
+    "file": "runtime/portraits/alexia.webp",
+    "bytes": 278796,
+    "sourceBytes": 1157765,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/alexia-thumb.webp",
+    "bytes": 80680,
+    "sourceBytes": 1157765,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/andreas.webp",
+    "bytes": 260718,
+    "sourceBytes": 1705568,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/andreas-thumb.webp",
+    "bytes": 76558,
+    "sourceBytes": 1705568,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/annkathrin.webp",
+    "bytes": 250860,
+    "sourceBytes": 1059905,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/annkathrin-thumb.webp",
+    "bytes": 73904,
+    "sourceBytes": 1059905,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/bobo.webp",
+    "bytes": 245172,
+    "sourceBytes": 1815598,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/bobo-thumb.webp",
+    "bytes": 75146,
+    "sourceBytes": 1815598,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/boeckli.webp",
+    "bytes": 305842,
+    "sourceBytes": 2349721,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/boeckli-thumb.webp",
+    "bytes": 90262,
+    "sourceBytes": 2349721,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/ed.webp",
+    "bytes": 283304,
+    "sourceBytes": 1231114,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/ed-thumb.webp",
+    "bytes": 81214,
+    "sourceBytes": 1231114,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/edda.webp",
+    "bytes": 270822,
+    "sourceBytes": 2043254,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/edda-thumb.webp",
+    "bytes": 80442,
+    "sourceBytes": 2043254,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/frederik.webp",
+    "bytes": 262076,
+    "sourceBytes": 1109907,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/frederik-thumb.webp",
+    "bytes": 78318,
+    "sourceBytes": 1109907,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/freudenreich.webp",
+    "bytes": 274500,
+    "sourceBytes": 2044185,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/freudenreich-thumb.webp",
+    "bytes": 81088,
+    "sourceBytes": 2044185,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/glen.webp",
+    "bytes": 193104,
+    "sourceBytes": 1319223,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/glen-thumb.webp",
+    "bytes": 61370,
+    "sourceBytes": 1319223,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/graumacher.webp",
+    "bytes": 268092,
+    "sourceBytes": 1223706,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/graumacher-thumb.webp",
+    "bytes": 74862,
+    "sourceBytes": 1223706,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/jan.webp",
+    "bytes": 270008,
+    "sourceBytes": 656200,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/jan-thumb.webp",
+    "bytes": 79230,
+    "sourceBytes": 656200,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/janhulk.webp",
+    "bytes": 270008,
+    "sourceBytes": 656200,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/janhulk-thumb.webp",
+    "bytes": 79230,
+    "sourceBytes": 656200,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/juergen.webp",
+    "bytes": 269138,
+    "sourceBytes": 1161794,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/juergen-thumb.webp",
+    "bytes": 78146,
+    "sourceBytes": 1161794,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/karsten.webp",
+    "bytes": 274270,
+    "sourceBytes": 2252285,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/karsten-thumb.webp",
+    "bytes": 77694,
+    "sourceBytes": 2252285,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/katja.webp",
+    "bytes": 239238,
+    "sourceBytes": 1030471,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/katja-thumb.webp",
+    "bytes": 69842,
+    "sourceBytes": 1030471,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/laurent.webp",
+    "bytes": 241490,
+    "sourceBytes": 1583252,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/laurent-thumb.webp",
+    "bytes": 69628,
+    "sourceBytes": 1583252,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/louis.webp",
+    "bytes": 236752,
+    "sourceBytes": 1667225,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/louis-thumb.webp",
+    "bytes": 75044,
+    "sourceBytes": 1667225,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/marianne.webp",
+    "bytes": 288434,
+    "sourceBytes": 1240878,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/marianne-thumb.webp",
+    "bytes": 82022,
+    "sourceBytes": 1240878,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/matthias.webp",
+    "bytes": 229728,
+    "sourceBytes": 969387,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/matthias-thumb.webp",
+    "bytes": 68318,
+    "sourceBytes": 969387,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/mauritia.webp",
+    "bytes": 286836,
+    "sourceBytes": 1204084,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/mauritia-thumb.webp",
+    "bytes": 84506,
+    "sourceBytes": 1204084,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/max.webp",
+    "bytes": 233588,
+    "sourceBytes": 979789,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/max-thumb.webp",
+    "bytes": 70226,
+    "sourceBytes": 979789,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/michael.webp",
+    "bytes": 247956,
+    "sourceBytes": 1077500,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/michael-thumb.webp",
+    "bytes": 72726,
+    "sourceBytes": 1077500,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/miriam.webp",
+    "bytes": 269908,
+    "sourceBytes": 1157674,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/miriam-thumb.webp",
+    "bytes": 77614,
+    "sourceBytes": 1157674,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/mross.webp",
+    "bytes": 252636,
+    "sourceBytes": 1870856,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/mross-thumb.webp",
+    "bytes": 74284,
+    "sourceBytes": 1870856,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/nathalie.webp",
+    "bytes": 227292,
+    "sourceBytes": 929861,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/nathalie-thumb.webp",
+    "bytes": 70264,
+    "sourceBytes": 929861,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/nicolas.webp",
+    "bytes": 274388,
+    "sourceBytes": 1147837,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/nicolas-thumb.webp",
+    "bytes": 79110,
+    "sourceBytes": 1147837,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/olli.webp",
+    "bytes": 267736,
+    "sourceBytes": 1960613,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/olli-thumb.webp",
+    "bytes": 80720,
+    "sourceBytes": 1960613,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/otto.webp",
+    "bytes": 254156,
+    "sourceBytes": 1910550,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/otto-thumb.webp",
+    "bytes": 74412,
+    "sourceBytes": 1910550,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/reinhold.webp",
+    "bytes": 261476,
+    "sourceBytes": 1725689,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/reinhold-thumb.webp",
+    "bytes": 75272,
+    "sourceBytes": 1725689,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/robbemond.webp",
+    "bytes": 297958,
+    "sourceBytes": 2197601,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/robbemond-thumb.webp",
+    "bytes": 86598,
+    "sourceBytes": 2197601,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/roland.webp",
+    "bytes": 266670,
+    "sourceBytes": 1130629,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/roland-thumb.webp",
+    "bytes": 77660,
+    "sourceBytes": 1130629,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/ross.webp",
+    "bytes": 279502,
+    "sourceBytes": 2097722,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/ross-thumb.webp",
+    "bytes": 81666,
+    "sourceBytes": 2097722,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/schaer.webp",
+    "bytes": 223718,
+    "sourceBytes": 1508781,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/schaer-thumb.webp",
+    "bytes": 72252,
+    "sourceBytes": 1508781,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/scholz.webp",
+    "bytes": 248080,
+    "sourceBytes": 1813597,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/scholz-thumb.webp",
+    "bytes": 73034,
+    "sourceBytes": 1813597,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/snorri.webp",
+    "bytes": 298380,
+    "sourceBytes": 1196191,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/snorri-thumb.webp",
+    "bytes": 89558,
+    "sourceBytes": 1196191,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/steffen.webp",
+    "bytes": 229788,
+    "sourceBytes": 1542208,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/steffen-thumb.webp",
+    "bytes": 75304,
+    "sourceBytes": 1542208,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/tesla.webp",
+    "bytes": 265392,
+    "sourceBytes": 2015086,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/tesla-thumb.webp",
+    "bytes": 77304,
+    "sourceBytes": 2015086,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/thomas.webp",
+    "bytes": 276948,
+    "sourceBytes": 1222007,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/thomas-thumb.webp",
+    "bytes": 79144,
+    "sourceBytes": 1222007,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/valentina.webp",
+    "bytes": 84992,
+    "sourceBytes": 155312,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/valentina-thumb.webp",
+    "bytes": 67836,
+    "sourceBytes": 155312,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/vendel.webp",
+    "bytes": 232672,
+    "sourceBytes": 1682507,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/vendel-thumb.webp",
+    "bytes": 72094,
+    "sourceBytes": 1682507,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/portraits/wakala.webp",
+    "bytes": 304390,
+    "sourceBytes": 1294930,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/wakala-thumb.webp",
+    "bytes": 85450,
+    "sourceBytes": 1294930,
+    "width": 192,
+    "height": 256
+  },
+  {
+    "file": "runtime/arenas/coaster-alpenexpress.webp",
+    "bytes": 838614,
+    "sourceBytes": 1531192,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/coaster-alpenexpress-thumb.webp",
+    "bytes": 28332,
+    "sourceBytes": 1531192,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/coaster-arthur.webp",
+    "bytes": 857282,
+    "sourceBytes": 1546160,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/coaster-arthur-thumb.webp",
+    "bytes": 28086,
+    "sourceBytes": 1546160,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/coaster-atlantica.webp",
+    "bytes": 799426,
+    "sourceBytes": 1464012,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/coaster-atlantica-thumb.webp",
+    "bytes": 26170,
+    "sourceBytes": 1464012,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/coaster-baaa-express.webp",
+    "bytes": 803034,
+    "sourceBytes": 1438148,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/coaster-baaa-express-thumb.webp",
+    "bytes": 27788,
+    "sourceBytes": 1438148,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/coaster-blue-fire.webp",
+    "bytes": 692708,
+    "sourceBytes": 1240536,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/coaster-blue-fire-thumb.webp",
+    "bytes": 24292,
+    "sourceBytes": 1240536,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/coaster-bobbahn.webp",
+    "bytes": 743118,
+    "sourceBytes": 1338874,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/coaster-bobbahn-thumb.webp",
+    "bytes": 26646,
+    "sourceBytes": 1338874,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/coaster-euro-mir.webp",
+    "bytes": 755262,
+    "sourceBytes": 1379906,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/coaster-euro-mir-thumb.webp",
+    "bytes": 25778,
+    "sourceBytes": 1379906,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/coaster-eurosat.webp",
+    "bytes": 781364,
+    "sourceBytes": 1396324,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/coaster-eurosat-thumb.webp",
+    "bytes": 27156,
+    "sourceBytes": 1396324,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/coaster-matterhorn.webp",
+    "bytes": 747524,
+    "sourceBytes": 1374790,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/coaster-matterhorn-thumb.webp",
+    "bytes": 25584,
+    "sourceBytes": 1374790,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/coaster-pegasus.webp",
+    "bytes": 783280,
+    "sourceBytes": 1417068,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/coaster-pegasus-thumb.webp",
+    "bytes": 27386,
+    "sourceBytes": 1417068,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/coaster-poseidon.webp",
+    "bytes": 836476,
+    "sourceBytes": 1514730,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/coaster-poseidon-thumb.webp",
+    "bytes": 28018,
+    "sourceBytes": 1514730,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/coaster-silver-star.webp",
+    "bytes": 804194,
+    "sourceBytes": 1467342,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/coaster-silver-star-thumb.webp",
+    "bytes": 27496,
+    "sourceBytes": 1467342,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/coaster-voltron.webp",
+    "bytes": 791750,
+    "sourceBytes": 1431356,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/coaster-voltron-thumb.webp",
+    "bytes": 27478,
+    "sourceBytes": 1431356,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/coaster-wodan.webp",
+    "bytes": 718650,
+    "sourceBytes": 1310166,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/coaster-wodan-thumb.webp",
+    "bytes": 24146,
+    "sourceBytes": 1310166,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-0.webp",
+    "bytes": 945452,
+    "sourceBytes": 1704746,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-0-thumb.webp",
+    "bytes": 32532,
+    "sourceBytes": 1704746,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-1.webp",
+    "bytes": 858836,
+    "sourceBytes": 1595942,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-1-thumb.webp",
+    "bytes": 28416,
+    "sourceBytes": 1595942,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-10.webp",
+    "bytes": 814612,
+    "sourceBytes": 1497222,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-10-thumb.webp",
+    "bytes": 26042,
+    "sourceBytes": 1497222,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-11.webp",
+    "bytes": 781288,
+    "sourceBytes": 1414276,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-11-thumb.webp",
+    "bytes": 26634,
+    "sourceBytes": 1414276,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-12.webp",
+    "bytes": 938322,
+    "sourceBytes": 1691390,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-12-thumb.webp",
+    "bytes": 31244,
+    "sourceBytes": 1691390,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-13.webp",
+    "bytes": 855902,
+    "sourceBytes": 1528434,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-13-thumb.webp",
+    "bytes": 29696,
+    "sourceBytes": 1528434,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-14.webp",
+    "bytes": 888388,
+    "sourceBytes": 1586478,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-14-thumb.webp",
+    "bytes": 30834,
+    "sourceBytes": 1586478,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-15.webp",
+    "bytes": 847130,
+    "sourceBytes": 1512362,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-15-thumb.webp",
+    "bytes": 29208,
+    "sourceBytes": 1512362,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-16.webp",
+    "bytes": 832486,
+    "sourceBytes": 1537672,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-16-thumb.webp",
+    "bytes": 26706,
+    "sourceBytes": 1537672,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-17-euromir-v2.webp",
+    "bytes": 756030,
+    "sourceBytes": 1385074,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-17-euromir-v2-thumb.webp",
+    "bytes": 25706,
+    "sourceBytes": 1385074,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-17.webp",
+    "bytes": 818088,
+    "sourceBytes": 1459934,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-17-thumb.webp",
+    "bytes": 28656,
+    "sourceBytes": 1459934,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-18.webp",
+    "bytes": 769008,
+    "sourceBytes": 1410488,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-18-thumb.webp",
+    "bytes": 25766,
+    "sourceBytes": 1410488,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-19.webp",
+    "bytes": 886918,
+    "sourceBytes": 1600344,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-19-thumb.webp",
+    "bytes": 29132,
+    "sourceBytes": 1600344,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-2.webp",
+    "bytes": 750472,
+    "sourceBytes": 1368174,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-2-thumb.webp",
+    "bytes": 25698,
+    "sourceBytes": 1368174,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-20.webp",
+    "bytes": 863606,
+    "sourceBytes": 1539206,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-20-thumb.webp",
+    "bytes": 29996,
+    "sourceBytes": 1539206,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-3.webp",
+    "bytes": 757522,
+    "sourceBytes": 1371612,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-3-thumb.webp",
+    "bytes": 25664,
+    "sourceBytes": 1371612,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-4.webp",
+    "bytes": 727508,
+    "sourceBytes": 1342984,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-4-thumb.webp",
+    "bytes": 24808,
+    "sourceBytes": 1342984,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-5.webp",
+    "bytes": 822496,
+    "sourceBytes": 1430648,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-5-thumb.webp",
+    "bytes": 29106,
+    "sourceBytes": 1430648,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-6.webp",
+    "bytes": 793492,
+    "sourceBytes": 1450750,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-6-thumb.webp",
+    "bytes": 26688,
+    "sourceBytes": 1450750,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-7.webp",
+    "bytes": 927516,
+    "sourceBytes": 1681490,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-7-thumb.webp",
+    "bytes": 30546,
+    "sourceBytes": 1681490,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-8.webp",
+    "bytes": 755876,
+    "sourceBytes": 1395612,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-8-thumb.webp",
+    "bytes": 24748,
+    "sourceBytes": 1395612,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/park-9.webp",
+    "bytes": 925460,
+    "sourceBytes": 1676166,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-9-thumb.webp",
+    "bytes": 30852,
+    "sourceBytes": 1676166,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/stage-batavia.webp",
+    "bytes": 734772,
+    "sourceBytes": 1325948,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/stage-batavia-thumb.webp",
+    "bytes": 26118,
+    "sourceBytes": 1325948,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/stage-blue-fire.webp",
+    "bytes": 663774,
+    "sourceBytes": 1227078,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/stage-blue-fire-thumb.webp",
+    "bytes": 22404,
+    "sourceBytes": 1227078,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/stage-cosmic.webp",
+    "bytes": 743570,
+    "sourceBytes": 1363184,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/stage-cosmic-thumb.webp",
+    "bytes": 24764,
+    "sourceBytes": 1363184,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/stage-hq.webp",
+    "bytes": 647108,
+    "sourceBytes": 1185024,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/stage-hq-thumb.webp",
+    "bytes": 22916,
+    "sourceBytes": 1185024,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/stage-skyport.webp",
+    "bytes": 703242,
+    "sourceBytes": 1336604,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/stage-skyport-thumb.webp",
+    "bytes": 22120,
+    "sourceBytes": 1336604,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/stage-svalgurok.webp",
+    "bytes": 597352,
+    "sourceBytes": 1109314,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/stage-svalgurok-thumb.webp",
+    "bytes": 21764,
+    "sourceBytes": 1109314,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arenas/stage-traumatica.webp",
+    "bytes": 617500,
+    "sourceBytes": 1149570,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/stage-traumatica-thumb.webp",
+    "bytes": 20486,
+    "sourceBytes": 1149570,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arena-0.webp",
+    "bytes": 493400,
+    "sourceBytes": 761717,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arena-0-thumb.webp",
+    "bytes": 38876,
+    "sourceBytes": 761717,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arena-1.webp",
+    "bytes": 457938,
+    "sourceBytes": 726477,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arena-1-thumb.webp",
+    "bytes": 35966,
+    "sourceBytes": 726477,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arena-2.webp",
+    "bytes": 487076,
+    "sourceBytes": 765856,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arena-2-thumb.webp",
+    "bytes": 37700,
+    "sourceBytes": 765856,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arena-3.webp",
+    "bytes": 447258,
+    "sourceBytes": 730343,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arena-3-thumb.webp",
+    "bytes": 35378,
+    "sourceBytes": 730343,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/arena-4.webp",
+    "bytes": 467804,
+    "sourceBytes": 771752,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arena-4-thumb.webp",
+    "bytes": 36050,
+    "sourceBytes": 771752,
+    "width": 160,
+    "height": 90
+  },
+  {
+    "file": "runtime/atlas/park-1-overview.webp",
+    "bytes": 825182,
+    "sourceBytes": 3284810,
+    "width": 742,
+    "height": 530
+  }
+]

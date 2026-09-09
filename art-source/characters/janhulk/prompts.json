@@ -1,0 +1,76 @@
+[
+  {
+    "id": "janhulk",
+    "clip": "idle",
+    "sourceClip": "idle",
+    "chromaKey": true,
+    "chromaColor": "magenta",
+    "pixelStep": 1,
+    "prompt": "Create a nonviolent fighting-game idle character spritesheet based on the supplied Jan Reiff reference: a friendly exaggerated green superhero GIANT with massively muscular proportions, recognizable sandyblond grey shoulderlength wavy hair, white beard and clear eyeglasses. Fully clothed in a fitted beige short-sleeve T-shirt, black full-length trousers and black shoes. Green face and green arms, very broad torso and powerful shoulders. Fine detailed crisp 32bit arcade pixel art. Eight distinct breathing guard poses facing RIGHT threequarter, exact1536x1024 FOUR columns TWO rows, one whole separate fullbody per384x512cell, about460px high with safe clear margins, consistent headsize and baseline. Flat solid MAGENTA#ff00ff background, no props text grid floor or shadows."
+  },
+  {
+    "id": "janhulk",
+    "clip": "walk",
+    "sourceClip": "walk",
+    "chromaKey": true,
+    "chromaColor": "magenta",
+    "pixelStep": 1,
+    "prompt": "Create walk animation spritesheet of EXACT same green muscular Jan superhero from reference, same recognisable greyblond longhair whitebeard clear glasses, beige T-shirt black full-lengthpants blackshoes greenarms. Fine crisp richly shaded 32bit arcadepixelart. Eight-phase lumbering walking stride leftcontact leftdown passing rightlift rightcontact rightdown passing leftlift. Foot baseline common and same headsize. EXACT1536x1024 FOUR columns TWO rows, EIGHT distinct whole fullbody figures one per384x512cell, all face RIGHT threequarter, normalstandingheightabout460px and broadbodyproportions preserved, safe margins no overlapping or cropped limbs. Background entirely solid uniform MAGENTA #FF00FF, no gradients no glow no floor shadows or text. Preserve green skin. No new props."
+  },
+  {
+    "id": "janhulk",
+    "clip": "punch",
+    "sourceClip": "idle",
+    "chromaKey": true,
+    "chromaColor": "magenta",
+    "pixelStep": 1,
+    "prompt": "Create a nonviolent fighting-game idle character spritesheet based on the supplied Jan Reiff reference: a friendly exaggerated green superhero GIANT with massively muscular proportions, recognizable sandyblond grey shoulderlength wavy hair, white beard and clear eyeglasses. Fully clothed in a fitted beige short-sleeve T-shirt, black full-length trousers and black shoes. Green face and green arms, very broad torso and powerful shoulders. Fine detailed crisp 32bit arcade pixel art. Eight distinct breathing guard poses facing RIGHT threequarter, exact1536x1024 FOUR columns TWO rows, one whole separate fullbody per384x512cell, about460px high with safe clear margins, consistent headsize and baseline. Flat solid MAGENTA#ff00ff background, no props text grid floor or shadows.",
+    "note": "Compatibility pose from existing guard sheet. Separate special/reaction generation was rejected; effects supply the special attack. No normal attacks available in this form."
+  },
+  {
+    "id": "janhulk",
+    "clip": "kick",
+    "sourceClip": "idle",
+    "chromaKey": true,
+    "chromaColor": "magenta",
+    "pixelStep": 1,
+    "prompt": "Create a nonviolent fighting-game idle character spritesheet based on the supplied Jan Reiff reference: a friendly exaggerated green superhero GIANT with massively muscular proportions, recognizable sandyblond grey shoulderlength wavy hair, white beard and clear eyeglasses. Fully clothed in a fitted beige short-sleeve T-shirt, black full-length trousers and black shoes. Green face and green arms, very broad torso and powerful shoulders. Fine detailed crisp 32bit arcade pixel art. Eight distinct breathing guard poses facing RIGHT threequarter, exact1536x1024 FOUR columns TWO rows, one whole separate fullbody per384x512cell, about460px high with safe clear margins, consistent headsize and baseline. Flat solid MAGENTA#ff00ff background, no props text grid floor or shadows.",
+    "note": "Compatibility pose from existing guard sheet. Separate special/reaction generation was rejected; effects supply the special attack. No normal attacks available in this form."
+  },
+  {
+    "id": "janhulk",
+    "clip": "airpunch",
+    "sourceClip": "idle",
+    "chromaKey": true,
+    "chromaColor": "magenta",
+    "pixelStep": 1,
+    "prompt": "Create a nonviolent fighting-game idle character spritesheet based on the supplied Jan Reiff reference: a friendly exaggerated green superhero GIANT with massively muscular proportions, recognizable sandyblond grey shoulderlength wavy hair, white beard and clear eyeglasses. Fully clothed in a fitted beige short-sleeve T-shirt, black full-length trousers and black shoes. Green face and green arms, very broad torso and powerful shoulders. Fine detailed crisp 32bit arcade pixel art. Eight distinct breathing guard poses facing RIGHT threequarter, exact1536x1024 FOUR columns TWO rows, one whole separate fullbody per384x512cell, about460px high with safe clear margins, consistent headsize and baseline. Flat solid MAGENTA#ff00ff background, no props text grid floor or shadows.",
+    "note": "Compatibility pose from existing guard sheet. Separate special/reaction generation was rejected; effects supply the special attack. No normal attacks available in this form."
+  },
+  {
+    "id": "janhulk",
+    "clip": "airkick",
+    "sourceClip": "idle",
+    "chromaKey": true,
+    "chromaColor": "magenta",
+    "pixelStep": 1,
+    "prompt": "Create a nonviolent fighting-game idle character spritesheet based on the supplied Jan Reiff reference: a friendly exaggerated green superhero GIANT with massively muscular proportions, recognizable sandyblond grey shoulderlength wavy hair, white beard and clear eyeglasses. Fully clothed in a fitted beige short-sleeve T-shirt, black full-length trousers and black shoes. Green face and green arms, very broad torso and powerful shoulders. Fine detailed crisp 32bit arcade pixel art. Eight distinct breathing guard poses facing RIGHT threequarter, exact1536x1024 FOUR columns TWO rows, one whole separate fullbody per384x512cell, about460px high with safe clear margins, consistent headsize and baseline. Flat solid MAGENTA#ff00ff background, no props text grid floor or shadows.",
+    "note": "Compatibility pose from existing guard sheet. Separate special/reaction generation was rejected; effects supply the special attack. No normal attacks available in this form."
+  },
+  {
+    "id": "janhulk",
+    "clip": "reactions",
+    "sourceClip": "idle",
+    "chromaKey": true,
+    "chromaColor": "magenta",
+    "pixelStep": 1,
+    "prompt": "Create a nonviolent fighting-game idle character spritesheet based on the supplied Jan Reiff reference: a friendly exaggerated green superhero GIANT with massively muscular proportions, recognizable sandyblond grey shoulderlength wavy hair, white beard and clear eyeglasses. Fully clothed in a fitted beige short-sleeve T-shirt, black full-length trousers and black shoes. Green face and green arms, very broad torso and powerful shoulders. Fine detailed crisp 32bit arcade pixel art. Eight distinct breathing guard poses facing RIGHT threequarter, exact1536x1024 FOUR columns TWO rows, one whole separate fullbody per384x512cell, about460px high with safe clear margins, consistent headsize and baseline. Flat solid MAGENTA#ff00ff background, no props text grid floor or shadows.",
+    "note": "Compatibility pose from existing guard sheet. Separate special/reaction generation was rejected; effects supply the special attack. No normal attacks available in this form."
+  },
+  {
+    "id": "janhulk",
+    "clip": "portrait",
+    "nativeWidth": 384,
+    "note": "Compatibility portrait; transformed form is not separately selectable."
+  }
+]

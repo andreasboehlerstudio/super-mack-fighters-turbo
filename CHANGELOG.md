@@ -2,6 +2,22 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.6-alpha — 2026-09-09
+
+- Jan Reiff als 40. spielbare Figur: normales Regie-Moveset und Verwandlung nach zwei ungeblockten Treffern. Grüne Energiesäule, Bodenwelle und Partikel begleiten den Schriftzug „You made jan angry now“; reduzierte Bewegung wird berücksichtigt.
+- Jans grüne Form ist rund 50 % größer und nutzt eigene 384er Sprite-Zellen. Drei Spezialangriffe ohne Energiekosten, Ein-Treffer-K.-o. und Rücken-Schwachstelle mit verzögertem Umdrehen. Form bleibt beim Teamwechsel erhalten und wird pro Runde zurückgesetzt.
+- Alpha-Einschränkung: Die Riesenform hat eigene Stand-/Laufbilder; Spezial- und Reaktionsposen verwenden vorerst Standbilder mit Kampfeffekten, da zwei neue Bildblätter vom Bilddienst abgelehnt wurden.
+- Arcade: Frederik Mack zuerst, Michael Mack in der Mitte, Roland Mack zuletzt; alle übrigen Gegner einschließlich Jan werden pro Durchlauf gemischt. Fortsetzen und Wiederholen behalten dieselbe Reihenfolge.
+
+- Feinere gemeinsame Pixel-Ausgabe mit 960 × 540 statt 480 × 270 Bildpunkten. Figuren, Arenen, Parkwelt, Titel und Endings teilen weiterhin ein Raster; keine bilineare Glättung.
+- Separate verlustfreie WebP-Spielbilder: kleine Portrait- und Ortskacheln, größere Dateien nur für Vorschauen und Kämpfe. Die Portrait-Kacheln benötigen zusammen weniger als 4 MB. Geladene Menübilder werden gemeinsam wiederverwendet.
+- Parkübersicht verkleinert; die Laufkarte lädt nicht mehr die rund 10 MB große Detailkarte und erzeugt keine unnötige Zwischenkopie.
+- Spezialmove-Namen bleiben 2,4 Sekunden, Ultra-Namen 3 Sekunden stehen und blenden anschließend sanft nach oben aus. Pro Spieler ersetzt ein neuer Hinweis den vorherigen.
+- Nach einem Rundenende laufen die aktuelle Angriffsbewegung und die Schwerkraft weiter. Sieger gehen erst nach Erholung und Landung in ihre Siegerpose; neue Angriffe verursachen dabei keinen Schaden.
+- Valentinas sieben Bewegungsblätter in feinerem Pixel-Art-Stil neu gezeichnet und als 17 Spielclips exportiert. Feinere Konturen, Gesichtsschattierung und Kleidfalten; zusätzliche 2 × 2-Vergröberung entfernt. Kampf, Parklauf und Ending laden denselben aktuellen Stand.
+- Beim entscheidenden K.O.-Treffer setzt kurze Zeitlupe ein, die allmählich auf Normaltempo zurückkehrt. Ein Zeitablauf löst keine K.O.-Zeitlupe aus.
+- Geprüft: 115 automatisierte Tests einschließlich Verwandlung, Rücken-Konter, Ein-Treffer-K.-o., Arcade-Reihenfolge, Luft-K.O., Landung, Teamwechsel, Bildcache und Dateigrößen; TypeScript und Pages-Build. Im Browser: Auswahl und Arenastart, Jans Verwandlung mit Schriftzug, größere Form, Pausenmenü sowie Valentinas Luftangriff gegen Snorri; keine Konsolenfehler.
+
 ## 0.2.5-alpha — 2026-09-08
 
 ### Bewegung und Parkwege

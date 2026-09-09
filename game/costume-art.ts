@@ -1,4 +1,5 @@
 import type {FighterId} from './data';
+import {fighterSheetUrl} from './fighter-sheet-url';
 import type {Costume} from './rules';
 import {costumePlacements,type CostumeAnchor,type Rect} from './costume-layout';
 const cache=new Map<string,Promise<HTMLCanvasElement>>();
@@ -10,7 +11,7 @@ function bounds(ctx:CanvasRenderingContext2D,x:number,y:number,w:number,h:number
 export function loadCostumeSheet(id:FighterId,costume:Costume,kind:'walk'|'action'|'motion'='action'):Promise<HTMLCanvasElement>{
  const key=`${id}-${costume}-${kind}`;if(cache.has(key))return cache.get(key)!;
  const promise=(async()=>{
-  const base=await load(`/assets/${kind==='action'?'':kind+'/'}${id}.png?v=combat-5-gait-3`),out=document.createElement('canvas');
+  const base=await load(fighterSheetUrl(id,kind)),out=document.createElement('canvas');
   out.width=base.naturalWidth;out.height=base.naturalHeight;const ctx=out.getContext('2d')!;ctx.imageSmoothingEnabled=false;ctx.drawImage(base,0,0);
   if(costume==='classic')return out;
   anchors??=fetch('/assets/costume-anchors.json?v=combat-5').then(r=>{if(!r.ok)throw Error('Costume anchors unavailable');return r.json()});

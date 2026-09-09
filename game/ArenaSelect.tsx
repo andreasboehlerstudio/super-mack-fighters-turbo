@@ -20,7 +20,7 @@ export function ArenaSelect(props:Props){
  return <section className="arena-select" aria-label="Arena auswählen">
   <header><div><small>{props.training?'TRAINING':'VERSUS · FREIER KAMPF'}</small><h1>ARENA WÄHLEN</h1></div><span>21 THEMENBEREICHE</span></header>
   <div className="arena-select-preview"><PixelArt className="arena-select-art" src={arenaImage(props.value)} alt={selected.name+' – Kampfarena'}/><div className="arena-select-fighters"><FighterPortrait id={props.p1}/><span>{fighter(props.p1).short}<b>VS</b>{fighter(props.p2).short}</span><FighterPortrait id={props.p2}/></div><h2 aria-live="polite">{selected.name}</h2></div>
-  <div className="arena-select-grid" role="group" aria-label="Kampfplätze">{STATIONS.map(area=><button key={area.id} aria-pressed={props.value===area.id} onClick={()=>props.onChange(area.id)} className={props.value===area.id?'is-selected':''}><PixelArt src={arenaImage(area.id)} alt=""/><span>{area.name}</span></button>)}</div>
+  <div className="arena-select-grid" role="group" aria-label="Kampfplätze">{STATIONS.map(area=><button key={area.id} aria-pressed={props.value===area.id} onClick={()=>props.onChange(area.id)} className={props.value===area.id?'is-selected':''}><PixelArt src={arenaImage(area.id,true)} alt=""/><span>{area.name}</span></button>)}</div>
   <footer><button className="arcade-button secondary" onClick={props.onBack}>◀ FIGUREN</button><span>← ↑ ↓ → WÄHLEN · A / ENTER BESTÄTIGEN</span><button className="arcade-button" onClick={props.onConfirm}>{props.training?'TRAINING STARTEN':'KAMPF STARTEN'} →</button></footer>
  </section>;
 }

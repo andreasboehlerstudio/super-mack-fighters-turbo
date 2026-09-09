@@ -23,7 +23,7 @@ function PortraitPanel({id, label, active, player, side=player, showMoves, partn
   <div className="select-hero-art"><FighterPortrait id={hero.id}/></div>
   <h2 className={hero.name.length > 18 ? 'long-name' : ''}>{hero.name}</h2>
   {teammate && <button className="select-partner" onClick={partnerActive ? onPickLead : onPickPartner} aria-label={`${label} ${partnerActive ? 'Hauptfigur' : 'Partner'} ${teammate.name} wählen`}>
-   <FighterPortrait id={teammate.id}/><span><small>{partnerActive ? 'HAUPTFIGUR' : 'TAG-PARTNER'}</small>{teammate.short}</span><b>↔</b>
+   <FighterPortrait id={teammate.id} thumbnail/><span><small>{partnerActive ? 'HAUPTFIGUR' : 'TAG-PARTNER'}</small>{teammate.short}</span><b>↔</b>
   </button>}
   {showMoves ? <MoveList id={hero.id} player={player}/> : <><strong className="select-hero-tag">{hero.tag}</strong><p className="select-hero-note">{hero.note}</p></>}
   {onRandom && <div className="select-random"><button onClick={onRandom}>↻ GEGNER AUSLOSEN</button><p>COMPUTER: selbst wählen</p></div>}
@@ -52,7 +52,7 @@ export function PlayerSelect({mode,p1,p2,picking,rules,onPickSeat,onSelect,onTog
       return <button key={hero.id} aria-label={`${hero.name} auswählen`} aria-pressed={hero.id === selectedId}
        className={`select-tile ${hero.id === selectedId ? 'is-current' : ''} ${badges.some(seat => seat.slot === 0 || seat.slot === 2) ? 'has-p1' : ''} ${badges.some(seat => seat.slot === 1 || seat.slot === 3) ? 'has-p2' : ''}`}
        onClick={() => onSelect(hero.id)}>
-       <FighterPortrait id={hero.id}/>
+       <FighterPortrait id={hero.id} thumbnail/>
        <span className="select-tile-badges">{badges.map(seat => <b key={seat.slot} className={seat.slot === 1 || seat.slot === 3 ? 'badge-p2' : ''}>{seat.slot > 1 ? (seat.slot === 2 ? '1P+' : opponent+'+') : seat.label}</b>)}</span>
        <span className="select-tile-name">{hero.short}</span>
       </button>;
