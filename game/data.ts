@@ -1,4 +1,4 @@
-export type FighterId = 'ed'|'edda'|'snorri'|'roland'|'marianne'|'juergen'|'mauritia'|'michael'|'thomas'|'annkathrin'|'frederik'|'alexia'|'miriam'|'katja'|'nicolas'|'max'|'matthias'|'laurent'|'reinhold'|'nathalie'|'andreas'|'karsten'|'vendel'|'valentina'|'jan'|'sebastien'|'schaer'|'glen'|'steffen'|'scholz'|'wakala'|'bobo'|'mross'|'otto'|'ross'|'freudenreich'|'robbemond'|'olli'|'boeckli'|'louis'|'tesla'|'graumacher';
+export type FighterId = 'ed'|'edda'|'snorri'|'roland'|'marianne'|'juergen'|'mauritia'|'michael'|'thomas'|'annkathrin'|'frederik'|'alexia'|'miriam'|'katja'|'nicolas'|'max'|'matthias'|'laurent'|'reinhold'|'nathalie'|'andreas'|'karsten'|'vendel'|'valentina'|'jan'|'kuebler'|'sebastien'|'schaer'|'glen'|'steffen'|'scholz'|'wakala'|'bobo'|'mross'|'otto'|'ross'|'freudenreich'|'robbemond'|'olli'|'boeckli'|'louis'|'tesla'|'graumacher';
 export type SpecialKind = 'bolt'|'wave'|'dash'|'burst'|'arc';
 export interface FighterDef {id:FighterId;name:string;short:string;color:string;special:string;kind:SpecialKind;speed:number;power:number;reach:number;shotSpeed:number;cooldown:number;tag:string;note:string;}
 const f=(id:FighterId,name:string,color:string,special:string,kind:SpecialKind,speed:number,power:number,reach:number,shotSpeed:number,cooldown:number,tag:string,note:string):FighterDef=>({id,name,short:name.replace(' Mack',''),color,special,kind,speed,power,reach,shotSpeed,cooldown,tag,note});
@@ -34,6 +34,7 @@ export const FIGHTERS:FighterDef[]=[
  f('matthias','Matthias Schilling','#76cafa','Fokusblitz','bolt',220,24,104,520,195,'FOKUS & KRAFT','Ein gebündelter blauer Lichtimpuls mit großer Reichweite.'),
  f('laurent','Laurent Kuhn','#ffe380','Lichtkante','wave',240,19,99,510,170,'LICHT & BODEN','Eine goldene Lichtkante fliegt knapp über dem Boden.'),
  f('reinhold','Reinhold Lamers','#72e0d0','Bassdruck','burst',195,27,112,320,220,'BASS & NÄHE','Ein kräftiger türkisfarbener Klangstoß in alle Richtungen.'),
+ f('kuebler','Sebastian Kübler','#a8c7ff','Melodie-Bogen','arc',250,20,98,535,170,'KOMPOSITION & TAKT','Der Komponist und Hauptmusiker des Parks gibt den Einsatz. Melodie-Bogen überspielt die Distanz, Bass-Ostinato hält den Boden und Crescendo schützt die Nähe.'),
  f('nathalie','Nathalie Ruder','#ffb2dc','Farbflug','arc',255,18,90,550,150,'FARBE & BOGEN','Ein pinker Farbfunke schwingt durch die Luft.'),
  f('andreas','Andreas Böhler','#bd9cff','Render-Rush','dash',250,21,97,580,185,'RHYTHMUS & SCHUB','Ein violetter Vorstoß hinterlässt eine leuchtende Spur.'),
  f('karsten','Karsten Mosner','#ffe1a0','Objektivblitz','bolt',230,21,96,540,175,'LICHT & BEWEGUNG','Gebündeltes Licht, ein schneller Dolly-Vorstoß und ein aufsteigender Kran-Schwenk.'),

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "kuebler",
+    "clip": "portrait",
+    "chromaKey": false,
+    "refs": [
+      "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-2e9daf29-4d33-4c35-868a-582c65d11768.png",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/portraits/roland.png"
+    ],
+    "prompt": "PIXEL STYLE MATCH ONLY. Image1 Sebastian is the approved face and exact composition. Image2 Roland is the existing roster's pixel-art style reference. Preserve image1 EXACT face identity, proportions, eyelids, nose, small thin-lip smile, forehead creases, hairstyle, silver ear hoop, navy blazer and dark blue shirt, RIGHT-facing head and body and chest crop. Redraw image1 with the SAME apparent pixel size and deliberate shadow clusters as image2. Authentic controlled 192x256 native pixel drawing shown at nearest-neighbor4x, every cluster aligned to one square grid. Remove microscopic noisy skin stippling, photographic texture and tiny fabric grain; replace with deliberate clean warm light/mid/shadow color ramps and sharp pixel contours. Not blurred, not smooth airbrush, not giant chunky poster blocks. Preserve recognizable adult face without beautification. Same navy/turquoise diagonal background and golden outline. Output only the finished portrait, no labels or frames. Keep right-facing orientation EXACTLY.",
+    "nativeWidth": 192,
+    "revisions": [
+      {
+        "prompt": "Refine Sebastian Kübler's portrait likeness. IMAGE1 is the authoritative FACE identity, image2 supports it. IMAGE3 is edit target with correct outfit/background/orientation. IMAGE4 is mandatory arcade PIXEL STYLE. Preserve image3 head/upperchest crop and RIGHT-facing3quarter shoulders and head. Replace beautified generic face with recognizable mature adult face from photo1: high broad forehead, sparse THIN LIGHT eyebrows (not thick brown), natural SMALLER blue-green eyes with real eyelid folds (not large sparkling anime eyes), distinctive straight prominent nose and broad rounded tip, softly rectangular jaw, slightly fuller cheek planes, small thin-lipped CLOSED restrained asymmetric smile exactly like photo1; subtle creases beside eyes and mouth. No glamorous lips, no pointed pretty-boy chin, no beard/glasses. Same short dark swept upright hair and closecut sides, small silver hoop. Navyblazer/darkblue shirt. EXACT hand-pixelled portrait detail density and shadow planes of Roland image4, shared regular pixel grid; simplify photographic skin texture into deliberate colored pixelclusters, no soft photo shading or tiny noisy stippling. No yellow shirt. Face resemblance more important than prettiness. Output one finishedportrait, no labels, borders or comparison.",
+        "refs": [
+          "C:/Users/andy_/Desktop/sebastian-kübler.1024x1024.jpg",
+          "C:/Users/andy_/Desktop/images (1).jpg",
+          "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-09310a50-07ed-4bc3-b37d-56dd70ff4a46.png",
+          "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/portraits/roland.png"
+        ]
+      },
+      {
+        "prompt": "HORIZONTALLY FLIP THE MAN ONLY in this portrait, so he looks toward the RIGHT edge rather than the left. Keep his exact current face, eye size, nose, subtle smile, hairstyle, ear hoop, clothing, crop, shading and pixel texture unchanged. Mirror the person, do NOT invent another face. Keep the navy/teal diagonal background in its current orientation. No other changes. Final: visible ear on image LEFT, nose toward image RIGHT, eyes directed RIGHT.",
+        "refs": [
+          "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-56ea9106-f044-42e5-bd26-787d0cef298f.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kuebler",
+    "clip": "idle",
+    "chromaKey": true,
+    "pixelStep": 1,
+    "refs": [
+      "C:/Users/andy_/Desktop/sebastian-kübler.1024x1024.jpg",
+      "C:/Users/andy_/Desktop/images (1).jpg",
+      "C:/Users/andy_/Documents/ChatGPT/Europa-Park Games/game/public/assets/roland.png"
+    ],
+    "prompt": "Create production game IDLE spritesheet. Photos1+2 exact identity; image3 Roland exact compact arcade cartoon body proportions and crisp pixel style. Sebastian Kübler from photos1+2: slim adult man, clean-shaven narrow oval face, distinctive high forehead, short dark upright swept hair with close-cut sides, blue-green eyes, thin light brows, subtle closed-lip smile, small silver ear hoop. NO glasses or beard. Dark navy blazer over dark blue open-neck shirt, charcoal trousers and plain black leather ankle shoes. No handheld props. Slightly enlarged head and fists, compact body, readable dark outlines and restrained pixel shading like Roland, NOT realistic long-legged anatomy. Eight successive breathing poses in relaxed boxing guard, both fists chest height, staggered grounded feet. Four columns TWO rows, 8 separate complete drawings on1536x1024. Upright fullbody420px high, sameheadsize, baselinealigned perrow,40px empty margins, eachlimbinsidecell. FaceRIGHTthreequarter. Flat solid #00FF00 green background includinggaps; no floor shadow, glow, grid, labels, props, effects or blur."
+  },
+  {
+    "id": "kuebler",
+    "clip": "walk",
+    "chromaKey": true,
+    "pixelStep": 1,
+    "refs": [
+      "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-6d1f3857-1317-487f-a396-9845a8dc4446.png"
+    ],
+    "prompt": "Create a production game spritesheet of EXACT Sebastian Kübler from reference: clean-shaven narrow adult face, short upright dark hair close sides, blue-green eyes, small silver ear hoop; dark navy blazer dark blue open-neck shirt charcoal trousers black leather shoes. SAME compact arcade proportions and pixel style as reference. Eight progressive grounded WALK combat-footwork frames: left contact, down weight transfer, passing, rising, right contact, down, passing, rising. Guard hands remain at chest. Shallow natural stride, no marching or growing/shrinking. Four columns TWO rows, eight separate complete drawings, canvas1536x1024. Upright equivalent bodyheight440px, constant head scale and clothing proportions,40px empty separation, entire limbs within eachcell. FaceRIGHTthreequarter. Crisp hand-pixelled contours and controlled shading. Perfect solid#00FF00 green chromakey background includinggaps. No floor shadows, grid, labels, text, props, instruments, particles, blur or overlapping frames."
+  },
+  {
+    "id": "kuebler",
+    "clip": "punch",
+    "chromaKey": true,
+    "pixelStep": 1,
+    "refs": [
+      "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-6d1f3857-1317-487f-a396-9845a8dc4446.png"
+    ],
+    "prompt": "Create a production game spritesheet of EXACT Sebastian Kübler from reference: clean-shaven narrow adult face, short upright dark hair close sides, blue-green eyes, small silver ear hoop; dark navy blazer dark blue open-neck shirt charcoal trousers black leather shoes. SAME compact arcade proportions and pixel style as reference. Eight progressive standing PUNCH frames: guard, windup, extend fist right, fully extended straight punch right, impact followthrough, retract, recovery, guard. Feet planted; subtle torso twist, same head and body proportions. Four columns TWO rows, eight separate complete drawings, canvas1536x1024. Upright equivalent bodyheight440px, constant head scale and clothing proportions,40px empty separation, entire limbs within eachcell. FaceRIGHTthreequarter. Crisp hand-pixelled contours and controlled shading. Perfect solid#00FF00 green chromakey background includinggaps. No floor shadows, grid, labels, text, props, instruments, particles, blur or overlapping frames."
+  },
+  {
+    "id": "kuebler",
+    "clip": "kick",
+    "chromaKey": true,
+    "pixelStep": 1,
+    "refs": [
+      "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-6d1f3857-1317-487f-a396-9845a8dc4446.png"
+    ],
+    "prompt": "Create a production game spritesheet of EXACT Sebastian Kübler from reference: clean-shaven narrow adult face, short upright dark hair close sides, blue-green eyes, small silver ear hoop; dark navy blazer dark blue open-neck shirt charcoal trousers black leather shoes. SAME compact arcade proportions and pixel style as reference. Eight progressive standing KICK frames: guard, prepare, lift knee, extend leg right at waist height, maximum full kick, retract knee, lower foot, guard. Support foot planted. Torso/head size unchanged. Four columns TWO rows, eight separate complete drawings, canvas1536x1024. Upright equivalent bodyheight440px, constant head scale and clothing proportions,40px empty separation, entire limbs within eachcell. FaceRIGHTthreequarter. Crisp hand-pixelled contours and controlled shading. Perfect solid#00FF00 green chromakey background includinggaps. No floor shadows, grid, labels, text, props, instruments, particles, blur or overlapping frames."
+  },
+  {
+    "id": "kuebler",
+    "clip": "airpunch",
+    "chromaKey": true,
+    "pixelStep": 1,
+    "refs": [
+      "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-6d1f3857-1317-487f-a396-9845a8dc4446.png"
+    ],
+    "prompt": "Create a production game spritesheet of EXACT Sebastian Kübler from reference: clean-shaven narrow adult face, short upright dark hair close sides, blue-green eyes, small silver ear hoop; dark navy blazer dark blue open-neck shirt charcoal trousers black leather shoes. SAME compact arcade proportions and pixel style as reference. Eight progressive AIR PUNCH frames: airborne guarded pose, windup fist at chest, extension, full airborne punch right, followthrough, retract, falling guard, descending guard. Both feet airborne, legs bent. Same head and torso size as reference, no fist higher than hair. Four columns TWO rows, eight separate complete drawings, canvas1536x1024. Upright equivalent bodyheight440px, constant head scale and clothing proportions,40px empty separation, entire limbs within eachcell. FaceRIGHTthreequarter. Crisp hand-pixelled contours and controlled shading. Perfect solid#00FF00 green chromakey background includinggaps. No floor shadows, grid, labels, text, props, instruments, particles, blur or overlapping frames."
+  },
+  {
+    "id": "kuebler",
+    "clip": "airkick",
+    "chromaKey": true,
+    "pixelStep": 1,
+    "refs": [
+      "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-7f83b3b6-a264-4ddf-987f-f86a11b25f58.png"
+    ],
+    "prompt": "Edit this AIR KICK sprite sheet. Keep all eight figures, their exact poses, sizes, faces, clothes, colors and layout unchanged. REPLACE THE ENTIRE DARK GRADIENT BACKGROUND with perfectly flat solid pure #00FF00 CHROMA GREEN. Fill every gap and every space between arms/legs with the same uniform green. Remove ALL background shadows, halos, glow and gradient. Crisp clean cutout edges. Do not alter the dark clothing, black shoes or hair. No added objects. Exactly four columns two rows."
+  },
+  {
+    "id": "kuebler",
+    "clip": "reactions",
+    "chromaKey": true,
+    "pixelStep": 1,
+    "refs": [
+      "C:\\Users\\andy_\\.codex\\generated_images\\01a072a6-0d91-7531-9a43-64247f8c8fb4\\exec-6d1f3857-1317-487f-a396-9845a8dc4446.png"
+    ],
+    "prompt": "Create a production game spritesheet of EXACT Sebastian Kübler from reference: clean-shaven narrow adult face, short upright dark hair close sides, blue-green eyes, small silver ear hoop; dark navy blazer dark blue open-neck shirt charcoal trousers black leather shoes. SAME compact arcade proportions and pixel style as reference. Eight REACTION poses in this EXACT order:0 jumping bent knees;1 crouch/landing;2 standing forearm block;3 hit/recoil;4 standing special preparation with both empty hands at chest like conductor ready;5 standing special release with both empty palms extended toward right;6 defeated on one knee head down;7 victory one fist raised. No objects or music particles. Four columns TWO rows, eight separate complete drawings, canvas1536x1024. Upright equivalent bodyheight440px, constant head scale and clothing proportions,40px empty separation, entire limbs within eachcell. FaceRIGHTthreequarter. Crisp hand-pixelled contours and controlled shading. Perfect solid#00FF00 green chromakey background includinggaps. No floor shadows, grid, labels, text, props, instruments, particles, blur or overlapping frames."
+  }
+]

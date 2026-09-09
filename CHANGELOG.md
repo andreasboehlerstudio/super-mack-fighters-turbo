@@ -2,6 +2,13 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.10-alpha — 2026-09-09
+
+- Sebastian Kübler als 42. spielbare Figur integriert: dunkles Sakko, eigenes Portrait nach den Fotovorlagen und rechte Dreiviertelansicht im bestehenden Brust-Ausschnitt. Pixelzeichnung mit klareren Farbflächen und weniger feiner Haut- und Stofftextur an Roland angeglichen.
+- Sieben eigene Animationsblätter mit 56 Posen und 17 verlustfreien Spielclips, gemeinsame Fußanker, passende Standhöhe, Kampfrufe und eigene Endsequenz.
+- Musik-Spezialangriffe: Melodie-Bogen, Bass-Ostinato, Crescendo und DIE PARK-SINFONIE. Noten-, Bass- und Crescendo-Effekte erscheinen nur beim Angriff.
+- Geprüft: 117 Tests, 2.623 nichtleere Animationsposen, TypeScript und Pages-Build. Portraitvergleich und Training gegen Roland im Browser einschließlich Spezialangriff und Ultra geprüft; keine Konsolenfehler.
+
 ## 0.2.9-alpha — 2026-09-09
 
 - Sébastien Ganzer als 41. spielbare Figur vor dem Social-Media-Team einsortiert: gelbes Polo mit rotem S, Brille, kurzer Bart und kompakte Arcade-Proportionen. Portrait nach rechts gedreht und auf Kopf/Brust zugeschnitten.

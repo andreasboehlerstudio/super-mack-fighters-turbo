@@ -342,5 +342,13 @@
     "maxBreathingHeightDifference": 0,
     "baseline": 246,
     "originX": 128
+  },
+  {
+    "id": "kuebler",
+    "frames": 8,
+    "bodyHeight": 196,
+    "maxBreathingHeightDifference": 4,
+    "baseline": 246,
+    "originX": 128
   }
 ]

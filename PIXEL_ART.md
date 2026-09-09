@@ -26,7 +26,7 @@ allein legt weder eine Auflösung noch eine Pixelgröße fest.
 ## Reproduzierbarer Abgleich
 
 `node --experimental-strip-types scripts/audit-pixel-grid.mjs` prüft alle
-42 Figuren inklusive Endgegner und alle 17 Clips. Messwerte und vier Portrait-
+43 Figuren inklusive Endgegner und alle 17 Clips. Messwerte und vier Portrait-
 Vergleichstafeln liegen anschließend in `../work/pixel-audit/`.
 `scripts/audit-animation-assets.mjs` prüft die normalen Figuren auf fehlende Zeichnungen
 und erzeugt Vergleichstafeln für Stand, Lauf und Tritt. Die Messwerte sind keine

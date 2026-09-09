@@ -34057,6 +34057,811 @@
           "hash": "29122e08ed2b62a801cc385d5c33edbab35c939ce9d8a6dc2220bd23a9156138"
         }
       ]
+    },
+    {
+      "id": "kuebler",
+      "clip": "punch",
+      "scale": 0.4188034188034188,
+      "idleHeight": 196,
+      "groundRatio": 0.765625,
+      "frames": [
+        {
+          "left": 71,
+          "top": 51,
+          "width": 115,
+          "height": 196,
+          "bottom": 246,
+          "count": 11004,
+          "frame": 0,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.4188034188034188,
+          "nativeBodyHeight": 468,
+          "nativeSpan": 468,
+          "hash": "cb36fa0dd6757bed7e4b6645f76d03263dc8fb61543376670a7ed7bd9e227926"
+        },
+        {
+          "left": 65,
+          "top": 56,
+          "width": 118,
+          "height": 191,
+          "bottom": 246,
+          "count": 11248,
+          "frame": 1,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 52,
+          "headX": 128,
+          "scale": 0.4188034188034188,
+          "nativeBodyHeight": 457,
+          "nativeSpan": 457,
+          "hash": "0e28504a4dd0e365e10d83cee6acb91e9da555e177a9244129929f76ded11191"
+        },
+        {
+          "left": 63,
+          "top": 51,
+          "width": 131,
+          "height": 196,
+          "bottom": 246,
+          "count": 11458,
+          "frame": 2,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 52,
+          "headX": 128,
+          "scale": 0.4188034188034188,
+          "nativeBodyHeight": 467,
+          "nativeSpan": 467,
+          "hash": "df0ea6f7a5f7d5a7ecbeeb60edbdef1b055ea9a25dafa0aa4552f0e1ce743591"
+        },
+        {
+          "left": 66,
+          "top": 55,
+          "width": 134,
+          "height": 192,
+          "bottom": 246,
+          "count": 10894,
+          "frame": 3,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.4188034188034188,
+          "nativeBodyHeight": 459,
+          "nativeSpan": 459,
+          "hash": "8354afae31eab52af8b8e1e918f091121ce6f6a260c380a03d5e7018eba011ad"
+        },
+        {
+          "left": 63,
+          "top": 53,
+          "width": 138,
+          "height": 194,
+          "bottom": 246,
+          "count": 11410,
+          "frame": 4,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 52,
+          "headX": 128,
+          "scale": 0.4188034188034188,
+          "nativeBodyHeight": 464,
+          "nativeSpan": 464,
+          "hash": "2dbd6416eb5128922f90218ebb19ca5b86eeafb2a6319a4929662e4e9725eb49"
+        },
+        {
+          "left": 63,
+          "top": 53,
+          "width": 121,
+          "height": 194,
+          "bottom": 246,
+          "count": 11422,
+          "frame": 5,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.4188034188034188,
+          "nativeBodyHeight": 464,
+          "nativeSpan": 464,
+          "hash": "34963417a4073b23fd4a8f8ef5f6163511188374715d5217cb5b4cf431d7b9a1"
+        },
+        {
+          "left": 68,
+          "top": 52,
+          "width": 119,
+          "height": 195,
+          "bottom": 246,
+          "count": 11181,
+          "frame": 6,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 52,
+          "headX": 128,
+          "scale": 0.4188034188034188,
+          "nativeBodyHeight": 465,
+          "nativeSpan": 465,
+          "hash": "28df466afdf7a9cfe602a99976e35be69273c14d235059f2cd3ec067c86de425"
+        },
+        {
+          "left": 69,
+          "top": 50,
+          "width": 118,
+          "height": 197,
+          "bottom": 246,
+          "count": 11297,
+          "frame": 7,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 52,
+          "headX": 128,
+          "scale": 0.4188034188034188,
+          "nativeBodyHeight": 470,
+          "nativeSpan": 470,
+          "hash": "b5b6de897c3d7769dac44a0af09fd722cd3a27a6459087aba81a2e5b84108ecf"
+        }
+      ]
+    },
+    {
+      "id": "kuebler",
+      "clip": "kick",
+      "scale": 0.416135881104034,
+      "idleHeight": 196,
+      "groundRatio": 0.765625,
+      "frames": [
+        {
+          "left": 74,
+          "top": 51,
+          "width": 109,
+          "height": 196,
+          "bottom": 246,
+          "count": 10863,
+          "frame": 0,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.416135881104034,
+          "nativeBodyHeight": 471,
+          "nativeSpan": 471,
+          "hash": "1b7fe1528e9017f90d55ab997c6a859fc72b363d3609f754a3333ec3d119dccf"
+        },
+        {
+          "left": 83,
+          "top": 51,
+          "width": 97,
+          "height": 196,
+          "bottom": 246,
+          "count": 10307,
+          "frame": 1,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.416135881104034,
+          "nativeBodyHeight": 470,
+          "nativeSpan": 470,
+          "hash": "37816723fb4a81aaf1ec2b4e481b1c57295ea97b2fc6e42bb87205e0ddace6e3"
+        },
+        {
+          "left": 83,
+          "top": 51,
+          "width": 99,
+          "height": 196,
+          "bottom": 246,
+          "count": 10081,
+          "frame": 2,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 50,
+          "headX": 128,
+          "scale": 0.416135881104034,
+          "nativeBodyHeight": 470,
+          "nativeSpan": 470,
+          "hash": "1be550094d8306b9a505cf74d563578d421a3787bf140eb57d4899df971950da"
+        },
+        {
+          "left": 80,
+          "top": 51,
+          "width": 153,
+          "height": 196,
+          "bottom": 246,
+          "count": 10522,
+          "frame": 3,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.416135881104034,
+          "nativeBodyHeight": 472,
+          "nativeSpan": 472,
+          "hash": "ea0cfc5be55acf002df30a070f4269c1e2cbaeafb43f13095d83df2c9b8fab34"
+        },
+        {
+          "left": 81,
+          "top": 50,
+          "width": 168,
+          "height": 197,
+          "bottom": 246,
+          "count": 10748,
+          "frame": 4,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 50,
+          "headX": 128,
+          "scale": 0.416135881104034,
+          "nativeBodyHeight": 474,
+          "nativeSpan": 474,
+          "hash": "e78f85696722ec1cbdc109631fd3a6f299a94a2723459388a5ef51566620bcf9"
+        },
+        {
+          "left": 81,
+          "top": 50,
+          "width": 94,
+          "height": 197,
+          "bottom": 246,
+          "count": 9822,
+          "frame": 5,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.416135881104034,
+          "nativeBodyHeight": 474,
+          "nativeSpan": 474,
+          "hash": "193b872af78c7e2557a77746bf9eff83178d28c98434f75b9e43fccad40efffd"
+        },
+        {
+          "left": 81,
+          "top": 50,
+          "width": 97,
+          "height": 197,
+          "bottom": 246,
+          "count": 10583,
+          "frame": 6,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.416135881104034,
+          "nativeBodyHeight": 474,
+          "nativeSpan": 474,
+          "hash": "967d698e01b62e2262c2e0730c59142d0298dfa821620678adaa10a90753d04c"
+        },
+        {
+          "left": 74,
+          "top": 50,
+          "width": 110,
+          "height": 197,
+          "bottom": 246,
+          "count": 10835,
+          "frame": 7,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 50,
+          "headX": 128,
+          "scale": 0.416135881104034,
+          "nativeBodyHeight": 474,
+          "nativeSpan": 474,
+          "hash": "57192acba822e3304f1895796f269905d5674682cb0778f86e6aa8d3fa332d43"
+        }
+      ]
+    },
+    {
+      "id": "kuebler",
+      "clip": "airpunch",
+      "scale": 0.41448495228774157,
+      "idleHeight": 196,
+      "groundRatio": 0.765625,
+      "frames": [
+        {
+          "left": 81,
+          "top": 51,
+          "width": 91,
+          "height": 184,
+          "bottom": 234,
+          "count": 9990,
+          "frame": 0,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 50,
+          "headX": 128,
+          "scale": 0.41448495228774157,
+          "nativeBodyHeight": 445,
+          "nativeSpan": 445,
+          "hash": "ff5d8d571face6af934bfcf7a7b149fd6574e3a619e95e8c6a63d45f93d7019f"
+        },
+        {
+          "left": 74,
+          "top": 51,
+          "width": 102,
+          "height": 184,
+          "bottom": 234,
+          "count": 10082,
+          "frame": 1,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.41448495228774157,
+          "nativeBodyHeight": 444,
+          "nativeSpan": 444,
+          "hash": "ddb6224e0d8ff2a5529529ea802bb6544936dfe56c20d7d4d5bd1d86682f6abd"
+        },
+        {
+          "left": 60,
+          "top": 51,
+          "width": 134,
+          "height": 185,
+          "bottom": 235,
+          "count": 10059,
+          "frame": 2,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.41448495228774157,
+          "nativeBodyHeight": 447,
+          "nativeSpan": 447,
+          "hash": "ac690e03918815b2c200d1236840686294dbaa739278d20876b7d8a48f159f16"
+        },
+        {
+          "left": 70,
+          "top": 51,
+          "width": 131,
+          "height": 189,
+          "bottom": 239,
+          "count": 10470,
+          "frame": 3,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 52,
+          "headX": 128,
+          "scale": 0.41448495228774157,
+          "nativeBodyHeight": 455,
+          "nativeSpan": 455,
+          "hash": "09a24f9ac1498d064329b694acca50098d8d3b0d22cab7bc52f59c3fde6a0886"
+        },
+        {
+          "left": 75,
+          "top": 51,
+          "width": 124,
+          "height": 187,
+          "bottom": 237,
+          "count": 10018,
+          "frame": 4,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.41448495228774157,
+          "nativeBodyHeight": 452,
+          "nativeSpan": 452,
+          "hash": "75d5a5bd898931fd9b36e1e5169c43e36ce8c7b21d851d3101b931cbb1f8367d"
+        },
+        {
+          "left": 80,
+          "top": 51,
+          "width": 93,
+          "height": 184,
+          "bottom": 234,
+          "count": 9782,
+          "frame": 5,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.41448495228774157,
+          "nativeBodyHeight": 444,
+          "nativeSpan": 444,
+          "hash": "f27936e7c45dfe034e92815d139f3aea7556cfcc6e884b3fa354a1cf41c0ff91"
+        },
+        {
+          "left": 87,
+          "top": 51,
+          "width": 87,
+          "height": 190,
+          "bottom": 240,
+          "count": 9710,
+          "frame": 6,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.41448495228774157,
+          "nativeBodyHeight": 458,
+          "nativeSpan": 458,
+          "hash": "6538903a43328154058b34dade15178b97e2619368258eabc6a328cf84236012"
+        },
+        {
+          "left": 84,
+          "top": 51,
+          "width": 89,
+          "height": 190,
+          "bottom": 240,
+          "count": 9952,
+          "frame": 7,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.41448495228774157,
+          "nativeBodyHeight": 459,
+          "nativeSpan": 459,
+          "hash": "13aa185f76955ec33063a806fcb9fb0140672dd3c82b959d9343ed58f7aa7c43"
+        }
+      ]
+    },
+    {
+      "id": "kuebler",
+      "clip": "airkick",
+      "scale": 0.41111515592767867,
+      "idleHeight": 196,
+      "groundRatio": 0.765625,
+      "frames": [
+        {
+          "left": 73,
+          "top": 51,
+          "width": 99,
+          "height": 167,
+          "bottom": 217,
+          "count": 9419,
+          "frame": 0,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.41111515592767867,
+          "nativeBodyHeight": 407,
+          "nativeSpan": 407,
+          "hash": "30595c3f0b60eea39fd63700e22c34c8483b68b487a7ad7cc709d4bd5f44c980"
+        },
+        {
+          "left": 73,
+          "top": 51,
+          "width": 106,
+          "height": 175,
+          "bottom": 225,
+          "count": 9689,
+          "frame": 1,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.41111515592767867,
+          "nativeBodyHeight": 426,
+          "nativeSpan": 426,
+          "hash": "b7da568d46a17baf4f6c7b6287348671c11a6ba4f9f03a5fdc03c44204e2d98a"
+        },
+        {
+          "left": 74,
+          "top": 51,
+          "width": 146,
+          "height": 171,
+          "bottom": 221,
+          "count": 10101,
+          "frame": 2,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.41111515592767867,
+          "nativeBodyHeight": 415,
+          "nativeSpan": 415,
+          "hash": "1b1e20b4671e769c606744e29dfaf67f777c5dc3a3d1d8f0fcbca42958a81a1e"
+        },
+        {
+          "left": 81,
+          "top": 51,
+          "width": 164,
+          "height": 156,
+          "bottom": 206,
+          "count": 10770,
+          "frame": 3,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.41111515592767867,
+          "nativeBodyHeight": 380,
+          "nativeSpan": 399,
+          "hash": "006564c5df4f4e4606e7244af90cef5c70710fb96f9569165d97d8ffb1fc8128"
+        },
+        {
+          "left": 73,
+          "top": 51,
+          "width": 156,
+          "height": 162,
+          "bottom": 212,
+          "count": 10390,
+          "frame": 4,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 52,
+          "headX": 128,
+          "scale": 0.41111515592767867,
+          "nativeBodyHeight": 394,
+          "nativeSpan": 394,
+          "hash": "c92463dc988f21846ee6778f976c38e3c23377caa4deb44e18fb4116c870cfd0"
+        },
+        {
+          "left": 76,
+          "top": 51,
+          "width": 101,
+          "height": 163,
+          "bottom": 213,
+          "count": 8697,
+          "frame": 5,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 52,
+          "headX": 128,
+          "scale": 0.41111515592767867,
+          "nativeBodyHeight": 397,
+          "nativeSpan": 397,
+          "hash": "4870d48e3cd66b820fa085243a092cede69d6ec69859c17b5c0b836f60428b6c"
+        },
+        {
+          "left": 78,
+          "top": 51,
+          "width": 99,
+          "height": 176,
+          "bottom": 226,
+          "count": 9732,
+          "frame": 6,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 51,
+          "headX": 128.5,
+          "scale": 0.41111515592767867,
+          "nativeBodyHeight": 428,
+          "nativeSpan": 428,
+          "hash": "33af2925d81cd638ad1351080c982c61800c0386eae1a43942bf44b65c8eff9b"
+        },
+        {
+          "left": 80,
+          "top": 51,
+          "width": 96,
+          "height": 190,
+          "bottom": 240,
+          "count": 10219,
+          "frame": 7,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 53,
+          "headX": 128.5,
+          "scale": 0.41111515592767867,
+          "nativeBodyHeight": 463,
+          "nativeSpan": 463,
+          "hash": "bed3c587b4bda34ed110c128e4ec1d4b067123bcd1b41ead49f260983eabc29d"
+        }
+      ]
+    },
+    {
+      "id": "kuebler",
+      "clip": "reactions",
+      "scale": 0.42516268980477223,
+      "idleHeight": 196,
+      "groundRatio": 0.765625,
+      "frames": [
+        {
+          "left": 65,
+          "top": 51,
+          "width": 121,
+          "height": 163,
+          "bottom": 213,
+          "count": 10537,
+          "frame": 0,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 52,
+          "headX": 128,
+          "scale": 0.42516268980477223,
+          "nativeBodyHeight": 384,
+          "nativeSpan": 384,
+          "hash": "012908b1e5aad42f5ef3e85bea65a731841483bc0ef1034000ee1bbd954f0d92"
+        },
+        {
+          "left": 53,
+          "top": 96,
+          "width": 112,
+          "height": 151,
+          "bottom": 246,
+          "count": 10046,
+          "frame": 1,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 52,
+          "headX": 128,
+          "scale": 0.42516268980477223,
+          "nativeBodyHeight": 356,
+          "nativeSpan": 356,
+          "hash": "84a7696699a9a5a98d5ac195925945fe95329839fdd491550d86f1d47516cdf8"
+        },
+        {
+          "left": 63,
+          "top": 51,
+          "width": 116,
+          "height": 196,
+          "bottom": 246,
+          "count": 11786,
+          "frame": 2,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 67,
+          "headX": 128.5,
+          "scale": 0.42516268980477223,
+          "nativeBodyHeight": 461,
+          "nativeSpan": 461,
+          "hash": "bfb898f57aeb36be30d4dc6f262529f7fadad85c9efe3506cbaf4993adcd574d"
+        },
+        {
+          "left": 101,
+          "top": 56,
+          "width": 122,
+          "height": 191,
+          "bottom": 246,
+          "count": 11690,
+          "frame": 3,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 55,
+          "headX": 128.5,
+          "scale": 0.42516268980477223,
+          "nativeBodyHeight": 449,
+          "nativeSpan": 449,
+          "hash": "d33a2b84811ab6a2c551885cc6f9432d4cba0500aaed581a13de1df916a6d866"
+        },
+        {
+          "left": 69,
+          "top": 48,
+          "width": 121,
+          "height": 199,
+          "bottom": 246,
+          "count": 11776,
+          "frame": 4,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 52,
+          "headX": 128,
+          "scale": 0.42516268980477223,
+          "nativeBodyHeight": 467,
+          "nativeSpan": 467,
+          "hash": "530237ccf4d96ee1e83707a5f718dcc2a9cc397898ab6639ae0a61f159090424"
+        },
+        {
+          "left": 58,
+          "top": 51,
+          "width": 161,
+          "height": 196,
+          "bottom": 246,
+          "count": 12144,
+          "frame": 5,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 52,
+          "headX": 128,
+          "scale": 0.42516268980477223,
+          "nativeBodyHeight": 461,
+          "nativeSpan": 461,
+          "hash": "3d671de10d5a42c90fc5a36d54acd30096c269c1486e4ecd3901fb6da9fff0d0"
+        },
+        {
+          "left": 54,
+          "top": 102,
+          "width": 130,
+          "height": 145,
+          "bottom": 246,
+          "count": 11100,
+          "frame": 6,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 83,
+          "headX": 128.5,
+          "scale": 0.42516268980477223,
+          "nativeBodyHeight": 340,
+          "nativeSpan": 340,
+          "hash": "e247b5ef0ab3c8fde5f908815a8ddfb46e31c3b14530936b315e943f8b10442b"
+        },
+        {
+          "left": 67,
+          "top": 42,
+          "width": 117,
+          "height": 205,
+          "bottom": 246,
+          "count": 12315,
+          "frame": 7,
+          "origin": {
+            "x": 128,
+            "y": 246
+          },
+          "headWidth": 83,
+          "headX": 128.5,
+          "scale": 0.42516268980477223,
+          "nativeBodyHeight": 482,
+          "nativeSpan": 482,
+          "hash": "fe94598bb61ff1af4e9fcb3acb2fea4a2ae48e842d10d2dadd4e6562f0e3a3af"
+        }
+      ]
     }
   ]
 }

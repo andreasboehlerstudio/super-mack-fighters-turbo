@@ -224,6 +224,20 @@
     "height": 256
   },
   {
+    "file": "runtime/portraits/kuebler.webp",
+    "bytes": 87818,
+    "sourceBytes": 156932,
+    "width": 384,
+    "height": 512
+  },
+  {
+    "file": "runtime/portraits/kuebler-thumb.webp",
+    "bytes": 71174,
+    "sourceBytes": 156932,
+    "width": 192,
+    "height": 256
+  },
+  {
     "file": "runtime/portraits/laurent.webp",
     "bytes": 241490,
     "sourceBytes": 1583252,
