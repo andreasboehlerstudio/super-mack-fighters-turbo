@@ -1,0 +1,12 @@
+{
+  "mode": "built-in imagegen",
+  "useCase": "precise-object-edit",
+  "reference": "public/assets/arenas/park-1.webp",
+  "prompt": "Use case: precise-object-edit. Edit the provided Germany arena background for a side-view pixel-art fighting game. Keep the recognizable German-themed plaza: ornate pink sandstone facade and blue slate turrets left/center, yellow clocktower and stone arch on the right, blue daytime sky, lamps and greenery. Correct the spatial perspective, especially the paved floor, which currently looks like a tilted slab. Camera level and horizontal, low side-view arcade fighting stage. Recompose the architecture slightly upward/farther back so all building bases are around 69-72% of image height, leaving the lower 28-30% as a spacious continuous FLAT level plaza. Foreground paving must read as ground seen at a shallow angle, NOT a ramp, stage platform, raised slab, fan of converging rays or top-down board. Use subtle small staggered cobblestones, restrained foreshortening, consistent distant horizon aligned with architecture, horizontal courses with gradually increasing spacing toward viewer, low-contrast mortar. No oversized foreground blocks or competing vanishing points. Playable unobstructed horizontal line spans whole width at 82% image height; spectators will be placed behind it at 77% image height. Do not draw fighters, people, shadows of people, UI or text. No curb, fence or step cutting through the combat floor. Match source's crisp richly colored arcade pixel art, coherent square pixel grid, deliberate compact color clusters, no blur or smooth painterly surface. Keep daytime palette and same landmark identities; focus correction on plaza perspective and enough depth in front of architecture. Finished 16:9 landscape, 1920x1080, designed for a sharp 960x540 native export.",
+  "export": {
+    "width": 1920,
+    "height": 1080,
+    "kernel": "nearest",
+    "runtime": "960x540 lossless WebP"
+  }
+}

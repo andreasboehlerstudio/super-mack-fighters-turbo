@@ -2,6 +2,13 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.11-alpha — 2026-09-09
+
+- Deutschland-Arena mit Imagegen neu überarbeitet: flacherer Vorplatz, ruhigere Pflasterperspektive und mehr Tiefe zwischen Fassaden und Kampflinie. Die bisherige Grafik bleibt als Referenz erhalten.
+- Zuschauer auf das neue Pflaster hinter den Kämpfern gesetzt; ihre Fußpunkte und Kontaktschatten bleiben miteinander verbunden.
+- Neue Arena und Vorschaubilder verlustfrei auf das gemeinsame Pixelraster exportiert. Auch der Sound-Test nutzt jetzt die zentrale Arenazuordnung.
+- Geprüft: neun Asset- und Arena-Tests, TypeScript und Pages-Build. Deutschland im Training mit Roland und Sebastian visuell auf Bodenanschluss geprüft; keine Konsolenfehler.
+
 ## 0.2.10-alpha — 2026-09-09
 
 - Sebastian Kübler als 42. spielbare Figur integriert: dunkles Sakko, eigenes Portrait nach den Fotovorlagen und rechte Dreiviertelansicht im bestehenden Brust-Ausschnitt. Pixelzeichnung mit klareren Farbflächen und weniger feiner Haut- und Stofftextur an Roland angeglichen.

@@ -7,7 +7,7 @@ const pair=(lx:number,ly:number,rx:number,ry:number):readonly CrowdSpot[]=>[{x:l
  */
 export const ARENA_CROWD_SPOTS:Record<string,readonly CrowdSpot[]>={
  'park-0':pair(130,427,815,427), // timber deck in front of the river
- 'park-1':pair(190,443,790,443), // German plaza, clear of lamps and facade
+ 'park-1':pair(190,418,790,418), // revised flat plaza: behind the combat line, in front of the facade
  'park-2':pair(82,430,820,420), // left of the fountain; right-hand pavement
  'park-3':pair(120,404,830,404),
  'park-4':pair(145,410,800,410),

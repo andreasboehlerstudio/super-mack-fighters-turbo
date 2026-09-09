@@ -826,6 +826,20 @@
     "height": 90
   },
   {
+    "file": "runtime/arenas/park-1-perspective-v2.webp",
+    "bytes": 856458,
+    "sourceBytes": 2655252,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "runtime/arenas/park-1-perspective-v2-thumb.webp",
+    "bytes": 28562,
+    "sourceBytes": 2655252,
+    "width": 160,
+    "height": 90
+  },
+  {
     "file": "runtime/arenas/park-1.webp",
     "bytes": 858836,
     "sourceBytes": 1595942,
