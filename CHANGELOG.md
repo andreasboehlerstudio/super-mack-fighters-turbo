@@ -2,6 +2,10 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.13-alpha — 2026-09-09
+
+- Namen von Karsten Monser korrigiert. Charakterauswahl, Versus-Anzeige und alle weiteren Anzeigen übernehmen die richtige Schreibweise aus den zentralen Charakterdaten.
+
 ## 0.2.12-alpha — 2026-09-09
 
 - Deutschland-Arena in helles goldenes Abendlicht versetzt: sichtbare tief stehende Sonne, warme Wolken und Fassaden sowie sanfte bläuliche Schatten. Die korrigierte Bodenperspektive und Zuschauerpositionen bleiben erhalten.
@@ -120,7 +124,7 @@ Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts
 ## 0.2.2-alpha — 2026-09-08
 
 ### Charaktere
-- Michael Vendel ist als 35. Kämpfer auswählbar, direkt nach Karsten Mosner.
+- Michael Vendel ist als 35. Kämpfer auswählbar, direkt nach Karsten Monser.
 - Eigenes Imagegen-Pixelportrait und sieben Animationsblätter mit je acht Zeichnungen anhand seines Character Sheets: graugrünes Shirt, Jeansshorts, schwarze Socken und weiße Sneaker.
 - Separate verlustfreie Animationsdateien mit festen Ankerpunkten für Lauf-, Boden- und Luftangriffe sowie Reaktionen.
 - Drei Spezialangriffe: Impulswelle, Kraft-Sprint und Druckwirbel. Ultra: Voller Einsatz.

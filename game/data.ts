@@ -37,7 +37,7 @@ export const FIGHTERS:FighterDef[]=[
  f('kuebler','Sebastian Kübler','#a8c7ff','Melodie-Bogen','arc',250,20,98,535,170,'KOMPOSITION & TAKT','Der Komponist und Hauptmusiker des Parks gibt den Einsatz. Melodie-Bogen überspielt die Distanz, Bass-Ostinato hält den Boden und Crescendo schützt die Nähe.'),
  f('nathalie','Nathalie Ruder','#ffb2dc','Farbflug','arc',255,18,90,550,150,'FARBE & BOGEN','Ein pinker Farbfunke schwingt durch die Luft.'),
  f('andreas','Andreas Böhler','#bd9cff','Render-Rush','dash',250,21,97,580,185,'RHYTHMUS & SCHUB','Ein violetter Vorstoß hinterlässt eine leuchtende Spur.'),
- f('karsten','Karsten Mosner','#ffe1a0','Objektivblitz','bolt',230,21,96,540,175,'LICHT & BEWEGUNG','Gebündeltes Licht, ein schneller Dolly-Vorstoß und ein aufsteigender Kran-Schwenk.'),
+ f('karsten','Karsten Monser','#ffe1a0','Objektivblitz','bolt',230,21,96,540,175,'LICHT & BEWEGUNG','Gebündeltes Licht, ein schneller Dolly-Vorstoß und ein aufsteigender Kran-Schwenk.'),
  f('vendel','Michael Vendel','#b8dbc2','Rotor-Impuls','wave',220,22,102,460,180,'DROHNE & DREH','Als Drohnenpilot behält Michael die Szene im Blick. Rotor-Impuls schafft Raum, Tiefflug und Orbit-Shot sichern die Nähe.'),
  f('jan','Jan Reiff','#8cde68','Action!','dash',240,20,102,520,165,'REGIE & TIMING','Action! Jan setzt mit präzisem Timing zum Vorstoß an. Director’s Cut und Letzte Klappe ergänzen sein Regie-Moveset.'),
  f('valentina','Valentina Sachs','#ff956f','Casting-Call','arc',290,19,94,545,160,'CASTING & TIMING','Valentina wählt als Casting-Direktorin die Models für die Videodrehs aus. Casting-Call hält Abstand, Screen-Test überbrückt ihn und Recall schützt die Nähe.'),
