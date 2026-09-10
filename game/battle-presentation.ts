@@ -8,4 +8,4 @@ export function finishTimeScale(m:Pick<Match,'phase'|'phaseTicks'|'actors'>){
  const t=Math.min(1,(progress-36)/36);
  return .45+.55*t*t*(3-2*t);
 }
-export const CALLOUT_TIMING={notice:{hold:1000,exit:350},special:{hold:2400,exit:600},ultra:{hold:3000,exit:650}} as const;
+export const CALLOUT_TIMING={notice:{hold:1000,exit:350},special:{hold:1200,exit:250},ultra:{hold:1600,exit:300}} as const;

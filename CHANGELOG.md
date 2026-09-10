@@ -2,6 +2,12 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.15-alpha — 2026-09-10
+
+- Spezialmove-Namen ohne rechteckige Hintergrundfläche; die dunkle Schriftkontur hält sie auf der Arena lesbar.
+- Kürzere Anzeige mit leichtem Aufsteigen und Ausblenden: Spezialmoves 1,45 statt 3 Sekunden, Ultras 1,9 statt 3,65 Sekunden bei normalem Zeitablauf.
+- Spezialangriffe und Ultras erhalten animierte Pixelflammen anstelle der einfachen Kreise. Projektile tragen eine flackernde Feuerspur; vorhandene charakterbezogene Symbole bleiben sichtbar.
+
 ## 0.2.14-alpha — 2026-09-10
 
 - Vergleich im Training für Roland und Michael Mack: **KAMPFGEFÜHL: KLASSISCH / DYNAMISCH**. Umschalten setzt den Kampf zurück. Der Pilot verändert keine anderen Figuren oder normalen Spielmodi.

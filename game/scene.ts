@@ -17,6 +17,7 @@ import {ANIMATION_SHEETS,animationUrl,hasDynamicArt,dynamicAnimationUrl,animatio
 import {isJanHulk} from './jan-form';
 import {JanSpecialSprites} from './jan-special-sprites';
 import {ImpactSprites} from './impact-sprites';
+import {drawSpecialFire,drawProjectileFire} from './special-fire';
 import {COMBAT_ART_ORIGINS} from './combat-art-origins';
 import {bossLabel,type BossRole} from './arcade-ladder.ts';
 import {drawFighterSpecial,drawFighterProjectile} from './fighter-effects.ts';
@@ -53,8 +54,6 @@ export function mountBattle(parent:HTMLElement,config:BattleConfig,audio:ArcadeA
     s.setCrop();
     if(a.action==='special'&&activeMove(a).kind==='dash'&&age>18&&age<34&&match.tick%4===0){const echo=this.add.sprite(s.x-a.face*14,s.y,texture,frame).setOrigin(s.originX,s.originY).setDisplaySize(cell,cell).setFlipX(a.face<0).setTint(Phaser.Display.Color.HexStringToColor(fighter(a.id).color).color).setAlpha(.35).setDepth(1);this.tweens.add({targets:echo,alpha:0,duration:180,onComplete:()=>echo.destroy()});}
     if(a.specialCd===0&&a.action==='idle'&&match.tick%12<6){this.fx.lineStyle(2,Phaser.Display.Color.HexStringToColor(fighter(a.id).color).color,.5);this.fx.strokeEllipse(a.x,FLOOR+3,120,22);}
-    if(a.id!=='jan'&&a.action==='ultra'){const col=Phaser.Display.Color.HexStringToColor(fighter(a.id).color).color;this.fx.lineStyle(5,col,.8);this.fx.strokeCircle(a.x,ground+a.y-95,36+age%28*3);}
-    if(a.id!=='jan'&&a.action==='special'){const col=Phaser.Display.Color.HexStringToColor(fighter(a.id).color).color;this.fx.lineStyle(4,col,.7);if(activeMove(a).kind==='burst'&&age>=18&&age<35)this.fx.strokeCircle(a.x,ground+a.y-65,80+(age-18)*4);else if(age<18||a.id==='graumacher'&&age<44){this.fx.strokeCircle(a.x+a.face*42,ground+a.y-65,10+age%16);if(a.id==='graumacher'){this.fx.fillStyle(0xcdd3e2,.12+.1*Math.sin(age));this.fx.fillRect(0,FLOOR-14,960,20);}}}
     if(a.transformTicks>0){
      const progress=1-a.transformTicks/90,reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
      this.fx.fillStyle(0x57bc38,Math.sin(progress*Math.PI)*(reduced?.05:.12));this.fx.fillRect(0,0,960,540);
@@ -62,10 +61,10 @@ export function mountBattle(parent:HTMLElement,config:BattleConfig,audio:ArcadeA
      if(!reduced)for(let p=0;p<22;p++){const phase=(progress*2+p/22)%1,x=Math.round(a.x+Math.sin(p*2.4)*(24+phase*90)),y=Math.round(ground-phase*335),size=2+p%4;this.fx.fillStyle(p%3?0x82e34a:0xf3ffc9,(1-phase)*strength);this.fx.fillRect(x,y,size,size);}
      this.fx.fillStyle(0xcaff9d,strength*(reduced?.12:.28));this.fx.fillRect(Math.round(a.x)-65,Math.round(ground)-Math.round(80+progress*225),130,Math.round(80+progress*225));
     }
-    drawFighterSpecial(this.fx,a,ground);
+    drawSpecialFire(this.fx,a,ground);drawFighterSpecial(this.fx,a,ground);
    });
    this.impacts.draw(match.tick);this.janEffects?.draw(match.actors,match.projectiles,ground);
-   for(const p of match.projectiles){if((p.sourceId??match.actors[p.owner].id)==='jan')continue;if(drawFighterProjectile(this.fx,p,p.sourceId??match.actors[p.owner].id,ground))continue;const c=Phaser.Display.Color.HexStringToColor(p.color).color;for(let glow=3;glow>0;glow--){this.fx.fillStyle(c,.065*glow);this.fx.fillCircle(p.x-p.vx*.025*glow,ground+p.y,p.radius*(1+glow*.38));}this.fx.fillStyle(c,1);this.fx.fillRoundedRect(p.x-p.radius,ground+p.y-p.radius,p.radius*2,p.radius*2,5);this.fx.fillStyle(0xffffff,.95);this.fx.fillRect(p.x-4,ground+p.y-7,8,14);this.fx.lineStyle(2,0xffffff,.8);this.fx.strokeCircle(p.x,ground+p.y,p.radius*.8);}
+   for(const p of match.projectiles){drawProjectileFire(this.fx,p,ground);if((p.sourceId??match.actors[p.owner].id)==='jan')continue;drawFighterProjectile(this.fx,p,p.sourceId??match.actors[p.owner].id,ground);}
    if(match.actors.some(a=>a.transformTicks>0)){this.banner.setText('YOU MADE JAN ANGRY NOW!').setFontSize(32).setColor('#bfff87');}
    else if(match.phase==='intro'){this.banner.setColor('#fff2ca');const text=config.boss&&match.round===1&&match.phaseTicks>85?bossLabel(config.boss)+'\n'+fighter(config.p2).name.toUpperCase():match.phaseTicks>36?`RUNDE ${match.round}`:'FIGHT!';this.banner.setText(text).setFontSize(text.length>25?29:45);}
    else if(match.phase==='roundover')this.banner.setText(match.roundWinner===null?'UNENTSCHIEDEN':match.phaseTicks<78?fighter(match.actors[match.roundWinner].id).short.toUpperCase()+' GEWINNT':match.actors[1-match.roundWinner].hp<=0?'K.O.!':'ZEIT ABGELAUFEN').setFontSize(match.phaseTicks<78?40:56);
@@ -73,7 +72,7 @@ export function mountBattle(parent:HTMLElement,config:BattleConfig,audio:ArcadeA
   }
   impact(event:import('./combat').CombatEvent,tick:number){const direction=event.direction??-match.actors[event.player??1].face;this.impacts.emit((event.x??480)-direction*18,(event.y??340)+stagePhysics(config.stationId,tick).floorOffset,tick,event.type==='block'?'block':(event.power??8)>=18?'special':(event.power??8)>=12?'heavy':'light',direction,window.matchMedia('(prefers-reduced-motion: reduce)').matches);}
   burst(x:number,y:number,color:number){for(let j=0;j<12;j++){const angle=j*Math.PI/6,rect=this.add.rectangle(x,y,6+j%3*2,4,color).setDepth(25);this.tweens.add({targets:rect,x:x+Math.cos(angle)*(35+j%4*12),y:y+Math.sin(angle)*45,alpha:0,duration:220,onComplete:()=>rect.destroy()});}}
-  callout(label:string,index:number,kind:keyof typeof CALLOUT_TIMING='notice'){const previous=this.callouts[index];if(previous){this.tweens.killTweensOf(previous);previous.destroy()}const timing=CALLOUT_TIMING[kind],text=this.add.text(index?725:235,245,label.toUpperCase(),{fontFamily:'Pixelify Sans',fontSize:'19px',fontStyle:'bold',color:fighter(match.actors[index].id).color,stroke:'#121329',strokeThickness:4,backgroundColor:'#101a34',padding:{x:10,y:6},wordWrap:{width:390},align:'center'}).setOrigin(.5).setDepth(25);this.callouts[index]=text;this.tweens.add({targets:text,y:227,alpha:0,delay:timing.hold,duration:timing.exit,ease:'Sine.easeInOut',onComplete:()=>{if(this.callouts[index]===text)this.callouts[index]=null;text.destroy()}});}
+  callout(label:string,index:number,kind:keyof typeof CALLOUT_TIMING='notice'){const previous=this.callouts[index];if(previous){this.tweens.killTweensOf(previous);previous.destroy()}const timing=CALLOUT_TIMING[kind],text=this.add.text(index?725:235,245,label.toUpperCase(),{fontFamily:'Pixelify Sans',fontSize:'19px',fontStyle:'bold',color:fighter(match.actors[index].id).color,stroke:'#121329',strokeThickness:4,wordWrap:{width:390},align:'center'}).setOrigin(.5).setDepth(25);this.callouts[index]=text;this.tweens.add({targets:text,y:227,alpha:0,delay:timing.hold,duration:timing.exit,ease:'Sine.easeInOut',onComplete:()=>{if(this.callouts[index]===text)this.callouts[index]=null;text.destroy()}});}
  }
  // The surrounding console scales once as a whole. Phaser must not measure that transformed
  // parent and scale again, otherwise high-resolution/fullscreen windows double the arena size.

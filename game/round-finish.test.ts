@@ -31,5 +31,5 @@ test('KO slowdown starts immediately, recovers monotonically, and resets for new
  assert.equal(finishTimeScale(m),.45);let previous=.45;
  for(let left=145;left>=0;left--){m.phaseTicks=left;const speed=finishTimeScale(m);assert.ok(speed>=previous&&speed<=1);previous=speed;}
  assert.equal(previous,1);m.phase='intro';assert.equal(finishTimeScale(m),1);
- assert.ok(CALLOUT_TIMING.special.hold>=2400&&CALLOUT_TIMING.special.exit>=600);
+ for(const kind of ['special','ultra'] as const){const timing=CALLOUT_TIMING[kind];assert.ok(timing.hold>=1000&&timing.hold+timing.exit<=2000);assert.ok(timing.exit>0);}
 });
