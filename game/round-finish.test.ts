@@ -2,6 +2,21 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createMatch,step,neutral} from './combat.ts';
 import {finishTimeScale,CALLOUT_TIMING} from './battle-presentation.ts';
+import {koAge,koPose,KO_END} from './ko-presentation.ts';
+
+test('KO overlay follows either loser, freezes with the match and clears before the winner banner',()=>{
+ for(const loser of [0,1]){
+  const m=createMatch('roland','michael');m.phase='roundover';m.phaseTicks=145;m.actors[loser].hp=0;
+  assert.equal(koAge(m),0);
+  m.phaseTicks=125;assert.equal(koAge(m),20);assert.equal(koAge(m),20);
+  assert.equal(koPose(20).alpha,1);assert.ok(koPose(60).alpha<1);
+  m.phaseTicks=145-KO_END;assert.equal(koAge(m),null);
+  m.phase='intro';m.phaseTicks=125;m.actors[loser].hp=100;assert.equal(koAge(m),null);
+ }
+ const timeout=createMatch('roland','michael');timeout.phase='roundover';timeout.phaseTicks=145;
+ assert.equal(koAge(timeout),null);
+ for(const age of [0,8,30,60]){assert.equal(koPose(age,true).scale,1);assert.equal(koPose(age,true).y,0);}
+});
 
 test('winning air attack finishes and both fighters land before victory or completion',()=>{
  const m=createMatch('valentina','ed');m.phase='fight';m.score[0]=1;

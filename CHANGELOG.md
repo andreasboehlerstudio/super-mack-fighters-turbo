@@ -2,6 +2,13 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.17-alpha — 2026-09-10
+
+- Erste K.O.-Variante umgesetzt: freigestellter gold-roter Pixelschriftzug mit kurzem Einschlag, radialer Feuerexplosion und auslaufenden Funken. Transparente Darstellung ohne Bannerkasten oder doppelte K.O.-Schrift.
+- Animation folgt der K.O.-Zeitlupe, pausiert mit dem Kampf und blendet vor der Siegeransage aus; bei reduzierter Bewegung ohne Zoom und bewegte Funken.
+- Porträts besiegter Kämpfer oben im HUD werden grau, auch bei ausgeschiedenen Tag-Partnern. In der nächsten Runde erscheinen sie wieder farbig.
+- Geprüft: 127 Tests, TypeScript und Pages-Build; echte K.O.-Treffer auf beiden Seiten, Pause/Fortsetzen, Rundenwechsel und Zeitablauf in einer lokalen Prüfszene.
+
 ## 0.2.16-alpha — 2026-09-10
 
 - Untere Beschriftungs- und Einstellungsleiste während des Kampfes entfernt. Kampfgefühl, Dummy und Reset befinden sich jetzt im Pausenmenü; Esc und die Pause-Taste am Controller bleiben aktiv. Die Parkkarte ist weiterhin im Pausenmenü erreichbar.
