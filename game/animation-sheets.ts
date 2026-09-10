@@ -16,9 +16,12 @@ export const ANIMATION_SHEETS={
 } as const;
 export type AnimationClip=keyof typeof ANIMATION_SHEETS;
 export const animationUrl=(id:FighterId,clip:AnimationClip)=>`/assets/animations/${id}/${clip}.webp?v=${id==='valentina'?'clips-6':'clips-5'}`;
-export function animationPose(action:Action,age:number,walkPhase:number,specialStartup=18,id?:FighterId){
+export const hasDynamicArt=(id:FighterId,clip:AnimationClip)=>id==='roland'&&clip==='punch'||id==='michael'&&clip==='kick';
+export const dynamicAnimationUrl=(id:FighterId,clip:AnimationClip)=>`/assets/animations/dynamic/${id}/${clip}.webp?v=1`;
+export function animationPose(action:Action,age:number,walkPhase:number,specialStartup=18,id?:FighterId,dynamic=false,vy=0){
+ if(dynamic&&action==='jump'&&age>3){const frame=vy<0?0:7;return {clip:'airkick' as const,frame,kind:'motion' as const,sourceFrame:ANIMATION_SHEETS.airkick.frames[frame]};}
  const clip:AnimationClip=action;
- const motion=motionFrame(action,age,walkPhase);
+ const motion=motionFrame(action,age,walkPhase,dynamic);
  let frame=action==='walk'?walkFrame(walkPhase):motion!==null?motion%8:action==='special'?Number(age>=specialStartup):action==='ultra'?Number(age>=28):0;
  // Jürgen's new air-punch has two anticipation, two contact and four recovery drawings.
  if(id==='juergen'&&action==='airpunch')frame=age<6?Math.min(1,Math.floor(age/3)):age<12?2+Math.min(1,Math.floor((age-6)/3)):4+Math.min(3,Math.floor((age-12)/3));

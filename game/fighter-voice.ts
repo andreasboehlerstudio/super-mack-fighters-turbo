@@ -1,3 +1,4 @@
+import {COMBAT_CALL_CLIPS} from './combat-call-clips.ts';
 import type {FighterId} from './data.ts';
 
 export type AttackCall = 'punch'|'kick'|'special'|'ultra';
@@ -62,20 +63,23 @@ export function renderAttackCall(id:FighterId,attack:AttackCall,variant=0,rate=2
 
 export class AttackVoices {
  private samples=new Map<string,AudioBuffer>();
- private next=[0,0];private variants=[0,0];
+ private banks:Partial<Record<'male'|'female',AudioBuffer>>={};
+ private variants=[0,0];private active:(null|{source:AudioBufferSourceNode;gain:GainNode})[]=[null,null];
  private context:AudioContext;private destination:AudioNode;
- constructor(context:AudioContext,destination:AudioNode){this.context=context;this.destination=destination;}
- play(id:FighterId,attack:AttackCall,player:number){
-  const c=this.context,slot=player===1?1:0,now=c.currentTime;
-  if(now<this.next[slot]||c.state!=='running')return;
-  const variant=this.variants[slot]++%3,key=`${id}:${attack}:${variant}`;
-  let buffer=this.samples.get(key);
-  if(!buffer){const pcm=renderAttackCall(id,attack,variant);buffer=c.createBuffer(1,pcm.length,22050);buffer.getChannelData(0).set(pcm);this.samples.set(key,buffer);}
-  this.next[slot]=now+buffer.duration+.025;
-  const source=c.createBufferSource(),gain=c.createGain(),pan=c.createStereoPanner();
-  source.buffer=buffer;gain.gain.value=attack==='ultra'?.5:.4;pan.pan.value=slot===0?-.24:.24;
-  source.connect(gain);gain.connect(pan);pan.connect(this.destination);
-  source.onended=()=>{source.disconnect();gain.disconnect();pan.disconnect()};
-  source.start(now+.005);
+ constructor(context:AudioContext,destination:AudioNode){this.context=context;this.destination=destination;void this.load();}
+ private async load(){await Promise.allSettled((['male','female'] as const).map(async bank=>{const r=await fetch('/assets/audio/combat/'+bank+'-v1.wav');if(!r.ok)return;const bytes=await r.arrayBuffer();this.banks[bank]=await this.context.decodeAudioData(bytes);}));}
+ stop(){for(let slot=0;slot<2;slot++)this.stopSlot(slot);}
+ private stopSlot(slot:number){const v=this.active[slot];if(!v)return;this.active[slot]=null;const now=this.context.currentTime;v.gain.gain.cancelScheduledValues(now);v.gain.gain.setTargetAtTime(.0001,now,.003);try{v.source.stop(now+.015)}catch{}}
+ play(id:FighterId,attack:AttackCall|'hurt',player:number){
+  const c=this.context,slot=player===1?1:0,now=c.currentTime;if(c.state!=='running')return;
+  const variant=this.variants[slot]++%3,voice=FIGHTER_VOICES[id],bank=voice.pitch>=200?'female':'male';
+  let buffer=this.banks[bank],offset=0,duration=0,rate=1;
+  if(buffer){const clip=attack==='punch'?variant:attack==='kick'?2+variant%2:attack==='special'?3:attack==='ultra'?4:5+variant%2;[offset,duration]=COMBAT_CALL_CLIPS[bank][clip];
+   rate=voice.timbre==='human'?Math.max(.82,Math.min(1.18,Math.pow(voice.pitch/(bank==='female'?240:145),.35))):({mouse:1.48,bird:1.6,water:.88,goat:1.12,elephant:.72,monster:.68}[voice.timbre]);rate*=1+(variant-1)*.025;
+  }else{const key=id+':'+attack+':'+variant;buffer=this.samples.get(key);if(!buffer){const pcm=renderAttackCall(id,attack==='hurt'?'kick':attack,variant);buffer=c.createBuffer(1,pcm.length,22050);buffer.getChannelData(0).set(pcm);this.samples.set(key,buffer);}duration=buffer.duration;}
+  this.stopSlot(slot);const source=c.createBufferSource(),gain=c.createGain(),pan=c.createStereoPanner();
+  source.buffer=buffer;source.playbackRate.value=rate;gain.gain.value=attack==='hurt'?.48:attack==='ultra'?.82:.68;pan.pan.value=slot===0?-.24:.24;
+  source.connect(gain);gain.connect(pan);pan.connect(this.destination);this.active[slot]={source,gain};
+  source.onended=()=>{if(this.active[slot]?.source===source)this.active[slot]=null;source.disconnect();gain.disconnect();pan.disconnect()};source.start(now+.005,offset,duration);
  }
 }

@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-10",
+  "credits": 40,
+  "assets": [
+    {
+      "fighter": "roland",
+      "clip": "punch",
+      "source": "6f846554-1496-40aa-aac0-1ef8cd991007",
+      "job": "ec801d43-8863-425b-aaba-6fc9d9a03aa9",
+      "asset": "1f62be34-64d4-4796-bc2c-2917880297a1"
+    },
+    {
+      "fighter": "michael",
+      "clip": "kick",
+      "source": "92cf3a66-cff3-4474-a5a7-e8a0ded80fd7",
+      "job": "ade4ceb5-9578-44cb-9d87-611f06f0e9e8",
+      "asset": "398d4674-b2e0-41da-9937-40db29440b1a"
+    }
+  ],
+  "packing": "196px source frames placed without resizing into 256px cells at (30,52). Fixed anchor (128,246). Contact frames selected to coincide with simulation hit windows."
+}

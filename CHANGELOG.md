@@ -2,6 +2,14 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.14-alpha — 2026-09-10
+
+- Vergleich im Training für Roland und Michael Mack: **KAMPFGEFÜHL: KLASSISCH / DYNAMISCH**. Umschalten setzt den Kampf zurück. Der Pilot verändert keine anderen Figuren oder normalen Spielmodi.
+- Dynamisch: kürzere Aushol- und Erholungsphasen für Faust, Tritt und Luftangriffe; zehn statt sechs Ticks Eingabepuffer, der während Trefferpausen erhalten bleibt. Getroffene/geblockte Faustschläge können in Tritte übergehen, auch in der Luft. Die Test-CPU nutzt diesen Übergang ebenfalls.
+- Roland-Faustschlag und Michael-Tritt mit SpriteCook neu animiert und ohne Skalierung in das gemeinsame Raster gepackt. Vorhandene weitere Angriffsbilder laufen passend zu den neuen Trefferphasen; Sprünge nutzen angezogene Beine und kürzere Landung. Dynamisches Gehen ist zwölf Prozent schneller.
+- Für alle Kämpfer: transparente Feuer-Trefferbilder mit Funken, eigener blauer Blockeffekt und Kontaktpunkte passend zur Angriffshöhe. Kurze Kampfrufe und Reaktionen aus den freigegebenen Sprachsnippets, angepasste Tonhöhe, kontrolliertes Überblenden und kräftigere Treffergeräusche.
+- Geprüft: automatisierte Kampf-, Eingabe-, Audio- und Rastertests, TypeScript und Pages-Build; Training mit Roland/Michael einschließlich Angriffen, Sprung, CPU, Pause, Reset und Umschaltung im Browser gespielt.
+
 ## 0.2.13-alpha — 2026-09-09
 
 - Namen von Karsten Monser korrigiert. Charakterauswahl, Versus-Anzeige und alle weiteren Anzeigen übernehmen die richtige Schreibweise aus den zentralen Charakterdaten.
