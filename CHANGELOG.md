@@ -2,6 +2,10 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.16-alpha — 2026-09-10
+
+- Untere Beschriftungs- und Einstellungsleiste während des Kampfes entfernt. Kampfgefühl, Dummy und Reset befinden sich jetzt im Pausenmenü; Esc und die Pause-Taste am Controller bleiben aktiv. Die Parkkarte ist weiterhin im Pausenmenü erreichbar.
+
 ## 0.2.15-alpha — 2026-09-10
 
 - Spezialmove-Namen ohne rechteckige Hintergrundfläche; die dunkle Schriftkontur hält sie auf der Arena lesbar.
