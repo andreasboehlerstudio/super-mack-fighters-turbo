@@ -2,6 +2,12 @@
 
 Das Spiel befindet sich in der **Alpha-Phase**. Die Versionsanzeige unten rechts nennt die Version und das Commit-Kürzel des tatsächlich gebauten Spielstands. `DEV` kennzeichnet lokale Änderungen.
 
+## 0.2.18-alpha — 2026-09-10
+
+- Geometrischen Strahlenstern hinter K.O. durch neun gezeichnete Pixel-Feuerframes ersetzt. Flammen und Glut laufen als transparente Sprites in Originalgröße auf dem Spielraster; Pause und Zeitlupe bleiben synchron.
+- „Die Arena öffnet …“ als vollständig gerasterte Ladeanzeige mit Bitmap-Schrift, Parktor und gestuft wandernden Ladeblöcken. Keine glatte Monospace-Schrift; das Ladebild verdeckt das noch unfertige HUD.
+- TypeScript, relevante Kampf-/Effekttests und Pages-Build geprüft; Ladeanzeige und K.O.-Animation im Browser kontrolliert.
+
 ## 0.2.17-alpha — 2026-09-10
 
 - Erste K.O.-Variante umgesetzt: freigestellter gold-roter Pixelschriftzug mit kurzem Einschlag, radialer Feuerexplosion und auslaufenden Funken. Transparente Darstellung ohne Bannerkasten oder doppelte K.O.-Schrift.

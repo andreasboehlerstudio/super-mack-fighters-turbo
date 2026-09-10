@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createMatch,step,neutral} from './combat.ts';
 import {finishTimeScale,CALLOUT_TIMING} from './battle-presentation.ts';
-import {koAge,koPose,KO_END} from './ko-presentation.ts';
+import {koAge,koPose,koFireFrame,KO_END} from './ko-presentation.ts';
 
 test('KO overlay follows either loser, freezes with the match and clears before the winner banner',()=>{
  for(const loser of [0,1]){
@@ -16,6 +16,8 @@ test('KO overlay follows either loser, freezes with the match and clears before 
  const timeout=createMatch('roland','michael');timeout.phase='roundover';timeout.phaseTicks=145;
  assert.equal(koAge(timeout),null);
  for(const age of [0,8,30,60]){assert.equal(koPose(age,true).scale,1);assert.equal(koPose(age,true).y,0);}
+ assert.equal(koFireFrame(-1),null);assert.equal(koFireFrame(KO_END),null);
+ assert.deepEqual([...new Set(Array.from({length:KO_END},(_,age)=>koFireFrame(age)))],[0,1,2,3,4,5,6,7,8]);
 });
 
 test('winning air attack finishes and both fighters land before victory or completion',()=>{
